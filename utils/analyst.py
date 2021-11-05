@@ -3,10 +3,11 @@ import numpy as np
 
 def get_sentence_pred(num_sent, y_pred, x_test):
     """
+    
     function get_sentence_pred: kiểm tra 1 câu những label được dự đoán đúng (is_error = 0), dự đoán sai (is_error =1)
     :num_sent: thể hiện số thứ tự của câu trong 1 list X_test
     :y_pred: input đã được dự đoán từ model với input là x_test
-    :x_test: câu được cho vào để dự đoán
+    :x_test: câu được cho vào để dự đoán dạng list tuple, mỗi tuple là: (word, pos, ner)
     :output: trả về tuple (num_sent, word, pos, ner, ner_pred, is_error)
     """
 
@@ -14,21 +15,23 @@ def get_sentence_pred(num_sent, y_pred, x_test):
     sent_error = False
     for index in range(len(x_test)):
         word_info = x_test[index]
-        true_ner = word_info[1]
+        
         word = word_info[0]
-        pos = word_info[2]
-        ner = word_info[1]
+        pos = word_info[1]
+        true_ner = word_info[2]
+     
+        ner_pred = y_pred[index]
 
         if true_ner == y_pred[index]:
             is_error = 0
            
-            ner_pred = y_pred[index]
-            sentence_info.append((num_sent, word, pos, ner, ner_pred, is_error))
+            
+            sentence_info.append((num_sent, word, pos, true_ner, ner_pred, is_error))
        
         else:
             is_error = 1
             sent_error = True
-            sentence_info.append((num_sent, word, pos, ner, ner_pred, is_error))
+            sentence_info.append((num_sent, word, pos, true_ner, ner_pred, is_error))
 
     return  sentence_info, sent_error
 
