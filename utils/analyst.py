@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def get_sentence_pred(num_sent, y_pred, x_test):
+def check_sentence(num_sent, y_pred, x_test):
     """
     
     function get_sentence_pred: kiểm tra 1 câu những label được dự đoán đúng (is_error = 0), dự đoán sai (is_error =1)
@@ -24,19 +24,17 @@ def get_sentence_pred(num_sent, y_pred, x_test):
 
         if true_ner == y_pred[index]:
             is_error = 0
-           
-            
-            sentence_info.append((num_sent, word, pos, true_ner, ner_pred, is_error))
+            sentence_info.append((num_sent, index, word, pos, true_ner, ner_pred, is_error))
        
         else:
             is_error = 1
             sent_error = True
-            sentence_info.append((num_sent, word, pos, true_ner, ner_pred, is_error))
+            sentence_info.append((num_sent, index, word, pos, true_ner, ner_pred, is_error))
 
     return  sentence_info, sent_error
 
 
-def get_sentences_pred(Y_pred, X_test, option = "full"):
+def convert_sentences_to_df(Y_pred, X_test, option = "full"):
 
     """
     function get_sentences_pred: kiểm tra N câu những label được dự đoán đúng (is_error = 0), dự đoán sai (is_error =1)
@@ -46,7 +44,7 @@ def get_sentences_pred(Y_pred, X_test, option = "full"):
     :output: trả về dataframe có các columns (num_sent, word, pos, ner, ner_pred, is_error)
     """
 
-    df = pd.DataFrame([], columns = ["#sent","word", "true_pos", "true_ner", "predict_ner", "is_error"])
+    df = pd.DataFrame([], columns = ["#sent","#word","word", "true_pos", "true_ner", "predict_ner", "is_error"])
     
     for index in range(len(X_test)):
 
@@ -54,19 +52,20 @@ def get_sentences_pred(Y_pred, X_test, option = "full"):
         y_pred = Y_pred[index]
         sentence_info, sent_error = get_sentence_pred(index, y_pred, x_test)
         if option == "full":
-            df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
+            df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent","#word", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
         
         if option == "ony_true":
             if sent_error == False:
-                df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
+                df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent", "#word", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
 
         if option == "ony_false":
             if sent_error == True:
-                df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
+                df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent", "#word", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
 
 
         
     return df.copy()
+    
     
 
 def  analyst_error(num_sent, y_pred, x_test):
