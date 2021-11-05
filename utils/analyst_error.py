@@ -9,7 +9,7 @@ def get_sentence_pred(num_sent, y_pred, x_test):
     :x_test: câu được cho vào để dự đoán
     :output: trả về tuple (num_sent, word, pos, ner, ner_pred, is_error)
     """
-    
+
     sentence_info = []
     sent_error = False
     for index in range(len(x_test)):
