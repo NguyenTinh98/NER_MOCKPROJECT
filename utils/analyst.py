@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-def check_sentence(num_sent, y_pred, x_test):
+
+def check_sentence(num_sent, y_pred, x_test, n_col = 3):
     """
     
     function get_sentence_pred: kiểm tra 1 câu những label được dự đoán đúng (is_error = 0), dự đoán sai (is_error =1)
@@ -16,9 +17,14 @@ def check_sentence(num_sent, y_pred, x_test):
     for index in range(len(x_test)):
         word_info = x_test[index]
         
-        word = word_info[0]
-        pos = word_info[1]
-        true_ner = word_info[2]
+        if n_col == 3:
+            word = word_info[0]
+            pos = word_info[1]
+            true_ner = word_info[2]
+        if n_col == 2:
+            word = word_info[0]
+            pos = "?"
+            true_ner = word_info[1]
      
         ner_pred = y_pred[index]
 
@@ -34,7 +40,7 @@ def check_sentence(num_sent, y_pred, x_test):
     return  sentence_info, sent_error
 
 
-def convert_sentences_to_df(Y_pred, X_test, option = "full"):
+def convert_sentences_to_df(Y_pred, Data_test, option = "full", n_col = 3):
 
     """
     function get_sentences_pred: kiểm tra N câu những label được dự đoán đúng (is_error = 0), dự đoán sai (is_error =1)
@@ -43,14 +49,16 @@ def convert_sentences_to_df(Y_pred, X_test, option = "full"):
     :X_test: N câu được cho vào để dự đoán
     :output: trả về dataframe có các columns (num_sent, word, pos, ner, ner_pred, is_error)
     """
+    
+    
 
     df = pd.DataFrame([], columns = ["#sent","#word","word", "true_pos", "true_ner", "predict_ner", "is_error"])
     
-    for index in range(len(X_test)):
+    for index in range(len(Data_test)):
 
-        x_test = X_test[index]
+        x_test = Data_test[index]
         y_pred = Y_pred[index]
-        sentence_info, sent_error = get_sentence_pred(index, y_pred, x_test)
+        sentence_info, sent_error = check_sentence(index, y_pred, x_test, n_col)
         if option == "full":
             df = df.append(pd.DataFrame(sentence_info,  columns = ["#sent","#word", "word", "true_pos", "true_ner", "predict_ner", "is_error"]))
         
