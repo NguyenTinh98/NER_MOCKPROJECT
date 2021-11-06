@@ -94,7 +94,7 @@ def tokenize_predict(tokenizer, sentence):
 
   return subwords
 
-def predict_text(model, tokenizer, tag_values,test_sentence):
+def predict_text(model, tokenizer, tag_values, test_sentence, device):
     #predict with model
     model.eval()
     test_sentence_token = transform_test(test_sentence, 'word')
@@ -102,9 +102,9 @@ def predict_text(model, tokenizer, tag_values,test_sentence):
     input_ids = pad_sequences([tokenizer.convert_tokens_to_ids(subwords)],
                               maxlen=512, dtype="long", value=0.0,
                               truncating="post", padding="post")
-    input_ids_tensor = torch.tensor(input_ids).type(torch.LongTensor).cuda() #Fixfug here
+    input_ids_tensor = torch.tensor(input_ids).type(torch.LongTensor).to(device) #Fixfug here
     input_mask = [[float(i != 0.0) for i in ii] for ii in input_ids]
-    input_mask_tensor = torch.tensor(input_mask).type(torch.LongTensor).cuda() 
+    input_mask_tensor = torch.tensor(input_mask).type(torch.LongTensor).to(device)
     with torch.no_grad():
         outputs = model(input_ids_tensor, token_type_ids = None, attention_mask = input_mask_tensor)
         
