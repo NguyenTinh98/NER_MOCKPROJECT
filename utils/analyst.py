@@ -74,6 +74,43 @@ def convert_sentences_to_df(Y_pred, Data_test, option = "full", n_col = 3):
         
     return df.copy()
 
-    #cỏmnt
+# find word index near
+def get_data_error(df, num_sent, dist_size):
+    """
+    function get_data_error: phân tích lỗi xung quanh từ bị lỗi
+    df: DataFrame để phân tích gồm các columns (#sent, #word, word, true_pos, true_ner,predict_ner,is_error)
+    dist_size: khoảng cách xung quanh từ bị lỗi
+    num_sent: câu nằm trong câu
+    """
+    is_error = 1
+    col_name = "#sent"
+    data_test = df
+    df_condition = data_test.loc[(data_test[col_name] ==  num_sent)]
+    df_condition_is_error = df_condition.loc[df_condition["is_error"] == is_error]
     
-    
+    if len(df_condition_is_error) ==  0:
+        return  print("Not exited data row by condition this")
+
+    else:
+        
+        word_near = df_condition_is_error["#word"].iloc[0]
+        word_least = df_condition_is_error["#word"].iloc[-1]
+        max_len = df_condition["#word"].iloc[-1]
+
+        if word_near <= dist_size:
+            word_index_left = 0
+        else:
+            word_index_left = word_near - dist_size 
+
+        if dist_size >= max_len - word_least:
+            word_index_right = -1
+
+        else:
+            word_index_right = word_least + dist_size
+
+
+        if word_index_right == -1:
+            rs_df = df_condition.iloc[word_index_left:]
+        else:
+            rs_df = df_condition.iloc[word_index_left:word_index_right + 1]
+        return rs_df
