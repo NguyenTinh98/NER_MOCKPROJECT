@@ -285,6 +285,7 @@ từ	O
 Đại	B-ORGANIZATION
 học	I-ORGANIZATION
 Pelotas	I-ORGANIZATION
+,	O
 Brazil	B-LOCATION-GPE
 cho	O
 biết	O
@@ -448,6 +449,7 @@ cho	O
 hơn	O
 1	B-DATETIME-DURATION
 tiếng	I-DATETIME-DURATION
+.	O
 Hai	B-QUANTITY-NUM
 là	O
 thời	O
@@ -487,6 +489,7 @@ vong	O
 là	O
 9.9	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -510,6 +513,7 @@ lên	O
 tiếng	I-QUANTITY
 mỗi	I-QUANTITY
 ngày	I-QUANTITY
+,	O
 tỷ	O
 lệ	O
 tử	O
@@ -522,6 +526,7 @@ xuống	O
 còn	O
 6.2	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Nguyên	O
 nhân	O
 gây	O
@@ -780,6 +785,7 @@ quan	O
 y	O
 tế	O
 Anh	B-LOCATION-GPE
+.	O
 
 Các	O
 nhà	O
@@ -887,6 +893,7 @@ chia	O
 sẻ	O
 trên	O
 Twitter	B-PRODUCT
+.	O
 
 Những	O
 'mẹo	O
@@ -2680,6 +2687,7 @@ bệnh	O
 tình	O
 của	O
 Selena	B-PERSON
+,	O
 người	O
 ta	O
 còn	O
@@ -2766,6 +2774,7 @@ người	O
 bạn	O
 như	O
 Francia	B-PERSON
+.	O
 
 Francia	B-PERSON
 đã	O
@@ -2842,10 +2851,13 @@ showbiz	O
 như	O
 Taylor	B-PERSON
 Swift	I-PERSON
+,	O
 Demi	B-PERSON
 Lovato	I-PERSON
+,	O
 Vanessa	B-PERSON
 Hudgens	I-PERSON
+,	O
 …	O
 nên	O
 tình	O
@@ -3514,6 +3526,7 @@ chung	O
 của	O
 cả	O
 hai	B-QUANTITY-NUM
+.	O
 
 Khi	O
 trò	O
@@ -4633,6 +4646,7 @@ như	O
 Tu	B-PERSON
 Dinh	I-PERSON
 Huong	I-PERSON
+,	O
 thành	O
 viên	O
 Pymini	B-PERSON
@@ -5391,6 +5405,7 @@ trang	O
 tin	O
 New	B-ORGANIZATION
 Scientist	I-ORGANIZATION
+,	O
 nhằm	O
 điều	O
 tra	O
@@ -5417,6 +5432,7 @@ thuộc	O
 Đại	B-ORGANIZATION
 học	I-ORGANIZATION
 California	I-ORGANIZATION
+,	O
 Riversid	B-LOCATION-GPE
 (	O
 Mỹ	B-LOCATION-GPE
@@ -5505,6 +5521,7 @@ nhau	O
 Sau	O
 một	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 những	O
 con	O
 chuột	O
@@ -5550,6 +5567,7 @@ dụng	O
 Hai	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
 sau	I-DATETIME-DURATION
+,	O
 nhóm	O
 nghiên	O
 cứu	O
@@ -5576,6 +5594,7 @@ thời	O
 điểm	O
 bốn	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 mức	O
 cortisol	O
 đã	O
@@ -5618,6 +5637,7 @@ thời	O
 điểm	O
 bốn	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 những	O
 con	O
 chuột	O
@@ -5676,6 +5696,7 @@ thời	O
 điểm	O
 sáu	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+.	O
 
 Tờ	O
 Newsweek	B-ORGANIZATION
@@ -6550,6 +6571,7 @@ giây	I-DATETIME-DURATION
 đến	O
 2	B-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+,	O
 rửa	O
 sạch	O
 .	O
@@ -6750,6 +6772,7 @@ một	B-QUANTITY-NUM
 thìa	O
 baking	B-PRODUCT
 soda	I-PRODUCT
+,	O
 và	O
 20	B-QUANTITY-NUM
 giọt	O
@@ -7777,10 +7800,12 @@ khoảng	O
 phút	I-QUANTITY
 mỗi	I-QUANTITY
 ngày	I-QUANTITY
+,	O
 liên	O
 tục	O
 2	B-DATETIME-DURATION
 ngày	I-DATETIME-DURATION
+.	O
 Sau	O
 đó	O
 ,	O
@@ -9123,6 +9148,7 @@ hệ	O
 của	O
 cả	O
 2	B-QUANTITY-NUM
+.	O
 Cùng	O
 nhau	O
 tận	O
@@ -10135,11 +10161,13 @@ viện	O
 
 Ngày	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 bác	B-PERSONTYPE
 sĩ	I-PERSONTYPE
 Đỗ	B-PERSON
 Đức	I-PERSON
 Thọ	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 khoa	I-PERSONTYPE
@@ -10314,6 +10342,7 @@ bệnh	O
 ,	O
 ngày	B-DATETIME-DATE
 13/9	I-DATETIME-DATE
+,	O
 người	O
 nhà	O
 đưa	O
@@ -10345,9 +10374,11 @@ Pen	I-LOCATION-GPE
 xã	B-LOCATION-GPE
 Mường	I-LOCATION-GPE
 Lạn	I-LOCATION-GPE
+,	O
 huyện	B-LOCATION-GPE
 Sốp	I-LOCATION-GPE
 Cộp	I-LOCATION-GPE
+,	O
 Sơn	B-LOCATION-GPE
 La	I-LOCATION-GPE
 .	O
@@ -10383,6 +10414,7 @@ BV	B-ORGANIZATION-MED
 khoa	I-ORGANIZATION-MED
 Hà	I-ORGANIZATION-MED
 Đông	I-ORGANIZATION-MED
+.	O
 
 Các	O
 bác	O
@@ -10738,6 +10770,7 @@ khô	O
 trên	O
 tờ	O
 Zing.vn	B-URL
+,	O
 PGS.TS	B-PERSONTYPE
 Nguyễn	B-PERSON
 Thị	I-PERSON
@@ -10923,6 +10956,7 @@ cung	O
 cấp	O
 100	B-QUANTITY-DIM
 kcal	I-QUANTITY-DIM
+,	O
 tương	O
 đương	O
 30	B-DATETIME-DURATION
@@ -12500,9 +12534,11 @@ những	O
 năm	O
 70	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 theo	O
 Daily	B-ORGANIZATION
 Mail	I-ORGANIZATION
+.	O
 
 Ngoài	O
 ra	O
@@ -12618,6 +12654,7 @@ khoa	I-PERSONTYPE
 học	I-PERSONTYPE
 Daniel	B-PERSON
 Aggio	I-PERSON
+,	O
 tác	O
 giả	O
 chính	O
@@ -12629,6 +12666,7 @@ nói	O
 với	O
 Daily	B-ORGANIZATION
 Mai	I-ORGANIZATION
+.	O
 
 Trong	O
 nghiên	O
@@ -12651,6 +12689,7 @@ trong	O
 suốt	O
 20	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+.	O
 Khi	O
 nghiên	O
 cứu	O
@@ -12668,6 +12707,7 @@ tuổi	O
 từ	O
 40	B-QUANTITY-NUM
 59	B-QUANTITY-NUM
+.	O
 Họ	O
 phải	O
 trả	O
@@ -12780,6 +12820,7 @@ BMJ	I-ORGANIZATION
 Open	I-ORGANIZATION
 của	O
 Anh	B-LOCATION-GPE
+.	O
 Các	O
 nhà	O
 khoa	O
@@ -12829,10 +12870,12 @@ thể	O
 thao	O
 150	B-QUANTITY
 phút/tuần	I-QUANTITY
+,	O
 tức	O
 hơn	O
 20	B-QUANTITY
 phút/ngày	I-QUANTITY
+.	O
 
 Cách	O
 làm	O
@@ -13071,6 +13114,7 @@ muối	O
 di	O
 chuyển	O
 1	B-QUANTITY-NUM
+,	O
 2	B-QUANTITY-NUM
 lần	O
 ,	O
@@ -13617,6 +13661,7 @@ và	O
 nước	B-PRODUCT
 oxy	I-PRODUCT
 già	I-PRODUCT
+.	O
 Thậm	O
 chí	O
 ,	O
@@ -13913,6 +13958,7 @@ trong	O
 -	I-DATETIME-DURATION
 10	I-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+.	O
 
 Tiếp	O
 theo	O
@@ -14227,6 +14273,7 @@ văn	O
 phòng	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+,	O
 có	O
 người	O
 còn	O
@@ -14673,6 +14720,7 @@ tổ	O
 chức	O
 chiều	B-DATETIME-TIMERANGE
 22/9	I-DATETIME-TIMERANGE
+,	O
 nhiều	O
 chuyên	O
 gia	O
@@ -14720,6 +14768,7 @@ Nguyễn	B-PERSON
 Thị	I-PERSON
 Tường	I-PERSON
 Vân	I-PERSON
+,	O
 có	O
 rất	O
 nhiều	O
@@ -14994,6 +15043,7 @@ của	O
 Bộ	B-ORGANIZATION-MED
 Y	I-ORGANIZATION-MED
 tế	I-ORGANIZATION-MED
+.	O
 Chất	O
 này	O
 có	O
@@ -15038,6 +15088,7 @@ Theo	O
 Nguyễn	B-PERSON
 Đình	I-PERSON
 Trường	I-PERSON
+,	O
 Viện	B-ORGANIZATION
 kinh	I-ORGANIZATION
 tế	I-ORGANIZATION
@@ -15047,6 +15098,7 @@ thuốc	I-ORGANIZATION
 lá	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 chất	O
 coumarin	O
 được	O
@@ -15600,6 +15652,7 @@ trẻ	O
 tuổi	I-QUANTITY-AGE
 họ	O
 Lâm	B-PERSON
+,	O
 hiện	O
 sống	O
 tại	O
@@ -15607,10 +15660,13 @@ thành	B-LOCATION-GPE
 phố	I-LOCATION-GPE
 Cao	I-LOCATION-GPE
 Hùng	I-LOCATION-GPE
+,	O
 Đài	B-LOCATION-GPE
 Loan	I-LOCATION-GPE
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Câu	O
 chuyện	O
 này	O
@@ -15990,6 +16046,7 @@ oán	O
 trách	O
 cô	O
 Lâm	B-PERSON
+.	O
 
 ``	O
 Dù	O
@@ -16221,6 +16278,7 @@ hội	I-ORGANIZATION-MED
 Ung	I-ORGANIZATION-MED
 thư	I-ORGANIZATION-MED
 Mỹ	I-ORGANIZATION-MED
+,	O
 hơn	O
 2.400	B-QUANTITY-NUM
 ca	O
@@ -16237,6 +16295,7 @@ hiện	O
 trong	O
 năm	B-DATETIME
 nay	I-DATETIME
+.	O
 Trong	O
 khi	O
 căn	O
@@ -16725,6 +16784,7 @@ giai	O
 từ	O
 0	B-QUANTITY-NUM
 4	B-QUANTITY-NUM
+.	O
 Giai	O
 đoạn	O
 bệnh	O
@@ -17252,6 +17312,7 @@ khi	O
 sinh	O
 3	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 bạn	O
 cũng	O
 nên	O
@@ -17315,6 +17376,7 @@ khoảng	O
 –	I-DATETIME-DURATION
 15	I-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+.	O
 
 Massage	O
 vùng	O
@@ -17883,6 +17945,7 @@ khô	O
 khoảng	O
 15	B-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+,	O
 hãy	O
 nhẹ	O
 nhàng	O
@@ -18092,6 +18155,7 @@ quốc	O
 gia	O
 châu	B-LOCATION-GPE
 Á	I-LOCATION-GPE
+.	O
 Tính	O
 đến	O
 nay	O
@@ -18807,6 +18871,7 @@ Trong	O
 phim	O
 Bad	B-PRODUCT
 Genius	I-PRODUCT
+,	O
 Lynn	B-PERSON
 và	O
 Bank	B-PERSON
@@ -19214,6 +19279,7 @@ Trailer	O
 phim	O
 Bad	B-PRODUCT
 Genius	I-PRODUCT
+.	O
 
 Nếu	O
 đã	O
@@ -19382,12 +19448,14 @@ Nếu	O
 quá	O
 3	B-DATETIME-DURATION
 ngày	I-DATETIME-DURATION
+,	O
 hoặc	O
 dưới	O
 3	B-QUANTITY
 lần	I-QUANTITY
 mỗi	I-QUANTITY
 tuần	I-QUANTITY
+,	O
 là	O
 dấu	O
 hiệu	O
@@ -19818,6 +19886,7 @@ Milan	B-EVENT
 Fashion	I-EVENT
 Week	I-EVENT
 2017	I-EVENT
+.	O
 
 Với	O
 vai	O
@@ -19833,6 +19902,7 @@ trang	O
 Dolce	B-ORGANIZATION
 &	I-ORGANIZATION
 Gabbana	I-ORGANIZATION
+,	O
 Địch	B-PERSON
 Lệ	I-PERSON
 Nhiệt	I-PERSON
@@ -19870,6 +19940,7 @@ cưng	O
 của	O
 Dương	B-PERSON
 Mịch	I-PERSON
+,	O
 hiện	O
 là	O
 gương	O
@@ -20097,6 +20168,7 @@ giải	O
 trí	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Không	O
 chỉ	O
 vậy	O
@@ -20129,13 +20201,14 @@ như	O
 Triệu	B-PERSON
 Lệ	I-PERSON
 Dĩnh	I-PERSON
+,	O
 Lưu	B-PERSON
 Thi	I-PERSON
 Thi	I-PERSON
 hay	O
 Dương	B-PERSON
 Mịch	I-PERSON
-..	O
+...	O
 
 Xiao	B-PERSON
 Pei	I-PERSON
@@ -20163,6 +20236,7 @@ khu	O
 vực	O
 miền	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 ban	O
 giám	O
 khảo	O
@@ -20259,10 +20333,12 @@ Hoa	B-PERSONTYPE
 khôi	I-PERSONTYPE
 Lan	B-PERSON
 Khuê	I-PERSON
+,	O
 Hoa	B-PERSONTYPE
 hậu	I-PERSONTYPE
 Diễm	B-PERSON
 Hương	I-PERSON
+,	O
 Á	B-PERSONTYPE
 vương	I-PERSONTYPE
 -	O
@@ -20270,12 +20346,14 @@ Siêu	B-PERSONTYPE
 mẫu	I-PERSONTYPE
 Ngọc	B-PERSON
 Tình	I-PERSON
+,	O
 Bác	B-PERSONTYPE
 sĩ	I-PERSONTYPE
 thẩm	I-PERSONTYPE
 mỹ	I-PERSONTYPE
 Xuân	B-PERSON
 Hùng	I-PERSON
+,	O
 Nhà	B-PERSONTYPE
 đào	I-PERSONTYPE
 tạo	I-PERSONTYPE
@@ -20283,11 +20361,13 @@ người	I-PERSONTYPE
 mẫu	I-PERSONTYPE
 Phúc	B-PERSON
 Nguyễn	I-PERSON
+,	O
 Nhiếp	B-PERSONTYPE
 ảnh	I-PERSONTYPE
 gia	I-PERSONTYPE
 Long	B-PERSON
 Thuỷ	I-PERSON
+,	O
 Chuyên	B-PERSONTYPE
 gia	I-PERSONTYPE
 trang	I-PERSONTYPE
@@ -20298,6 +20378,7 @@ nhân	I-PERSONTYPE
 Phan	B-PERSON
 Ngọc	I-PERSON
 Nga	I-PERSON
+.	O
 
 Ở	O
 vòng	O
@@ -20446,6 +20527,7 @@ khu	O
 vực	O
 miền	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 ban	O
 giám	O
 khảo	O
@@ -20490,17 +20572,21 @@ Lê	B-PERSON
 Âu	I-PERSON
 Ngân	I-PERSON
 Anh	I-PERSON
+,	O
 sinh	O
 năm	B-DATETIME
 1995	I-DATETIME
+,	O
 cao	O
 1,74	B-QUANTITY-DIM
 m	I-QUANTITY-DIM
+,	O
 số	O
 đo	O
 85	B-QUANTITY-NUM
 56	B-QUANTITY-NUM
 94	B-QUANTITY-NUM
+,	O
 hiện	O
 là	O
 sinh	O
@@ -20521,6 +20607,7 @@ tế	O
 ở	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 Ở	O
 vòng	O
 thi	O
@@ -20546,6 +20633,7 @@ thân	O
 bằng	O
 tiếng	B-MISCELLANEOUS
 Anh	I-MISCELLANEOUS
+.	O
 
 Người	O
 đẹp	O
@@ -20602,13 +20690,16 @@ khả	O
 năng	O
 tiếng	B-MISCELLANEOUS
 Anh	I-MISCELLANEOUS
+,	O
 tiếng	B-MISCELLANEOUS
 Pháp	I-MISCELLANEOUS
+.	O
 
 Đối	O
 với	O
 Ngân	B-PERSON
 Anh	I-PERSON
+,	O
 cuộc	B-EVENT
 thi	I-EVENT
 Hoa	I-EVENT
@@ -20649,6 +20740,7 @@ cao	O
 học	O
 tại	O
 Anh	B-LOCATION-GPE
+.	O
 
 Thí	O
 sinh	O
@@ -20673,6 +20765,7 @@ dương	I-EVENT
 Việt	I-EVENT
 Nam	I-EVENT
 2017	I-EVENT
+.	O
 Trước	O
 câu	O
 hỏi	O
@@ -20719,6 +20812,7 @@ hậu	I-EVENT
 dương	I-EVENT
 Việt	I-EVENT
 Nam	I-EVENT
+,	O
 đồng	O
 thời	O
 khẳng	O
@@ -20771,9 +20865,11 @@ Thương	I-PERSON
 sinh	O
 năm	B-DATETIME
 1996	I-DATETIME
+,	O
 cao	O
 1,73	B-QUANTITY-DIM
 m	I-QUANTITY-DIM
+,	O
 hiện	O
 đang	O
 là	O
@@ -20925,6 +21021,7 @@ diễn	O
 ra	O
 ngày	B-DATETIME-DATE
 28/9	I-DATETIME-DATE
+.	O
 Đêm	O
 Gala	O
 Công	O
@@ -20940,11 +21037,13 @@ cùng	O
 ngày	O
 tại	O
 TP.HCM	B-LOCATION-GPE
+.	O
 
 ﻿	O
 Nhà	B-PERSONTYPE
 thiết	I-PERSONTYPE
 kế	I-PERSONTYPE
+,	O
 hoạ	B-PERSONTYPE
 sỹ	I-PERSONTYPE
 Trung	B-PERSON
@@ -20983,6 +21082,7 @@ Armani	I-ORGANIZATION
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 thì	O
 gần	O
 đây	O
@@ -21079,6 +21179,7 @@ hoạ	O
 của	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 và	O
 đồng	O
 thời	O
@@ -21116,9 +21217,11 @@ vẹn	O
 là	O
 hoạ	B-PERSONTYPE
 sỹ	I-PERSONTYPE
+,	O
 NTK	B-PERSONTYPE
 Trung	B-PERSON
 Đinh	I-PERSON
+.	O
 
 Sau	O
 rất	O
@@ -21164,6 +21267,7 @@ Xin	O
 chào	O
 Trung	B-PERSON
 Đinh	I-PERSON
+,	O
 rất	O
 vui	O
 vì	O
@@ -21174,6 +21278,7 @@ lời	O
 ngày	O
 hôm	B-DATETIME
 nay	I-DATETIME
+,	O
 sau	O
 rất	O
 nhiều	O
@@ -21208,6 +21313,7 @@ tới	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Đầu	O
 tiên	O
 là	O
@@ -21306,6 +21412,7 @@ việc	O
 giờ	I-QUANTITY
 mỗi	I-QUANTITY
 ngày	I-QUANTITY
+.	O
 Nhưng	O
 tôi	O
 chưa	O
@@ -21345,6 +21452,7 @@ từ	O
 cuối	B-DATETIME
 năm	I-DATETIME
 ngoái	I-DATETIME
+.	O
 Đầu	O
 tiên	O
 là	O
@@ -21584,9 +21692,11 @@ chơi	O
 của	O
 showbiz	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
+?	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Nói	O
 thế	O
 nào	O
@@ -21861,6 +21971,7 @@ này	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Đúng	O
 vậy	O
 ,	O
@@ -22051,6 +22162,7 @@ gì	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Tôi	O
 thành	O
 lập	O
@@ -22253,6 +22365,7 @@ không	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Tôi	O
 không	O
 trả	O
@@ -22444,6 +22557,7 @@ Armani	I-ORGANIZATION
 được	O
 9	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+.	O
 Anh	O
 đã	O
 gặt	O
@@ -22464,6 +22578,7 @@ nào	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Năm	B-DATETIME
 2015	I-DATETIME
 tôi	O
@@ -22557,6 +22672,7 @@ kế	O
 cho	O
 Giorgio	B-ORGANIZATION
 Armani	I-ORGANIZATION
+?	O
 Dạy	O
 vẽ	O
 tại	O
@@ -22564,6 +22680,7 @@ Trung	B-ORGANIZATION
 Tâm	I-ORGANIZATION
 Trung	I-ORGANIZATION
 Đinh	I-ORGANIZATION
+?	O
 Hay	O
 vẽ	O
 và	O
@@ -22585,6 +22702,7 @@ việc	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Thật	O
 ra	O
 ,	O
@@ -22664,6 +22782,7 @@ gì	O
 
 Trung	B-PERSON
 Đinh	I-PERSON
+:	O
 Muốn	O
 làm	O
 nghệ	O
@@ -22810,6 +22929,7 @@ chuyên	O
 ở	O
 Bình	B-LOCATION-GPE
 Dương	I-LOCATION-GPE
+.	O
 
 Dù	O
 đã	O
@@ -22892,17 +23012,21 @@ THPT	O
 ở	O
 Bình	B-LOCATION-GPE
 Dương	I-LOCATION-GPE
+.	O
 
 Chiều	B-DATETIME-TIMERANGE
 22/	I-DATETIME-TIMERANGE
+,	O
 trả	O
 lời	O
 PV	B-PERSONTYPE
 VTC	B-ORGANIZATION
 News	I-ORGANIZATION
+,	O
 bạn	O
 Khánh	B-PERSON
 Vy	I-PERSON
+,	O
 học	O
 sinh	O
 lớp	O
@@ -22942,6 +23066,7 @@ lý	O
 vào	O
 ngày	B-DATETIME-DATE
 20/9	I-DATETIME-DATE
+.	O
 
 ``	O
 Em	B-PRODUCT
@@ -23027,6 +23152,7 @@ này	O
 là	O
 thầy	O
 T.V.Q.N	B-PERSON
+.	O
 Thầy	O
 N	B-PERSON
 .	I-PERSON
@@ -23045,6 +23171,7 @@ tác	O
 gần	O
 một	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+.	O
 Thầy	O
 N	B-PERSON
 .	I-PERSON
@@ -23073,6 +23200,7 @@ SỐC	O
 :	O
 Hoàng	B-PERSON
 Thùy	I-PERSON
+,	O
 Mâu	B-PERSON
 Thủy	I-PERSON
 'bị	O
@@ -23090,6 +23218,7 @@ Vũ	I-EVENT
 Việt	I-EVENT
 Nam	I-EVENT
 2017	I-EVENT
+?	O
 
 Danh	O
 sách	O
@@ -23132,6 +23261,7 @@ giả	O
 ,	O
 Hoàng	B-PERSON
 Thùy	I-PERSON
+,	O
 Mâu	B-PERSON
 Thủy	I-PERSON
 lại	O
@@ -23183,6 +23313,7 @@ Thùy	I-PERSON
 và	O
 Mâu	B-PERSON
 Thủy	I-PERSON
+.	O
 Trải	O
 qua	O
 nhiều	O
@@ -23197,6 +23328,7 @@ Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 và	O
 TP.HCM	B-LOCATION-GPE
+,	O
 mới	O
 đây	O
 danh	O
@@ -23268,7 +23400,7 @@ Người	B-PERSONTYPE
 mẫu	I-PERSONTYPE
 Mâu	B-PERSON
 Thủy	I-PERSON
-..	O
+...	O
 
 ...	O
 và	O
@@ -23319,6 +23451,7 @@ sách	O
 như	O
 Hoàng	B-PERSON
 Thùy	I-PERSON
+,	O
 Mâu	B-PERSON
 Thủy	I-PERSON
 vốn	O
@@ -23563,6 +23696,7 @@ Asia	B-EVENT
 Song	I-EVENT
 Festival	I-EVENT
 2017	I-EVENT
+,	O
 Đông	B-PERSON
 Nhi	I-PERSON
 quyết	O
@@ -23579,6 +23713,7 @@ là	O
 Lê	B-PERSON
 Thanh	I-PERSON
 Hòa	I-PERSON
+.	O
 
 Chỉ	O
 còn	O
@@ -23595,6 +23730,7 @@ lên	O
 đường	O
 sang	O
 Busan	B-LOCATION-GPE
+,	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
 để	O
@@ -23613,6 +23749,7 @@ Asia	B-EVENT
 Song	I-EVENT
 Festival	I-EVENT
 2017	I-EVENT
+.	O
 Đây	O
 là	O
 một	O
@@ -23708,6 +23845,7 @@ Asia	B-EVENT
 Song	I-EVENT
 Festival	I-EVENT
 2017	I-EVENT
+,	O
 Đông	B-PERSON
 Nhi	I-PERSON
 quyết	O
@@ -23725,6 +23863,7 @@ là	O
 Lê	B-PERSON
 Thanh	I-PERSON
 Hòa	I-PERSON
+.	O
 
 Nữ	O
 ca	O
@@ -23754,6 +23893,7 @@ trang	I-PERSONTYPE
 điểm	I-PERSONTYPE
 Minh	B-PERSON
 Lộc	I-PERSON
+.	O
 
 Theo	O
 dự	O
@@ -23843,6 +23983,7 @@ khán	O
 giả	O
 tại	O
 Seoul	B-LOCATION-GPE
+,	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
 là	O
@@ -23864,6 +24005,7 @@ Quốc	I-LOCATION-GPE
 tại	O
 RBW	B-LOCATION-STRUC
 Studio	I-LOCATION-STRUC
+.	O
 
 Xiao	B-PERSON
 Pei	I-PERSON
@@ -23929,6 +24071,7 @@ sự	O
 kiện	O
 ở	O
 TP.HCM	B-LOCATION-GPE
+.	O
 Người	O
 đẹp	O
 diện	O
@@ -24143,6 +24286,7 @@ thân	O
 của	O
 Thúy	B-PERSON
 Vân	I-PERSON
+,	O
 cô	O
 và	O
 bạn	O
@@ -24157,6 +24301,7 @@ cách	O
 hơn	O
 3	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+.	O
 
 Thúy	B-PERSON
 Vân	I-PERSON
@@ -24362,6 +24507,7 @@ nhau	O
 Sáng	B-DATETIME-TIMERANGE
 ngày	I-DATETIME-TIMERANGE
 21/9	I-DATETIME-TIMERANGE
+,	O
 trên	O
 mạng	O
 xã	O
@@ -24392,6 +24538,7 @@ cùng	O
 đó	O
 một	B-DATETIME-DURATION
 đêm	I-DATETIME-DURATION
+.	O
 Sáng	O
 sớm	O
 ngày	O
@@ -24737,6 +24884,7 @@ nhân	O
 dịp	O
 Trung	B-EVENT-CUL
 thu	I-EVENT-CUL
+.	O
 
 '	O
 Cuội	B-PRODUCT
@@ -24780,6 +24928,7 @@ Hằng	B-PERSON
 và	O
 chú	O
 Cuội	B-PERSON
+.	O
 
 '	O
 Cuội	B-PRODUCT
@@ -24917,6 +25066,7 @@ lừ	O
 phong	O
 cách	O
 2017	B-DATETIME
+.	O
 
 Á	B-PERSONTYPE
 quân	I-PERSONTYPE
@@ -25078,6 +25228,7 @@ ngay	O
 Ngoài	O
 chị	O
 Hằng	B-PERSON
+,	O
 trong	O
 MV	O
 ,	O
@@ -25122,6 +25273,7 @@ cổ	O
 chất	O
 Á	B-LOCATION-GPE
 Đông	I-LOCATION-GPE
+.	O
 
 Với	O
 MV	O
@@ -25262,6 +25414,7 @@ phố	I-LOCATION-GPE
 Hồ	I-LOCATION-GPE
 Chí	I-LOCATION-GPE
 Minh	I-LOCATION-GPE
+.	O
 Võ	B-PERSON
 Kiều	I-PERSON
 Vân	I-PERSON
@@ -25278,6 +25431,7 @@ làng	O
 nhạc	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 Trước	O
 khi	O
 ra	O
@@ -25298,6 +25452,7 @@ gia	O
 nhóm	B-ORGANIZATION
 nhạc	I-ORGANIZATION
 Ohlala	I-ORGANIZATION
+,	O
 cùng	O
 các	O
 thành	O
@@ -25318,6 +25473,7 @@ nhạc	O
 ở	O
 Sài	B-LOCATION-GPE
 Gòn	I-LOCATION-GPE
+.	O
 
 Sau	O
 thời	O
@@ -25437,6 +25593,7 @@ phố	I-ORGANIZATION
 Hồ	I-ORGANIZATION
 Chí	I-ORGANIZATION
 Minh	I-ORGANIZATION
+.	O
 Nữ	O
 ca	O
 sĩ	O
@@ -25603,6 +25760,7 @@ khai	O
 yêu	O
 Kim	B-PERSON
 Lý	I-PERSON
+:	O
 Ai	O
 mệt	O
 mỏi	O
@@ -25683,6 +25841,7 @@ hai	B-QUANTITY-NUM
 cùng	O
 đi	O
 Thái	B-LOCATION-GPE
+,	O
 Thuỵ	B-LOCATION-GPE
 Điển	I-LOCATION-GPE
 khiến	O
@@ -25802,6 +25961,7 @@ khẳng	O
 là	O
 Kim	B-PERSON
 Lý	I-PERSON
+.	O
 
 Công	O
 chúng	O
@@ -25844,6 +26004,7 @@ lại	O
 Còn	O
 Hà	B-PERSON
 Hồ	I-PERSON
+,	O
 nhân	O
 vật	O
 chính	O
@@ -26056,6 +26217,7 @@ chưa	O
 đầy	O
 2	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 mỗi	O
 ngày	O
 công	O
@@ -26480,6 +26642,7 @@ cuộc	O
 sống	O
 của	O
 Hà	B-PERSON
+,	O
 không	O
 vi	O
 phạm	O
@@ -26686,6 +26849,7 @@ Hồ	I-PERSON
 và	O
 Kim	B-PERSON
 Lý	I-PERSON
+,	O
 những	O
 ai	O
 ghét	O
@@ -26998,6 +27162,7 @@ ra	O
 mắt	O
 vào	O
 29/9	B-DATETIME-DATE
+.	O
 Vai	O
 diễn	O
 được	O
@@ -27035,6 +27200,7 @@ Baodatviet.vn	B-URL
 Lưu	B-PERSON
 Trọng	I-PERSON
 Ninh	I-PERSON
+,	O
 NSND	B-PERSONTYPE
 Lý	B-PERSON
 Thái	I-PERSON
@@ -27052,6 +27218,7 @@ diễn	I-PERSONTYPE
 Lưu	B-PERSON
 Trọng	I-PERSON
 Ninh	I-PERSON
+,	O
 nhà	B-PERSONTYPE
 quay	I-PERSONTYPE
 phim	I-PERSONTYPE
@@ -27076,6 +27243,7 @@ phim	I-ORGANIZATION
 Truyện	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -27099,6 +27267,7 @@ kêu	O
 cứu	O
 Hãng	B-ORGANIZATION
 phim	I-ORGANIZATION
+.	O
 
 Trên	O
 trang	O
@@ -27130,6 +27299,7 @@ hóa	O
 Hãng	B-ORGANIZATION
 phim	I-ORGANIZATION
 Truyện	I-ORGANIZATION
+.	O
 
 Đạo	B-PERSONTYPE
 diễn	I-PERSONTYPE
@@ -27290,6 +27460,7 @@ phim	I-ORGANIZATION
 Truyện	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 anh	O
 viết	O
 :	O
@@ -27328,6 +27499,7 @@ liệu	I-ORGANIZATION
 phim	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 Hãng	B-ORGANIZATION
 phim	I-ORGANIZATION
 Truyện	I-ORGANIZATION
@@ -27451,6 +27623,7 @@ Hội	B-ORGANIZATION
 ảnh	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 Ngay	O
 sau	O
 lá	O
@@ -27477,6 +27650,7 @@ quyền	O
 .	O
 Bộ	B-ORGANIZATION
 VHTTDL	I-ORGANIZATION
+,	O
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Nguyễn	B-PERSON
@@ -27518,6 +27692,7 @@ xúc	O
 Chiều	B-DATETIME-TIMERANGE
 ngày	I-DATETIME-TIMERANGE
 21.9	I-DATETIME-TIMERANGE
+,	O
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
 tướng	I-PERSONTYPE
@@ -27541,6 +27716,7 @@ cùng	O
 với	O
 Bộ	B-ORGANIZATION
 VHTTDL	I-ORGANIZATION
+.	O
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
 tướng	I-PERSONTYPE
@@ -27561,6 +27737,7 @@ phim	I-ORGANIZATION
 Truyện	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 Thúy	B-PERSON
 Vân	I-PERSON
@@ -28154,6 +28331,7 @@ sau	I-PRODUCT
 một	I-PRODUCT
 cô	I-PRODUCT
 gái	I-PRODUCT
+,	O
 Soobin	B-PERSON
 Hoàng	I-PERSON
 Sơn	I-PERSON
@@ -28250,6 +28428,7 @@ viên	O
 The	B-EVENT-GAMESHOW
 Voice	I-EVENT-GAMESHOW
 Kids	I-EVENT-GAMESHOW
+,	O
 trực	O
 tiếp	O
 hướng	O
@@ -28379,6 +28558,7 @@ nên	O
 đến	O
 năm	B-DATETIME
 2011	I-DATETIME
+,	O
 anh	O
 bắt	O
 đầu	O
@@ -28430,6 +28610,7 @@ The	B-EVENT-GAMESHOW
 Remix	I-EVENT-GAMESHOW
 mùa	O
 2	B-QUANTITY-NUM
+,	O
 Soobin	B-PERSON
 Hoàng	I-PERSON
 Sơn	I-PERSON
@@ -28472,6 +28653,7 @@ trong	O
 suốt	O
 5	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 anh	O
 có	O
 dịp	O
@@ -28486,7 +28668,9 @@ tên	O
 tuổi	O
 như	O
 4Minute	B-ORGANIZATION
+,	O
 C.N.blue	B-ORGANIZATION
+,	O
 FT	B-ORGANIZATION
 island	I-ORGANIZATION
 Trở	O
@@ -28494,6 +28678,7 @@ về	O
 từ	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 nam	O
 ca	O
 sĩ	O
@@ -28529,7 +28714,9 @@ bạn	O
 thân	O
 thiết	O
 BigDaddy	B-PERSON
+,	O
 JustaTee	B-PERSON
+.	O
 
 4	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
@@ -28598,6 +28785,7 @@ thị	O
 trường	O
 nhạc	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
+.	O
 Năm	B-DATETIME
 2015	I-DATETIME
 đánh	O
@@ -28642,6 +28830,7 @@ ballad	O
 từ	O
 tháng	B-DATETIME
 10/2016	I-DATETIME
+,	O
 Soobin	B-PERSON
 mới	O
 có	O
@@ -28710,6 +28899,7 @@ là	O
 để	I-PRODUCT
 trở	I-PRODUCT
 về	I-PRODUCT
+,	O
 Anh	B-PRODUCT
 đã	I-PRODUCT
 quen	I-PRODUCT
@@ -28727,6 +28917,7 @@ Xin	B-PRODUCT
 đừng	I-PRODUCT
 lặng	I-PRODUCT
 im	I-PRODUCT
+.	O
 
 Và	O
 2017	B-DATETIME
@@ -28737,6 +28928,7 @@ khúc	O
 cover	O
 cùng	O
 Touliver	B-PERSON
+,	O
 Lê	B-PERSON
 Hiếu	I-PERSON
 một	O
@@ -28822,6 +29014,7 @@ xanh	I-EVENT
 lần	O
 thứ	B-QUANTITY-ORD
 19	I-QUANTITY-ORD
+,	O
 Soobin	B-PERSON
 Hoàng	I-PERSON
 Sơn	I-PERSON
@@ -29016,6 +29209,7 @@ trong	O
 làng	O
 nhạc	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
+.	O
 Có	O
 thể	O
 nói	O
@@ -29087,8 +29281,11 @@ ngày	B-DATETIME-DATE
 26/05/1984	I-DATETIME-DATE
 tại	O
 Londrina	B-LOCATION-GPE
+,	O
 Parana	B-LOCATION-GPE
+,	O
 Brazil	B-LOCATION-GPE
+.	O
 Cô	O
 là	O
 vợ	O
@@ -29098,6 +29295,7 @@ quần	I-PERSONTYPE
 vợt	I-PERSONTYPE
 Guillermo	B-PERSON
 Cañas	I-PERSON
+.	O
 
 Mang	O
 trong	O
@@ -29113,6 +29311,7 @@ và	O
 mẹ	O
 người	O
 Ý	B-LOCATION-GPE
+,	O
 Fabiana	B-PERSON
 Semprebom	I-PERSON
 có	O
@@ -29127,6 +29326,7 @@ hữu	O
 chiều	O
 cao	O
 1m78	B-QUANTITY-DIM
+,	O
 và	O
 nét	O
 đẹp	O
@@ -29194,6 +29394,7 @@ tay	O
 Hồ	B-PERSON
 Quang	I-PERSON
 Hiếu	I-PERSON
+.	O
 
 Sau	O
 gần	O
@@ -29298,6 +29499,7 @@ hò	O
 vào	O
 tháng	B-DATETIME
 10/2016	I-DATETIME
+.	O
 Càng	O
 về	O
 sau	O
@@ -29545,6 +29747,7 @@ diễn	O
 tại	O
 châu	B-LOCATION-GPE
 Âu	I-LOCATION-GPE
+.	O
 Đồng	O
 thời	O
 ,	O
@@ -29890,6 +30093,7 @@ Ariosto	B-PERSON
 Ludovico	I-PERSON
 (	O
 A-ri-ô-xtô	B-PERSON
+,	O
 1474	B-DATETIME
 1533	B-DATETIME
 là	O
@@ -29931,12 +30135,14 @@ tập	O
 viết	O
 thơ	O
 la-tinh	B-MISCELLANEOUS
+.	O
 Cha	O
 mất	O
 năm	O
 ông	O
 26	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+.	O
 Ông	O
 phải	O
 đi	O
@@ -30016,6 +30222,7 @@ lại	O
 mất	O
 26	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 là	O
 Chàng	B-PRODUCT
 Rô-lăng	I-PRODUCT
@@ -30024,6 +30231,7 @@ nộ	I-PRODUCT
 (	O
 Orlando	B-PRODUCT
 furioso	I-PRODUCT
+,	O
 1516-1532	B-DATETIME-DURATION
 :	O
 Hoàng	B-PERSON
@@ -30047,11 +30255,13 @@ của	O
 Người	O
 là	O
 Rô-lăng	B-PERSON
+,	O
 tức	O
 là	O
 Or	B-PERSON
 ’	I-PERSON
 -lan-đô	I-PERSON
+,	O
 phát	O
 điên	O
 vì	O
@@ -30167,6 +30377,7 @@ trong	O
 thế	B-DATETIME
 kỷ	I-DATETIME
 16	I-DATETIME
+,	O
 bản	O
 tiếng	B-MISCELLANEOUS
 Ý	I-MISCELLANEOUS
@@ -30223,12 +30434,14 @@ khỏi	O
 Tây	B-LOCATION-GPE
 Ban	I-LOCATION-GPE
 Nha	I-LOCATION-GPE
+.	O
 Phải	O
 vượt	O
 qua	O
 dãy	O
 núi	O
 Pyréné	B-LOCATION-GEO
+,	O
 Roland	B-PERSON
 đi	O
 hậu	O
@@ -30297,6 +30510,7 @@ tiếng	B-MISCELLANEOUS
 la	I-MISCELLANEOUS
 -	I-MISCELLANEOUS
 tinh	I-MISCELLANEOUS
+,	O
 hài	O
 kịch	O
 ...	O
@@ -30310,6 +30524,7 @@ tư	O
 duy	O
 của	O
 Ariosto	B-PERSON
+:	O
 
 '	O
 Bao	B-PERSON
@@ -30336,6 +30551,7 @@ phẫu	O
 hồi	O
 năm	B-DATETIME
 ngoái	I-DATETIME
+,	O
 sức	O
 khỏe	O
 của	O
@@ -30375,6 +30591,7 @@ hàng	O
 ở	O
 Thanh	B-LOCATION-GPE
 Đảo	I-LOCATION-GPE
+.	O
 Sau	O
 ca	O
 mổ	O
@@ -30385,6 +30602,7 @@ não	O
 hồi	O
 năm	B-DATETIME
 ngoái	I-DATETIME
+,	O
 sức	O
 khỏe	O
 của	O
@@ -30437,6 +30655,7 @@ phim	O
 về	O
 Bao	B-PERSON
 Công	I-PERSON
+.	O
 Nhưng	O
 hiện	O
 tại	O
@@ -30462,6 +30681,7 @@ già	O
 
 Năm	B-DATETIME
 1993	I-DATETIME
+,	O
 Kim	B-PERSON
 Siêu	I-PERSON
 Quần	I-PERSON
@@ -30476,6 +30696,7 @@ hình	O
 Bao	B-PRODUCT
 Thanh	I-PRODUCT
 Thiên	I-PRODUCT
+.	O
 Để	O
 phù	O
 hợp	O
@@ -30484,6 +30705,7 @@ hình	O
 ảnh	O
 Bao	B-PERSON
 Chửng	I-PERSON
+,	O
 Kim	B-PERSON
 Siêu	I-PERSON
 Quần	I-PERSON
@@ -30494,6 +30716,7 @@ từ	O
 80	B-QUANTITY-DIM
 lên	O
 100	B-QUANTITY-DIM
+.	O
 Việc	O
 ép	O
 tăng	O
@@ -30585,6 +30808,7 @@ Trái	B-EVENT
 tim	I-EVENT
 cho	I-EVENT
 em	I-EVENT
+,	O
 những	O
 BTV	O
 thường	O
@@ -30711,6 +30935,7 @@ Vũ	B-PERSON
 Trần	I-PERSON
 Đức	I-PERSON
 Hải	I-PERSON
+,	O
 Đũi	B-ORGANIZATION
 Nam	I-ORGANIZATION
 Cao	I-ORGANIZATION
@@ -30719,6 +30944,7 @@ Duy	B-PERSON
 Nguyễn	I-PERSON
 và	O
 SilkyVietnam	B-ORGANIZATION
+.	O
 Các	O
 bộ	O
 sưu	O
@@ -30769,17 +30995,22 @@ như	O
 nhóm	O
 O	B-ORGANIZATION
 Plus	I-ORGANIZATION
+,	O
 ca	B-PERSONTYPE
 sĩ	I-PERSONTYPE
 Khánh	B-PERSON
 Linh	I-PERSON
+,	O
 Mai	B-PERSON
 Trang	I-PERSON
+,	O
 Đông	B-PERSON
 Hùng	I-PERSON
+,	O
 Tăng	B-PERSON
 Ngân	I-PERSON
 Hà	I-PERSON
+.	O
 Phần	O
 trình	O
 diễn	O
@@ -30882,6 +31113,7 @@ chức	O
 từ	O
 năm	B-DATETIME
 2008	I-DATETIME
+.	O
 Đây	O
 là	O
 chương	O
@@ -31188,8 +31420,10 @@ thành	O
 phố	O
 biển	O
 Fuengirola	B-LOCATION-GPE
+,	O
 tỉnh	B-LOCATION-GPE
 Málaga	I-LOCATION-GPE
+.	O
 Đêm	O
 chung	O
 kết	O
@@ -31228,6 +31462,7 @@ vào	O
 cuối	B-DATETIME
 năm	I-DATETIME
 nay	I-DATETIME
+.	O
 
 Mải	O
 catwalk	O
@@ -31290,6 +31525,7 @@ sạn	I-LOCATION-GPE
 Pierre	I-LOCATION-GPE
 &	I-LOCATION-GPE
 Vacances	I-LOCATION-GPE
+,	O
 40	B-QUANTITY-NUM
 thí	O
 sinh	O
@@ -31539,8 +31775,10 @@ thành	O
 phố	O
 biển	O
 Fuengirola	B-LOCATION-GPE
+,	O
 tỉnh	B-LOCATION-GPE
 Málaga	I-LOCATION-GPE
+.	O
 Đêm	O
 chung	O
 kết	O
@@ -31579,11 +31817,13 @@ vào	O
 cuối	B-DATETIME
 năm	I-DATETIME
 nay	I-DATETIME
+.	O
 
 SỐC	O
 :	O
 Hoàng	B-PERSON
 Thùy	I-PERSON
+,	O
 Mâu	B-PERSON
 Thủy	I-PERSON
 'bị	O
@@ -31601,6 +31841,7 @@ Vũ	I-EVENT
 Việt	I-EVENT
 Nam	I-EVENT
 2017	I-EVENT
+?	O
 
 Daisy	B-PERSON
 
@@ -31638,6 +31879,7 @@ nhà	O
 .	O
 
 1	B-QUANTITY-NUM
+.	O
 Biết	O
 chọn	O
 quần	O
@@ -31649,6 +31891,7 @@ khôn	O
 ngoan	O
 
 2	B-QUANTITY-NUM
+.	O
 Mua	O
 sắm	O
 trực	O
@@ -31662,6 +31905,7 @@ quả	O
 cao	O
 
 3	B-QUANTITY-NUM
+.	O
 Tư	O
 vấn	O
 từ	O
@@ -31673,6 +31917,7 @@ kế	O
 lót	O
 
 4	B-QUANTITY-NUM
+.	O
 Tiêu	O
 chuẩn	O
 về	O
@@ -31682,6 +31927,7 @@ ngực	O
 ''	O
 
 5	B-QUANTITY-NUM
+.	O
 Chỉ	O
 sử	O
 dụng	O
@@ -31691,6 +31937,7 @@ dây	O
 đai	O
 
 6	B-QUANTITY-NUM
+.	O
 Đôi	O
 khi	O
 bộ	O
@@ -31701,6 +31948,7 @@ sống	O
 riêng	O
 
 7	B-QUANTITY-NUM
+.	O
 Những	O
 cô	O
 gái	O
@@ -31714,6 +31962,7 @@ tập	O
 luyện	O
 
 8	B-QUANTITY-NUM
+.	O
 Và	O
 các	O
 vấn	O
@@ -31723,6 +31972,7 @@ chạy	O
 bộ	O
 
 9	B-QUANTITY-NUM
+.	O
 Nằm	O
 úp	O
 không	O
@@ -31734,6 +31984,7 @@ của	O
 bạn	O
 
 10	B-QUANTITY-NUM
+.	O
 Nghĩ	O
 về	O
 chiếc	O
@@ -31742,6 +31993,7 @@ mơ	O
 ước	O
 
 11	B-QUANTITY-NUM
+.	O
 Kích	O
 thước	O
 áo	O
@@ -31754,6 +32006,7 @@ toàn	O
 khác	O
 
 12	B-QUANTITY-NUM
+.	O
 Mỗi	O
 người	O
 là	O
@@ -31763,6 +32016,7 @@ khác	O
 nhau	O
 
 13	B-QUANTITY-NUM
+.	O
 Sự	O
 hấp	O
 dẫn	O
@@ -31771,6 +32025,7 @@ chiến	O
 thắng	O
 
 14	B-QUANTITY-NUM
+.	O
 Cơ	O
 thể	O
 bạn	O
@@ -31780,6 +32035,7 @@ bạn	O
 tưởng	O
 
 15	B-QUANTITY-NUM
+.	O
 Càng	O
 nhiều	O
 tiêu	O
@@ -31790,6 +32046,7 @@ thất	O
 vọng	O
 
 16	B-QUANTITY-NUM
+.	O
 Bạn	O
 thấy	O
 gợi	O
@@ -31915,6 +32172,7 @@ sắc	O
 nhất	O
 năm	B-DATETIME
 2006	I-DATETIME
+.	O
 
 Hai	B-QUANTITY-NUM
 người	O
@@ -31950,10 +32208,12 @@ chăn	O
 cừu	O
 tại	O
 Wyoming	B-LOCATION-GPE
+,	O
 miền	B-LOCATION-GPE
 tây	I-LOCATION-GPE
 Hoa	B-LOCATION-GPE
 Kỳ	I-LOCATION-GPE
+.	O
 Sự	O
 đồng	O
 cảm	O
@@ -31982,6 +32242,7 @@ Thời	O
 gian	O
 ở	O
 Wyoming	B-LOCATION-GPE
+,	O
 cùng	O
 bao	O
 bọc	O
@@ -32054,6 +32315,7 @@ mới	O
 4	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
 sau	I-DATETIME-DURATION
+,	O
 hai	B-QUANTITY-NUM
 người	O
 vô	O
@@ -32188,6 +32450,7 @@ Ledger	I-PERSON
 và	O
 Jake	B-PERSON
 Gyllenhaal	I-PERSON
+.	O
 Đặc	O
 biệt	O
 với	O
@@ -32196,6 +32459,7 @@ diễn	O
 viên	O
 Heath	B-PERSON
 Ledger	I-PERSON
+,	O
 nhân	O
 vật	O
 Ennis	B-PERSON
@@ -32836,6 +33100,7 @@ phủ	O
 Nguyễn	B-PERSON
 Đình	I-PERSON
 Vinh	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 Hiệu	I-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -33334,6 +33599,7 @@ Bối	I-ORGANIZATION
 huyện	B-LOCATION-GPE
 Đông	I-LOCATION-GPE
 Anh	I-LOCATION-GPE
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 đã	O
@@ -33390,6 +33656,7 @@ Bà	O
 Bùi	B-PERSON
 Thị	I-PERSON
 Sinh	I-PERSON
+,	O
 Hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Trường	B-ORGANIZATION
@@ -33397,15 +33664,19 @@ Tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hải	I-ORGANIZATION
 Bối	I-ORGANIZATION
+,	O
 huyện	B-LOCATION-GPE
 Đông	I-LOCATION-GPE
 Anh	I-LOCATION-GPE
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+.	O
 Nguồn	O
 :	O
 VTC	B-ORGANIZATION
 News	I-ORGANIZATION
+.	O
 
 Theo	O
 hiệu	B-PERSONTYPE
@@ -33413,6 +33684,7 @@ trưởng	I-PERSONTYPE
 Bùi	B-PERSON
 Thị	I-PERSON
 Sinh	I-PERSON
+,	O
 các	O
 hạng	O
 mục	O
@@ -33475,6 +33747,7 @@ hết	O
 khối	O
 lớp	O
 1	B-QUANTITY-NUM
+.	O
 Tuy	O
 nhiên	O
 do	O
@@ -33573,6 +33846,7 @@ dồn	O
 vào	O
 đầu	B-DATETIME
 năm	I-DATETIME
+.	O
 Đồng	O
 thời	O
 ,	O
@@ -33741,6 +34015,7 @@ học	O
 2016-2017	B-DATETIME-DATERANGE
 và	O
 2017-2018	B-DATETIME-DATERANGE
+,	O
 bà	O
 Sinh	O
 cho	O
@@ -33793,6 +34068,7 @@ trường	O
 là	O
 50	B-QUANTITY-PER
 %	I-QUANTITY-PER
+,	O
 song	O
 để	O
 đảm	O
@@ -33831,10 +34107,12 @@ huynh	O
 từ	O
 200.000-300.000	B-QUANTITY
 đồng/năm	I-QUANTITY
+,	O
 trích	O
 nộp	O
 50	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Tuy	O
 nhiên	O
 cũng	O
@@ -33850,6 +34128,7 @@ hơn	O
 Theo	O
 bà	O
 Sinh	B-PERSON
+,	O
 thông	O
 tin	O
 ép	O
@@ -33939,11 +34218,13 @@ cao	O
 là	O
 100.000đ/học	B-QUANTITY
 sinh/tháng	I-QUANTITY
+,	O
 lớp	O
 thường	O
 là	O
 35.000đ/học	B-QUANTITY
 sinh/tháng	I-QUANTITY
+,	O
 bà	O
 Sinh	B-PERSON
 cho	O
@@ -34193,6 +34474,7 @@ làm	O
 Theo	O
 bà	O
 Sinh	B-PERSON
+,	O
 nhà	O
 trường	O
 không	O
@@ -34227,6 +34509,7 @@ nhiên	O
 đến	O
 ngày	B-DATETIME-DATE
 14/9	I-DATETIME-DATE
+,	O
 khi	O
 nắm	O
 được	O
@@ -34275,6 +34558,7 @@ thập	O
 .000	B-QUANTITY
 đồng/học	I-QUANTITY
 sinh	I-QUANTITY
+,	O
 quỹ	O
 Đoàn-	O
 Đội	O
@@ -34299,6 +34583,7 @@ giáo	O
 dục	O
 năm	B-DATETIME-DATERANGE
 2017-2018	I-DATETIME-DATERANGE
+,	O
 theo	O
 phụ	O
 huynh	O
@@ -34317,6 +34602,7 @@ là	O
 200.000	B-QUANTITY
 đồng/học	I-QUANTITY
 sinh	I-QUANTITY
+.	O
 Với	O
 học	O
 sinh	O
@@ -34325,6 +34611,7 @@ tuyến	O
 là	O
 300.000	B-QUANTITY
 đồng/em	I-QUANTITY
+.	O
 
 Tuy	O
 nhiên	O
@@ -34339,6 +34626,7 @@ biết	O
 năm	O
 học	O
 2017-2018	B-DATETIME-DATERANGE
+,	O
 nhà	O
 trường	O
 chưa	O
@@ -34361,6 +34649,7 @@ UBND	B-ORGANIZATION
 huyện	I-ORGANIZATION
 Đông	I-ORGANIZATION
 Anh	I-ORGANIZATION
+.	O
 Nhưng	O
 một	O
 số	O
@@ -34410,6 +34699,7 @@ giảng	O
 50.000	B-QUANTITY
 đồng/học	I-QUANTITY
 sinh	I-QUANTITY
+,	O
 bà	O
 Sinh	B-PERSON
 cho	O
@@ -34541,6 +34831,7 @@ hộ	O
 Tống	B-PERSON
 Duy	I-PERSON
 Hiến	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 Chánh	I-PERSONTYPE
 thanh	I-PERSONTYPE
@@ -34559,10 +34850,13 @@ thu	O
 ở	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Hải	B-LOCATION-GPE
 Phòng	I-LOCATION-GPE
+,	O
 Nghệ	B-LOCATION-GPE
 An	I-LOCATION-GPE
+,	O
 Hà	B-LOCATION-GPE
 Tĩnh	I-LOCATION-GPE
 cho	O
@@ -34776,6 +35070,7 @@ Tân	I-ORGANIZATION
 huyện	I-ORGANIZATION
 Thủy	I-ORGANIZATION
 Nguyên	I-ORGANIZATION
+,	O
 Hải	B-LOCATION-GPE
 Phòng	I-LOCATION-GPE
 và	O
@@ -34785,6 +35080,7 @@ UBND	B-ORGANIZATION
 phường	I-ORGANIZATION
 Thạch	I-ORGANIZATION
 Quý	I-ORGANIZATION
+,	O
 thành	B-LOCATION-GPE
 phố	I-LOCATION-GPE
 Hà	I-LOCATION-GPE
@@ -34839,6 +35135,7 @@ phòng	O
 
 Ngày	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 ông	O
 Phạm	B-PERSON
 Xuân	I-PERSON
@@ -34903,6 +35200,7 @@ tỉnh	O
 giai	O
 đoạn	O
 2015-2017	B-DATETIME-DATERANGE
+,	O
 huyện	O
 bổ	O
 nhiệm	O
@@ -35041,6 +35339,7 @@ thư	O
 huyện	B-LOCATION-GPE
 Tây	I-LOCATION-GPE
 Trà	I-LOCATION-GPE
+,	O
 thời	O
 điểm	O
 thành	O
@@ -35174,6 +35473,7 @@ nghèo	O
 trên	O
 75	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 
 Vì	O
 sao	O
@@ -35263,6 +35563,7 @@ tạo	I-ORGANIZATION
 TP	I-ORGANIZATION
 Bắc	I-ORGANIZATION
 Kạn	I-ORGANIZATION
+,	O
 tỉnh	B-LOCATION-GPE
 Bắc	I-LOCATION-GPE
 Kạn	I-LOCATION-GPE
@@ -35374,6 +35675,7 @@ tạo	I-PERSONTYPE
 TP	I-PERSONTYPE
 Bắc	I-PERSONTYPE
 Kạn	I-PERSONTYPE
+.	O
 
 Trước	O
 phát	O
@@ -35393,6 +35695,7 @@ _	I-ORGANIZATION
 TP	I-PERSONTYPE
 Bắc	I-PERSONTYPE
 Kạn	I-PERSONTYPE
+:	O
 “	O
 Hôm	B-DATETIME
 qua	I-DATETIME
@@ -35545,6 +35848,7 @@ tại	O
 TP	B-LOCATION-GPE
 Bắc	I-LOCATION-GPE
 Kạn	I-LOCATION-GPE
+,	O
 còn	O
 hộ	O
 khẩu	O
@@ -36026,9 +36330,12 @@ trưa	O
 cho	O
 trẻ	O
 3	B-QUANTITY-AGE
+,	O
 4	B-QUANTITY-AGE
+,	O
 5	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+:	O
 thực	O
 hiện	O
 theo	O
@@ -36036,6 +36343,7 @@ theo	O
 2	I-PRODUCT-LEGAL
 ngày	I-PRODUCT-LEGAL
 11/3/2013	I-PRODUCT-LEGAL
+:	O
 “	O
 …Năm	O
 học	O
@@ -36050,8 +36358,10 @@ trẻ	O
 đến	O
 3	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 4	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 5	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
 theo	O
@@ -36084,6 +36394,7 @@ sau	O
 Năm	O
 học	O
 2014-2015	B-DATETIME-DATERANGE
+:	O
 Đến	O
 ngày	B-DATETIME-DATE
 01/11/2014	I-DATETIME-DATE
@@ -36091,6 +36402,7 @@ trẻ	O
 đạt	O
 3	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+.	O
 Thời	O
 gian	O
 được	O
@@ -36109,6 +36421,7 @@ tháng	I-DATETIME-DATERANGE
 Năm	O
 học	O
 2015-2016	B-DATETIME-DATERANGE
+:	O
 Thời	O
 gian	O
 được	O
@@ -36121,9 +36434,11 @@ tháng	I-DATETIME-DATERANGE
 đến	I-DATETIME-DATERANGE
 tháng	I-DATETIME-DATERANGE
 05/2016	I-DATETIME-DATERANGE
+.	O
 Năm	O
 học	O
 2016-2017	B-DATETIME-DATERANGE
+:	O
 Thời	O
 gian	O
 được	O
@@ -36220,7 +36535,9 @@ trợ	O
 cho	O
 trẻ	O
 3	B-QUANTITY-AGE
+,	O
 4	B-QUANTITY-AGE
+,	O
 5	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
 học	O
@@ -36238,6 +36555,7 @@ non	I-ORGANIZATION
 Phùng	I-ORGANIZATION
 Chí	I-ORGANIZATION
 Kiên	I-ORGANIZATION
+,	O
 các	O
 cháu	O
 bị	O
@@ -36286,6 +36604,7 @@ cho	O
 năm	O
 học	O
 2016-2017	B-DATETIME-DATERANGE
+,	O
 thì	O
 nay	O
 đã	O
@@ -36386,6 +36705,7 @@ GD	I-ORGANIZATION
 TP	I-ORGANIZATION
 Bắc	I-ORGANIZATION
 Kạn	I-ORGANIZATION
+,	O
 cùng	O
 một	O
 số	O
@@ -36447,6 +36767,7 @@ của	O
 TP	B-LOCATION-GPE
 Bắc	I-LOCATION-GPE
 Kạn	I-LOCATION-GPE
+.	O
 
 Sinh	B-PERSON
 Nguyễn	I-PERSON
@@ -36460,6 +36781,7 @@ Thám	I-ORGANIZATION
 (	O
 Ba	B-LOCATION-GPE
 Đình	I-LOCATION-GPE
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 Giòi	O
@@ -36510,6 +36832,7 @@ Thám	I-ORGANIZATION
 (	O
 Ba	B-LOCATION-GPE
 Đình	I-LOCATION-GPE
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 về	O
@@ -36568,6 +36891,7 @@ thứ	B-DATETIME
 2	I-DATETIME
 đầu	I-DATETIME
 tuần	I-DATETIME
+,	O
 các	O
 em	O
 học	O
@@ -36655,6 +36979,7 @@ luận	O
 nhóm	O
 trên	O
 facebook	B-PRODUCT-COM
+.	O
 Sau	O
 đó	O
 ,	O
@@ -36765,6 +37090,7 @@ tác	O
 Sáng	B-DATETIME-TIMERANGE
 ngày	I-DATETIME-TIMERANGE
 14/9	I-DATETIME-TIMERANGE
+,	O
 phóng	O
 viên	O
 báo	B-ORGANIZATION
@@ -36881,6 +37207,7 @@ trường	B-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Hoa	I-ORGANIZATION
 Thám	I-ORGANIZATION
+,	O
 PV	O
 đã	O
 liên	O
@@ -36896,6 +37223,7 @@ tạo	I-ORGANIZATION
 Quận	I-ORGANIZATION
 Ba	I-ORGANIZATION
 Đình	I-ORGANIZATION
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -36923,11 +37251,13 @@ học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Hoa	I-ORGANIZATION
 Thám	I-ORGANIZATION
+.	O
 
 Buổi	B-DATETIME-TIMERANGE
 chiều	I-DATETIME-TIMERANGE
 ngày	I-DATETIME-TIMERANGE
 14/9	I-DATETIME-TIMERANGE
+,	O
 chúng	O
 tôi	O
 tiếp	O
@@ -37007,9 +37337,11 @@ tạo	O
 
 Ngày	B-DATETIME-DATE
 21-9	I-DATETIME-DATE
+,	O
 tại	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Học	B-ORGANIZATION
 viện	I-ORGANIZATION
 Báo	I-ORGANIZATION
@@ -37027,6 +37359,7 @@ năm	I-EVENT
 học	I-EVENT
 mới	I-EVENT
 2017-2018	I-EVENT
+.	O
 
 Lãnh	O
 đạo	O
@@ -37052,6 +37385,7 @@ tiến	O
 năm	O
 học	O
 2016-2017	B-DATETIME-DATERANGE
+.	O
 
 Năm	O
 học	O
@@ -37194,6 +37528,7 @@ học	O
 năm	O
 học	O
 2017-2018	B-DATETIME-DATERANGE
+.	O
 
 Điều	O
 mong	O
@@ -37201,6 +37536,7 @@ mong	O
 
 Năm	B-DATETIME-DATE
 2015	I-DATETIME-DATE
+,	O
 ngôi	O
 trường	O
 do	O
@@ -37315,6 +37651,7 @@ Tô	B-PERSON
 Thị	I-PERSON
 Thúy	I-PERSON
 Nga	I-PERSON
+,	O
 Hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Trường	B-ORGANIZATION
@@ -37326,6 +37663,7 @@ Phượng	I-ORGANIZATION
 Nhà	B-ORGANIZATION
 máy	I-ORGANIZATION
 Z129	I-ORGANIZATION
+,	O
 Tổng	B-ORGANIZATION
 cục	I-ORGANIZATION
 Công	I-ORGANIZATION
@@ -37491,6 +37829,7 @@ diện	O
 tích	O
 gần	O
 700m2	B-QUANTITY-DIM
+,	O
 được	O
 chia	O
 làm	O
@@ -37589,8 +37928,10 @@ của	O
 Trường	B-ORGANIZATION
 Hoa	I-ORGANIZATION
 Phượng	I-ORGANIZATION
+,	O
 tháng	B-DATETIME-DATE
 3-2017	I-DATETIME-DATE
+.	O
 
 Ý	O
 tưởng	O
@@ -37761,6 +38102,7 @@ tôi	O
 .	O
 Năm	B-DATETIME-DATE
 1998	I-DATETIME-DATE
+,	O
 tốt	O
 nghiệp	O
 Trường	B-ORGANIZATION
@@ -37770,6 +38112,7 @@ Mẫu	I-ORGANIZATION
 giáo	I-ORGANIZATION
 Trung	I-ORGANIZATION
 ương	I-ORGANIZATION
+,	O
 chị	O
 Nga	B-PERSON
 “	O
@@ -37780,6 +38123,7 @@ về	O
 Nhà	B-ORGANIZATION
 máy	I-ORGANIZATION
 Z129	I-ORGANIZATION
+.	O
 Tính	O
 ra	O
 cũng	O
@@ -37865,6 +38209,7 @@ toàn	O
 quân	O
 năm	B-DATETIME-DATE
 2008	I-DATETIME-DATE
+,	O
 Giáo	O
 viên	O
 dạy	O
@@ -37875,6 +38220,7 @@ Quốc	I-ORGANIZATION
 phòng	I-ORGANIZATION
 năm	B-DATETIME-DATE
 2011	I-DATETIME-DATE
+.	O
 Cùng	O
 với	O
 các	O
@@ -38070,6 +38416,7 @@ nhanh	O
 
 Năm	B-DATETIME-DATE
 2013	I-DATETIME-DATE
+,	O
 chị	O
 được	O
 bổ	O
@@ -38082,6 +38429,7 @@ Mầm	I-ORGANIZATION
 non	I-ORGANIZATION
 Hoa	I-ORGANIZATION
 Phượng	I-ORGANIZATION
+.	O
 Trên	O
 cương	O
 vị	O
@@ -38133,6 +38481,7 @@ gia	O
 mức	O
 độ	O
 2	B-QUANTITY-ORD
+.	O
 Đúng	O
 lúc	O
 này	O
@@ -38288,6 +38637,7 @@ gia	O
 mức	O
 độ	O
 2	B-QUANTITY-ORD
+,	O
 mọi	O
 người	O
 thấy	O
@@ -38308,6 +38658,7 @@ Tô	B-PERSON
 Thị	I-PERSON
 Thúy	I-PERSON
 Nga	I-PERSON
+.	O
 
 Chia	O
 tay	O
@@ -38517,6 +38868,7 @@ thuật	I-ORGANIZATION
 y	I-ORGANIZATION
 học	I-ORGANIZATION
 K5	I-ORGANIZATION
+,	O
 Đại	B-ORGANIZATION
 học	I-ORGANIZATION
 Y	I-ORGANIZATION
@@ -38528,6 +38880,7 @@ tích	O
 ,	O
 ngày	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 giáo	O
 viên	O
 chủ	O
@@ -38565,6 +38918,7 @@ thuật	I-ORGANIZATION
 y	I-ORGANIZATION
 học	I-ORGANIZATION
 K5	I-ORGANIZATION
+,	O
 từ	O
 sau	O
 đợt	O
@@ -38679,6 +39033,7 @@ khá	O
 ,	O
 trên	O
 9,0	B-QUANTITY-NUM
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -38833,6 +39188,7 @@ xong	O
 vào	O
 tháng	B-DATETIME-DATE
 5/2017	I-DATETIME-DATE
+.	O
 
 Tôi	O
 chỉ	O
@@ -38972,6 +39328,7 @@ tin	O
 vào	O
 ngày	B-DATETIME-DATE
 19/9	I-DATETIME-DATE
+,	O
 nữ	O
 sinh	O
 Vũ	B-PERSON
@@ -38986,12 +39343,14 @@ tại	O
 thôn	B-LOCATION-GPE
 Lũng	I-LOCATION-GPE
 Tả	I-LOCATION-GPE
+,	O
 xã	B-LOCATION-GPE
 Mỹ	I-LOCATION-GPE
 Lộc	I-LOCATION-GPE
 (	O
 Thái	B-LOCATION-GPE
 Thụy	I-LOCATION-GPE
+,	O
 Thái	B-LOCATION-GPE
 Bình	I-LOCATION-GPE
 đã	O
@@ -39073,6 +39432,7 @@ hành	O
 động	O
 của	O
 Diên	B-PERSON
+.	O
 Gia	O
 đình	O
 nữ	O
@@ -39111,6 +39471,7 @@ viện	I-ORGANIZATION
 Trung	I-ORGANIZATION
 ương	I-ORGANIZATION
 Huế	I-ORGANIZATION
+.	O
 
 Minh	B-PERSON
 Trang	I-PERSON
@@ -39202,6 +39563,7 @@ ngày	B-DATETIME-DATE
 tại	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+.	O
 Nhiều	O
 vấn	O
 đề	O
@@ -39335,10 +39697,12 @@ dục	I-EVENT
 phổ	I-EVENT
 thông	I-EVENT
 ”	I-EVENT
+.	O
 Ảnh	O
 :	O
 Quyên	B-PERSON
 Quyên	I-PERSON
+.	O
 
 Chia	O
 sẻ	O
@@ -39355,12 +39719,14 @@ giáo	B-PERSONTYPE
 viên	I-PERSONTYPE
 Lịch	I-PERSONTYPE
 sử	I-PERSONTYPE
+,	O
 trường	B-ORGANIZATION
 THPT	I-ORGANIZATION
 chuyên	I-ORGANIZATION
 Trần	I-ORGANIZATION
 Đại	I-ORGANIZATION
 Nghĩa	I-ORGANIZATION
+,	O
 TP.HCM	B-LOCATION-GPE
 cho	O
 rằng	O
@@ -39425,6 +39791,7 @@ giáo	B-PERSONTYPE
 viên	I-PERSONTYPE
 Lịch	I-PERSONTYPE
 sử	I-PERSONTYPE
+,	O
 rất	O
 ủng	O
 hộ	O
@@ -39521,6 +39888,7 @@ Nguyễn	B-PERSON
 Thị	I-PERSON
 Huyền	I-PERSON
 Thảo	I-PERSON
+,	O
 giáo	B-PERSONTYPE
 viên	I-PERSONTYPE
 tại	O
@@ -39535,8 +39903,10 @@ thảo	O
 :	O
 Quyên	B-PERSON
 Quyên	I-PERSON
+.	O
 
 TS	B-PERSONTYPE
+.	O
 Lê	B-PERSON
 Quang	I-PERSON
 Minh	I-PERSON
@@ -39549,6 +39919,7 @@ Quản	I-ORGANIZATION
 lý	I-ORGANIZATION
 tiên	I-ORGANIZATION
 tiến	I-ORGANIZATION
+,	O
 Viện	B-ORGANIZATION
 Quản	I-ORGANIZATION
 trị	I-ORGANIZATION
@@ -39608,6 +39979,7 @@ người	O
 dân	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 các	O
 chuyên	O
 gia	O
@@ -39630,6 +40002,7 @@ TS	B-PERSONTYPE
 Lê	B-LOCATION
 Quang	I-LOCATION
 Minh	I-LOCATION
+,	O
 có	O
 sự	O
 khác	O
@@ -39797,6 +40170,7 @@ thảo	O
 Nguyễn	B-PERSON
 Đình	I-PERSON
 Anh	I-PERSON
+,	O
 nguyên	B-PERSONTYPE
 Trưởng	I-PERSONTYPE
 phòng	I-PERSONTYPE
@@ -39804,12 +40178,14 @@ giáo	I-PERSONTYPE
 dục	I-PERSONTYPE
 chuyên	I-PERSONTYPE
 nghiệp	I-PERSONTYPE
+,	O
 Sở	B-ORGANIZATION
 GD	I-ORGANIZATION
 &	I-ORGANIZATION
 ĐT	I-ORGANIZATION
 Nghệ	I-ORGANIZATION
 An	I-ORGANIZATION
+,	O
 đưa	O
 đưa	O
 ra	O
@@ -39833,6 +40209,7 @@ Theo	O
 ông	O
 Đình	B-PERSON
 Anh	I-PERSON
+,	O
 dạy	O
 học	O
 là	O
@@ -39954,6 +40331,7 @@ viên	O
 Phạm	B-PERSON
 Văn	I-PERSON
 Hùng	I-PERSON
+,	O
 Giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 sở	B-ORGANIZATION
@@ -39963,14 +40341,17 @@ GD	I-ORGANIZATION
 Thừa	I-ORGANIZATION
 Thiên	I-ORGANIZATION
 Huế	I-ORGANIZATION
+.	O
 Ảnh	O
 :	O
 Quyên	B-PERSON
 Quyên	I-PERSON
+.	O
 
 Theo	O
 TS	B-PERSONTYPE
 Hùng	B-PERSON
+,	O
 phải	O
 có	O
 một	O
@@ -40189,6 +40570,7 @@ dạy	O
 ngoại	O
 ngữ	O
 2	B-QUANTITY-ORD
+.	O
 
 TS	B-PERSONTYPE
 Lê	B-PERSON
@@ -40321,6 +40703,7 @@ cơn	B-EVENT-NATURAL
 bão	I-EVENT-NATURAL
 số	I-EVENT-NATURAL
 10	I-EVENT-NATURAL
+,	O
 thời	O
 tiết	O
 ở	O
@@ -40340,6 +40723,7 @@ oi	O
 giờ	I-DATETIME-TIME
 ngày	I-DATETIME-TIME
 19-9	I-DATETIME-TIME
+,	O
 chúng	O
 tôi	O
 có	O
@@ -40351,9 +40735,11 @@ non	I-ORGANIZATION
 xã	I-ORGANIZATION
 Kỳ	I-ORGANIZATION
 Hải	I-ORGANIZATION
+,	O
 huyện	B-LOCATION-GPE
 Kỳ	I-LOCATION-GPE
 Anh	I-LOCATION-GPE
+,	O
 tỉnh	B-LOCATION-GPE
 Hà	I-LOCATION-GPE
 Tĩnh	I-LOCATION-GPE
@@ -40388,6 +40774,7 @@ Nguyễn	B-PERSON
 Thị	I-PERSON
 Minh	I-PERSON
 Tú	I-PERSON
+,	O
 Hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 nhà	O
@@ -40759,9 +41146,13 @@ các	O
 nước	O
 
 Anh	B-LOCATION-GPE
+,	O
 Úc	B-LOCATION-GPE
+,	O
 Mỹ	B-LOCATION-GPE
+,	O
 Nhật	B-LOCATION-GPE
+,	O
 Pháp	B-LOCATION-GPE
 hay	O
 Áo	B-LOCATION-GPE
@@ -40779,6 +41170,7 @@ như	O
 ở	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 Ở	O
 một	O
 số	O
@@ -40876,11 +41268,13 @@ khoản	O
 quỹ	O
 300	B-QUANTITY-CUR
 yên	I-QUANTITY-CUR
+,	O
 tương	O
 đương	O
 60	B-QUANTITY-CUR
 nghìn	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 Số	O
 tiền	O
 này	O
@@ -41020,6 +41414,7 @@ không	O
 biết	O
 tiếng	B-MISCELLANEOUS
 Nhật	I-MISCELLANEOUS
+,	O
 hội	O
 phụ	O
 huynh	O
@@ -41069,6 +41464,7 @@ Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
 và	O
 Áo	B-LOCATION-GPE
+,	O
 anh	O
 Vũ	B-PERSON
 Hồng	I-PERSON
@@ -41376,6 +41772,7 @@ với	O
 giá	O
 50	B-QUANTITY
 cents/mặt	I-QUANTITY
+.	O
 Ảnh	O
 :	O
 NVCC	O
@@ -41469,6 +41866,7 @@ quan	O
 .	O
 Cuối	B-DATETIME
 năm	I-DATETIME
+,	O
 trường	O
 nào	O
 cũng	O
@@ -41616,6 +42014,7 @@ tiên	O
 
 Ở	O
 Pháp	B-LOCATION-GPE
+,	O
 chị	O
 Nguyên	B-PERSON
 Kan	I-PERSON
@@ -41648,6 +42047,7 @@ của	O
 Bộ	B-ORGANIZATION
 Giáo	I-ORGANIZATION
 dục	I-ORGANIZATION
+,	O
 ở	O
 nhiều	O
 cấp	O
@@ -41705,6 +42105,7 @@ lập	O
 từ	O
 năm	B-DATETIME-DATE
 1926	I-DATETIME-DATE
+,	O
 hoạt	O
 động	O
 nhằm	O
@@ -41725,6 +42126,7 @@ trên	O
 khắp	O
 nước	B-LOCATION-GPE
 Pháp	I-LOCATION-GPE
+.	O
 
 “	O
 Nhiệm	O
@@ -41835,6 +42237,7 @@ vào	O
 đầu	B-DATETIME
 năm	I-DATETIME
 học	I-DATETIME
+,	O
 hội	O
 phụ	O
 huynh	O
@@ -41909,6 +42312,7 @@ nhiều	O
 mức	O
 15-20	B-QUANTITY
 euros	I-QUANTITY
+.	O
 Để	O
 so	O
 sánh	O
@@ -41922,6 +42326,7 @@ Pháp	B-LOCATION-GPE
 là	O
 1150	B-QUANTITY
 euros/tháng	I-QUANTITY
+.	O
 Đây	O
 cũng	O
 là	O
@@ -41971,12 +42376,15 @@ các	O
 ngày	O
 như	O
 Halloween	B-EVENT-CUL
+,	O
 Ngày	B-EVENT-CUL
 của	I-EVENT-CUL
 Mẹ/Bố	I-EVENT-CUL
+,	O
 Valentine	B-EVENT-CUL
+,	O
 Noel	B-EVENT-CUL
-..	O
+...	O
 Tại	O
 những	O
 buổi	O
@@ -42014,8 +42422,10 @@ vào	O
 ,	O
 10	B-QUANTITY-CUR
 cents	I-QUANTITY-CUR
+,	O
 20	B-QUANTITY-CUR
 cents	I-QUANTITY-CUR
+,	O
 1	B-QUANTITY-CUR
 euros	I-QUANTITY-CUR
 bao	O
@@ -42150,6 +42560,7 @@ Milton	I-ORGANIZATION
 Road	I-ORGANIZATION
 (	O
 Cambridgeshire	B-LOCATION-GPE
+,	O
 Anh	B-LOCATION-GPE
 với	O
 giá	O
@@ -42207,6 +42618,7 @@ phụ	O
 huynh	O
 cấp	O
 2	B-QUANTITY-NUM
+,	O
 đứng	O
 bán	O
 bánh	O
@@ -42242,10 +42654,12 @@ học	O
 sinh	O
 cấp	O
 2	B-QUANTITY-NUM
+.	O
 Khi	O
 hết	O
 cấp	O
 1	B-QUANTITY-NUM
+,	O
 các	O
 học	O
 sinh	O
@@ -42320,6 +42734,7 @@ giáo	O
 ở	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 hiệu	O
 trưởng	O
 đi	O
@@ -42526,6 +42941,7 @@ Trần	B-PERSON
 Huyền	I-PERSON
 (	O
 Melbourne	B-LOCATION-GPE
+,	O
 Úc	B-LOCATION-GPE
 chia	O
 sẻ	O
@@ -42623,6 +43039,7 @@ vào	O
 chiều	B-DATETIME-TIMERANGE
 thứ	I-DATETIME-TIMERANGE
 6	I-DATETIME-TIMERANGE
+.	O
 
 “	O
 Hai	B-QUANTITY
@@ -42632,6 +43049,7 @@ lần	I-QUANTITY
 vào	O
 thứ	B-DATETIME
 7	I-DATETIME
+,	O
 ban	O
 phụ	O
 huynh	O
@@ -42783,11 +43201,14 @@ phụ	O
 huynh	O
 ở	O
 Úc	B-LOCATION-GPE
+,	O
 Pháp	B-LOCATION-GPE
+,	O
 anh	O
 Tùng	B-PERSON
 (	O
 Cambridge	B-LOCATION-GPE
+,	O
 Vương	B-LOCATION-GPE
 quốc	I-LOCATION-GPE
 Anh	I-LOCATION-GPE
@@ -42951,6 +43372,7 @@ trường	O
 học	O
 Trung	B-LOCATION-GEO
 Quốc	I-LOCATION-GEO
+,	O
 nhất	O
 là	O
 các	O
@@ -42971,6 +43393,7 @@ sinh	O
 viên	O
 Triều	B-LOCATION-GPE
 Tiên	I-LOCATION-GPE
+,	O
 kể	O
 từ	O
 các	O
@@ -42986,10 +43409,12 @@ mới	O
 của	O
 Bình	B-LOCATION-GPE
 Nhưỡng	I-LOCATION-GPE
+.	O
 
 Tại	O
 Bắc	B-LOCATION-GPE
 Kinh	I-LOCATION-GPE
+,	O
 một	O
 số	O
 trường	O
@@ -43017,6 +43442,7 @@ sinh	O
 viên	O
 Triều	B-LOCATION-GPE
 Tiên	I-LOCATION-GPE
+.	O
 Lãnh	O
 đạo	O
 các	O
@@ -43055,6 +43481,7 @@ viên	O
 tại	O
 Bắc	B-LOCATION-GPE
 Kinh	I-LOCATION-GPE
+,	O
 sau	O
 khi	O
 Triều	B-LOCATION-GPE
@@ -43068,6 +43495,7 @@ lửa	O
 lần	O
 thứ	B-QUANTITY-ORD
 6	I-QUANTITY-ORD
+,	O
 tất	O
 cả	O
 sinh	O
@@ -43148,6 +43576,7 @@ tháng	B-DATETIME-DATE
 4	I-DATETIME-DATE
 hằng	I-DATETIME-DATE
 năm	I-DATETIME-DATE
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
 bắt	O
@@ -43203,6 +43632,7 @@ sinh	O
 viên	O
 Triều	B-LOCATION-GPE
 Tiên	I-LOCATION-GPE
+.	O
 Ông	O
 nói	O
 :	O
@@ -43278,6 +43708,7 @@ Giáo	I-ORGANIZATION
 dục	I-ORGANIZATION
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 người	O
 giám	O
 sát	O
@@ -43327,6 +43758,7 @@ Tiên	I-LOCATION-GPE
 vào	O
 năm	B-DATETIME-DATE
 2013	I-DATETIME-DATE
+,	O
 cung	O
 cấp	O
 học	O
@@ -43387,6 +43819,7 @@ nghệ	I-ORGANIZATION
 Cáp	I-ORGANIZATION
 Nhĩ	I-ORGANIZATION
 Tân	I-ORGANIZATION
+.	O
 
 Ước	O
 tính	O
@@ -43403,6 +43836,7 @@ tập	O
 ở	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Một	O
 giáo	O
 sư	O
@@ -43448,6 +43882,7 @@ họ	O
 tuổi	O
 ngoài	O
 30	B-QUANTITY-AGE
+,	O
 đều	O
 có	O
 gia	O
@@ -43580,10 +44015,12 @@ cảm	O
 tại	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 
 Ông	O
 Tần	B-PERSON
 Dũng	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 giám	I-PERSONTYPE
 đốc	I-PERSONTYPE
@@ -43601,6 +44038,7 @@ nghệ	I-ORGANIZATION
 Cáp	I-ORGANIZATION
 Nhĩ	I-ORGANIZATION
 Tân	I-ORGANIZATION
+,	O
 nói	O
 rằng	O
 ,	O
@@ -43808,12 +44246,14 @@ học	O
 khoảng	O
 10	B-QUANTITY
 USD/người/năm	I-QUANTITY
+,	O
 hoặc	O
 đóng	O
 12	B-QUANTITY
 USD/2	I-QUANTITY
 người/	I-QUANTITY
 năm	I-QUANTITY
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -43907,6 +44347,7 @@ Những	B-DATETIME
 ngày	I-DATETIME
 gần	I-DATETIME
 đây	I-DATETIME
+,	O
 cư	O
 dân	O
 mạng	O
@@ -43937,8 +44378,10 @@ Công	I-ORGANIZATION
 nghệ	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Qua	O
 đó	O
 có	O
@@ -44056,6 +44499,7 @@ Công	I-ORGANIZATION
 nghệ	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 hình	O
 phạt	O
 được	O
@@ -44187,6 +44631,7 @@ trẻ	O
 ở	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 khiến	O
 cư	O
 dân	O
@@ -44455,6 +44900,7 @@ tuổi	I-QUANTITY-AGE
 
 Giờ	B-DATETIME
 trưa	I-DATETIME
+,	O
 ở	O
 một	O
 góc	O
@@ -44476,13 +44922,16 @@ TP.HCM	I-ORGANIZATION
 Lê	I-LOCATION-GPE
 Văn	I-LOCATION-GPE
 Việt	I-LOCATION-GPE
+,	O
 phường	B-LOCATION-GPE
 Tăng	I-LOCATION-GPE
 Nhơn	I-LOCATION-GPE
 Phú	I-LOCATION-GPE
 A	I-LOCATION-GPE
+,	O
 quận	B-LOCATION-GPE
 9	I-LOCATION-GPE
+,	O
 TP.HCM	B-LOCATION-GPE
 thấp	O
 thoáng	O
@@ -44563,6 +45012,7 @@ ngoại	O
 của	O
 Ngọc	B-PERSON
 Hân	I-PERSON
+,	O
 kể	O
 hơn	O
 một	B-DATETIME-DURATION
@@ -44607,6 +45057,7 @@ Hân	B-PERSON
 học	O
 lớp	O
 1	B-QUANTITY-NUM
+.	O
 May	O
 mắn	O
 ,	O
@@ -44694,6 +45145,7 @@ khoảng	O
 giữa	O
 tháng	B-DATETIME-DATE
 7-2017	I-DATETIME-DATE
+,	O
 mang	O
 hồ	O
 sơ	O
@@ -44772,6 +45224,7 @@ học	O
 lại	O
 lớp	O
 1	B-QUANTITY-NUM
+,	O
 kết	O
 thúc	O
 năm	O
@@ -44824,6 +45277,7 @@ lại	O
 Lần	O
 thứ	B-QUANTITY-ORD
 hai	I-QUANTITY-ORD
+,	O
 sau	O
 khi	O
 đã	O
@@ -44883,6 +45337,7 @@ này	O
 Nguyễn	B-PERSON
 Vinh	I-PERSON
 Hiển	I-PERSON
+,	O
 Hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Trường	B-ORGANIZATION
@@ -44891,6 +45346,7 @@ học	I-ORGANIZATION
 Trương	I-ORGANIZATION
 Văn	I-ORGANIZATION
 Thành	I-ORGANIZATION
+,	O
 cho	O
 biết	O
 ông	O
@@ -45187,6 +45643,7 @@ NGUYỄN	B-PERSON
 THỊ	I-PERSON
 THU	I-PERSON
 HIỀN	I-PERSON
+,	O
 Trưởng	B-PERSONTYPE
 phòng	I-PERSONTYPE
 GD	I-PERSONTYPE
@@ -45222,6 +45679,7 @@ thu	O
 phí	O
 đầu	B-DATETIME
 năm	I-DATETIME
+.	O
 Trường	O
 ít	O
 trường	O
@@ -45390,6 +45848,7 @@ dưới	O
 100	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 Mỗi	O
 buổi	O
 họp	O
@@ -45623,6 +46082,7 @@ lớp	O
 ghi	O
 200.000	B-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+,	O
 tức	O
 là	O
 chỉ	O
@@ -46163,6 +46623,7 @@ trang	O
 mạng	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Để	O
 nghĩ	O
 ra	O
@@ -46355,6 +46816,7 @@ cao	O
 ở	O
 Hồ	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 phía	O
 tây	O
 Trung	B-LOCATION-GPE
@@ -46442,6 +46904,7 @@ không	O
 ,	O
 Liu	B-PERSON
 Min	I-PERSON
+,	O
 một	O
 trong	O
 số	O
@@ -46540,6 +47003,7 @@ thận	O
 
 Xie	B-PERSON
 Yong	I-PERSON
+,	O
 một	O
 cán	O
 bộ	O
@@ -46681,6 +47145,7 @@ sự	O
 
 Hu	B-PERSON
 Ling	I-PERSON
+,	O
 một	O
 sinh	O
 viên	O
@@ -46898,6 +47363,7 @@ viết	O
 
 Yang	B-PERSON
 Liangchi	I-PERSON
+,	O
 một	O
 giáo	O
 sư	O
@@ -47067,6 +47533,7 @@ Thiên	I-PERSON
 
 Đầu	B-DATETIME
 năm	I-DATETIME
+,	O
 hội	O
 phụ	O
 huynh	O
@@ -47098,10 +47565,12 @@ Tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Diệu	I-ORGANIZATION
+,	O
 (	O
 Quận	B-LOCATION-GPE
 Thủ	I-LOCATION-GPE
 Đức	I-LOCATION-GPE
+,	O
 TP.HCM	B-LOCATION-GPE
 đưa	O
 ra	O
@@ -47119,6 +47588,7 @@ chi	O
 332	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Bản	O
 dự	O
@@ -47139,6 +47609,7 @@ Tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Diệu	I-ORGANIZATION
+,	O
 TP.HCM	B-LOCATION-GPE
 (	O
 Ảnh	O
@@ -47157,6 +47628,7 @@ thể	O
 Tháng	B-DATETIME-DATERANGE
 8-	I-DATETIME-DATERANGE
 9/2017	I-DATETIME-DATERANGE
+:	O
 Giáo	O
 dục	O
 thẩm	O
@@ -47179,10 +47651,12 @@ tính	O
 53	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-DATE
 10/2017	I-DATETIME-DATE
+:	O
 Tổ	O
 chức	O
 các	O
@@ -47196,10 +47670,12 @@ tính	O
 30	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-DATE
 11/2017	I-DATETIME-DATE
+:	O
 Tổ	O
 chức	O
 các	O
@@ -47212,6 +47688,7 @@ Nhà	I-EVENT
 giáo	I-EVENT
 Việt	I-EVENT
 Nam	I-EVENT
+,	O
 kinh	O
 phí	O
 dự	O
@@ -47219,10 +47696,12 @@ tính	O
 34	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-DATE
 12/2017	I-DATETIME-DATE
+:	O
 Kỷ	O
 niệm	O
 ngày	B-EVENT-CUL
@@ -47232,11 +47711,13 @@ Quân	I-EVENT-CUL
 đội	I-EVENT-CUL
 nhân	I-EVENT-CUL
 dân	I-EVENT-CUL
+,	O
 Sơ	B-EVENT
 kết	I-EVENT
 học	I-EVENT
 kì	I-EVENT
 I	I-EVENT
+,	O
 kinh	O
 phí	O
 dự	O
@@ -47244,12 +47725,14 @@ tính	O
 43	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-SET
 1	I-DATETIME-SET
 và	I-DATETIME-SET
 2/2018	I-DATETIME-SET
+:	O
 Kỷ	O
 niệm	O
 ngày	B-EVENT
@@ -47270,10 +47753,12 @@ tính	O
 52	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-DATE
 3/2018	I-DATETIME-DATE
+:	O
 Kỷ	O
 niệm	O
 ngày	B-EVENT-CUL
@@ -47281,9 +47766,11 @@ quốc	I-EVENT-CUL
 tế	I-EVENT-CUL
 phụ	I-EVENT-CUL
 nữ	I-EVENT-CUL
+,	O
 thành	B-EVENT-CUL
 lập	I-EVENT-CUL
 đoàn	I-EVENT-CUL
+,	O
 kinh	O
 phí	O
 dự	O
@@ -47291,26 +47778,31 @@ tính	O
 20	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 -	O
 Tháng	B-DATETIME-SET
 4	I-DATETIME-SET
 và	I-DATETIME-SET
 5/2018	I-DATETIME-SET
+:	O
 Kỷ	O
 niệm	O
 ngày	B-DATETIME-SET
 30/4	I-DATETIME-SET
 và	I-DATETIME-SET
 1/5	I-DATETIME-SET
+,	O
 ngày	B-EVENT-CUL
 thành	I-EVENT-CUL
 lập	I-EVENT-CUL
 đội	I-EVENT-CUL
+,	O
 ngày	B-EVENT-CUL
 sinh	I-EVENT-CUL
 Bác	I-EVENT-CUL
 Hồ	I-EVENT-CUL
+,	O
 tổng	O
 kết	O
 năm	O
@@ -47322,6 +47814,7 @@ tính	O
 90	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 (	O
 Ảnh	O
@@ -47356,6 +47849,7 @@ là	O
 332	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Như	O
 vậy	O
@@ -47370,6 +47864,7 @@ phải	O
 9	B-QUANTITY
 triệu	I-QUANTITY
 đồng/năm	I-QUANTITY
+.	O
 Chia	O
 bình	O
 quân	O
@@ -47378,6 +47873,7 @@ quân	O
 học	I-QUANTITY
 sinh/	I-QUANTITY
 tháng	I-QUANTITY
+.	O
 
 Được	O
 biết	O
@@ -47412,6 +47908,7 @@ học	O
 sinh	O
 đầu	B-DATETIME
 năm	I-DATETIME
+.	O
 
 Hiệu	O
 trưởng	O
@@ -47437,6 +47934,7 @@ Lê	B-PERSON
 Thị	I-PERSON
 Thu	I-PERSON
 Thủy	I-PERSON
+,	O
 Hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Trường	B-ORGANIZATION
@@ -47478,6 +47976,7 @@ Nam	I-ORGANIZATION
 ,	O
 ngày	B-DATETIME-DATE
 19/9	I-DATETIME-DATE
+,	O
 Ủy	B-ORGANIZATION
 ban	I-ORGANIZATION
 nhân	I-ORGANIZATION
@@ -47501,6 +48000,7 @@ Lê	B-PERSON
 Thị	I-PERSON
 Thu	I-PERSON
 Thủy	I-PERSON
+,	O
 hiệu	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Trường	B-ORGANIZATION
@@ -47511,6 +48011,7 @@ Cương	I-ORGANIZATION
 (	O
 An	B-LOCATION-GPE
 Dương	I-LOCATION-GPE
+,	O
 Hải	B-LOCATION-GPE
 Phòng	I-LOCATION-GPE
 .	O
@@ -47565,6 +48066,7 @@ tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Đặng	I-ORGANIZATION
 Cương	I-ORGANIZATION
+.	O
 
 Trước	O
 đó	O
@@ -47605,6 +48107,7 @@ Tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Đặng	I-ORGANIZATION
 Cương	I-ORGANIZATION
+.	O
 
 Sau	O
 khi	O
@@ -47665,6 +48168,7 @@ tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Đặng	I-ORGANIZATION
 Cương	I-ORGANIZATION
+.	O
 
 Trao	O
 đổi	O
@@ -47678,6 +48182,7 @@ Giáo	I-ORGANIZATION
 dục	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 bà	O
 Lê	B-PERSON
 Thị	I-PERSON
@@ -47798,6 +48303,7 @@ Cũng	O
 theo	O
 bà	O
 Thủy	B-PERSON
+,	O
 bà	O
 sẽ	O
 tôn	O
@@ -47858,6 +48364,7 @@ học	O
 theo	O
 bà	O
 Thủy	B-PERSON
+,	O
 việc	O
 thu	O
 ,	O
@@ -48031,6 +48538,7 @@ học	O
 2017	B-DATETIME-DATERANGE
 –	I-DATETIME-DATERANGE
 2018	I-DATETIME-DATERANGE
+,	O
 Ban	O
 đại	O
 diện	O
@@ -48044,9 +48552,11 @@ tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Diệu	I-ORGANIZATION
+,	O
 quận	B-LOCATION-GPE
 Thủ	I-LOCATION-GPE
 Đức	I-LOCATION-GPE
+,	O
 thành	B-LOCATION-GPE
 phố	I-LOCATION-GPE
 Hồ	I-LOCATION-GPE
@@ -48072,6 +48582,7 @@ giá	O
 332	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Đây	O
 là	O
@@ -48108,6 +48619,7 @@ học	O
 2017	B-DATETIME-DATERANGE
 –	I-DATETIME-DATERANGE
 2018	I-DATETIME-DATERANGE
+.	O
 
 Theo	O
 đó	O
@@ -48123,6 +48635,7 @@ tháng	B-DATETIME-SET
 1	I-DATETIME-SET
 ,	I-DATETIME-SET
 2/2018	I-DATETIME-SET
+,	O
 với	O
 tổng	O
 cộng	O
@@ -48148,6 +48661,7 @@ là	O
 52	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Bản	O
 dự	O
@@ -48179,6 +48693,7 @@ tính	O
 riêng	O
 tháng	B-DATETIME-DATE
 11/2017	I-DATETIME-DATE
+,	O
 trường	O
 cũng	O
 dự	O
@@ -48200,6 +48715,7 @@ là	O
 34	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Đa	O
 phần	O
@@ -48278,6 +48794,7 @@ là	O
 triệu	I-QUANTITY
 đồng/năm	I-QUANTITY
 học	I-QUANTITY
+,	O
 vị	O
 chi	O
 hoạt	O
@@ -48288,6 +48805,7 @@ sinh	O
 là	O
 25.000	B-QUANTITY
 đồng/tháng	I-QUANTITY
+.	O
 
 Nhiều	O
 phụ	O
@@ -48352,6 +48870,7 @@ CTV	O
 
 Ngày	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 phóng	O
 viên	O
 Báo	B-ORGANIZATION
@@ -48368,9 +48887,11 @@ tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Diệu	I-ORGANIZATION
+,	O
 quận	B-LOCATION-GPE
 Thủ	I-LOCATION-GPE
 Đức	I-LOCATION-GPE
+,	O
 để	O
 tìm	O
 hiểu	O
@@ -48452,6 +48973,7 @@ tạo	I-ORGANIZATION
 quận	I-ORGANIZATION
 Thủ	I-ORGANIZATION
 Đức	I-ORGANIZATION
+,	O
 bộ	O
 phận	O
 Văn	O
@@ -48506,6 +49028,7 @@ nhân	O
 của	O
 ông	O
 Tuấn	B-PERSON
+,	O
 nhưng	O
 cũng	O
 không	O
@@ -48531,6 +49054,7 @@ tiểu	I-ORGANIZATION
 học	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Diệu	I-ORGANIZATION
+,	O
 một	O
 người	O
 xưng	O
@@ -48736,6 +49260,7 @@ ngân	O
 sách	O
 hàng	B-DATETIME
 năm	I-DATETIME
+,	O
 được	O
 đầu	O
 tư	O
@@ -49144,6 +49669,7 @@ phổ	I-ORGANIZATION
 thông	I-ORGANIZATION
 Nguyễn	I-ORGANIZATION
 Khuyến	I-ORGANIZATION
+.	O
 
 Nếu	O
 như	O
@@ -49152,6 +49678,7 @@ học	I-DATETIME-DATERANGE
 1992	I-DATETIME-DATERANGE
 -	I-DATETIME-DATERANGE
 1993	I-DATETIME-DATERANGE
+,	O
 khi	O
 mới	O
 thành	O
@@ -49184,6 +49711,7 @@ học	I-DATETIME-DATERANGE
 2016	I-DATETIME-DATERANGE
 -	I-DATETIME-DATERANGE
 2017	I-DATETIME-DATERANGE
+,	O
 trường	O
 có	O
 4	B-QUANTITY-NUM
@@ -49255,6 +49783,7 @@ này	O
 Năm	B-DATETIME-DATE
 học	I-DATETIME-DATE
 2007	I-DATETIME-DATE
+,	O
 khi	O
 mà	O
 ngành	O
@@ -49304,6 +49833,7 @@ vẫn	O
 đạt	O
 100	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 
 Tỉ	O
 lệ	O
@@ -49317,6 +49847,7 @@ năm	O
 trên	O
 90	B-QUANTITY-PER
 %	I-QUANTITY-PER
+,	O
 trong	O
 đó	O
 có	O
@@ -49333,6 +49864,7 @@ khoa	O
 biệt	O
 năm	B-DATETIME-DATE
 2014	I-DATETIME-DATE
+,	O
 trường	O
 có	O
 38	B-QUANTITY-NUM
@@ -49439,6 +49971,7 @@ thành	O
 lập	O
 năm	B-DATETIME-DATE
 1989	I-DATETIME-DATE
+.	O
 
 Hiện	O
 nay	O
@@ -49784,6 +50317,7 @@ gần	O
 100	B-QUANTITY-CUR
 tỉ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Đó	O
 là	O
@@ -50032,6 +50566,7 @@ bạch	O
 
 Ngày	B-DATETIME-DATE
 19/9	I-DATETIME-DATE
+,	O
 bà	O
 Lê	B-PERSON
 Thị	I-PERSON
@@ -50218,6 +50753,7 @@ quy	O
 định	O
 của	O
 Đảng	B-ORGANIZATION
+,	O
 Nhà	O
 nước	O
 về	O
@@ -50373,6 +50909,7 @@ bộ	O
 :	O
 Thùy	B-PERSON
 Linh	I-PERSON
+.	O
 
 Trước	O
 đó	O
@@ -50413,12 +50950,14 @@ Giao	I-ORGANIZATION
 thông	I-ORGANIZATION
 Vận	I-ORGANIZATION
 tải	I-ORGANIZATION
+,	O
 dưới	O
 thời	O
 ông	O
 Đinh	B-PERSON
 La	I-PERSON
 Thăng	I-PERSON
+.	O
 
 Đó	O
 là	O
@@ -50458,6 +50997,7 @@ trưởng	I-PERSONTYPE
 Cục	B-ORGANIZATION
 Hàng	I-ORGANIZATION
 Hải	I-ORGANIZATION
+.	O
 
 Vụ	O
 việc	O
@@ -50616,6 +51156,7 @@ Giao	I-ORGANIZATION
 thông	I-ORGANIZATION
 Vận	I-ORGANIZATION
 tải	I-ORGANIZATION
+:	O
 “	O
 Tiêu	O
 chuẩn	O
@@ -50797,6 +51338,7 @@ trưởng	I-PERSON
 Cục	B-ORGANIZATION
 Hàng	I-ORGANIZATION
 hải	I-ORGANIZATION
+.	O
 
 Khi	O
 vụ	O
@@ -50815,6 +51357,7 @@ kỳ	I-EVENT
 đầu	O
 tháng	B-DATETIME-DATE
 8/2017	I-DATETIME-DATE
+,	O
 ông	O
 Nguyễn	B-PERSON
 Ngọc	I-PERSON
@@ -50907,6 +51450,7 @@ chính	O
 vào	O
 năm	B-DATETIME-DATE
 2014	I-DATETIME-DATE
+,	O
 theo	O
 kết	O
 quả	O
@@ -50974,6 +51518,7 @@ lại	O
 vào	O
 năm	B-DATETIME-DATE
 2016	I-DATETIME-DATE
+?	O
 
 Dù	O
 vậy	O
@@ -51088,6 +51633,7 @@ Giao	I-ORGANIZATION
 thông	I-ORGANIZATION
 Vận	I-ORGANIZATION
 tải	I-ORGANIZATION
+,	O
 ông	O
 Nguyễn	B-PERSON
 Xuân	I-PERSON
@@ -51123,6 +51669,7 @@ Cục	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Hàng	I-PERSONTYPE
 Hải	I-PERSONTYPE
+.	O
 ảnh	O
 :	O
 ảnh	O
@@ -51229,6 +51776,7 @@ lên	O
 thẳng	O
 Cục	B-PERSONTYPE
 trưởng	I-PERSONTYPE
+.	O
 
 Ông	O
 Giang	B-PERSON
@@ -51237,11 +51785,13 @@ phải	O
 là	O
 Chuyên	B-PERSONTYPE
 viên	I-PERSONTYPE
+,	O
 mà	O
 chỉ	O
 là	O
 Giảng	B-PERSONTYPE
 viên	I-PERSONTYPE
+,	O
 vì	O
 vậy	O
 việc	O
@@ -51327,6 +51877,7 @@ Giáo	I-ORGANIZATION
 dục	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 Phó	B-PERSONTYPE
 Giáo	I-PERSONTYPE
 sư	I-PERSONTYPE
@@ -51433,6 +51984,7 @@ là	O
 Bộ	B-ORGANIZATION
 Chính	I-ORGANIZATION
 trị	I-ORGANIZATION
+,	O
 triển	O
 khai	O
 từ	O
@@ -51441,6 +51993,7 @@ Chấp	I-ORGANIZATION
 hành	I-ORGANIZATION
 Trung	I-ORGANIZATION
 ương	I-ORGANIZATION
+,	O
 Chính	O
 phủ	O
 trực	O
@@ -51524,6 +52077,7 @@ biết	O
 :	O
 Ngọc	B-PERSON
 Quang	I-PERSON
+.	O
 
 Dù	O
 vậy	O
@@ -51535,6 +52089,7 @@ sư	I-PERSONTYPE
 Bùi	B-PERSON
 Thị	I-PERSON
 An	I-PERSON
+,	O
 thực	O
 hiện	O
 tổng	O
@@ -51566,6 +52121,7 @@ chí	O
 lãnh	O
 đạo	O
 Đảng	B-ORGANIZATION
+,	O
 Nhà	O
 nước	O
 trước	O
@@ -51764,6 +52320,7 @@ Kiến	B-PERSON
 Văn	I-PERSON
 
 Bankpay	B-PRODUCT-COM
+:	O
 Hệ	O
 thống	O
 kết	O
@@ -51785,6 +52342,7 @@ nối	I-PRODUCT-COM
 thanh	I-PRODUCT-COM
 toán	I-PRODUCT-COM
 BankPay	I-PRODUCT-COM
+,	O
 khách	O
 hàng	O
 có	O
@@ -51825,6 +52383,7 @@ thanh	O
 toán	O
 của	O
 VietinBank	B-ORGANIZATION
+.	O
 
 BankPay	B-PRODUCT-COM
 là	O
@@ -51925,6 +52484,7 @@ nối	I-PRODUCT-COM
 thanh	I-PRODUCT-COM
 toán	I-PRODUCT-COM
 BankPay	I-PRODUCT-COM
+,	O
 khách	O
 hàng	O
 có	O
@@ -51965,6 +52525,7 @@ thanh	O
 toán	O
 của	O
 VietinBank	B-ORGANIZATION
+.	O
 
 BankPay	O
 đáp	O
@@ -52003,14 +52564,17 @@ như	O
 Tổng	B-ORGANIZATION
 cục	I-ORGANIZATION
 thuế	I-ORGANIZATION
+,	O
 Tổng	B-ORGANIZATION
 cục	I-ORGANIZATION
 Hải	I-ORGANIZATION
 quan	I-ORGANIZATION
+,	O
 Kho	B-ORGANIZATION
 bạc	I-ORGANIZATION
 Nhà	I-ORGANIZATION
 nước	I-ORGANIZATION
+,	O
 các	O
 nhà	O
 cung	O
@@ -52121,6 +52685,7 @@ mặt	O
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 tuân	O
 thủ	O
 chặt	O
@@ -52223,6 +52788,7 @@ thống	I-PRODUCT-COM
 BankPay	I-PRODUCT-COM
 của	O
 VietinBank	B-ORGANIZATION
+,	O
 các	O
 định	O
 chế	O
@@ -52260,6 +52826,7 @@ giao	O
 dịch	O
 của	O
 VietinBank	B-ORGANIZATION
+.	O
 Để	O
 từ	O
 đó	O
@@ -52429,6 +52996,7 @@ Sao	O
 khuê	O
 năm	B-DATETIME-DATE
 2017	I-DATETIME-DATE
+.	O
 Danh	O
 hiệu	O
 ghi	O
@@ -52463,6 +53031,7 @@ hiện	O
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Yến	B-PERSON
 Nguyễn	I-PERSON
@@ -52497,11 +53066,13 @@ lượt	O
 là	O
 2017	B-LOCATION-GEO
 SQ2	I-LOCATION-GEO
+,	O
 2017	B-LOCATION-GEO
 SM2	I-LOCATION-GEO
 và	O
 2017	B-LOCATION-GEO
 SR2	I-LOCATION-GEO
+.	O
 
 Chỉ	O
 trong	O
@@ -52540,6 +53111,7 @@ gần	O
 với	O
 Trái	B-LOCATION-GEO
 Đất	I-LOCATION-GEO
+,	O
 nhưng	O
 điều	O
 may	O
@@ -52573,6 +53145,7 @@ tiểu	B-LOCATION-GEO
 hành	I-LOCATION-GEO
 tinh	I-LOCATION-GEO
 Apollo	I-LOCATION-GEO
+,	O
 đường	O
 kính	O
 ước	O
@@ -52649,6 +53222,7 @@ tại	O
 Catalina	B-EVENT
 Sky	I-EVENT
 Survey	I-EVENT
+,	O
 khoảng	O
 cách	O
 của	O
@@ -52661,6 +53235,7 @@ vào	O
 khoảng	O
 193.000	B-QUANTITY-DIM
 km	I-QUANTITY-DIM
+.	O
 
 Hai	B-QUANTITY-NUM
 tiểu	O
@@ -52684,6 +53259,7 @@ và	I-DATETIME-SET
 13h	I-DATETIME-SET
 chiều	I-DATETIME-SET
 20-9	I-DATETIME-SET
+,	O
 khoảng	O
 cách	O
 của	O
@@ -52700,6 +53276,7 @@ km	I-QUANTITY-DIM
 và	O
 ~88.550	B-QUANTITY-DIM
 km	I-QUANTITY-DIM
+.	O
 Trong	O
 đó	O
 ,	O
@@ -52756,6 +53333,7 @@ lướt	O
 qua	O
 Trái	B-LOCATION-GEO
 Đất	I-LOCATION-GEO
+,	O
 lần	O
 gần	O
 đây	O
@@ -52764,6 +53342,7 @@ là	O
 vào	O
 tháng	B-DATETIME-DATE
 4-2017	I-DATETIME-DATE
+.	O
 
 Trung	B-PERSON
 Nguyễn	I-PERSON
@@ -52837,6 +53416,7 @@ là	O
 bộ	B-ORGANIZATION
 tộc	I-ORGANIZATION
 Korowai	I-ORGANIZATION
+,	O
 sống	O
 tách	O
 biệt	O
@@ -52885,6 +53465,7 @@ cách	O
 đây	O
 17	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 nhiếp	B-PERSONTYPE
 ảnh	I-PERSONTYPE
 gia	O
@@ -52972,6 +53553,7 @@ cho	O
 cả	O
 chục	B-QUANTITY-DIM
 mét	I-QUANTITY-DIM
+.	O
 Được	O
 biết	O
 ,	O
@@ -53085,6 +53667,7 @@ thuộc	O
 bộ	B-ORGANIZATION
 tộc	I-ORGANIZATION
 Korowai	I-ORGANIZATION
+.	O
 (	O
 Nguồn	O
 Sina	B-ORGANIZATION
@@ -53167,6 +53750,7 @@ mãi	O
 đến	O
 năm	B-DATETIME-DATE
 1970	I-DATETIME-DATE
+,	O
 người	O
 Korowai	O
 không	O
@@ -53217,6 +53801,7 @@ Sina	B-ORGANIZATION
 
 Tháng	B-DATETIME-DATE
 3/1974	I-DATETIME-DATE
+,	O
 một	O
 nhóm	O
 các	O
@@ -53261,6 +53846,7 @@ nhiên	O
 phải	O
 đến	O
 5/2006	B-DATETIME-DATE
+,	O
 một	O
 bài	O
 phóng	O
@@ -53287,6 +53873,7 @@ có	O
 tên	O
 Paul	B-PERSON
 Rafeale	I-PERSON
+.	O
 (	O
 Nguồn	O
 Sina	B-ORGANIZATION
@@ -53375,6 +53962,7 @@ giới	O
 vào	O
 năm	B-DATETIME-DATE
 1522	I-DATETIME-DATE
+.	O
 Ai	O
 là	O
 người	O
@@ -53474,6 +54062,7 @@ lên	O
 Bồ	B-LOCATION-GPE
 Đào	I-LOCATION-GPE
 Nha	I-LOCATION-GPE
+,	O
 nhưng	O
 sau	O
 đó	O
@@ -53497,6 +54086,7 @@ gia	I-ORGANIZATION
 Tây	I-ORGANIZATION
 Ban	I-ORGANIZATION
 Nha	I-ORGANIZATION
+.	O
 
 Bị	O
 giết	O
@@ -53515,6 +54105,7 @@ thịt	O
 
 Ngày	B-DATETIME-DATE
 27/4/1521	I-DATETIME-DATE
+,	O
 khi	O
 đoàn	O
 thuyền	O
@@ -53534,6 +54125,7 @@ thổ	O
 dân	O
 ở	O
 Philippine	B-LOCATION-GPE
+.	O
 Magellan	B-PERSON
 bị	O
 trúng	O
@@ -53624,6 +54216,7 @@ là	O
 Thái	B-LOCATION-GEO
 Bình	I-LOCATION-GEO
 Dương	I-LOCATION-GEO
+.	O
 
 Colombus	B-PERSON
 Vasco	B-PERSON
@@ -53635,6 +54228,7 @@ Wiliams	I-PERSON
 Sáng	B-DATETIME-TIMERANGE
 sớm	I-DATETIME-TIMERANGE
 12/10/1492	I-DATETIME-TIMERANGE
+,	O
 trên	O
 cuộc	O
 hành	O
@@ -53658,6 +54252,7 @@ phá	O
 ra	O
 Châu	B-LOCATION-GPE
 Mỹ	I-LOCATION-GPE
+,	O
 miền	O
 đất	O
 chưa	O
@@ -53718,6 +54313,7 @@ sinh	O
 ra	O
 ở	O
 Italia	B-LOCATION-GPE
+,	O
 nhưng	O
 sau	O
 đó	O
@@ -53730,6 +54326,7 @@ của	O
 Tây	B-LOCATION-GPE
 Ban	I-LOCATION-GPE
 Nha	I-LOCATION-GPE
+.	O
 
 Tìm	O
 những	O
@@ -53821,6 +54418,7 @@ phong	O
 kiến	O
 châu	B-LOCATION-GPE
 Âu	I-LOCATION-GPE
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -53950,6 +54548,7 @@ Trước	O
 vào	O
 tháng	B-DATETIME-DATE
 11/2016	I-DATETIME-DATE
+,	O
 Bộ	B-ORGANIZATION
 Thông	I-ORGANIZATION
 tin	I-ORGANIZATION
@@ -53996,8 +54595,11 @@ khoảng	O
 số	O
 gồm	O
 3	B-QUANTITY-NUM
+,	O
 4	B-QUANTITY-NUM
+,	O
 5	B-QUANTITY-NUM
+,	O
 7	B-QUANTITY-NUM
 và	O
 8	B-QUANTITY-NUM
@@ -54156,6 +54758,7 @@ số	O
 :	O
 Lan	B-PERSON
 Lan	I-PERSON
+.	O
 
 Và	O
 cuối	O
@@ -54203,6 +54806,7 @@ Lượng	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
 Online	I-ORGANIZATION
+,	O
 thị	O
 trường	O
 sim	O
@@ -54281,6 +54885,7 @@ khoảng	O
 120	I-QUANTITY
 nghìn	I-QUANTITY
 đồng	I-QUANTITY
+.	O
 Ngoài	O
 ra	O
 ,	O
@@ -54303,6 +54908,7 @@ tài	O
 khoản	O
 0	B-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Nhiều	O
 cửa	O
@@ -54409,6 +55015,7 @@ mới	O
 :	O
 Lan	B-PERSON
 Lan	I-PERSON
+.	O
 
 Chia	O
 sẻ	O
@@ -54484,9 +55091,11 @@ các	O
 mạng	O
 như	O
 Viettel	B-ORGANIZATION
+,	O
 Vinaphone	B-ORGANIZATION
 và	O
 Mobiphone	B-ORGANIZATION
+.	O
 Còn	O
 vài	B-DATETIME
 tháng	I-DATETIME
@@ -54557,6 +55166,7 @@ thể	O
 tăng	O
 gấp	O
 đôi	B-QUANTITY-NUM
+,	O
 gấp	O
 ba	B-QUANTITY-NUM
 .	O
@@ -54575,6 +55185,7 @@ từ	O
 nhiều	B-DATETIME
 tháng	I-DATETIME
 trước	I-DATETIME
+,	O
 ngay	O
 sau	O
 khi	O
@@ -54623,6 +55234,7 @@ nghìn	I-QUANTITY
 2	I-QUANTITY
 triệu	I-QUANTITY
 đồng	I-QUANTITY
+,	O
 có	O
 chiếc	O
 lên	O
@@ -54886,6 +55498,7 @@ di	O
 :	O
 Lan	B-PERSON
 Lan	I-PERSON
+.	O
 
 Cũng	O
 theo	O
@@ -55061,7 +55674,7 @@ nhưng	O
 nếu	O
 sim	O
 016033	B-PHONENUMBER
-…	O
+.…	O
 chuyển	O
 sang	O
 đầu	O
@@ -55070,7 +55683,7 @@ số	O
 sẽ	O
 thành	O
 033033	B-PHONENUMBER
-…	O
+.…	O
 sẽ	O
 khiến	O
 sim	O
@@ -55087,6 +55700,7 @@ giảm	O
 hàng	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Tìm	O
 thấy	O
@@ -55128,6 +55742,7 @@ bắn	O
 chết	O
 ở	O
 Rockhampton	B-LOCATION-GPE
+.	O
 
 Cảnh	O
 sát	O
@@ -55163,6 +55778,7 @@ sông	B-LOCATION-GEO
 Fitzroy	I-LOCATION-GEO
 hôm	B-DATETIME-DATE
 20-9	I-DATETIME-DATE
+.	O
 
 Người	O
 ta	O
@@ -55258,6 +55874,7 @@ bị	O
 bắt	O
 ở	O
 Queensland	B-LOCATION-GPE
+.	O
 
 Con	O
 cá	O
@@ -55279,6 +55896,7 @@ gần	O
 bãi	B-LOCATION-GEO
 biển	I-LOCATION-GEO
 Airlie	I-LOCATION-GEO
+.	O
 
 Tuấn	B-PERSON
 Anh	I-PERSON
@@ -55399,6 +56017,7 @@ sau	I-DATETIME-DATE
 những	I-DATETIME-DATE
 năm	I-DATETIME-DATE
 80	I-DATETIME-DATE
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
 triển	O
@@ -55417,9 +56036,11 @@ YJ	I-PRODUCT
 (	I-PRODUCT
 C-801	I-PRODUCT
 )	I-PRODUCT
+.	O
 Từ	O
 năm	B-DATETIME-DATE
 1987	I-DATETIME-DATE
+,	O
 YJ	B-PRODUCT
 -8	I-PRODUCT
 bắt	O
@@ -55477,6 +56098,7 @@ công	O
 nghiệp	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Tên	O
 lửa	O
 này	O
@@ -55550,12 +56172,14 @@ hạm	I-PRODUCT
 Exocet	I-PRODUCT
 của	O
 Pháp	B-LOCATION-GPE
+.	O
 
 Tên	B-PRODUCT
 lửa	I-PRODUCT
 YJ-8	I-PRODUCT
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 Ảnh	O
 :	O
 Đất	B-ORGANIZATION
@@ -55575,6 +56199,7 @@ có	O
 ký	O
 hiệu	O
 YJ-8K	B-PRODUCT
+.	O
 Chỉ	O
 vài	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
@@ -55668,6 +56293,7 @@ bay	O
 cao	O
 20-30	B-QUANTITY
 m	I-QUANTITY
+,	O
 khi	O
 tiếp	O
 cận	O
@@ -55746,6 +56372,7 @@ có	O
 ký	O
 hiệu	O
 KD-88	B-PRODUCT
+.	O
 
 Sau	O
 đó	O
@@ -55785,6 +56412,7 @@ ly	O
 hơn	O
 60	B-QUANTITY-DIM
 km	I-QUANTITY-DIM
+.	O
 
 Tên	B-PRODUCT
 lửa	I-PRODUCT
@@ -55826,6 +56454,7 @@ bom	I-PRODUCT
 JH-7	I-PRODUCT
 và	O
 H-6	B-PRODUCT
+,	O
 các	O
 máy	B-PRODUCT
 bay	I-PRODUCT
@@ -55836,11 +56465,13 @@ J-15	I-PRODUCT
 J-10	B-PRODUCT
 và	O
 J-17	B-PRODUCT
+,	O
 máy	B-PRODUCT
 bay	I-PRODUCT
 tuần	I-PRODUCT
 tiễu	I-PRODUCT
 Y-8J	I-PRODUCT
+.	O
 
 Tên	B-PRODUCT
 lửa	I-PRODUCT
@@ -55853,20 +56484,27 @@ sang	O
 các	O
 nước	O
 Angeria	B-LOCATION-GPE
+,	O
 Bắc	B-LOCATION-GPE
 Triều	I-LOCATION-GPE
 Tiên	I-LOCATION-GPE
+,	O
 Iran	B-LOCATION-GPE
 ,	O
 Indonexia	B-LOCATION-GPE
+,	O
 Myanma	B-LOCATION-GPE
+,	O
 Thái	B-LOCATION-GPE
 Lan	I-LOCATION-GPE
+,	O
 Pakistan	B-LOCATION-GPE
 và	O
 Syria	B-LOCATION-GPE
+.	O
 Tại	O
 Iran	B-LOCATION
+,	O
 các	O
 chuyên	O
 gia	O
@@ -55903,6 +56541,7 @@ hạm	O
 của	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 chuyên	O
 gia	O
 quân	O
@@ -56025,6 +56664,7 @@ số	O
 tăng	O
 lên	O
 0,9	B-QUANTITY-NUM
+.	O
 
 Tất	O
 nhiên	O
@@ -56193,9 +56833,11 @@ Châu	B-LOCATION-GPE
 
 Chiều	B-DATETIME-TIMERANGE
 22/9	I-DATETIME-TIMERANGE
+,	O
 tại	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Công	B-ORGANIZATION
 ty	I-ORGANIZATION
 Cổ	I-ORGANIZATION
@@ -56237,6 +56879,7 @@ Rochling	O
 )	O
 sang	O
 EU	B-ORGANIZATION
+.	O
 Tham	O
 dự	O
 lễ	O
@@ -56254,11 +56897,13 @@ Séc	I-ORGANIZATION
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 đại	O
 diện	O
 Bộ	B-ORGANIZATION
 Công	I-ORGANIZATION
 Thương	I-ORGANIZATION
+,	O
 Bộ	B-ORGANIZATION
 Khoa	I-ORGANIZATION
 học	I-ORGANIZATION
@@ -56276,6 +56921,7 @@ quan	O
 Nguyễn	B-PERSON
 Kim	I-PERSON
 Sơn	I-PERSON
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 HĐQT	I-PERSONTYPE
@@ -56291,6 +56937,7 @@ và	O
 ông	O
 Jiri	B-PERSON
 Belinger	I-PERSON
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 HĐQT	I-PERSONTYPE
@@ -56315,10 +56962,12 @@ kết	O
 ông	O
 David	B-PERSON
 Jarkulisch	I-PERSON
+,	O
 Trưởng	B-PERSONTYPE
 Phòng	I-PERSONTYPE
 Kinh	I-PERSONTYPE
 tế	I-PERSONTYPE
+,	O
 Đại	B-ORGANIZATION
 sứ	I-ORGANIZATION
 quán	I-ORGANIZATION
@@ -56353,6 +57002,7 @@ Boat	I-ORGANIZATION
 sang	O
 Châu	B-LOCATION-GPE
 Âu	I-LOCATION-GPE
+.	O
 Thành	O
 công	O
 này	O
@@ -56412,12 +57062,14 @@ nghiệp	O
 Séc	B-LOCATION-GPE
 -	O
 Việt	B-LOCATION-GPE
+.	O
 
 Theo	O
 ông	O
 Nguyễn	B-PERSON
 Kim	I-PERSON
 Sơn	I-PERSON
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 HĐQT	I-PERSONTYPE
@@ -56429,6 +57081,7 @@ công	I-ORGANIZATION
 nghệ	I-ORGANIZATION
 James	I-ORGANIZATION
 Boat	I-ORGANIZATION
+,	O
 vật	O
 liệu	O
 PPC	O
@@ -56534,10 +57187,12 @@ hóa	O
 Ông	O
 David	B-PERSON
 Jarkulisch	I-PERSON
+,	O
 Trưởng	B-PERSONTYPE
 Phòng	I-PERSONTYPE
 Kinh	I-PERSONTYPE
 tế	I-PERSONTYPE
+,	O
 Đại	B-ORGANIZATION
 sứ	I-ORGANIZATION
 quán	I-ORGANIZATION
@@ -56568,6 +57223,7 @@ công	I-ORGANIZATION
 nghệ	I-ORGANIZATION
 James	I-ORGANIZATION
 Boat	I-ORGANIZATION
+.	O
 
 Tổng	O
 trọng	O
@@ -56622,6 +57278,7 @@ từ	O
 -	I-QUANTITY
 40	I-QUANTITY
 %	I-QUANTITY
+.	O
 Không	O
 tốn	O
 kém	O
@@ -56741,6 +57398,7 @@ khai	O
 ở	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Thực	O
 hiện	O
@@ -56804,6 +57462,7 @@ tác	I-PRODUCT-LEGAL
 quốc	I-PRODUCT-LEGAL
 tế	I-PRODUCT-LEGAL
 ”	I-PRODUCT-LEGAL
+,	O
 Phó	B-PERSONTYPE
 Giáo	I-PERSONTYPE
 sư	I-PERSONTYPE
@@ -56825,12 +57484,14 @@ hội	I-ORGANIZATION
 và	I-ORGANIZATION
 nhân	I-ORGANIZATION
 văn	I-ORGANIZATION
+,	O
 Đại	B-ORGANIZATION
 học	I-ORGANIZATION
 Quốc	I-ORGANIZATION
 gia	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Nội	I-ORGANIZATION
+,	O
 chủ	B-PERSONTYPE
 nhiệm	I-PERSONTYPE
 nhiệm	O
@@ -56873,6 +57534,7 @@ trường	O
 đại	O
 học	O
 Australia	B-LOCATION-GPE
+.	O
 
 Cơ	O
 quan	O
@@ -57326,6 +57988,7 @@ Không	O
 riêng	O
 gì	O
 Australia	B-LOCATION-GPE
+,	O
 Singapore	B-LOCATION-GPE
 và	O
 nhiều	O
@@ -57362,6 +58025,7 @@ Kỹ	I-ORGANIZATION
 thuật	I-ORGANIZATION
 Đan	I-ORGANIZATION
 Mạch	I-ORGANIZATION
+,	O
 Vương	B-LOCATION-GPE
 quốc	I-LOCATION-GPE
 Đan	I-LOCATION-GPE
@@ -57384,6 +58048,7 @@ viên	I-LOCATION-STRUC
 khoa	I-LOCATION-STRUC
 học	I-LOCATION-STRUC
 Cambridge	I-LOCATION-STRUC
+.	O
 Đây	O
 là	O
 đại	O
@@ -57405,6 +58070,7 @@ Viện	B-ORGANIZATION
 Đại	I-ORGANIZATION
 học	I-ORGANIZATION
 Cambridge	I-ORGANIZATION
+.	O
 
 Theo	O
 nghiên	O
@@ -57414,6 +58080,7 @@ PGS-TS	B-PERSONTYPE
 Trần	B-PERSON
 Văn	I-PERSON
 Hải	I-PERSON
+,	O
 tại	O
 Australia	B-LOCATION-GPE
 có	O
@@ -57425,6 +58092,7 @@ nghệ	I-ORGANIZATION
 technology	I-ORGANIZATION
 park	I-ORGANIZATION
 )	I-ORGANIZATION
+,	O
 được	O
 coi	O
 là	O
@@ -57438,10 +58106,12 @@ công	O
 nghệ	O
 thuộc	O
 Sydney	B-LOCATION-GPE
+,	O
 bang	B-LOCATION-GPE
 New	I-LOCATION-GPE
 South	I-LOCATION-GPE
 Wales	I-LOCATION-GPE
+.	O
 Công	O
 viên	O
 này	O
@@ -57452,6 +58122,7 @@ hoạt	O
 từ	O
 năm	B-DATETIME-DATE
 1995	I-DATETIME-DATE
+,	O
 gồm	O
 các	O
 doanh	O
@@ -57798,6 +58469,7 @@ hơn	O
 20	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 Tham	O
 khảo	O
 thêm	O
@@ -57841,6 +58513,7 @@ tiếp	O
 tục	O
 hôm	B-DATETIME-DATE
 22.9	I-DATETIME-DATE
+.	O
 
 Uber	B-ORGANIZATION
 nhờ	O
@@ -57869,6 +58542,7 @@ giấy	O
 phép	O
 của	O
 Uber	B-ORGANIZATION
+,	O
 CEO	B-PERSONTYPE
 Dara	B-PERSON
 Khosrowshahi	I-PERSON
@@ -57973,16 +58647,19 @@ Hà	B-LOCATION-GPE
 Lan	I-LOCATION-GPE
 và	O
 Bỉ	B-LOCATION-GPE
+,	O
 Jacob	B-PERSON
 van	I-PERSON
 den	I-PERSON
 Borne	I-PERSON
+,	O
 một	O
 người	O
 nông	O
 dân	O
 Hà	B-LOCATION-GEO
 Lan	I-LOCATION-GEO
+,	O
 ngồi	O
 trong	O
 cabin	O
@@ -58119,6 +58796,7 @@ tác	I-PRODUCT
 chính	I-PRODUCT
 xác	I-PRODUCT
 ”	I-PRODUCT
+,	O
 một	O
 phương	O
 pháp	O
@@ -58148,6 +58826,7 @@ hơn	O
 tấn	I-QUANTITY
 khoai	I-QUANTITY
 tây/mẫu	I-QUANTITY
+,	O
 trong	O
 khi	O
 con	O
@@ -58162,6 +58841,7 @@ là	O
 khoảng	O
 9	B-QUANTITY
 tấn/mẫu	I-QUANTITY
+.	O
 
 Sản	O
 lượng	O
@@ -58241,6 +58921,7 @@ Kể	O
 từ	O
 năm	B-DATETIME-DATE
 2000	I-DATETIME-DATE
+,	O
 van	B-PERSON
 den	I-PERSON
 Borne	I-PERSON
@@ -58297,6 +58978,7 @@ và	O
 từ	O
 năm	B-DATETIME-DATE
 2009	I-DATETIME-DATE
+,	O
 người	O
 chăn	O
 nuôi	O
@@ -58350,6 +59032,7 @@ mật	O
 1300	B-QUANTITY
 dân/dặm	I-QUANTITY
 vuông	I-QUANTITY
+.	O
 Họ	O
 thiếu	O
 hầu	O
@@ -58395,6 +59078,7 @@ chỉ	O
 xếp	O
 sau	O
 Mỹ	B-LOCATION-GPE
+,	O
 quốc	O
 gia	O
 có	O
@@ -58552,6 +59236,7 @@ tới	O
 hơn	O
 700.000	B-QUANTITY-DIM
 m2	I-QUANTITY-DIM
+.	O
 
 Những	O
 trang	O
@@ -58631,6 +59316,7 @@ thuộc	O
 về	O
 Hà	B-LOCATION-GPE
 Lan	I-LOCATION-GPE
+.	O
 
 Đằng	O
 sau	O
@@ -58697,6 +59383,7 @@ Thung	B-LOCATION
 lũng	I-LOCATION
 Lương	I-LOCATION
 thực	I-LOCATION
+,	O
 tập	O
 hợp	O
 các	O
@@ -58734,6 +59421,7 @@ lũng	I-LOCATION
 Silicon	I-LOCATION
 ở	O
 California	B-LOCATION-GPE
+,	O
 với	O
 Wageningen	B-ORGANIZATION
 đóng	O
@@ -58757,6 +59445,7 @@ Ernst	B-PERSON
 van	I-PERSON
 den	I-PERSON
 Ende	I-PERSON
+,	O
 giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 tổ	B-ORGANIZATION
@@ -58766,6 +59455,7 @@ Sciences	I-ORGANIZATION
 Group	I-ORGANIZATION
 của	O
 WUR	B-ORGANIZATION
+,	O
 chính	O
 là	O
 hiện	O
@@ -58781,6 +59471,7 @@ Thung	B-LOCATION
 lũng	I-LOCATION
 Lương	I-LOCATION
 thực	I-LOCATION
+.	O
 Một	O
 học	O
 giả	O
@@ -58839,6 +59530,7 @@ tôi	O
 hành	O
 Plant	B-ORGANIZATION
 Sciences	I-ORGANIZATION
+,	O
 nhưng	O
 nửa	O
 còn	O
@@ -58951,6 +59643,7 @@ do	O
 đến	O
 năm	B-DATETIME-DATE
 2050	I-DATETIME-DATE
+,	O
 dân	O
 số	O
 thế	O
@@ -59031,6 +59724,7 @@ của	O
 thể	B-DATETIME-DATE
 kỷ	I-DATETIME-DATE
 21	I-DATETIME-DATE
+,	O
 và	O
 những	O
 người	O
@@ -59153,8 +59847,10 @@ Thời	B-ORGANIZATION
 Đại	I-ORGANIZATION
 
 DxOMark	B-PRODUCT-COM
+:	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+,	O
 8	B-PRODUCT
 Plus	I-PRODUCT
 là	O
@@ -59173,6 +59869,7 @@ nhận	O
 định	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+,	O
 8	B-PRODUCT
 Plus	I-PRODUCT
 là	O
@@ -59195,6 +59892,7 @@ U11	I-PRODUCT
 và	O
 Google	B-PRODUCT
 Pixel	I-PRODUCT
+.	O
 
 Camera	O
 trên	O
@@ -59209,6 +59907,7 @@ Nhưng	O
 với	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+,	O
 8	B-PRODUCT
 Plus	I-PRODUCT
 còn	O
@@ -59243,6 +59942,7 @@ và	O
 cho	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+,	O
 bộ	O
 đôi	O
 Táo	B-PRODUCT
@@ -59319,6 +60019,7 @@ bí	O
 ''	O
 iPhone	B-PRODUCT
 X	I-PRODUCT
+,	O
 sản	O
 phẩm	O
 đặc	O
@@ -59369,6 +60070,7 @@ bụng	O
 ''	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+:	O
 Lưng	O
 kính	O
 bền	O
@@ -59391,6 +60093,7 @@ iPhone	B-PRODUCT
 đến	O
 từ	O
 iFixit	B-PRODUCT-COM
+.	O
 
 PV	O
 
@@ -59446,12 +60149,14 @@ Rạng	B-DATETIME-TIMERANGE
 sáng	I-DATETIME-TIMERANGE
 ngày	I-DATETIME-TIMERANGE
 20.9	I-DATETIME-TIMERANGE
+,	O
 cặp	O
 vợ	O
 chồng	O
 ở	O
 bang	B-LOCATION-GPE
 Queensland	I-LOCATION-GPE
+,	O
 Australia	B-LOCATION-GPE
 “	O
 tá	O
@@ -59786,6 +60491,7 @@ video	O
 bên	O
 thứ	B-QUANTITY-ORD
 ba	I-QUANTITY-ORD
+,	O
 YouTube	B-ORGANIZATION
 đã	O
 tích	O
@@ -59833,6 +60539,7 @@ YouTube	B-PRODUCT-COM
 
 Theo	O
 SlashGear	B-ORGANIZATION
+,	O
 hiện	O
 nay	O
 khi	O
@@ -59970,6 +60677,7 @@ một	O
 video	O
 trên	O
 YouTube	B-PRODUCT-COM
+,	O
 bạn	O
 có	O
 thể	O
@@ -60168,6 +60876,7 @@ tin	O
 Mổ	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
+:	O
 pin	O
 nhỏ	O
 hơn	O
@@ -60179,6 +60888,7 @@ sửa	O
 hơn	O
 iPhone	B-PRODUCT
 7	I-PRODUCT
+,	O
 điểm	O
 6/10	B-QUANTITY
 
@@ -60255,6 +60965,7 @@ trường	O
 .	O
 Theo	O
 iFixit	B-PRODUCT-COM
+,	O
 iPhone	B-PRODUCT
 8	I-PRODUCT
 có	O
@@ -60269,6 +60980,7 @@ so	O
 với	O
 iPhone	B-PRODUCT
 7	I-PRODUCT
+,	O
 có	O
 chip	O
 sóng	O
@@ -60383,6 +61095,7 @@ iPhone	B-PRODUCT
 đạt	O
 điểm	O
 7/10	B-QUANTITY
+.	O
 
 +	O
 Vi	B-PRODUCT
@@ -60431,6 +61144,7 @@ sau	O
 MP	I-QUANTITY-DIM
 khẩu	O
 ƒ/1.8	B-QUANTITY
+,	O
 chống	O
 rung	O
 quang	O
@@ -60439,6 +61153,7 @@ và	O
 zoom	O
 số	O
 5x	B-QUANTITY
+.	O
 
 +	O
 Camera	O
@@ -60452,6 +61167,7 @@ quay	O
 phim	O
 1080p	B-QUANTITY-DIM
 HD	I-QUANTITY-DIM
+.	O
 
 +	O
 Hỗ	O
@@ -60634,6 +61350,7 @@ quản	I-PRODUCT
 lý	I-PRODUCT
 năng	I-PRODUCT
 lượng	I-PRODUCT
+.	O
 
 +	O
 ô	O
@@ -60677,6 +61394,7 @@ gương	O
 mặt	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+:	O
 Sau	O
 30	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
@@ -60854,8 +61572,10 @@ là	O
 chỉ	O
 0,3	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Theo	O
 NEC	B-ORGANIZATION
+,	O
 nếu	O
 dùng	O
 ảnh	O
@@ -60876,6 +61596,7 @@ sau	O
 5	B-DATETIME-DURATION
 thập	I-DATETIME-DURATION
 kỷ	I-DATETIME-DURATION
+.	O
 
 Sân	B-LOCATION-STRUC
 bay	I-LOCATION-STRUC
@@ -60964,6 +61685,7 @@ là	O
 vào	O
 năm	B-DATETIME
 sau	I-DATETIME
+,	O
 hệ	O
 thống	O
 cũng	O
@@ -60985,6 +61707,7 @@ khác	O
 của	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+.	O
 Bộ	B-ORGANIZATION
 Tư	I-ORGANIZATION
 pháp	I-ORGANIZATION
@@ -61137,6 +61860,7 @@ lời	O
 
 Theo	O
 Neowin	B-PERSON
+,	O
 Ctrl-Alt-Del	O
 là	O
 thao	O
@@ -61228,6 +61952,7 @@ kỹ	O
 sư	O
 tại	O
 IBM	B-ORGANIZATION
+.	O
 Ông	O
 Gates	B-PERSON
 giải	O
@@ -61367,6 +62092,7 @@ này	O
 Trong	O
 năm	B-DATETIME-DATE
 2013	I-DATETIME-DATE
+,	O
 ông	O
 đã	O
 đưa	O
@@ -61432,6 +62158,7 @@ nhắc	O
 là	O
 David	B-PERSON
 Bradley	I-PERSON
+,	O
 kỹ	O
 sư	O
 đã	O
@@ -61460,6 +62187,7 @@ Gates	B-PERSON
 vào	O
 năm	B-DATETIME-DATE
 2011	I-DATETIME-DATE
+,	O
 Bradley	B-PERSON
 thừa	O
 nhận	O
@@ -61499,6 +62227,7 @@ dụng	O
 cho	O
 Windows	B-PRODUCT-COM
 NT	I-PRODUCT-COM
+.	O
 Tính	O
 năng	O
 này	O
@@ -61615,6 +62344,7 @@ thân	O
 thay	O
 vì	O
 bitcoin	B-PRODUCT-COM
+.	O
 
 Mã	O
 độc	O
@@ -61705,7 +62435,7 @@ tài	O
 khoản	O
 trên	O
 Protomail	B-PRODUCT-COM
-.	O
+..	O
 
 Báo	O
 cáo	O
@@ -61816,6 +62546,7 @@ bảo	I-ORGANIZATION
 mật	I-ORGANIZATION
 Trend	I-ORGANIZATION
 Micro	I-ORGANIZATION
+,	O
 ransomware	B-PRODUCT-COM
 (	O
 hay	O
@@ -61869,6 +62600,7 @@ hại	O
 Locky	B-PRODUCT-COM
 hay	O
 FakeGlobal	B-PRODUCT-COM
+.	O
 
 Một	O
 nghiên	O
@@ -61926,6 +62658,7 @@ bảo	I-ORGANIZATION
 mật	I-ORGANIZATION
 Trend	I-ORGANIZATION
 Micro	I-ORGANIZATION
+,	O
 để	O
 hạn	O
 chế	O
@@ -62038,6 +62771,7 @@ tại	I-PRODUCT
 Bắc	I-PRODUCT
 Kạn	I-PRODUCT
 ”	I-PRODUCT
+.	O
 
 Hiện	O
 nhóm	O
@@ -62155,6 +62889,7 @@ tại	O
 xã	B-LOCATION-GPE
 Khang	I-LOCATION-GPE
 Ninh	I-LOCATION-GPE
+,	O
 huyện	B-LOCATION-GPE
 Ba	I-LOCATION-GPE
 Bể	I-LOCATION-GPE
@@ -62309,6 +63044,7 @@ lớp	O
 ở	O
 Hồng	B-LOCATION-GPE
 Kông	I-LOCATION-GPE
+.	O
 Bọn	O
 trẻ	O
 chỉ	O
@@ -62560,10 +63296,12 @@ Sáng	B-DATETIME-TIMERANGE
 giờ	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 nhiều	O
 người	O
 dùng	O
 iPhone	B-PRODUCT
+,	O
 iPad	B-PRODUCT
 cho	O
 biết	O
@@ -62611,6 +63349,7 @@ chỉ	O
 ở	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 nhiều	O
 người	O
 dùng	O
@@ -62629,6 +63368,7 @@ dụng	O
 được	O
 trên	O
 iOS	B-PRODUCT-COM
+.	O
 Các	O
 trường	O
 hợp	O
@@ -62656,6 +63396,7 @@ iOS	B-PRODUCT-COM
 và	O
 iOS	B-PRODUCT-COM
 11	I-PRODUCT-COM
+.	O
 Những	O
 người	O
 dùng	O
@@ -62694,8 +63435,10 @@ hội	O
 riêng	O
 như	O
 Nga	B-LOCATION-GPE
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 
 Để	O
 khắc	O
@@ -62716,6 +63459,7 @@ xoá	O
 dụng	I-PRODUCT-COM
 Facebook	I-PRODUCT-COM
 Messenger	I-PRODUCT-COM
+,	O
 sau	O
 đó	O
 bấm	O
@@ -62774,6 +63518,7 @@ lại	O
 dụng	I-PRODUCT-COM
 Facebook	I-PRODUCT-COM
 Messenger	I-PRODUCT-COM
+.	O
 
 Nếu	O
 vẫn	O
@@ -62818,6 +63563,7 @@ mới	O
 ứng	B-PRODUCT-COM
 dụng	I-PRODUCT-COM
 Facebook	I-PRODUCT-COM
+.	O
 Đây	O
 là	O
 cách	O
@@ -62854,6 +63600,7 @@ trên	O
 Đầu	O
 tháng	B-DATETIME-DATE
 5/2017	I-DATETIME-DATE
+,	O
 Facebook	B-PRODUCT-COM
 cũng	O
 gặp	O
@@ -63120,6 +63867,7 @@ thoại	O
 của	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+:	O
 'Ông	O
 cố	O
 vấn	O
@@ -63158,6 +63906,7 @@ báo	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
+.	O
 
 Giống	O
 với	O
@@ -63177,14 +63926,18 @@ Pierre	B-PERSON
 Vũ	I-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
+,	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhã	I-PERSON
+,	O
 Hoàng	B-PERSON
 Đức	I-PERSON
 Nhã	I-PERSON
+,	O
 Hai	B-PERSON
 Long	I-PERSON
+,	O
 …nhưng	O
 người	O
 ta	O
@@ -63216,6 +63969,7 @@ năm	O
 tại	O
 Thái	B-LOCATION
 Bình	I-LOCATION
+,	O
 từ	O
 nhỏ	O
 ông	O
@@ -63229,8 +63983,10 @@ Giáo	O
 xứ	O
 Phát	B-LOCATION
 Diệm	I-LOCATION
+,	O
 Ninh	B-LOCATION
 Bình	I-LOCATION
+.	O
 Sau	O
 này	O
 ,	O
@@ -63260,6 +64016,7 @@ ngụy	O
 quyền	O
 Sài	B-LOCATION
 Gòn	I-LOCATION
+.	O
 
 Từ	O
 năm	O
@@ -63278,6 +64035,7 @@ Pháp	B-LOCATION
 tại	O
 Hà	B-LOCATION
 Nội	I-LOCATION
+.	O
 Sau	O
 khi	O
 chính	O
@@ -63297,6 +64055,7 @@ nhà	O
 ở	O
 Ninh	B-LOCATION
 Bình	I-LOCATION
+,	O
 tham	O
 gia	O
 công	O
@@ -63310,6 +64069,7 @@ khối	O
 Công	B-MISCELLANEOUS
 giáo	I-MISCELLANEOUS
 vận	I-MISCELLANEOUS
+.	O
 Tới	O
 năm	O
 1953	O
@@ -63361,6 +64121,7 @@ Sau	O
 hiệp	B-MISCELLANEOUS
 định	I-MISCELLANEOUS
 Genève	I-MISCELLANEOUS
+,	O
 cả	O
 miền	B-LOCATION
 Bắc	I-LOCATION
@@ -63406,6 +64167,7 @@ cả	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
+.	O
 Ông	O
 và	O
 một	O
@@ -63446,12 +64208,15 @@ khi	O
 ở	O
 Sài	B-LOCATION
 Gòn	I-LOCATION
+.	O
 Ảnh	O
 :	O
 ĐSPL	B-ORGANIZATION
+.	O
 
 Năm	O
 1955	B-QUANTITY
+,	O
 Vũ	B-LOCATION
 Ngọc	I-LOCATION
 Nhạ	I-LOCATION
@@ -63477,6 +64242,7 @@ tên	O
 Vũ	B-PERSON
 Đình	I-PERSON
 Long	I-PERSON
+.	O
 Mặc	O
 dù	O
 vậy	O
@@ -63535,6 +64301,7 @@ quyết	O
 định	O
 vào	O
 Nam	B-LOCATION
+.	O
 Về	O
 sau	O
 ,	O
@@ -63561,6 +64328,7 @@ quyền	O
 ngụy	O
 Sài	B-LOCATION
 Gòn	I-LOCATION
+.	O
 
 Dù	O
 rất	O
@@ -63707,8 +64475,10 @@ lên	O
 tại	O
 Phát	B-LOCATION
 Diệm	I-LOCATION
+,	O
 Ninh	B-LOCATION
 Bình	I-LOCATION
+,	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
@@ -63753,6 +64523,7 @@ Tới	O
 cuối	O
 năm	O
 1965	B-QUANTITY
+,	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
@@ -63813,15 +64584,18 @@ tên	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
+.	O
 
 Thiếu	O
 tướng	O
 Vũ	B-PERSON
 Ngọc	I-PERSON
 Nhạ	I-PERSON
+.	O
 Ảnh	O
 :	O
 VOV	B-ORGANIZATION
+.	O
 
 Để	O
 có	O
@@ -63844,6 +64618,7 @@ quyền	O
 ngụy	O
 Sài	B-LOCATION
 Gòn	I-LOCATION
+,	O
 tổ	O
 chức	O
 yêu	O
@@ -64288,6 +65063,7 @@ chính	O
 giới	O
 Sài	B-LOCATION
 Gòn	I-LOCATION
+.	O
 
 Nếu	O
 bị	O
@@ -64558,6 +65334,7 @@ của	O
 Hiệp	B-MISCELLANEOUS
 định	I-MISCELLANEOUS
 Paris	I-MISCELLANEOUS
+.	O
 Sau	O
 khi	O
 được	O
@@ -64717,10 +65494,12 @@ nghĩa	B-LOCATION
 trang	I-LOCATION
 Lạc	I-LOCATION
 Cảnh	I-LOCATION
+,	O
 TP	B-LOCATION
 Hồ	I-LOCATION
 Chí	I-LOCATION
 Minh	I-LOCATION
+,	O
 trong	O
 khu	O
 vực	O
@@ -64763,6 +65542,7 @@ và	O
 Đặng	B-PERSON
 Trần	I-PERSON
 Đức	I-PERSON
+.	O
 
 Nhật	B-PERSON
 Vi	I-PERSON
@@ -64803,6 +65583,7 @@ châu	O
 trong	O
 năm	O
 2017	B-DATETIME
+,	O
 bên	O
 cạnh	O
 cuộc	O
@@ -64825,6 +65606,7 @@ Pháp	O
 hồi	O
 tháng	O
 5	B-DATETIME
+.	O
 
 Không	O
 chỉ	O
@@ -64834,6 +65616,7 @@ trọng	O
 với	O
 nước	O
 Đức	B-LOCATION
+,	O
 cuộc	O
 bầu	O
 cử	O
@@ -64922,6 +65705,7 @@ tranh	O
 cử	O
 ở	O
 Kappeln	B-LOCATION
+,	O
 miền	B-LOCATION
 bắc	I-LOCATION
 ngày	O
@@ -65022,6 +65806,7 @@ trên	O
 chính	O
 trường	O
 Đức	B-LOCATION
+,	O
 có	O
 thể	O
 thấy	O
@@ -65305,6 +66090,7 @@ và	O
 Thổ	B-LOCATION
 Nhĩ	I-LOCATION
 Kỳ	I-LOCATION
+,	O
 cùng	O
 với	O
 các	O
@@ -65363,6 +66149,7 @@ năm	O
 nay	O
 ,	O
 SPD	B-ORGANIZATION
+,	O
 vốn	O
 được	O
 xem	O
@@ -65373,6 +66160,7 @@ chính	O
 của	O
 CDU	B-ORGANIZATION
 CSU	B-ORGANIZATION
+,	O
 vẫn	O
 tỏ	O
 ra	O
@@ -65731,6 +66519,7 @@ Merkel	B-PERSON
 và	O
 ông	O
 Schulz	B-PERSON
+.	O
 
 Bởi	O
 vậy	O
@@ -65801,6 +66590,7 @@ nhỏ	O
 hơn	O
 ở	O
 Đức	B-LOCATION
+,	O
 như	O
 đảng	B-ORGANIZATION
 Dân	I-ORGANIZATION
@@ -65955,6 +66745,7 @@ dậy	O
 ở	O
 châu	B-LOCATION
 Âu	I-LOCATION
+,	O
 với	O
 sự	O
 xuất	O
@@ -65985,6 +66776,7 @@ tiền	O
 chung	O
 châu	B-LOCATION
 Âu	I-LOCATION
+,	O
 như	O
 đảng	B-ORGANIZATION
 “	I-ORGANIZATION
@@ -66002,6 +66794,7 @@ quốc	B-ORGANIZATION
 hội	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Lan	I-ORGANIZATION
+,	O
 hay	O
 đảng	B-ORGANIZATION
 Mặt	I-ORGANIZATION
@@ -66017,9 +66810,11 @@ cử	O
 tổng	O
 thống	O
 Pháp	B-LOCATION
+.	O
 
 Tại	O
 Đức	B-LOCATION
+,	O
 việc	O
 chỉ	O
 trích	O
@@ -66087,12 +66882,13 @@ tại	O
 quốc	B-ORGANIZATION
 hội	I-ORGANIZATION
 Đức	I-ORGANIZATION
+,	O
 sau	O
 CDU	B-ORGANIZATION
 CSU	B-ORGANIZATION
 và	O
 SPD	B-ORGANIZATION
-.	O
+..	O
 Nếu	O
 vậy	O
 ,	O
@@ -66212,6 +67008,7 @@ liên	O
 minh	O
 là	O
 FDP	B-ORGANIZATION
+.	O
 
 Liên	O
 minh	O
@@ -66226,6 +67023,7 @@ kéo	O
 thêm	O
 đảng	B-ORGANIZATION
 Xanh	I-ORGANIZATION
+,	O
 nếu	O
 đảng	O
 này	O
@@ -66281,6 +67079,7 @@ ra	O
 kịch	O
 bản	O
 SPD	B-ORGANIZATION
+,	O
 nếu	O
 làm	O
 tốt	O
@@ -66390,6 +67189,7 @@ khu	O
 vực	O
 ,	O
 Đức	B-LOCATION
+,	O
 cùng	O
 với	O
 đồng	O
@@ -66400,6 +67200,7 @@ Tổng	O
 thống	O
 Emmanuel	B-PERSON
 Macron	I-PERSON
+,	O
 đang	O
 tìm	O
 cách	O
@@ -66445,6 +67246,7 @@ công	O
 ở	O
 Hy	B-LOCATION
 Lạp	I-LOCATION
+,	O
 vấn	O
 đề	O
 tự	O
@@ -66499,6 +67301,7 @@ Mỹ	B-LOCATION
 về	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+,	O
 liên	O
 quan	O
 đến	O
@@ -66508,6 +67311,7 @@ hạt	O
 nhân	O
 với	O
 Iran	B-LOCATION
+.	O
 
 Đại	O
 sứ	O
@@ -66548,6 +67352,7 @@ gửi	O
 đến	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Theo	O
 Đại	O
@@ -66602,6 +67407,7 @@ Theo	O
 ông	O
 Vasily	B-PERSON
 Nebenzya	I-PERSON
+,	O
 hiện	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
@@ -66634,6 +67440,7 @@ hạt	O
 nhân	O
 với	O
 Iran	B-LOCATION
+,	O
 sẽ	O
 là	O
 sai	O
@@ -66670,6 +67477,7 @@ quan	O
 chức	O
 của	O
 Nga	B-LOCATION
+,	O
 tình	O
 hình	O
 trên	O
@@ -66698,6 +67506,7 @@ hạt	O
 nhân	O
 với	O
 Iran	B-LOCATION
+.	O
 
 ``	O
 Chúng	O
@@ -66806,6 +67615,7 @@ bán	O
 đảo	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+,	O
 thỏa	O
 thuận	O
 hạt	O
@@ -66824,12 +67634,14 @@ hóa	O
 học	O
 ở	O
 Syria	B-LOCATION
+.	O
 
 Đắm	O
 tàu	O
 ngoài	O
 khơi	O
 Libya	B-LOCATION
+,	O
 hơn	O
 100	B-QUANTITY
 người	O
@@ -66881,11 +67693,13 @@ khơi	O
 thị	B-LOCATION
 trấn	I-LOCATION
 Sabratha	I-LOCATION
+,	O
 phía	O
 Bắc	O
 thủ	B-LOCATION
 đô	I-LOCATION
 Tripoli	I-LOCATION
+,	O
 vốn	O
 là	O
 điểm	O
@@ -66906,6 +67720,7 @@ phép	O
 sang	O
 châu	B-LOCATION
 Âu	I-LOCATION
+.	O
 
 Vụ	O
 đắm	O
@@ -66917,15 +67732,18 @@ khơi	O
 thị	B-LOCATION
 trấn	I-LOCATION
 Sabratha	I-LOCATION
+,	O
 phía	O
 Bắc	O
 thủ	B-LOCATION
 đô	I-LOCATION
 Tripoli	I-LOCATION
+.	O
 Theo	O
 giới	O
 chức	O
 Libya	B-LOCATION
+,	O
 lực	O
 lượng	O
 cứu	O
@@ -67012,6 +67830,7 @@ gia	O
 ở	O
 châu	B-LOCATION
 Phi	I-LOCATION
+,	O
 trong	O
 đó	O
 có	O
@@ -67262,15 +68081,18 @@ khơi	O
 thị	B-LOCATION
 trấn	I-LOCATION
 Sabratha	I-LOCATION
+,	O
 phía	O
 Bắc	O
 thủ	B-LOCATION
 đô	I-LOCATION
 Tripoli	I-LOCATION
+.	O
 Theo	O
 giới	O
 chức	O
 Libya	B-LOCATION
+,	O
 lực	O
 lượng	O
 cứu	O
@@ -67358,6 +68180,7 @@ gia	O
 ở	O
 châu	B-LOCATION
 Phi	I-LOCATION
+,	O
 trong	O
 đó	O
 có	O
@@ -67400,6 +68223,7 @@ Hải	I-LOCATION-GEO
 tới	O
 châu	B-LOCATION-GPE
 Âu	I-LOCATION-GPE
+,	O
 trong	O
 khi	O
 đó	O
@@ -67618,6 +68442,7 @@ diệt	O
 khủng	O
 bố	O
 HTS	B-ORGANIZATION
+,	O
 phá	O
 kế	O
 giải	O
@@ -67632,6 +68457,7 @@ Bộ	B-ORGANIZATION
 Quốc	I-ORGANIZATION
 phòng	I-ORGANIZATION
 Nga	I-ORGANIZATION
+,	O
 mục	O
 đích	O
 chính	O
@@ -67658,6 +68484,7 @@ chiến	O
 trường	O
 Deir	B-LOCATION
 Ezzor	I-LOCATION
+.	O
 
 Sau	O
 trận	O
@@ -67672,6 +68499,7 @@ kinh	O
 ở	O
 tỉnh	B-LOCATION
 Hama	I-LOCATION
+,	O
 các	O
 quân	O
 nhân	O
@@ -67767,6 +68595,7 @@ của	O
 quân	O
 đội	O
 Syria	B-LOCATION
+.	O
 Các	O
 tay	O
 súng	O
@@ -67802,6 +68631,7 @@ Nga	B-LOCATION
 ở	O
 gần	O
 Hama	B-LOCATION
+.	O
 
 Theo	O
 Bộ	B-ORGANIZATION
@@ -67988,6 +68818,7 @@ trở	O
 về	O
 tỉnh	B-LOCATION
 Hama	I-LOCATION
+.	O
 
 Kết	O
 quả	O
@@ -68107,6 +68938,7 @@ quan	O
 tình	O
 báo	O
 Mỹ	B-LOCATION
+,	O
 nhằm	O
 nỗ	O
 lực	O
@@ -68128,6 +68960,7 @@ phía	O
 tỉnh	B-LOCATION
 Deir	I-LOCATION
 Ezzor	I-LOCATION
+.	O
 
 Hiện	O
 quân	O
@@ -68144,6 +68977,7 @@ phía	O
 Đông	O
 sông	B-LOCATION
 Euphrates	I-LOCATION
+,	O
 nhằm	O
 mục	O
 đích	O
@@ -68221,6 +69055,7 @@ biên	O
 giới	O
 Syria	B-LOCATION
 Iraq	B-LOCATION
+.	O
 
 Khi	O
 chiến	O
@@ -68246,6 +69081,7 @@ vây	O
 từ	O
 tháng	O
 7/2014	B-DATETIME
+,	O
 đặc	O
 biệt	O
 là	O
@@ -68341,6 +69177,7 @@ quân	O
 Syria	B-LOCATION
 ở	O
 Hama	B-LOCATION
+.	O
 
 Ngoài	O
 ra	O
@@ -68367,6 +69204,7 @@ trung	O
 quân	O
 cảnh	O
 Nga	B-LOCATION
+,	O
 lấy	O
 đó	O
 làm	O
@@ -68387,6 +69225,7 @@ Syria	B-LOCATION
 ở	O
 Deir	B-LOCATION
 Ezzor	I-LOCATION
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -68475,6 +69314,7 @@ chỉ	O
 đạo	O
 của	O
 Washington	B-LOCATION
+.	O
 
 Cái	O
 gọi	O
@@ -68576,6 +69416,7 @@ tấn	O
 công	O
 vào	O
 Syria	B-LOCATION
+,	O
 ngay	O
 lập	O
 tức	O
@@ -68598,6 +69439,7 @@ trinh	O
 sát	O
 của	O
 Israel	B-LOCATION
+.	O
 
 Dường	O
 như	O
@@ -68649,6 +69491,7 @@ sáng	O
 nay	O
 ,	O
 22/09/2017	B-DATETIME-DATE
+,	O
 không	O
 quân	O
 Israel	O
@@ -68755,6 +69598,7 @@ trinh	O
 sát	O
 của	O
 Israel	B-LOCATION
+.	O
 Việc	O
 không	O
 quân	O
@@ -68812,6 +69656,7 @@ công	O
 máu	O
 vào	O
 Israel	B-LOCATION
+.	O
 Vì	O
 thế	O
 Israel	B-LOCATION
@@ -68827,6 +69672,7 @@ gần	O
 sân	B-LOCATION
 bay	I-LOCATION
 Damascus	I-LOCATION
+,	O
 vì	O
 cho	O
 rằng	O
@@ -68878,6 +69724,7 @@ lấn	O
 lướt	O
 của	O
 Israel	B-LOCATION
+.	O
 Tuy	O
 vậy	O
 ,	O
@@ -68965,6 +69812,7 @@ của	O
 quân	B-ORGANIZATION
 đội	I-ORGANIZATION
 Syria	I-ORGANIZATION
+.	O
 
 Kênh	O
 thông	O
@@ -68985,6 +69833,7 @@ sáng	O
 nay	O
 ,	O
 22/09/2017	B-DATETIME-DATE
+,	O
 không	O
 quân	O
 Israel	O
@@ -69094,6 +69943,7 @@ trinh	O
 sát	O
 của	O
 Israel	B-LOCATION
+.	O
 
 Việc	O
 không	O
@@ -69153,6 +70003,7 @@ công	O
 máu	O
 vào	O
 Israel	B-LOCATION
+.	O
 
 Vì	O
 thế	O
@@ -69169,6 +70020,7 @@ gần	O
 sân	B-LOCATION
 bay	I-LOCATION
 Damascus	I-LOCATION
+,	O
 vì	O
 cho	O
 rằng	O
@@ -69221,6 +70073,7 @@ lấn	O
 lướt	O
 của	O
 Israel	B-LOCATION
+.	O
 
 Tuy	O
 vậy	O
@@ -69288,6 +70141,7 @@ bán	B-LOCATION
 đảo	I-LOCATION
 Triều	I-LOCATION
 Tiên	I-LOCATION
+:	O
 Nguy	O
 cơ	O
 chạy	O
@@ -69393,6 +70247,7 @@ Washington	B-LOCATION
 và	O
 Bình	B-LOCATION
 Nhưỡng	I-LOCATION
+.	O
 
 Nhiều	O
 lần	O
@@ -69482,6 +70337,7 @@ nhất	O
 là	O
 Nhật	B-LOCATION
 Bản	I-LOCATION
+.	O
 
 Tình	O
 trạng	O
@@ -69512,6 +70368,7 @@ nhân	O
 của	O
 Bình	B-LOCATION
 Nhưỡng	I-LOCATION
+,	O
 chính	O
 quyền	O
 Thủ	O
@@ -69581,6 +70438,7 @@ Quốc	I-ORGANIZATION
 với	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Tuy	O
 nhiên	O
@@ -69605,6 +70463,7 @@ chế	O
 ở	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Bởi	O
 nếu	O
@@ -69652,6 +70511,7 @@ chịu	O
 hưởng	O
 từ	O
 Mỹ	B-LOCATION
+.	O
 Đây	O
 là	O
 điều	O
@@ -69781,6 +70641,7 @@ THAAD	O
 ở	O
 Hàn	B-LOCATION
 Quốc	I-LOCATION
+.	O
 
 Lý	O
 do	O
@@ -69809,6 +70670,7 @@ hại	O
 cho	O
 Bắc	B-LOCATION
 Kinh	I-LOCATION
+.	O
 
 Để	O
 trừng	O
@@ -69860,6 +70722,7 @@ là	O
 minh	O
 của	O
 Mỹ	B-LOCATION
+,	O
 song	O
 chính	O
 quyền	O
@@ -69883,6 +70746,7 @@ Tổng	O
 thống	O
 Donald	B-PERSON
 Trump	I-PERSON
+.	O
 
 Phía	O
 Hàn	B-LOCATION
@@ -69918,6 +70782,7 @@ bán	B-LOCATION
 đảo	I-LOCATION
 Triều	I-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Hồi	O
 giữa	O
@@ -70041,6 +70906,7 @@ bán	B-LOCATION
 đảo	I-LOCATION
 Triều	I-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Bên	O
 cạnh	O
@@ -70132,6 +70998,7 @@ minh	O
 Mỹ	B-LOCATION
 -	O
 Nhật	B-LOCATION
+,	O
 cũng	O
 như	O
 lời	O
@@ -70324,6 +71191,7 @@ hạt	O
 nhân	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Nhật	B-LOCATION
 Bản	I-LOCATION
@@ -70385,6 +71253,7 @@ lửa	O
 của	O
 Bình	B-LOCATION
 Nhưỡng	I-LOCATION
+.	O
 
 Trong	O
 khi	O
@@ -70539,6 +71408,7 @@ lạnh	O
 tại	O
 châu	B-LOCATION
 Á	I-LOCATION
+.	O
 
 Cảnh	O
 sát	O
@@ -70626,6 +71496,7 @@ TTXVN	B-ORGANIZATION
 
 Theo	O
 AFP	B-ORGANIZATION
+,	O
 ngày	O
 22/9	O
 ,	O
@@ -70670,6 +71541,7 @@ thương	O
 tượng	O
 Ahmed	B-PERSON
 Hassan	I-PERSON
+,	O
 bị	O
 bắt	O
 giữ	O
@@ -70835,6 +71707,7 @@ và	O
 vụ	O
 ở	O
 Manchester	B-LOCATION
+.	O
 Tổng	O
 số	O
 người	O
@@ -70911,6 +71784,7 @@ mạng	O
 Binh	O
 sỹ	O
 Pakistan	B-LOCATION
+.	O
 (	O
 Ảnh	O
 :	O
@@ -70992,6 +71866,7 @@ là	O
 bên	O
 phía	O
 Pakistan	B-LOCATION
+.	O
 
 Quân	O
 đội	O
@@ -71055,6 +71930,7 @@ vào	O
 người	O
 dân	O
 Pakistan	B-LOCATION
+.	O
 
 Trong	O
 khi	O
@@ -71090,6 +71966,7 @@ thường	O
 phía	O
 Ấn	B-LOCATION
 Độ	I-LOCATION
+.	O
 
 Khu	O
 vực	O
@@ -71203,6 +72080,7 @@ xe	O
 quân	O
 đội	O
 Pakistan	B-LOCATION
+.	O
 
 Giới	O
 chức	O
@@ -71329,6 +72207,7 @@ Nhưỡng	O
 Báo	O
 Nhật	B-LOCATION
 Bản	I-LOCATION
+:	O
 Tiết	O
 lộ	O
 Triều	B-LOCATION
@@ -71342,6 +72221,7 @@ hạt	O
 nhân	O
 Hôm	B-DATETIME-DATE
 19/9	I-DATETIME-DATE
+,	O
 trước	O
 Đại	O
 hội	O
@@ -71480,6 +72360,7 @@ và	O
 Liên	B-ORGANIZATION
 Hợp	I-ORGANIZATION
 Quốc	I-ORGANIZATION
+.	O
 
 Tổng	O
 thống	O
@@ -71512,6 +72393,7 @@ trên	O
 tờ	O
 Defense	B-ORGANIZATION
 One	I-ORGANIZATION
+,	O
 chuyên	O
 gia	O
 Mỹ	B-LOCATION
@@ -71540,6 +72422,7 @@ của	O
 Tổng	O
 thống	O
 Mỹ	B-LOCATION
+.	O
 Ông	O
 cho	O
 rằng	O
@@ -71571,6 +72454,7 @@ lửa	O
 của	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 Lý	O
 do	O
 được	O
@@ -71608,6 +72492,7 @@ lửa	O
 của	O
 Bình	B-LOCATION
 Nhưỡng	I-LOCATION
+.	O
 
 Hôm	O
 15/9	O
@@ -71648,6 +72533,7 @@ xuống	O
 Thái	B-LOCATION-GPE
 Bình	I-LOCATION-GPE
 Dương	I-LOCATION-GPE
+,	O
 theo	O
 bộ	O
 Quốc	O
@@ -71682,6 +72568,7 @@ tàu	O
 chiến	O
 Nhật	B-LOCATION
 Bản	I-LOCATION
+.	O
 Thậm	O
 chí	O
 cả	O
@@ -71751,6 +72638,7 @@ thủ	O
 Patriot	O
 của	O
 Mỹ	B-LOCATION
+.	O
 
 Tất	O
 cả	O
@@ -71858,6 +72746,7 @@ biển	O
 của	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 Thậm	O
 chí	O
 sau	O
@@ -71917,6 +72806,7 @@ với	O
 đất	O
 liền	O
 Mỹ	B-LOCATION
+,	O
 hiện	O
 tại	O
 Washington	B-LOCATION
@@ -71940,6 +72830,7 @@ bang	O
 Alaska	B-LOCATION
 và	O
 California	B-LOCATION
+.	O
 
 Hệ	O
 thống	O
@@ -72295,11 +73186,13 @@ quốc	O
 gia	O
 châu	B-LOCATION
 Âu	I-LOCATION
+,	O
 gồm	O
 Đan	B-LOCATION
 Mạch	I-LOCATION
 và	O
 Hungary	B-LOCATION
+,	O
 và	O
 đang	O
 đối	O
@@ -72318,6 +73211,7 @@ nhiều	O
 bang	O
 ở	O
 Mỹ	B-LOCATION
+.	O
 
 Thị	B-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -72338,6 +73232,7 @@ giấy	O
 phép	O
 của	O
 Uber	B-ORGANIZATION
+.	O
 
 ``	O
 Tất	O
@@ -72442,6 +73337,7 @@ IS	B-ORGANIZATION
 Tây	O
 Deir	B-LOCATION
 Ezzur	I-LOCATION
+,	O
 và	O
 giành	O
 lại	O
@@ -72479,6 +73375,7 @@ Euphrates	I-LOCATION
 Tây	O
 Deir	B-LOCATION
 Ezzur	I-LOCATION
+,	O
 và	O
 lấy	O
 lại	O
@@ -72488,6 +73385,7 @@ soát	O
 thị	B-LOCATION
 trấn	I-LOCATION
 al-Tabani	I-LOCATION
+.	O
 Binh	O
 lính	O
 Damascus	B-LOCATION
@@ -72499,9 +73397,11 @@ lại	O
 khu	O
 vực	O
 al-Bavitieh	B-LOCATION
+,	O
 ngọn	O
 núi	B-LOCATION
 Salim	I-LOCATION
+,	O
 mỏ	O
 muối	O
 và	O
@@ -72515,6 +73415,7 @@ tây	O
 của	O
 sông	B-LOCATION
 Euphrates	I-LOCATION
+.	O
 
 Đánh	O
 IS	B-ORGANIZATION
@@ -72531,6 +73432,7 @@ bờ	O
 Tây	O
 sông	B-LOCATION
 Euphrates	I-LOCATION
+.	O
 
 Trong	O
 thời	O
@@ -72706,6 +73608,7 @@ kiểm	O
 soát	O
 của	O
 IS	B-ORGANIZATION
+.	O
 
 Nga	B-LOCATION
 phủ	O
@@ -73063,6 +73966,7 @@ mới	O
 nhằm	O
 vào	O
 Nga	B-LOCATION
+,	O
 song	O
 khẳng	O
 định	O
@@ -73091,7 +73995,7 @@ toàn	O
 diện	O
 với	O
 Mỹ	B-LOCATION
-/	O
+./	O
 .	O
 
 Nga	B-LOCATION
@@ -73139,7 +74043,9 @@ bố	O
 tại	O
 tỉnh	B-LOCATION
 Idlib	I-LOCATION
+,	O
 Syria	B-LOCATION
+.	O
 Đây	O
 là	O
 hành	O
@@ -73194,9 +74100,11 @@ Al-Nursa	I-ORGANIZATION
 tại	O
 tỉnh	B-LOCATION
 Idlib	I-LOCATION
+,	O
 Tây	O
 Bắc	O
 Syria	B-LOCATION
+,	O
 TASS	B-ORGANIZATION
 ngày	O
 22-9	O
@@ -73219,6 +74127,7 @@ tên	O
 lửa	O
 diệt	O
 IS	B-ORGANIZATION
+.	O
 Video	O
 :	O
 Sputnik	B-ORGANIZATION
@@ -73326,6 +74235,7 @@ xảy	O
 ra	O
 ngày	O
 19-9	B-DATETIME-DATE
+,	O
 một	O
 nhóm	O
 29	O
@@ -73418,6 +74328,7 @@ cảnh	O
 Nga	B-LOCATION
 tại	O
 Syria	B-LOCATION
+.	O
 Ảnh	O
 :	O
 RT	B-ORGANIZATION
@@ -73465,6 +74376,7 @@ thống	O
 Syria	B-LOCATION
 Bashar	B-PERSON
 Al-Assad	I-PERSON
+.	O
 
 Bộ	B-ORGANIZATION
 Quốc	I-ORGANIZATION
@@ -73527,8 +74439,10 @@ quân	O
 sự	O
 tại	O
 Syria	B-LOCATION
+.	O
 Theo	O
 Sputnik	B-ORGANIZATION
+,	O
 các	O
 tàu	O
 này	O
@@ -73576,6 +74490,7 @@ tàu	O
 ngầm	O
 tại	O
 Anh	B-LOCATION
+:	O
 Cảnh	O
 sát	O
 buộc	O
@@ -73700,6 +74615,7 @@ cho	O
 là	O
 người	B-MISCELLANEOUS
 Iraq	I-MISCELLANEOUS
+,	O
 được	O
 một	O
 cặp	O
@@ -73717,10 +74633,12 @@ sinh	O
 sống	O
 tại	O
 Sunbury	B-LOCATION
+,	O
 vùng	O
 ngoại	O
 ô	O
 London	B-LOCATION
+.	O
 Nhà	O
 của	O
 đối	O
@@ -73963,6 +74881,7 @@ và	O
 vụ	O
 ở	O
 Manchester	B-LOCATION
+.	O
 Tổng	O
 số	O
 người	O
@@ -74151,6 +75070,7 @@ ra	O
 Đại	B-LOCATION
 Tây	I-LOCATION
 Dương	I-LOCATION
+,	O
 men	O
 theo	O
 bờ	O
@@ -74167,6 +75087,7 @@ vào	O
 Ấn	B-LOCATION
 Độ	I-LOCATION
 Dương	I-LOCATION
+.	O
 
 Dự	O
 kiến	O
@@ -74273,6 +75194,7 @@ Zelenodolsk	B-LOCATION
 (	O
 CH	B-LOCATION
 Tatarstan	I-LOCATION
+,	O
 Nga	B-LOCATION
 .	O
 
@@ -74645,6 +75567,7 @@ an	I-ORGANIZATION
 Liên	I-ORGANIZATION
 Hợp	I-ORGANIZATION
 Quốc	I-ORGANIZATION
+.	O
 
 Bài	O
 phát	O
@@ -74676,6 +75599,7 @@ tên	O
 lửa	O
 Triều	B-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Bộ	O
 trưởng	O
@@ -74789,6 +75713,7 @@ tại	O
 Liên	B-ORGANIZATION
 Hợp	I-ORGANIZATION
 Quốc	I-ORGANIZATION
+,	O
 Tổng	O
 thống	O
 Trump	O
@@ -74840,6 +75765,7 @@ bầu	O
 cử	O
 Mỹ	B-LOCATION
 2016	B-DATETIME
+,	O
 ông	O
 Lavrov	B-PERSON
 nhắc	O
@@ -74917,6 +75843,7 @@ ninh	O
 mạng	O
 Nga	B-LOCATION
 Mỹ	B-LOCATION
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -74944,6 +75871,7 @@ trong	O
 bầu	O
 cử	O
 Mỹ	B-LOCATION
+.	O
 
 Mối	O
 quan	O
@@ -74962,6 +75890,7 @@ Trump	B-PERSON
 vào	O
 Nhà	B-LOCATION
 Trắng	I-LOCATION
+.	O
 Bộ	O
 trưởng	O
 Lavrov	B-PERSON
@@ -75111,6 +76040,7 @@ lục	O
 quân	O
 Hàn	B-LOCATION
 Quốc	I-LOCATION
+.	O
 Các	O
 khoản	O
 tiền	O
@@ -75176,6 +76106,7 @@ lục	O
 quân	O
 Park	B-PERSON
 Chan-ju	I-PERSON
+.	O
 (	O
 Ảnh	O
 :	O
@@ -75400,6 +76331,7 @@ Trung	B-LOCATION
 Quốc	I-LOCATION
 -	O
 ASEAN	B-ORGANIZATION
+,	O
 diễn	O
 ra	O
 vào	O
@@ -75410,6 +76342,7 @@ tại	O
 tỉnh	B-LOCATION
 Quảng	I-LOCATION
 Tây	I-LOCATION
+.	O
 Trong	O
 đó	O
 ,	O
@@ -75844,7 +76777,9 @@ giáo	I-ORGANIZATION
 ở	O
 tỉnh	B-LOCATION
 Idlib	I-LOCATION
+,	O
 Syria	B-LOCATION
+.	O
 Tên	O
 lửa	O
 được	O
@@ -75886,6 +76821,7 @@ hôm	O
 Ảnh	O
 :	O
 Sputnik	B-ORGANIZATION
+.	O
 
 Tên	O
 lửa	O
@@ -75931,6 +76867,7 @@ vào	O
 cảnh	O
 sát	O
 Nga	B-LOCATION
+.	O
 
 Đây	O
 là	O
@@ -76035,6 +76972,7 @@ mục	O
 tiêu	O
 tại	O
 Idlib	B-LOCATION
+.	O
 Ảnh	O
 :	O
 Google	O
@@ -76043,6 +76981,7 @@ Maps	O
 
 Theo	O
 RT	B-ORGANIZATION
+,	O
 lực	O
 lượng	O
 tiến	O
@@ -76064,6 +77003,7 @@ từ	O
 Mặt	B-ORGANIZATION
 trận	I-ORGANIZATION
 Al-Nusra	I-ORGANIZATION
+.	O
 Mục	O
 tiêu	O
 của	O
@@ -76152,6 +77092,7 @@ soát	O
 .	O
 Theo	O
 RT	B-ORGANIZATION
+,	O
 cho	O
 vài	O
 tháng	O
@@ -76269,6 +77210,7 @@ Nguồn	O
 ảnh	O
 :	O
 Sputnik	B-ORGANIZATION
+.	O
 
 Và	O
 theo	O
@@ -76438,6 +77380,7 @@ Nguồn	O
 ảnh	O
 :	O
 Sputnik	B-ORGANIZATION
+.	O
 
 Cuộc	O
 đụng	O
@@ -76465,6 +77408,7 @@ tuần	O
 tra	O
 của	O
 Nga	B-LOCATION
+,	O
 và	O
 với	O
 họ	O
@@ -76527,6 +77471,7 @@ Nguồn	O
 ảnh	O
 :	O
 Sputnik	B-ORGANIZATION
+.	O
 
 Tu-22M3	O
 là	O
@@ -76627,6 +77572,7 @@ Nguồn	O
 ảnh	O
 :	O
 BBC	B-ORGANIZATION
+.	O
 
 Trọng	O
 lượng	O
@@ -76879,6 +77825,7 @@ bay	I-PRODUCT
 ném	I-PRODUCT
 bom	I-PRODUCT
 Tu-22M3	I-PRODUCT
+.	O
 
 Phi	O
 hành	O
@@ -77350,6 +78297,7 @@ buổi	O
 sáng	O
 ngày	O
 12/7	B-DATETIME
+,	O
 6	O
 máy	O
 bay	O
@@ -77520,6 +78468,7 @@ bay	O
 ném	O
 bom	O
 Nga	B-LOCATION
+.	O
 
 Ảnh	O
 nạp	O
@@ -77532,6 +78481,7 @@ bay	I-PRODUCT
 tầm	I-PRODUCT
 xa	I-PRODUCT
 Tu-22M3	I-PRODUCT
+.	O
 
 Một	B-PRODUCT
 chiếc	I-PRODUCT
@@ -77707,6 +78657,7 @@ bán	B-LOCATION
 đảo	I-LOCATION
 Triều	I-LOCATION
 Tiên	I-LOCATION
+.	O
 
 Quân	O
 đội	O
@@ -77770,6 +78721,7 @@ trọng	I-MISCELLANEOUS
 tấn	I-MISCELLANEOUS
 Ronald	I-MISCELLANEOUS
 Reagan	I-MISCELLANEOUS
+,	O
 đồn	O
 trú	O
 tại	O
@@ -78031,6 +78983,7 @@ dịch	O
 tranh	O
 cử	O
 Mỹ	B-LOCATION
+,	O
 Nga	B-LOCATION
 nói	O
 gì	O
@@ -78126,9 +79079,11 @@ ngôn	O
 viên	O
 Điện	B-LOCATION
 Kremlin	I-LOCATION
+,	O
 ông	O
 Dmitry	B-PERSON
 Peskov	I-PERSON
+,	O
 hôm	O
 22/9	O
 .	O
@@ -78400,6 +79355,7 @@ cuộc	O
 bầu	O
 cử	O
 Mỹ	B-LOCATION
+,	O
 việc	O
 bỏ	O
 phiếu	O
@@ -78460,6 +79416,7 @@ dịch	O
 của	O
 Donald	B-PERSON
 Trump	I-PERSON
+,	O
 vẫn	O
 chưa	O
 đưa	O
@@ -78485,6 +79442,7 @@ của	O
 cũng	O
 như	O
 Nga	B-LOCATION
+,	O
 đã	O
 nhiều	O
 lần	O
@@ -78520,6 +79478,7 @@ bầu	O
 cử	O
 ở	O
 Mỹ	B-LOCATION
+,	O
 nhưng	O
 lại	O
 không	O
@@ -78577,6 +79536,7 @@ vì	O
 sân	B-LOCATION
 Thống	I-LOCATION
 Nhất	I-LOCATION
+,	O
 sân	B-LOCATION
 Mỹ	I-LOCATION
 Đình	I-LOCATION
@@ -78627,6 +79587,7 @@ League	O
 .	O
 
 Ronaldo	B-PERSON
+:	O
 Đây	O
 chỉ	O
 là	O
@@ -78779,8 +79740,10 @@ mới	O
 trước	O
 Real	B-ORGANIZATION
 Betis	I-ORGANIZATION
+,	O
 khiến	O
 Zidane	B-PERSON
+,	O
 Ronaldo	B-PERSON
 và	O
 rất	O
@@ -78821,6 +79784,7 @@ chia	O
 sẻ	O
 trên	O
 Marca	B-ORGANIZATION
+:	O
 “	O
 Mùa	O
 trước	O
@@ -78852,6 +79816,7 @@ về	O
 cấp	O
 của	O
 Real	B-ORGANIZATION
+,	O
 họ	O
 sẽ	O
 sớm	O
@@ -78906,6 +79871,7 @@ quân	O
 đến	O
 nước	O
 Đức	B-LOCATION
+,	O
 chạm	O
 trán	O
 Borussia	B-ORGANIZATION
@@ -79042,6 +80008,7 @@ thật	O
 thủ	O
 Mông	B-LOCATION
 Cổ	I-LOCATION
+.	O
 Đội	O
 bóng	O
 của	O
@@ -79078,6 +80045,7 @@ Hoàng	I-PERSON
 ở	O
 phút	O
 12	B-QUANTITY
+.	O
 
 Phần	O
 còn	O
@@ -79097,6 +80065,7 @@ chân	O
 sút	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 Trong	O
 đó	O
 ,	O
@@ -79118,6 +80087,7 @@ lưới	O
 thủ	O
 Mông	B-LOCATION
 Cổ	I-LOCATION
+.	O
 Chung	O
 cuộc	O
 ,	O
@@ -79214,6 +80184,7 @@ vượt	O
 qua	O
 U16	B-ORGANIZATION
 Australia	I-ORGANIZATION
+,	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
@@ -79240,6 +80211,7 @@ U16	I-MISCELLANEOUS
 châu	I-MISCELLANEOUS
 Á	I-MISCELLANEOUS
 2018	I-MISCELLANEOUS
+.	O
 
 Khi	O
 đó	O
@@ -79343,7 +80315,7 @@ lúc	O
 14h	B-DATETIME-TIME
 ngày	I-DATETIME-TIME
 24/9	I-DATETIME-TIME
-/	O
+./	O
 .	O
 
 Thùy	B-PERSON
@@ -79391,6 +80363,7 @@ vô	O
 địch	O
 châu	B-LOCATION
 Âu	I-LOCATION
+,	O
 Hiệp	B-ORGANIZATION
 hội	I-ORGANIZATION
 Bóng	I-ORGANIZATION
@@ -79502,6 +80475,7 @@ từ	O
 đầu	O
 năm	O
 2014	B-DATETIME
+,	O
 tức	O
 chỉ	O
 vài	O
@@ -79518,6 +80492,7 @@ dắt	O
 tuyển	O
 nữ	O
 Anh	B-LOCATION
+.	O
 Câu	O
 chuyện	O
 bùng	O
@@ -79602,6 +80577,7 @@ Bristol	I-ORGANIZATION
 từ	O
 năm	O
 2009	B-DATETIME
+,	O
 Sampson	B-PERSON
 là	O
 người	O
@@ -79650,6 +80626,7 @@ bên	O
 .	O
 Tháng	O
 5-2016	B-DATETIME-DATE
+,	O
 tuyển	O
 thủ	O
 Eni	O
@@ -79915,6 +80892,7 @@ quyết	O
 sa	O
 thải	O
 Sampson	B-PERSON
+.	O
 Bộ	O
 trưởng	O
 Thể	O
@@ -80018,6 +80996,7 @@ Kỷ	O
 luật	O
 của	O
 FA	B-ORGANIZATION
+,	O
 dự	O
 kiến	O
 nhóm	O
@@ -80132,6 +81111,7 @@ với	O
 HLV	O
 Antonio	B-PERSON
 Conte	I-PERSON
+.	O
 Anh	O
 đã	O
 bước	O
@@ -80258,6 +81238,7 @@ người	O
 của	O
 The	B-ORGANIZATION
 Blues	I-ORGANIZATION
+,	O
 cùng	O
 với	O
 Jimmy	B-PERSON
@@ -80309,15 +81290,20 @@ xếp	O
 sau	O
 Eidur	B-PERSON
 Gudjohnsen	I-PERSON
+,	O
 Eden	B-PERSON
 Hazard	I-PERSON
+,	O
 Gianfranco	B-PERSON
 Zola	I-PERSON
+,	O
 Hasselbaink	B-PERSON
+,	O
 Drogba	B-PERSON
 và	O
 Frank	B-PERSON
 Lampard	I-PERSON
+.	O
 
 Thực	O
 tế	O
@@ -80359,13 +81345,16 @@ ngay	O
 sau	O
 Alexis	B-PERSON
 Sanchez	I-PERSON
+,	O
 Romelu	B-PERSON
 Lukaku	I-PERSON
+,	O
 Sergio	B-PERSON
 Aguero	I-PERSON
 và	O
 Harry	B-PERSON
 Kane	I-PERSON
+.	O
 
 Tiền	O
 đạo	O
@@ -80400,12 +81389,14 @@ danh	O
 như	O
 Alan	B-PERSON
 Shearer	I-PERSON
+,	O
 Andy	B-PERSON
 Cole	I-PERSON
 và	O
 Ruud	B-PERSON
 van	B-PERSON
 Nistelrooy	I-PERSON
+.	O
 
 Thật	O
 công	O
@@ -80447,6 +81438,7 @@ gian	O
 ở	O
 Stamford	B-LOCATION
 Bridge	I-LOCATION
+.	O
 Chỉ	O
 Hernan	B-PERSON
 Crespo	I-PERSON
@@ -80588,6 +81580,7 @@ chủ	O
 sân	O
 Old	B-LOCATION
 Trafford	I-LOCATION
+.	O
 
 Mới	O
 đây	O
@@ -80618,6 +81611,7 @@ gắn	O
 bó	O
 với	O
 MU	B-ORGANIZATION
+.	O
 Trước	O
 đó	O
 ,	O
@@ -80688,6 +81682,7 @@ lâu	O
 dài	O
 tại	O
 MU	B-ORGANIZATION
+,	O
 với	O
 bản	O
 hợp	O
@@ -80797,11 +81792,13 @@ A	O
 cùng	O
 với	O
 Indonesia	B-LOCATION
+,	O
 Philippines	B-LOCATION
+,	O
 Myanmar	B-LOCATION
 và	O
 Brunei	B-LOCATION
-Trong	O
+.Trong	O
 khi	O
 đó	O
 ,	O
@@ -80885,7 +81882,7 @@ người	B-MISCELLANEOUS
 Tây	I-MISCELLANEOUS
 Ban	I-MISCELLANEOUS
 Nha	I-MISCELLANEOUS
-/	O
+./	O
 .	O
 
 Trường	B-PERSON
@@ -81000,6 +81997,7 @@ chủ	O
 nhà	O
 Mông	B-LOCATION
 Cổ	I-LOCATION
+.	O
 
 Taekwondo	O
 Việt	B-LOCATION-GPE
@@ -81024,6 +82022,7 @@ là	O
 Châu	B-PERSON
 Tuyết	I-PERSON
 Vân	I-PERSON
+,	O
 Liên	B-PERSON
 Thị	I-PERSON
 Tuyết	I-PERSON
@@ -81097,8 +82096,10 @@ thủ	O
 khác	O
 là	O
 iran	B-LOCATION
+,	O
 Trung	B-LOCATION
 Quốc	I-LOCATION
+,	O
 Philippines	B-LOCATION
 và	O
 Indonesia	B-LOCATION
@@ -81151,6 +82152,7 @@ là	O
 SEA	B-MISCELLANEOUS
 Games	I-MISCELLANEOUS
 29	I-MISCELLANEOUS
+.	O
 Sau	O
 khi	O
 đoạt	O
@@ -81254,6 +82256,7 @@ cao	O
 Châu	B-PERSON
 Tuyết	I-PERSON
 Vân	I-PERSON
+,	O
 Liên	B-PERSON
 Thị	I-PERSON
 Tuyết	I-PERSON
@@ -81476,10 +82479,12 @@ HCĐ	O
 Hà	B-PERSON
 Thị	I-PERSON
 Nguyễn	I-PERSON
+,	O
 Trần	B-PERSON
 Thị	I-PERSON
 Ánh	I-PERSON
 Tuyết	I-PERSON
+,	O
 Nguyễn	B-PERSON
 Văn	I-PERSON
 Duy	I-PERSON
@@ -81627,10 +82632,12 @@ không	O
 khí	O
 tại	O
 Bernabeu	B-LOCATION
+:	O
 Sau	O
 trận	O
 thua	O
 Betis	B-ORGANIZATION
+,	O
 tiền	O
 vệ	O
 Isco	B-PERSON
@@ -81714,11 +82721,13 @@ quyết	O
 định	O
 của	O
 Zidane	B-PERSON
+:	O
 Ở	O
 trận	O
 gặp	O
 Real	B-ORGANIZATION
 Betis	I-ORGANIZATION
+,	O
 Zidane	B-PERSON
 đã	O
 có	O
@@ -81735,6 +82744,7 @@ chính	O
 thay	O
 vì	O
 Isco	B-PERSON
+,	O
 dù	O
 số	O
 22	O
@@ -81769,6 +82779,7 @@ nhớ	O
 trận	O
 gặp	O
 Levante	B-ORGANIZATION
+,	O
 Zidane	B-PERSON
 cũng	O
 thực	O
@@ -81803,6 +82814,7 @@ trận	O
 của	O
 Cristiano	B-PERSON
 Ronaldo	I-PERSON
+,	O
 có	O
 vẻ	O
 như	O
@@ -81866,10 +82878,13 @@ Real	B-ORGANIZATION
 mất	O
 Theo	B-PERSON
 Hernandez	I-PERSON
+,	O
 Karim	B-PERSON
 Benzema	I-PERSON
+,	O
 Mateo	B-PERSON
 Kovacic	I-PERSON
+,	O
 Jesus	B-PERSON
 Vallejo	I-PERSON
 và	O
@@ -81906,6 +82921,7 @@ cúp	O
 Tây	B-LOCATION
 Ban	I-LOCATION
 Nha	I-LOCATION
+:	O
 Với	O
 việc	O
 hạ	O
@@ -81991,6 +83007,7 @@ bóng	O
 nhỏ	O
 như	O
 Levante	B-ORGANIZATION
+,	O
 Betis	B-ORGANIZATION
 hay	O
 Real	B-ORGANIZATION
@@ -82004,12 +83021,14 @@ mảnh	O
 lưới	O
 Real	B-ORGANIZATION
 Madrid	I-ORGANIZATION
+.	O
 
 Hòa	B-PERSON
 Lộc	I-PERSON
 
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82017,6 +83036,7 @@ Chelsea	B-ORGANIZATION
 Ngoại	O
 hạng	O
 Anh	B-LOCATION
+:	O
 Ăn	O
 nhau	O
 ở	O
@@ -82033,6 +83053,7 @@ hình	O
 của	O
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82071,9 +83092,11 @@ liệt	O
 Ngoại	O
 hạng	O
 Anh	B-LOCATION
+.	O
 
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82112,6 +83135,7 @@ viên	O
 khác	O
 là	O
 Arsenal	B-ORGANIZATION
+,	O
 Tottenham	B-ORGANIZATION
 hay	O
 Liverpool	B-ORGANIZATION
@@ -82158,6 +83182,7 @@ hè	O
 ,	O
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82173,6 +83198,7 @@ nhất	O
 Ngoại	O
 hạng	O
 Anh	B-LOCATION
+.	O
 Man	B-ORGANIZATION
 xanh	I-ORGANIZATION
 “	O
@@ -82229,6 +83255,7 @@ chất	O
 Matic	B-PERSON
 và	O
 Lukaku	B-PERSON
+.	O
 
 Bộ	O
 khung	O
@@ -82236,6 +83263,7 @@ chính	O
 của	O
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82330,12 +83358,16 @@ sàng	O
 thế	O
 chỗ	O
 Silva	B-PERSON
+,	O
 De	B-PERSON
 Bruyne	I-PERSON
+,	O
 Sterling	B-PERSON
+,	O
 Aguero	B-PERSON
 hoặc	O
 Jesus	B-PERSON
+.	O
 Pep	B-PERSON
 Guardiola	I-PERSON
 còn	O
@@ -82348,6 +83380,7 @@ triển	O
 vọng	O
 Phil	B-PERSON
 Foden	I-PERSON
+.	O
 Tuyến	O
 giữa	O
 ,	O
@@ -82355,8 +83388,11 @@ giữa	O
 sở	O
 hữu	O
 Toure	B-PERSON
+,	O
 Fernando	B-PERSON
+,	O
 Delph	B-PERSON
+,	O
 Gundogan	B-PERSON
 (	O
 mới	O
@@ -82368,6 +83404,7 @@ Hàng	O
 thủ	O
 có	O
 Mangala	B-PERSON
+,	O
 Danilo	B-PERSON
 và	O
 “	B-PERSON
@@ -82385,6 +83422,7 @@ lai	O
 của	O
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+.	O
 
 MU	B-ORGANIZATION
 “	O
@@ -82437,17 +83475,25 @@ với	O
 tân	O
 binh	O
 Lindelof	B-PERSON
+,	O
 Smalling	B-PERSON
+,	O
 Luke	B-PERSON
 Shaw	I-PERSON
+,	O
 Darmian	B-PERSON
+,	O
 Young	B-PERSON
+.	O
 Tuyến	O
 giữa	O
 là	O
 Carrick	B-PERSON
+,	O
 Herrera	B-PERSON
+,	O
 Fellaini	B-PERSON
+.	O
 Hàng	O
 công	O
 dự	O
@@ -82456,6 +83502,7 @@ cực	O
 mạnh	O
 với	O
 Martial	B-PERSON
+,	O
 Lingard	B-PERSON
 và	O
 sang	O
@@ -82562,9 +83609,11 @@ cực	O
 ổn	O
 cho	O
 Morata	B-PERSON
+.	O
 
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 MU	B-ORGANIZATION
 và	O
 Chelsea	B-ORGANIZATION
@@ -82598,9 +83647,12 @@ cuộc	O
 Ngoại	O
 hạng	O
 Anh	B-LOCATION
+.	O
 HLV	O
 Pep	B-PERSON
+,	O
 Mourinho	B-PERSON
+,	O
 và	O
 Conte	B-PERSON
 đã	O
@@ -82620,12 +83672,15 @@ tỏa	O
 sáng	O
 của	O
 Sane	B-PERSON
+,	O
 Martial	B-PERSON
+,	O
 hay	O
 cặp	O
 Zappacosta	B-PERSON
 –	O
 Batshuayi	B-PERSON
+.	O
 Vòng	O
 bảng	O
 Champions	O
@@ -82691,6 +83746,7 @@ bảo	O
 Zidane	B-PERSON
 loại	O
 Mayoral	B-PERSON
+,	O
 Marcus	B-PERSON
 Rashford	I-PERSON
 bị	O
@@ -82769,6 +83825,7 @@ tiêu	O
 Trên	O
 Sky	B-ORGANIZATION
 Sports	I-ORGANIZATION
+,	O
 Phil	B-PERSON
 Neville	I-PERSON
 đã	O
@@ -82778,6 +83835,7 @@ thầy	O
 trò	O
 HLV	O
 Klopp	B-PERSON
+.	O
 
 “	O
 Họ	O
@@ -82969,6 +84027,7 @@ xuất	O
 hiện	O
 của	O
 Mayoral	B-PERSON
+.	O
 Tờ	O
 Don	B-ORGANIZATION
 Balon	I-ORGANIZATION
@@ -82991,6 +84050,7 @@ người	B-MISCELLANEOUS
 Tây	I-MISCELLANEOUS
 Ban	I-MISCELLANEOUS
 Nha	I-MISCELLANEOUS
+.	O
 
 Báo	O
 cáo	O
@@ -83009,6 +84069,7 @@ lối	O
 chơi	O
 của	O
 Mayoral	B-PERSON
+.	O
 Cầu	O
 thủ	O
 người	B-MISCELLANEOUS
@@ -83103,6 +84164,7 @@ nhiên	O
 HLV	O
 Stuart	B-PERSON
 Pearce	I-PERSON
+,	O
 người	O
 từng	O
 dẫn	O
@@ -83182,10 +84244,13 @@ giới	O
 ?	O
 Jack	B-PERSON
 Wilshere	I-PERSON
+,	O
 Andros	B-PERSON
 Townsend	I-PERSON
+,	O
 Micah	B-PERSON
 Richards	I-PERSON
+,	O
 Theo	B-PERSON
 Walcott	I-PERSON
 tất	O
@@ -83322,6 +84387,7 @@ sân	B-LOCATION
 Bet365	I-LOCATION
 của	O
 Stoke	B-ORGANIZATION
+.	O
 Đây	O
 được	O
 coi	O
@@ -83365,6 +84431,7 @@ Stoke	B-ORGANIZATION
 đánh	O
 bại	O
 Chelsea	B-ORGANIZATION
+.	O
 
 “	O
 Nói	O
@@ -83392,6 +84459,7 @@ cầu	O
 thủ	O
 của	O
 Stoke	B-ORGANIZATION
+.	O
 Tôi	O
 rất	O
 hạnh	O
@@ -83448,6 +84516,7 @@ hạnh	O
 phúc	O
 ở	O
 Stoke	B-ORGANIZATION
+.	O
 Đó	O
 là	O
 lý	O
@@ -83591,6 +84660,7 @@ Villa	I-ORGANIZATION
 và	O
 Man	B-ORGANIZATION
 City	I-ORGANIZATION
+,	O
 Darius	B-PERSON
 Vassell	I-PERSON
 vẫn	O
@@ -83622,6 +84692,7 @@ ngày	O
 đầu	O
 xem	O
 Arsenal	B-ORGANIZATION
+,	O
 họ	O
 là	O
 đội	O
@@ -83779,6 +84850,7 @@ gia	O
 nhập	O
 Atletico	B-ORGANIZATION
 Madrid	I-ORGANIZATION
+,	O
 tiền	O
 đạo	O
 Diego	B-PERSON
@@ -83829,6 +84901,7 @@ Costa	I-PERSON
 cho	O
 Atletico	B-ORGANIZATION
 Madrid	I-ORGANIZATION
+.	O
 Quá	O
 trình	O
 đám	O
@@ -83933,6 +85006,7 @@ luyện	O
 cùng	O
 The	B-ORGANIZATION
 Blues	I-ORGANIZATION
+.	O
 
 Costa	B-PERSON
 hiện	O
@@ -83942,6 +85016,7 @@ lại	O
 quê	O
 nhà	O
 Brazil	B-LOCATION
+.	O
 Khi	O
 được	O
 các	O
@@ -84002,6 +85077,7 @@ tới	O
 các	O
 CĐV	O
 Chelsea	B-ORGANIZATION
+:	O
 “	O
 Mọi	O
 người	O
@@ -84152,6 +85228,7 @@ thành	O
 tích	O
 của	O
 Costa	B-PERSON
+.	O
 
 Nói	O
 chung	O
@@ -84327,6 +85404,7 @@ tuyển	B-ORGANIZATION
 Taekwondo	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 sau	O
 3	O
 HCĐ	O
@@ -84371,6 +85449,7 @@ mạnh	O
 của	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 bởi	O
 các	O
 VĐV	O
@@ -84441,6 +85520,7 @@ giải	O
 Đông	B-LOCATION
 Nam	I-LOCATION
 Á	I-LOCATION
+.	O
 
 Không	O
 chỉ	O
@@ -84637,6 +85717,7 @@ bóng	O
 đá	O
 Trung	B-LOCATION
 Quốc	I-LOCATION
+.	O
 
 Tiền	O
 đạo	O
@@ -84712,6 +85793,7 @@ tịch	O
 CLB	B-ORGANIZATION
 Shanghai	I-ORGANIZATION
 Shenhua	I-ORGANIZATION
+,	O
 ông	O
 Wu	B-PERSON
 Xiaohui	I-PERSON
@@ -84861,6 +85943,7 @@ hình	O
 Pháp	B-LOCATION
 SFR	B-ORGANIZATION
 Sport	I-ORGANIZATION
+.	O
 
 “	O
 Các	O
@@ -84941,6 +86024,7 @@ dội	O
 tại	O
 Trung	B-LOCATION
 Quốc	I-LOCATION
+.	O
 CLB	B-ORGANIZATION
 Shanghai	I-ORGANIZATION
 Shenhua	I-ORGANIZATION
@@ -85007,6 +86091,7 @@ báo	O
 chí	O
 của	O
 Shenhua	B-LOCATION
+.	O
 
 “	O
 Tevez	B-PERSON
@@ -85074,6 +86159,7 @@ cầu	O
 thủ	O
 Trung	B-LOCATION
 Quốc	I-LOCATION
+.	O
 Tevez	B-PERSON
 đã	O
 cố	O
@@ -85092,6 +86178,7 @@ bóng	O
 đá	O
 Trung	B-LOCATION
 Quốc	I-LOCATION
+.	O
 Cậu	O
 ấy	O
 cũng	O
@@ -85176,6 +86263,7 @@ tin	O
 vui	O
 với	O
 M.U	B-ORGANIZATION
+?	O
 
 Sau	O
 hàng	O
@@ -85216,6 +86304,7 @@ gia	O
 nhập	O
 Man	B-ORGANIZATION
 United	I-ORGANIZATION
+.	O
 
 Ngày	O
 hôm	O
@@ -85238,6 +86327,7 @@ thương	O
 vụ	O
 Diego	B-PERSON
 Costa	I-PERSON
+.	O
 Các	O
 chuyên	O
 gia	O
@@ -85310,6 +86400,7 @@ năm	O
 Về	O
 phía	O
 Costa	B-PERSON
+,	O
 anh	O
 từng	O
 là	O
@@ -85427,6 +86518,7 @@ bảng	O
 cho	O
 Diego	B-PERSON
 Costa	I-PERSON
+.	O
 Nhưng	O
 sau	O
 một	O
@@ -85449,6 +86541,7 @@ yêu	O
 cầu	O
 của	O
 Chelsea	B-ORGANIZATION
+.	O
 
 Điều	O
 này	O
@@ -85480,6 +86573,7 @@ số	O
 tiền	O
 mua	O
 Costa	B-PERSON
+.	O
 Hồi	O
 tháng	O
 1	O
@@ -85498,6 +86592,7 @@ hàng	O
 của	O
 Man	B-ORGANIZATION
 United	I-ORGANIZATION
+.	O
 Tuy	O
 nhiên	O
 do	O
@@ -85510,6 +86605,7 @@ chuyển	O
 nhượng	O
 của	O
 FIFA	B-ORGANIZATION
+,	O
 Griezmann	B-PERSON
 đã	O
 quyết	O
@@ -85548,6 +86644,7 @@ khi	O
 có	O
 Diego	B-PERSON
 Costa	I-PERSON
+,	O
 Atletico	B-ORGANIZATION
 Madrid	I-ORGANIZATION
 rất	O
@@ -85576,6 +86673,7 @@ mua	O
 lại	O
 của	O
 Griezmann	B-PERSON
+,	O
 Quỷ	O
 đỏ	O
 sẽ	O
@@ -85594,10 +86692,12 @@ gờm	O
 nhất	O
 châu	B-LOCATION
 Âu	I-LOCATION
+.	O
 
 Về	O
 phía	O
 Griezmann	B-PERSON
+,	O
 anh	O
 cũng	O
 không	O
@@ -85613,6 +86713,7 @@ tại	O
 sân	B-LOCATION
 Old	I-LOCATION
 Trafford	I-LOCATION
+.	O
 Cầu	O
 thủ	O
 26	O
@@ -85642,6 +86743,7 @@ cuộc	O
 sống	O
 tại	O
 Manchester	B-ORGANIZATION
+.	O
 
 Một	O
 trong	O
@@ -85673,6 +86775,7 @@ huyền	O
 thoại	O
 George	B-PERSON
 Best	I-PERSON
+,	O
 Eric	B-PERSON
 Cantona	I-PERSON
 và	O
@@ -85697,6 +86800,7 @@ trống	O
 tại	O
 Man	B-ORGANIZATION
 United	I-ORGANIZATION
+.	O
 Điều	O
 này	O
 càng	O
@@ -85874,6 +86978,7 @@ Bator	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+:	O
 Nguyên	B-PERSON
 Hoàng	I-PERSON
 13	O
@@ -86404,6 +87509,7 @@ Nam	I-ORGANIZATION
 và	O
 U16	B-ORGANIZATION
 Campuchia	I-ORGANIZATION
+.	O
 
 •	O
 2017-09-22	O
@@ -86527,6 +87633,7 @@ VCK	O
 U16	O
 châu	B-LOCATION
 Á	I-LOCATION
+.	O
 
 •	O
 2017-09-22	O
@@ -86592,6 +87699,7 @@ của	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -86638,6 +87746,7 @@ cho	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+!	O
 Sau	O
 pha	O
 phối	O
@@ -86697,6 +87806,7 @@ tốt	O
 của	O
 Chí	B-PERSON
 Bảo	I-PERSON
+,	O
 Quốc	B-PERSON
 Hoàng	I-PERSON
 tung	O
@@ -86890,6 +88000,7 @@ thủ	O
 thành	O
 Duy	B-PERSON
 Dũng	I-PERSON
+.	O
 
 •	O
 2017-09-22	O
@@ -86928,6 +88039,7 @@ cho	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 •	O
 2017-09-22	O
@@ -87045,6 +88157,7 @@ thủ	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 •	O
 2017-09-22	O
@@ -87078,6 +88191,7 @@ hội	O
 của	O
 Quốc	B-PERSON
 Hoàng	I-PERSON
+!	O
 Khi	O
 trước	O
 mặt	O
@@ -87220,6 +88334,7 @@ Hoàng	I-PERSON
 và	O
 Thanh	B-PERSON
 Trung	I-PERSON
+.	O
 
 •	O
 2017-09-22	O
@@ -87255,6 +88370,7 @@ cho	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+!	O
 Từ	O
 tình	O
 huống	O
@@ -87472,6 +88588,7 @@ cho	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+!	O
 Chí	B-PERSON
 Bảo	I-PERSON
 thoát	O
@@ -87582,6 +88699,7 @@ cho	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 Đội	O
 chủ	O
 nhà	O
@@ -87820,6 +88938,7 @@ của	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 •	O
 2017-09-22	O
@@ -87867,6 +88986,7 @@ Sáng	I-PERSON
 Thắng	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+,	O
 Quảng	B-ORGANIZATION
 Nam	I-ORGANIZATION
 FC	I-ORGANIZATION
@@ -88017,10 +89137,12 @@ của	O
 FLC	B-ORGANIZATION
 Thanh	I-ORGANIZATION
 Hóa	I-ORGANIZATION
+.	O
 Ảnh	O
 :	O
 Viết	B-PERSON
 Định	I-PERSON
+.	O
 
 Thế	O
 trận	O
@@ -88360,6 +89482,7 @@ thế	O
 cho	O
 Minh	B-PERSON
 Tuấn	I-PERSON
+.	O
 Sự	O
 có	O
 mặt	O
@@ -88385,6 +89508,7 @@ khung	O
 thành	O
 Văn	B-PERSON
 Phong	I-PERSON
+.	O
 
 Những	O
 tưởng	O
@@ -88493,10 +89617,12 @@ HLV	O
 Hoàng	B-PERSON
 Văn	I-PERSON
 Phúc	I-PERSON
+.	O
 Ảnh	O
 :	O
 Viết	B-PERSON
 Định	I-PERSON
+.	O
 
 Thắng	O
 trận	O
@@ -88566,49 +89692,72 @@ O.g	O
 Quảng	B-ORGANIZATION
 Nam	I-ORGANIZATION
 FC	I-ORGANIZATION
+:	O
 Văn	B-PERSON
 Cường	I-PERSON
+,	O
 Văn	B-PERSON
 Học	I-PERSON
+,	O
 Thiago	B-PERSON
+,	O
 Ngọc	B-PERSON
 Nguyên	I-PERSON
+,	O
 Văn	B-PERSON
 Phong	I-PERSON
+,	O
 Hữu	B-PERSON
 Phước	I-PERSON
+,	O
 Thanh	B-PERSON
 Hưng	I-PERSON
+,	O
 Đình	B-PERSON
 Thắng	I-PERSON
+,	O
 Thanh	B-PERSON
 Trung	I-PERSON
+,	O
 Minh	B-PERSON
 Tuấn	I-PERSON
+,	O
 Claudecir	B-PERSON
+.	O
 
 Hải	B-ORGANIZATION
 Phòng	I-ORGANIZATION
 FC	I-ORGANIZATION
+:	O
 Văn	B-PERSON
 Phong	I-PERSON
+,	O
 Anh	B-PERSON
 Hùng	I-PERSON
+,	O
 Văn	B-PERSON
 Phú	I-PERSON
+,	O
 Ngọc	B-PERSON
 Thịnh	I-PERSON
+,	O
 Quốc	B-PERSON
 Trung	I-PERSON
+,	O
 Cảnh	B-PERSON
 Dương	I-PERSON
+,	O
 Xuân	B-PERSON
 Hùng	I-PERSON
+,	O
 Ngọc	B-PERSON
 Tân	I-PERSON
+,	O
 Quốc	B-PERSON
 Tuấn	I-PERSON
+,	O
 Stvens	B-PERSON
+.	O
 
 Viết	B-PERSON
 Định	I-PERSON
@@ -88645,6 +89794,7 @@ U16	B-MISCELLANEOUS
 châu	I-MISCELLANEOUS
 Á	I-MISCELLANEOUS
 2018	I-MISCELLANEOUS
+,	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
@@ -88666,6 +89816,7 @@ Theo	O
 báo	B-ORGANIZATION
 Tiền	I-ORGANIZATION
 Phong	I-ORGANIZATION
+,	O
 vào	O
 15h	O
 chiều	O
@@ -88748,6 +89899,7 @@ lưới	O
 U16	B-ORGANIZATION
 Mông	I-ORGANIZATION
 Cổ	I-ORGANIZATION
+.	O
 10	O
 phút	O
 sau	O
@@ -88889,6 +90041,7 @@ Thắng	O
 đậm	O
 Mông	B-LOCATION
 Cổ	I-LOCATION
+,	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
@@ -88935,6 +90088,7 @@ loại	O
 U16	B-MISCELLANEOUS
 châu	I-MISCELLANEOUS
 Á	I-MISCELLANEOUS
+.	O
 (	O
 Ảnh	O
 :	O
@@ -88955,6 +90109,7 @@ hơn	O
 là	O
 Mông	B-LOCATION
 Cổ	I-LOCATION
+,	O
 U16	B-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
@@ -88977,6 +90132,7 @@ VCK	B-MISCELLANEOUS
 U16	I-MISCELLANEOUS
 châu	I-MISCELLANEOUS
 Á	I-MISCELLANEOUS
+.	O
 
 Dù	O
 đội	O
@@ -89222,6 +90378,7 @@ Messi	I-PERSON
 và	O
 Andres	B-PERSON
 Iniesta	I-PERSON
+,	O
 Gã	O
 khổng	O
 lồ	O
@@ -89243,6 +90400,7 @@ tờ	O
 nhật	B-ORGANIZATION
 báo	I-ORGANIZATION
 SPORT	I-ORGANIZATION
+.	O
 
 Cách	O
 đây	O
@@ -89276,6 +90434,7 @@ người	B-MISCELLANEOUS
 Argentina	I-MISCELLANEOUS
 Lionel	B-PERSON
 Messi	I-PERSON
+.	O
 Trong	O
 khi	O
 đó	O
@@ -89335,9 +90494,11 @@ thời	O
 HLV	O
 Ernesto	B-PERSON
 Valverde	I-PERSON
+.	O
 
 Theo	O
 SPORT	B-ORGANIZATION
+,	O
 3	O
 cái	O
 tên	O
@@ -89369,11 +90530,13 @@ Masia	O
 :	O
 Gerard	B-PERSON
 Pique	I-PERSON
+,	O
 Sergi	B-PERSON
 Roberto	I-PERSON
 và	O
 Gerard	B-PERSON
 Deulofeu	I-PERSON
+,	O
 chân	O
 sút	O
 vừa	O
@@ -89460,6 +90623,7 @@ Châu	B-LOCATION
 Âu	I-LOCATION
 như	O
 PSG	B-ORGANIZATION
+.	O
 
 Mức	O
 phí	O
@@ -89529,6 +90693,7 @@ trường	O
 hợp	O
 của	O
 Neymar	B-PERSON
+,	O
 chẳng	O
 ai	O
 có	O
@@ -89591,6 +90756,7 @@ mới	O
 Riêng	O
 với	O
 Pique	B-PERSON
+,	O
 vấn	O
 đề	O
 không	O
@@ -89636,6 +90802,7 @@ chủ	O
 sân	B-LOCATION
 Camp	I-LOCATION
 Nou	I-LOCATION
+.	O
 Thời	O
 hạn	O
 của	O
@@ -89732,6 +90899,7 @@ hợp	O
 của	O
 Sergi	B-PERSON
 Roberto	I-PERSON
+,	O
 chỉ	O
 cần	O
 bỏ	O
@@ -89754,6 +90922,7 @@ phục	O
 vụ	O
 của	O
 Deulofeu	B-PERSON
+,	O
 dĩ	O
 nhiên	O
 phải	O
@@ -89816,6 +90985,7 @@ tân	O
 HLV	O
 Ernesto	B-PERSON
 Valverde	I-PERSON
+.	O
 
 Bình	B-PERSON
 An	I-PERSON
@@ -89906,6 +91076,7 @@ cá	O
 nhân	O
 của	O
 Messi	B-PERSON
+.	O
 Thực	O
 chất	O
 ,	O
@@ -90132,6 +91303,7 @@ trận	O
 với	O
 Real	B-ORGANIZATION
 Betis	I-ORGANIZATION
+,	O
 HLV	O
 Zidane	B-PERSON
 đã	O
@@ -90261,8 +91433,10 @@ thương	O
 .	O
 Theo	B-PERSON
 Hernandez	I-PERSON
+,	O
 Mateo	B-PERSON
 Kovacic	I-PERSON
+,	O
 Jesus	B-PERSON
 Vallejo	I-PERSON
 và	O
@@ -90347,6 +91521,7 @@ thành	O
 lực	O
 của	O
 Barcelona	B-ORGANIZATION
+.	O
 
 Real	B-ORGANIZATION
 Madrid	I-ORGANIZATION
@@ -90843,6 +92018,7 @@ phải	O
 bại	O
 U16	B-ORGANIZATION
 Australia	I-ORGANIZATION
+.	O
 
 HOÀI	B-PERSON
 ĐAN	I-PERSON
@@ -90856,6 +92032,7 @@ bán	O
 đầy	O
 chợ	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
+,	O
 chị	O
 em	O
 dễ	O
@@ -90996,6 +92173,7 @@ với	O
 táo	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
 không	O
@@ -91208,6 +92386,7 @@ hơn	O
 giá	O
 30.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 
 Loại	O
 táo	O
@@ -91356,6 +92535,7 @@ mùa	O
 chỉ	O
 35.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+,	O
 vào	O
 giữa	O
 mùa	O
@@ -91365,6 +92545,7 @@ tại	O
 chỉ	O
 25.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 
 Thời	O
 điểm	O
@@ -91388,12 +92569,14 @@ phải	O
 táo	O
 Hà	B-LOCATION
 Giang	I-LOCATION
+,	O
 mà	O
 chính	O
 là	O
 táo	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 
 Có	O
 hình	O
@@ -91428,6 +92611,7 @@ cái	O
 của	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 Chúng	O
 chỉ	O
 khác	O
@@ -91539,6 +92723,7 @@ dao	O
 từ	O
 70.000-90.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+,	O
 tuỳ	O
 loại	O
 .	O
@@ -91638,6 +92823,7 @@ rocket	O
 của	O
 New	B-LOCATION-GPE
 Zealand	I-LOCATION-GPE
+.	O
 
 Khi	O
 ăn	O
@@ -91669,6 +92855,7 @@ táo	O
 khoảng	O
 20-22	B-QUANTITY
 quả	I-QUANTITY
+.	O
 Giá	O
 bán	O
 tại	O
@@ -91679,6 +92866,7 @@ dao	O
 từ	O
 35.000-40.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 
 Táo	O
 hồng	O
@@ -91707,6 +92895,7 @@ chỉ	O
 từ	O
 15.000-20.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+,	O
 tuỳ	O
 loại	O
 .	O
@@ -91760,6 +92949,7 @@ thị	O
 trường	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 khiến	O
 khá	O
 nhiều	O
@@ -91831,6 +93021,7 @@ cherry	O
 vàng	O
 của	O
 Mỹ	B-LOCATION-GPE
+.	O
 
 Táo	O
 cherry	O
@@ -91883,6 +93074,7 @@ khác	O
 của	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 song	O
 hình	O
 thức	O
@@ -91899,6 +93091,7 @@ buôn	O
 là	O
 35.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 
 Hiện	O
 ở	O
@@ -91944,6 +93137,7 @@ dao	O
 từ	O
 55.000-70.000	B-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 
 Top	O
 những	O
@@ -92170,6 +93364,7 @@ suốt	O
 13	B-DATETIME-DURATION
 thế	I-DATETIME-DURATION
 kỷ	I-DATETIME-DURATION
+,	O
 Hoàng	B-LOCATION-STRUC
 thành	I-LOCATION-STRUC
 Thăng	I-LOCATION-STRUC
@@ -92187,6 +93382,7 @@ du	O
 lịch	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 được	O
 du	O
 khách	O
@@ -92214,6 +93410,7 @@ khách	O
 ,	O
 chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 Sở	O
 Du	O
 lịch	O
@@ -92315,16 +93512,21 @@ kiến	O
 trúc	O
 Kỳ	B-LOCATION-STRUC
 đài	I-LOCATION-STRUC
+,	O
 Đoan	B-LOCATION-STRUC
 môn	I-LOCATION-STRUC
+,	O
 Bắc	B-LOCATION-STRUC
 môn	I-LOCATION-STRUC
+,	O
 Hậu	B-LOCATION-STRUC
 lâu	I-LOCATION-STRUC
+,	O
 thềm	B-LOCATION-STRUC
 điện	I-LOCATION-STRUC
 Kính	I-LOCATION-STRUC
 Thiên	I-LOCATION-STRUC
+,	O
 dấu	O
 ấn	O
 lịch	O
@@ -92335,6 +93537,7 @@ Nhà	O
 và	O
 hầm	B-LOCATION-STRUC
 D67	I-LOCATION-STRUC
+,	O
 Hầm	O
 chỉ	O
 huy	O
@@ -92468,11 +93671,13 @@ thềm	B-LOCATION-STRUC
 điện	I-LOCATION-STRUC
 Kính	I-LOCATION-STRUC
 Thiên	I-LOCATION-STRUC
+,	O
 Hậu	B-LOCATION-STRUC
 lâu	I-LOCATION-STRUC
 và	O
 Bắc	B-LOCATION-STRUC
 môn	I-LOCATION-STRUC
+,	O
 dâng	O
 hương	O
 tưởng	O
@@ -92607,6 +93812,7 @@ cổ	O
 18	B-LOCATION
 Hoàng	I-LOCATION
 Diệu	I-LOCATION
+.	O
 Bên	O
 cạnh	O
 đó	O
@@ -92635,6 +93841,7 @@ Hoàng	B-LOCATION-STRUC
 thành	I-LOCATION-STRUC
 Thăng	I-LOCATION-STRUC
 Long	I-LOCATION-STRUC
+,	O
 Trung	B-ORGANIZATION
 tâm	I-ORGANIZATION
 bảo	I-ORGANIZATION
@@ -92684,6 +93891,7 @@ Vui	B-EVENT-GAMESHOW
 tết	I-EVENT-GAMESHOW
 Trung	I-EVENT-GAMESHOW
 thu	I-EVENT-GAMESHOW
+,	O
 lễ	O
 trồng	O
 cây	O
@@ -92699,7 +93907,7 @@ Tết	B-EVENT-CUL
 Công	I-EVENT-CUL
 ông	I-EVENT-CUL
 Táo	I-EVENT-CUL
-..	O
+...	O
 
 Hiện	O
 tại	O
@@ -92736,6 +93944,7 @@ Hoàng	B-LOCATION-STRUC
 thành	I-LOCATION-STRUC
 Thăng	I-LOCATION-STRUC
 Long	I-LOCATION-STRUC
+.	O
 
 Tại	O
 buổi	O
@@ -92763,6 +93972,7 @@ Hoàng	B-LOCATION-STRUC
 thành	I-LOCATION-STRUC
 Thăng	I-LOCATION-STRUC
 Long	I-LOCATION-STRUC
+,	O
 đồng	O
 thời	O
 đưa	O
@@ -92792,6 +94002,7 @@ Theo	O
 Nguyễn	B-PERSON
 Quang	I-PERSON
 Lân	I-PERSON
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 Hiệp	B-ORGANIZATION
@@ -92916,6 +94127,7 @@ quan	O
 Phùng	B-PERSON
 Quang	I-PERSON
 Thắng	I-PERSON
+,	O
 Giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 Công	B-ORGANIZATION
@@ -93243,6 +94455,7 @@ ngon	O
 Trần	B-PERSON
 Việt	I-PERSON
 Anh	I-PERSON
+,	O
 Giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 Trung	B-ORGANIZATION
@@ -93300,7 +94513,7 @@ Hoàng	B-LOCATION-STRUC
 thành	I-LOCATION-STRUC
 Thăng	I-LOCATION-STRUC
 Long	I-LOCATION-STRUC
-/	O
+./	O
 .	O
 
 Chuyện	O
@@ -93329,15 +94542,19 @@ khu	O
 vực	O
 Hạ	B-LOCATION
 Thanh	I-LOCATION
+,	O
 xã	B-LOCATION
 Thanh	I-LOCATION
 Nưa	I-LOCATION
+,	O
 huyện	B-LOCATION
 Điện	I-LOCATION
 Biên	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Điện	I-LOCATION
 Biên	I-LOCATION
+,	O
 có	O
 đến	O
 hơn	O
@@ -93420,9 +94637,11 @@ khu	O
 vực	O
 Hạ	B-LOCATION
 Thanh	I-LOCATION
+,	O
 xã	B-LOCATION
 Thanh	I-LOCATION
 Nưa	I-LOCATION
+,	O
 huyện	B-LOCATION
 Điện	I-LOCATION
 Biên	I-LOCATION
@@ -93454,6 +94673,7 @@ của	O
 Lò	B-PERSON
 Văn	I-PERSON
 Cu	I-PERSON
+,	O
 Chi	B-PERSONTYPE
 hội	I-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -93465,12 +94685,15 @@ khu	O
 vực	O
 Hạ	B-LOCATION
 Thanh	I-LOCATION
+,	O
 xã	B-LOCATION
 Thanh	I-LOCATION
 Nưa	I-LOCATION
+,	O
 huyện	B-LOCATION
 Điện	I-LOCATION
 Biên	I-LOCATION
+.	O
 Nhưng	O
 tôi	O
 hiểu	O
@@ -93504,6 +94727,7 @@ xanh	O
 
 Năm	B-DATETIME
 1994	I-DATETIME
+,	O
 sau	O
 khi	O
 nhà	O
@@ -93530,9 +94754,11 @@ khu	O
 vực	O
 Hạ	B-LOCATION
 Thanh	I-LOCATION
+,	O
 xã	B-LOCATION
 Thanh	I-LOCATION
 Nưa	I-LOCATION
+,	O
 đã	O
 khoanh	O
 nuôi	O
@@ -93592,6 +94818,7 @@ Nhưng	O
 sau	O
 6	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+,	O
 hạt	O
 mọc	O
 không	O
@@ -93646,6 +94873,7 @@ chấp	O
 nhận	O
 cho	O
 12,7ha	B-QUANTITY-DIM
+.	O
 
 Sau	O
 đó	O
@@ -93672,6 +94900,7 @@ vệ	O
 rừng	O
 lên	O
 42,7ha	B-QUANTITY-DIM
+.	O
 Diện	O
 tích	O
 lớn	O
@@ -93720,6 +94949,7 @@ người	O
 vào	O
 năm	B-DATETIME
 1995	I-DATETIME
+.	O
 Việc	O
 phân	O
 công	O
@@ -93760,6 +94990,7 @@ quen	O
 Sau	O
 23	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 nơi	O
 đây	O
 đã	O
@@ -93808,6 +95039,7 @@ xứng	O
 Lò	B-PERSON
 Văn	I-PERSON
 Cu	I-PERSON
+,	O
 cho	O
 biết	O
 :	O
@@ -93899,6 +95131,7 @@ từ	O
 -	I-QUANTITY
 70	I-QUANTITY
 tuổi	I-QUANTITY
+,	O
 nhưng	O
 cũng	O
 còn	O
@@ -93910,6 +95143,7 @@ viên	O
 -	I-QUANTITY
 90	I-QUANTITY
 tuổi	I-QUANTITY
+.	O
 Đối	O
 với	O
 các	O
@@ -94029,12 +95263,15 @@ cháu	O
 Lò	B-PERSON
 Văn	I-PERSON
 Bình	I-PERSON
+,	O
 bản	B-LOCATION
 Tông	I-LOCATION
 Khao	I-LOCATION
+,	O
 xã	B-LOCATION
 Thanh	I-LOCATION
 Nưa	I-LOCATION
+,	O
 đã	O
 67	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
@@ -94066,6 +95303,7 @@ hội	O
 được	O
 10	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 những	O
 chuyến	O
 đi	O
@@ -94467,6 +95705,7 @@ hơn	O
 100	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 Nhờ	O
 vậy	O
 ,	O
@@ -95080,11 +96319,13 @@ phía	O
 nam	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 nhất	O
 là	O
 tỉnh	B-LOCATION
 Quảng	I-LOCATION
 Đông	I-LOCATION
+.	O
 Tại	O
 đây	O
 ,	O
@@ -95181,6 +96422,7 @@ lên	O
 tới	O
 40	B-QUANTITY-PER
 %	I-QUANTITY-PER
+,	O
 đoạn	O
 đường	O
 đua	O
@@ -95216,6 +96458,7 @@ năm	I-DATETIME-DURATION
 nhạc	O
 Việt	B-LOCATION-GPE
 nam	I-LOCATION-GPE
+:	O
 'Hòn	O
 vọng	O
 phu	O
@@ -95269,6 +96512,7 @@ cách	O
 đây	O
 79	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 tân	O
 nhạc	O
 Việt	B-LOCATION-GPE
@@ -95313,6 +96557,7 @@ Thương	I-PERSON
 ở	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+.	O
 
 Chuyến	O
 hành	O
@@ -95339,10 +96584,12 @@ cách	O
 tại	O
 miền	B-LOCATION
 Bắc	I-LOCATION
+.	O
 Nhưng	O
 ở	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 ông	O
 Tuyên	B-PERSON
 đã	O
@@ -95379,10 +96626,12 @@ của	O
 người	O
 Thăng	B-LOCATION
 Long	I-LOCATION
+.	O
 Song	O
 ở	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+,	O
 nhờ	O
 có	O
 Lê	B-PERSON
@@ -95410,6 +96659,7 @@ ngộ	O
 trên	O
 đất	B-LOCATION
 Cảng	I-LOCATION
+,	O
 ông	O
 Tuyên	B-PERSON
 đã	O
@@ -95447,6 +96697,7 @@ cũng	O
 nhờ	O
 Lê	B-PERSON
 Thương	I-PERSON
+,	O
 Nguyễn	B-PERSON
 Văn	I-PERSON
 Tuyên	I-PERSON
@@ -95471,9 +96722,11 @@ Nữ	I-LOCATION
 họ	I-LOCATION
 Hoài	I-LOCATION
 Đức	I-LOCATION
+.	O
 Gặp	O
 Lê	B-PERSON
 Thương	I-PERSON
+,	O
 tuy	O
 tuổi	O
 đời	O
@@ -95482,6 +96735,7 @@ thua	O
 Tuyên	B-PERSON
 5	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 ông	O
 Tuyên	B-PERSON
 vẫn	O
@@ -95544,12 +96798,14 @@ báo	O
 Ngày	I-PRODUCT
 nay	I-PRODUCT
 ''	I-PRODUCT
+.	O
 
 Nhạc	B-PERSONTYPE
 sĩ	I-PERSONTYPE
 Lê	B-PERSON
 Thương	I-PERSON
 Ảnh	I-PERSON
+:	O
 TƯ	O
 LIỆU	O
 
@@ -95557,6 +96813,7 @@ Sau	O
 mùa	B-DATETIME
 thu	I-DATETIME
 1938	I-DATETIME
+,	O
 ``	B-PRODUCT
 Bản	I-PRODUCT
 đàn	I-PRODUCT
@@ -95573,6 +96830,7 @@ báo	O
 Ngày	I-PRODUCT
 nay	I-PRODUCT
 ''	I-PRODUCT
+,	O
 ít	O
 tháng	O
 sau	O
@@ -95603,11 +96861,13 @@ Tiếng	I-PRODUCT
 đêm	I-PRODUCT
 khuya	I-PRODUCT
 ''	I-PRODUCT
+,	O
 ``	B-PRODUCT
 Một	I-PRODUCT
 ngày	I-PRODUCT
 xanh	I-PRODUCT
 ''	I-PRODUCT
+,	O
 ``	B-PRODUCT
 Thu	I-PRODUCT
 trên	I-PRODUCT
@@ -95615,6 +96875,7 @@ trên	I-PRODUCT
 Kinh	I-PRODUCT
 Châu	I-PRODUCT
 ''	I-PRODUCT
+,	O
 ``	B-PRODUCT
 Trên	I-PRODUCT
 sông	I-PRODUCT
@@ -95627,6 +96888,7 @@ hát	I-LOCATION-STRUC
 Lớn	I-LOCATION-STRUC
 Hải	I-LOCATION-STRUC
 Phòng	I-LOCATION-STRUC
+,	O
 trong	O
 không	O
 khí	O
@@ -95650,6 +96912,7 @@ trong	O
 mùa	B-DATETIME
 hè	I-DATETIME
 1939	I-DATETIME
+.	O
 Từ	O
 đó	O
 ,	O
@@ -95664,6 +96927,7 @@ tỏa	O
 lên	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Vĩnh	B-LOCATION
 Yên	I-LOCATION
 nhờ	O
@@ -95694,6 +96958,7 @@ là	O
 tới	O
 năm	B-DATETIME
 1941	I-DATETIME
+,	O
 khi	O
 nhóm	B-ORGANIZATION
 Hoàng	I-ORGANIZATION
@@ -95723,6 +96988,7 @@ Nhật	B-LOCATION-GPE
 chiếm	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+,	O
 Lê	B-PERSON
 Thương	I-PERSON
 cùng	O
@@ -95738,6 +97004,7 @@ trên	O
 đất	O
 Nam	B-LOCATION
 Bộ	I-LOCATION
+.	O
 Vậy	O
 là	O
 ông	O
@@ -95762,6 +97029,7 @@ xưa	O
 Ở	O
 Nam	B-LOCATION
 Bộ	I-LOCATION
+,	O
 Lê	B-PERSON
 Thương	I-PERSON
 đã	O
@@ -95812,6 +97080,7 @@ tại	O
 Radio	B-ORGANIZATION
 Sài	I-ORGANIZATION
 Gòn	I-ORGANIZATION
+.	O
 Hãng	O
 này	O
 xuất	O
@@ -95876,7 +97145,9 @@ hàng	O
 hát	O
 như	O
 Béka	B-ORGANIZATION
+,	O
 Keller	B-ORGANIZATION
+,	O
 hãng	O
 đĩa	O
 Asia	B-ORGANIZATION
@@ -95913,6 +97184,7 @@ là	O
 chưa	I-PRODUCT
 xài	I-PRODUCT
 ''	I-PRODUCT
+.	O
 Chỉ	O
 khi	O
 đến	O
@@ -95921,6 +97193,7 @@ Bắc	I-ORGANIZATION
 kỳ	I-ORGANIZATION
 ái	I-ORGANIZATION
 hữu	I-ORGANIZATION
+,	O
 Lê	B-PERSON
 Thương	I-PERSON
 mới	O
@@ -95958,6 +97231,7 @@ Scawell	I-PERSON
 và	O
 Nguyễn	B-PERSON
 Thông	I-PERSON
+.	O
 Nhưng	O
 đó	O
 chỉ	O
@@ -95973,8 +97247,10 @@ Phải	O
 tới	O
 năm	B-DATETIME
 1943	I-DATETIME
+,	O
 Quý	B-DATETIME
 Mùi	I-DATETIME
+,	O
 tân	O
 nhạc	O
 mới	O
@@ -95986,6 +97262,7 @@ chú	O
 ở	O
 Sài	B-LOCATION-GPE
 Gòn	I-LOCATION-GPE
+.	O
 Một	O
 loạt	O
 bài	O
@@ -96015,9 +97292,11 @@ từ	B-DATETIME-DATERANGE
 25-3-1943	I-DATETIME-DATERANGE
 đến	I-DATETIME-DATERANGE
 26-8-1944	I-DATETIME-DATERANGE
+.	O
 Ở	O
 Sài	B-LOCATION-GPE
 Gòn	I-LOCATION-GPE
+,	O
 Lê	B-PERSON
 Thương	I-PERSON
 vừa	O
@@ -96149,6 +97428,7 @@ Chinh	I-PRODUCT
 phụ	I-PRODUCT
 ngâm	I-PRODUCT
 ''	I-PRODUCT
+:	O
 ``	O
 Giã	O
 nhà	O
@@ -96323,6 +97603,7 @@ lý	O
 xuyên	O
 nước	O
 Nam	B-LOCATION
+,	O
 rồi	O
 lại	O
 nhiều	O
@@ -96362,6 +97643,7 @@ Thương	I-PERSON
 viết	O
 năm	B-DATETIME
 1946	I-DATETIME
+.	O
 Ông	O
 muốn	O
 gửi	O
@@ -96418,12 +97700,15 @@ danh	O
 thành	B-LOCATION-STRUC
 Cổ	I-LOCATION-STRUC
 Loa	I-LOCATION-STRUC
+,	O
 đền	B-LOCATION-STRUC
 Vạn	I-LOCATION-STRUC
 Kiếp	I-LOCATION-STRUC
+,	O
 vượt	O
 Hoàng	B-LOCATION
 Sơn	I-LOCATION
+,	O
 vòng	O
 thành	O
 Huế	B-LOCATION
@@ -96509,6 +97794,7 @@ năm	I-DATETIME
 ở	O
 Sài	B-LOCATION-GPE
 Gòn	I-LOCATION-GPE
+.	O
 Hôm	O
 ấy	O
 ,	O
@@ -96529,6 +97815,7 @@ gia	O
 55	B-LOCATION
 Bùi	I-LOCATION
 Viện	I-LOCATION
+.	O
 Bác	O
 quả	O
 là	O
@@ -96553,6 +97840,7 @@ nhà	O
 anh	O
 Lê	B-PERSON
 Thắng	I-PERSON
+,	O
 đường	O
 sông	O
 ở	O
@@ -96560,6 +97848,7 @@ mạn	O
 cầu	B-LOCATION-STRUC
 chữ	I-LOCATION-STRUC
 Y	I-LOCATION-STRUC
+,	O
 Lê	B-PERSON
 Thương	I-PERSON
 sương	O
@@ -96668,6 +97957,7 @@ Bác	O
 mất	O
 ngày	B-DATETIME-DATE
 18-9-1996	I-DATETIME-DATE
+.	O
 Năm	O
 ấy	O
 nghe	O
@@ -96791,6 +98081,7 @@ hào	O
 
 Lê	B-PERSON
 Thương	I-PERSON
+,	O
 tên	O
 khai	O
 sinh	O
@@ -96798,6 +98089,7 @@ là	O
 Ngô	B-PERSON
 Đình	I-PERSON
 Hộ	I-PERSON
+.	O
 Ông	O
 sinh	O
 năm	B-DATETIME
@@ -96805,6 +98097,7 @@ năm	B-DATETIME
 tại	O
 Nam	B-LOCATION
 Định	I-LOCATION
+.	O
 Sau	O
 khi	O
 tốt	O
@@ -96825,8 +98118,10 @@ Trung	I-ORGANIZATION
 học	I-ORGANIZATION
 Lê	I-ORGANIZATION
 Lợi	I-ORGANIZATION
+,	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+.	O
 Ở	O
 đấy	O
 ,	O
@@ -96888,10 +98183,13 @@ hát	O
 của	O
 Hoàng	B-PERSON
 Quý	I-PERSON
+,	O
 Canh	B-PERSON
 Thân	I-PERSON
+,	O
 Phạm	B-PERSON
 Ngữ	I-PERSON
+,	O
 Hoàng	B-PERSON
 Phú	I-PERSON
 (	O
@@ -96904,6 +98202,7 @@ Vũ	I-PERSON
 ,	O
 Văn	B-PERSON
 Cao	I-PERSON
+,	O
 nàng	O
 Cúc	B-PERSON
 Phương	I-PERSON
@@ -97014,8 +98313,10 @@ Long	I-LOCATION-STRUC
 Biên	I-LOCATION-STRUC
 Hà	I-LOCATION-STRUC
 Nội	I-LOCATION-STRUC
+,	O
 rộng	O
 800m2	B-QUANTITY-DIM
+,	O
 thiết	O
 kế	O
 theo	O
@@ -97086,6 +98387,7 @@ gần	O
 7	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+,	O
 để	O
 phục	O
 vụ	O
@@ -97138,11 +98440,13 @@ TTTM	B-LOCATION-STRUC
 Aeon	I-LOCATION-STRUC
 Long	I-LOCATION-STRUC
 Biên	I-LOCATION-STRUC
+,	O
 số	O
 27	B-QUANTITY-NUM
 đường	B-LOCATION
 Cổ	I-LOCATION
 Linh	I-LOCATION
+.	O
 
 Với	O
 hơn	O
@@ -97162,6 +98466,7 @@ nhà	O
 sách	O
 tại	O
 TP.HCM	B-LOCATION-GPE
+,	O
 19	B-QUANTITY-NUM
 nhà	O
 sách	O
@@ -97172,6 +98477,7 @@ miền	O
 Tây	B-LOCATION
 Nam	I-LOCATION
 bộ	I-LOCATION
+,	O
 19	B-QUANTITY-NUM
 nhà	O
 sách	O
@@ -97179,12 +98485,14 @@ tại	O
 Đông	B-LOCATION
 Nam	I-LOCATION
 bộ	I-LOCATION
+,	O
 4	B-QUANTITY-NUM
 nhà	O
 sách	O
 tại	O
 Tây	B-LOCATION
 Nguyên	I-LOCATION
+,	O
 15	B-QUANTITY-NUM
 nhà	O
 sách	O
@@ -97192,6 +98500,7 @@ tại	O
 Nam	B-LOCATION
 Trung	I-LOCATION
 bộ	I-LOCATION
+,	O
 6	B-QUANTITY-NUM
 nhà	O
 sách	O
@@ -97199,6 +98508,7 @@ tại	O
 Bắc	B-LOCATION
 Trung	I-LOCATION
 bộ	I-LOCATION
+,	O
 12	B-QUANTITY-NUM
 nhà	O
 sách	O
@@ -97210,6 +98520,7 @@ các	O
 tỉnh	O
 miền	B-LOCATION
 Bắc	I-LOCATION
+.	O
 
 Công	B-ORGANIZATION
 ty	I-ORGANIZATION
@@ -97387,6 +98698,7 @@ họa	I-EVENT
 
 Ngày	B-DATETIME-DATE
 22-9	I-DATETIME-DATE
+,	O
 Sở	O
 Văn	O
 hóa	O
@@ -97423,6 +98735,7 @@ thanh	I-EVENT
 hội	I-EVENT
 họa	I-EVENT
 ”	I-EVENT
+.	O
 
 Triển	O
 lãm	O
@@ -97468,6 +98781,7 @@ TP	I-ORGANIZATION
 Hồ	I-ORGANIZATION
 Chí	I-ORGANIZATION
 Minh	I-ORGANIZATION
+,	O
 tổ	O
 chức	O
 các	O
@@ -97492,6 +98806,7 @@ ra	O
 đến	O
 ngày	B-DATETIME-DATE
 24-9	I-DATETIME-DATE
+.	O
 
 Hơn	O
 130	B-QUANTITY-NUM
@@ -97519,6 +98834,7 @@ ngày	I-DATETIME-DATERANGE
 11	I-DATETIME-DATERANGE
 đến	I-DATETIME-DATERANGE
 22-9	I-DATETIME-DATERANGE
+,	O
 tại	O
 Đoàn	B-ORGANIZATION
 An	I-ORGANIZATION
@@ -97528,6 +98844,7 @@ dưỡng	I-ORGANIZATION
 Hồ	B-LOCATION
 Núi	I-LOCATION
 Cốc	I-LOCATION
+,	O
 Quân	B-LOCATION
 khu	I-LOCATION
 1	I-LOCATION
@@ -97547,6 +98864,7 @@ Quân	O
 khu	O
 năm	B-DATETIME
 2017	I-DATETIME
+,	O
 với	O
 sự	O
 tham	O
@@ -97704,6 +99022,7 @@ Việt	I-PRODUCT
 Bắc-quyển	I-PRODUCT
 6	I-PRODUCT
 ”	I-PRODUCT
+.	O
 
 Mỵ	B-PERSON
 Châu	I-PERSON
@@ -97812,9 +99131,11 @@ thuộc	O
 xã	B-LOCATION
 Phương	I-LOCATION
 Công	I-LOCATION
+,	O
 huyện	B-LOCATION
 Tiền	I-LOCATION
 Hải	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Thái	I-LOCATION
 Bình	I-LOCATION
@@ -97833,11 +99154,13 @@ tên	O
 là	O
 Trần	B-PERSON
 Bính	I-PERSON
+,	O
 lấy	O
 bà	O
 Đào	B-PERSON
 Thị	I-PERSON
 Hoan	I-PERSON
+,	O
 hai	O
 vợ	O
 chồng	O
@@ -97871,6 +99194,7 @@ hai	O
 hơn	O
 40	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+.	O
 
 Họ	O
 bàn	O
@@ -97894,6 +99218,7 @@ mãi	O
 năm	O
 42	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 người	O
 vợ	O
 nằm	O
@@ -97921,6 +99246,7 @@ xuân	I-DATETIME
 năm	I-DATETIME
 Giáp	I-DATETIME
 Thìn	I-DATETIME
+.	O
 
 Ngay	O
 khi	O
@@ -97949,15 +99275,18 @@ là	O
 Trần	B-PERSON
 Thị	I-PERSON
 Chân	I-PERSON
+,	O
 còn	O
 gọi	O
 là	O
 Châu	B-PERSON
 Nương	I-PERSON
+,	O
 hiệu	O
 là	O
 Thục	B-PERSON
 Nương	I-PERSON
+.	O
 
 Càng	O
 lớn	O
@@ -98004,12 +99333,14 @@ vua	O
 làng	B-LOCATION
 Thao	I-LOCATION
 Bồi	I-LOCATION
+,	O
 gặp	O
 Thục	B-PERSON
 Nương	I-PERSON
 Trần	B-PERSON
 Thị	I-PERSON
 Chân	I-PERSON
+,	O
 vua	O
 rất	O
 yêu	O
@@ -98028,6 +99359,7 @@ làm	O
 nhị	I-PERSONTYPE
 Nguyên	I-PERSONTYPE
 phi	I-PERSONTYPE
+.	O
 
 Vua	O
 truyền	O
@@ -98094,6 +99426,7 @@ Năm	I-DATETIME-DATE
 năm	I-DATETIME-DATE
 Tân	I-DATETIME-DATE
 Dậu	I-DATETIME-DATE
+.	O
 
 An	B-PERSON
 Dương	I-PERSON
@@ -98112,12 +99445,14 @@ gái	O
 là	O
 Mỵ	B-PERSON
 Châu	I-PERSON
+,	O
 đặt	O
 hiệu	O
 là	O
 Trinh	B-PERSON
 Nhất	I-PERSON
 Nương	I-PERSON
+.	O
 
 Tuy	O
 nhiên	O
@@ -98137,6 +99472,7 @@ của	O
 An	B-PERSON
 Dương	I-PERSON
 Vương	I-PERSON
+.	O
 Trong	O
 các	O
 tài	O
@@ -98146,6 +99482,7 @@ sách	O
 Tây	B-PRODUCT
 Hồ	I-PRODUCT
 chí	I-PRODUCT
+,	O
 …	O
 có	O
 nhắc	O
@@ -98250,8 +99587,10 @@ Châu	I-PERSON
 (	O
 Cổ	B-LOCATION
 Loa	I-LOCATION
+,	O
 Đông	B-LOCATION
 Anh	I-LOCATION
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 .	O
@@ -98275,6 +99614,7 @@ cha	O
 con	O
 Triệu	B-PERSON
 Đà	I-PERSON
+,	O
 thành	B-LOCATION-STRUC
 Cổ	I-LOCATION-STRUC
 Loa	I-LOCATION-STRUC
@@ -98385,6 +99725,7 @@ chém	O
 đầu	O
 Mỵ	B-PERSON
 Châu	I-PERSON
+.	O
 
 Trước	O
 khi	O
@@ -98481,6 +99822,7 @@ trôi	O
 ngược	O
 biển	B-LOCATION
 Đông	I-LOCATION
+,	O
 về	O
 đến	O
 dòng	O
@@ -98678,6 +100020,7 @@ cái	O
 của	O
 Mỵ	B-PERSON
 Châu	I-PERSON
+,	O
 riêng	O
 có	O
 sách	O
@@ -98687,6 +100030,7 @@ Nam	I-PRODUCT
 ngữ	I-PRODUCT
 lục	I-PRODUCT
 ''	I-PRODUCT
+,	O
 tác	O
 phẩm	O
 khuyết	O
@@ -98855,6 +100199,7 @@ Thiên	B-PRODUCT
 Nam	I-PRODUCT
 ngữ	I-PRODUCT
 lục	I-PRODUCT
+,	O
 mẹ	O
 của	O
 Triệu	B-PERSON
@@ -98866,6 +100211,7 @@ công	B-PERSONTYPE
 chúa	I-PERSONTYPE
 Mỵ	B-PERSON
 Châu	I-PERSON
+.	O
 
 Theo	O
 HTHT/Khỏe	O
@@ -98907,6 +100253,7 @@ Chớ	O
 đi	O
 ngày	B-DATETIME-DATE
 bảy	I-DATETIME-DATE
+,	O
 chớ	O
 về	O
 ngày	B-DATETIME-DATE
@@ -98921,6 +100268,7 @@ bốn	I-DATETIME-SET
 ,	I-DATETIME-SET
 hai	I-DATETIME-SET
 ba	I-DATETIME-SET
+,	O
 đi	O
 chơi	O
 còn	O
@@ -98944,10 +100292,12 @@ Theo	O
 Trần	B-PERSON
 Ngọc	I-PERSON
 Kiệm	I-PERSON
+,	O
 chuyên	B-PERSONTYPE
 gia	I-PERSONTYPE
 phong	I-PERSONTYPE
 thủy	I-PERSONTYPE
+,	O
 sở	O
 dĩ	O
 có	O
@@ -98957,6 +100307,7 @@ Chớ	O
 đi	O
 ngày	B-DATETIME-DATE
 bảy	I-DATETIME-DATE
+,	O
 chớ	O
 về	O
 ngày	B-DATETIME-DATE
@@ -99070,6 +100421,7 @@ các	O
 ngày	B-DATETIME-DATE
 Nguyệt	I-DATETIME-DATE
 kỵ	I-DATETIME-DATE
+,	O
 tránh	O
 làm	O
 những	O
@@ -99673,6 +101025,7 @@ trải	O
 dài	O
 3000	B-QUANTITY-DIM
 dặm	I-QUANTITY-DIM
+,	O
 đi	O
 qua	O
 18	B-QUANTITY-NUM
@@ -99838,6 +101191,7 @@ nắng	O
 rực	O
 rỡ	O
 California	B-LOCATION-GPE
+,	O
 cây	O
 cầu	O
 nối	O
@@ -99934,6 +101288,7 @@ biển	O
 Đại	B-LOCATION
 Tây	I-LOCATION
 Dương	I-LOCATION
+.	O
 
 Nằm	O
 dưới	O
@@ -99978,6 +101333,7 @@ vời	O
 xứ	O
 New	B-LOCATION-GPE
 Zealand	I-LOCATION-GPE
+.	O
 
 Quãng	O
 đường	O
@@ -100026,6 +101382,7 @@ thú	O
 ở	O
 bang	B-LOCATION-GPE
 Utah	I-LOCATION-GPE
+.	O
 
 Được	O
 chọn	O
@@ -100039,6 +101396,7 @@ James	B-PERSON
 Bond	I-PERSON
 của	O
 Goldfinger	B-PERSON
+,	O
 cung	O
 đường	O
 Furka	B-LOCATION
@@ -100051,6 +101409,7 @@ Alps	B-LOCATION
 của	O
 Thụy	B-LOCATION-GPE
 Sĩ	I-LOCATION-GPE
+,	O
 uốn	O
 lượn	O
 giữa	O
@@ -100085,6 +101444,7 @@ Môn	I-LOCATION
 –	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 con	O
 đường	O
 11	B-QUANTITY-DIM
@@ -100133,6 +101493,7 @@ sen	O
 tuyết	O
 Tây	B-LOCATION
 Tạng	I-LOCATION
+,	O
 trà	O
 hoa	O
 hồng	O
@@ -100158,6 +101519,7 @@ trên	O
 2,5	B-QUANTITY
 triệu	I-QUANTITY
 đồng/kg	I-QUANTITY
+.	O
 Cũng	O
 loại	O
 hoa	O
@@ -100234,6 +101596,7 @@ Chị	O
 Nguyễn	B-PERSON
 Thị	I-PERSON
 Mai	I-PERSON
+,	O
 chủ	O
 cửa	O
 hàng	O
@@ -100327,6 +101690,7 @@ châu	B-LOCATION
 hay	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+,	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
 không	O
@@ -100360,6 +101724,7 @@ thiệu	O
 của	O
 chị	O
 Mai	B-PERSON
+,	O
 cửa	O
 hàng	O
 chị	O
@@ -100375,10 +101740,12 @@ gốc	O
 từ	O
 Tây	B-LOCATION
 Tạng	I-LOCATION
+,	O
 giá	O
 280	B-QUANTITY
 nghìn	I-QUANTITY
 đồng/lạng	I-QUANTITY
+.	O
 Đây	O
 là	O
 loại	O
@@ -100457,6 +101824,7 @@ biển	O
 trên	O
 dãy	B-LOCATION-GEO
 Hymalaya	I-LOCATION-GEO
+.	O
 Phải	O
 rất	O
 khó	O
@@ -100522,6 +101890,7 @@ Trà	B-PRODUCT
 Tuyết	I-PRODUCT
 Liên	I-PRODUCT
 Sơn	I-PRODUCT
+,	O
 một	O
 trong	O
 những	O
@@ -100586,6 +101955,7 @@ dã	O
 250	B-QUANTITY
 nghìn	I-QUANTITY
 đồng/lạng	I-QUANTITY
+.	O
 Quả	O
 hồng	O
 leo	O
@@ -100609,6 +101979,7 @@ gốc	O
 từ	O
 Tây	B-LOCATION
 Tạng	I-LOCATION
+,	O
 sấy	O
 khô	O
 tự	O
@@ -100689,6 +102060,7 @@ Trang	I-PERSON
 quận	B-LOCATION
 Tây	I-LOCATION
 Hồ	I-LOCATION
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 ,	O
@@ -100707,6 +102079,7 @@ cao	O
 Theo	O
 chị	O
 Trang	B-PERSON
+,	O
 những	O
 người	O
 am	O
@@ -100721,6 +102094,7 @@ hoa	O
 hồng	O
 Tây	B-LOCATION
 Tạng	I-LOCATION
+.	O
 Đây	O
 là	O
 loài	O
@@ -100766,6 +102140,7 @@ trời	O
 vùng	O
 Tây	B-LOCATION
 Tạng	I-LOCATION
+.	O
 Đây	O
 là	O
 vùng	O
@@ -100778,6 +102153,7 @@ giới	O
 thuộc	O
 dãy	O
 Himalaya	B-LOCATION-GEO
+,	O
 với	O
 độ	O
 cao	O
@@ -100785,6 +102161,7 @@ trung	O
 bình	O
 trên	O
 4.200m	B-QUANTITY-DIM
+.	O
 Nơi	O
 đây	O
 có	O
@@ -100817,6 +102194,7 @@ cao	O
 từ	O
 5.000-7.000	B-QUANTITY
 m	I-QUANTITY
+.	O
 
 Với	O
 công	O
@@ -100990,6 +102368,7 @@ khi	O
 tới	O
 vùng	O
 Outback	B-LOCATION
+.	O
 Nhưng	O
 nơi	O
 đây	O
@@ -101001,6 +102380,7 @@ cảnh	O
 như	O
 Ayers	B-LOCATION
 Rock	I-LOCATION
+,	O
 Red	B-LOCATION
 Centre	I-LOCATION
 và	O
@@ -101089,9 +102469,11 @@ khám	O
 phá	O
 núi	B-LOCATION-GEO
 Cook	I-LOCATION-GEO
+,	O
 thảo	O
 nguyên	O
 Canterbury	B-LOCATION
+,	O
 sông	O
 băng	O
 và	O
@@ -101146,11 +102528,13 @@ khám	O
 phá	O
 vùng	O
 Patagonia	B-LOCATION-GPE
+,	O
 cực	O
 nam	O
 của	O
 Nam	B-LOCATION
 Mỹ	I-LOCATION
+.	O
 Nơi	O
 đây	O
 có	O
@@ -101180,6 +102564,7 @@ nhất	O
 trên	O
 Trái	B-LOCATION
 đất	I-LOCATION
+.	O
 
 Chỉ	O
 2	B-DATETIME-DURATION
@@ -101187,7 +102572,9 @@ giờ	I-DATETIME-DURATION
 bay	O
 từ	O
 Reykjavik	B-LOCATION
+,	O
 Iceland	B-LOCATION-GPE
+,	O
 du	O
 khách	O
 có	O
@@ -101245,6 +102632,7 @@ hay	O
 Glasgow	B-LOCATION-GPE
 ở	O
 Scotland	B-LOCATION-GPE
+.	O
 Với	O
 chỉ	O
 khoảng	O
@@ -101304,6 +102692,7 @@ nhỏ	O
 Easter	B-LOCATION-GEO
 ở	O
 Chile	B-LOCATION-GPE
+.	O
 Nằm	O
 cách	O
 xa	O
@@ -101317,6 +102706,7 @@ nhất	O
 gần	O
 2.000	B-QUANTITY-DIM
 km	I-QUANTITY-DIM
+,	O
 hòn	O
 đảo	O
 này	O
@@ -101431,6 +102821,7 @@ lên	O
 dãy	O
 núi	O
 Himalayan	B-LOCATION-GEO
+.	O
 Mặc	O
 dù	O
 các	O
@@ -101484,6 +102875,7 @@ Sicily	I-LOCATION-GEO
 Địa	B-LOCATION
 Trung	I-LOCATION
 Hải	I-LOCATION
+.	O
 Nó	O
 được	O
 cho	O
@@ -101499,6 +102891,7 @@ trong	O
 trường	O
 ca	O
 Odyssey	B-LOCATION
+.	O
 Nơi	O
 đây	O
 cũng	O
@@ -101590,6 +102983,7 @@ nổi	O
 tiếng	O
 Grand	B-LOCATION
 Canyon	I-LOCATION
+.	O
 Vì	O
 chỉ	O
 có	O
@@ -101657,17 +103051,21 @@ Sa	I-LOCATION
 
 Sáng	B-DATETIME-DATE
 9-12	I-DATETIME-DATE
+,	O
 tại	O
 xã	B-LOCATION
 Tam	I-LOCATION
 Thanh	I-LOCATION
+,	O
 thành	B-LOCATION-GPE
 phố	I-LOCATION-GPE
 Tam	I-LOCATION-GPE
 Kỳ	I-LOCATION-GPE
+,	O
 tỉnh	B-LOCATION
 Quảng	I-LOCATION
 Nam	I-LOCATION
+,	O
 Bảo	B-ORGANIZATION
 tàng	I-ORGANIZATION
 tỉnh	I-ORGANIZATION
@@ -101680,6 +103078,7 @@ với	O
 BP	I-ORGANIZATION
 Tam	I-ORGANIZATION
 Thanh	I-ORGANIZATION
+,	O
 BĐBP	B-ORGANIZATION
 tỉnh	I-ORGANIZATION
 và	I-ORGANIZATION
@@ -101722,6 +103121,7 @@ và	I-EVENT
 pháp	I-EVENT
 lý	I-EVENT
 ”	I-EVENT
+.	O
 
 Triển	O
 lãm	O
@@ -101834,6 +103234,7 @@ do	O
 ông	O
 Trần	B-PERSON
 Thắng	I-PERSON
+,	O
 Việt	B-MISCELLANEOUS
 kiều	I-MISCELLANEOUS
 sưu	O
@@ -101905,6 +103306,7 @@ liệu	O
 về	O
 Hoàng	B-LOCATION
 Sa	I-LOCATION
+,	O
 Trường	B-LOCATION
 Sa	I-LOCATION
 thời	O
@@ -101915,6 +103317,7 @@ Việt	B-MISCELLANEOUS
 Nam	I-MISCELLANEOUS
 Cộng	I-MISCELLANEOUS
 hòa	I-MISCELLANEOUS
+,	O
 hình	O
 ảnh	O
 về	O
@@ -101985,6 +103388,7 @@ Sa	I-LOCATION
 và	O
 Trường	B-LOCATION
 Sa	I-LOCATION
+.	O
 
 Ngay	O
 sau	O
@@ -102117,6 +103521,7 @@ khác	O
 trên	O
 Biển	B-LOCATION-GEO
 Đông	I-LOCATION-GEO
+.	O
 
 Huỳnh	B-PERSON
 Chín	I-PERSON
@@ -102174,6 +103579,7 @@ Tại	O
 trang	O
 An	B-LOCATION
 Lạc	I-LOCATION
+,	O
 đất	O
 Quảng	B-LOCATION
 An	I-LOCATION
@@ -102183,6 +103589,7 @@ là	O
 huyện	B-LOCATION
 Thọ	I-LOCATION
 Xuân	I-LOCATION
+,	O
 Thanh	B-LOCATION
 Hóa	I-LOCATION
 có	O
@@ -102195,6 +103602,7 @@ và	O
 bà	O
 Hoàng	B-PERSON
 Thị	I-PERSON
+,	O
 ăn	O
 ở	O
 hiền	O
@@ -102252,6 +103660,7 @@ là	O
 gò	B-LOCATION
 Kim	I-LOCATION
 Quy	I-LOCATION
+,	O
 ngồi	O
 một	O
 lát	O
@@ -102327,6 +103736,7 @@ Hoa	B-PERSON
 Nương	I-PERSON
 18	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 rất	O
 nhiều	O
 chàng	O
@@ -102366,6 +103776,7 @@ sắc	O
 của	O
 Hoa	B-PERSON
 Nương	I-PERSON
+,	O
 mang	O
 lễ	O
 vật	O
@@ -102556,6 +103967,7 @@ mã	O
 chống	O
 quân	B-MISCELLANEOUS
 Lương	I-MISCELLANEOUS
+.	O
 Năm	B-DATETIME
 541	I-DATETIME
 khi	O
@@ -102570,6 +103982,7 @@ nghĩa	O
 đánh	O
 quân	B-MISCELLANEOUS
 Lương	I-MISCELLANEOUS
+,	O
 Phạm	B-PERSON
 Lương	I-PERSON
 liền	O
@@ -102585,6 +103998,7 @@ quân	O
 của	O
 Lý	B-PERSON
 Bí	I-PERSON
+.	O
 
 Phạm	B-PERSON
 Thị	I-PERSON
@@ -102661,6 +104075,7 @@ giặc	O
 .	O
 Năm	B-DATETIME
 543	I-DATETIME
+,	O
 Phạm	B-PERSON
 Thị	I-PERSON
 Toàn	I-PERSON
@@ -102675,6 +104090,7 @@ tan	O
 quân	B-MISCELLANEOUS
 Lâm	I-MISCELLANEOUS
 Ấp	I-MISCELLANEOUS
+.	O
 
 Mùa	B-DATETIME
 xuân	I-DATETIME
@@ -102690,12 +104106,14 @@ lên	O
 ngôi	O
 Hoàng	B-PERSONTYPE
 Đế	I-PERSONTYPE
+,	O
 tự	O
 xưng	O
 là	O
 Lý	B-PERSON
 Nam	I-PERSON
 Đế	I-PERSON
+,	O
 đổi	O
 tên	O
 nước	O
@@ -102843,6 +104261,7 @@ trường	O
 Quốc	B-LOCATION-STRUC
 Tử	I-LOCATION-STRUC
 Giám	I-LOCATION-STRUC
+,	O
 lúc	O
 về	O
 có	O
@@ -102855,6 +104274,7 @@ là	O
 chùa	B-LOCATION-STRUC
 Ngọc	I-LOCATION-STRUC
 Hồ	I-LOCATION-STRUC
+.	O
 Vào	O
 tới	O
 sân	O
@@ -103119,6 +104539,7 @@ khu	O
 vực	O
 Cửa	B-LOCATION
 Nam	I-LOCATION
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 ngày	O
@@ -103569,6 +104990,7 @@ Theo	O
 lời	O
 bà	O
 Lan	B-PERSON
+,	O
 vài	O
 năm	O
 trở	O
@@ -103891,8 +105313,10 @@ nước	O
 ngoài	O
 như	O
 Mỹ	B-LOCATION-GPE
+,	O
 Ấn	B-LOCATION-GPE
 Độ	I-LOCATION-GPE
+,	O
 Thái	B-LOCATION-GPE
 Lan	I-LOCATION-GPE
 và	O
@@ -104711,6 +106135,7 @@ nước	O
 khoảng	O
 30	B-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+,	O
 sau	O
 đó	O
 rửa	O
@@ -104830,6 +106255,7 @@ sôi	O
 khoảng	O
 2	B-DATETIME-DURATION
 phút	I-DATETIME-DURATION
+,	O
 thêm	O
 nước	O
 luộc	O
@@ -105445,9 +106871,11 @@ của	O
 biển	O
 Phan	B-LOCATION-GEO
 Thiết	I-LOCATION-GEO
+.	O
 
 Nguyễn	B-PERSON
 Hiền	I-PERSON
+,	O
 Ảnh	O
 :	O
 thợ	O
@@ -105520,12 +106948,14 @@ bà	O
 Đặng	B-PERSON
 Thị	I-PERSON
 Thu	I-PERSON
+,	O
 vợ	O
 liệt	O
 sĩ	O
 Trần	B-PERSON
 Công	I-PERSON
 Uẩn	I-PERSON
+,	O
 do	O
 Cơ	O
 quan	O
@@ -105539,12 +106969,15 @@ tại	O
 phường	B-LOCATION
 Phú	I-LOCATION
 Lương	I-LOCATION
+,	O
 quận	B-LOCATION
 Hà	I-LOCATION
 Đông	I-LOCATION
+,	O
 TP	B-LOCATION-GPE
 Hà	I-LOCATION-GPE
 Nội	I-LOCATION-GPE
+.	O
 
 Trong	O
 ngôi	O
@@ -105580,6 +107013,7 @@ tình	O
 
 Năm	B-DATETIME
 1954	I-DATETIME
+,	O
 chàng	O
 thanh	O
 niên	O
@@ -105625,6 +107059,7 @@ lanh	O
 .	O
 Năm	B-DATETIME
 1961	I-DATETIME
+,	O
 Trần	B-PERSON
 Công	I-PERSON
 Uẩn	I-PERSON
@@ -105644,6 +107079,7 @@ quân	O
 vào	O
 năm	B-DATETIME
 1963	I-DATETIME
+.	O
 Tưởng	O
 rằng	O
 đôi	O
@@ -105688,6 +107124,7 @@ quốc	O
 Đến	O
 năm	B-DATETIME
 1968	I-DATETIME
+,	O
 bao	O
 hy	O
 vọng	O
@@ -105718,7 +107155,7 @@ mặt	O
 trận	B-EVENT-CUL
 Khe	I-EVENT-CUL
 Sanh	I-EVENT-CUL
-..	O
+...	O
 Gạt	O
 những	O
 giọt	O
@@ -105832,6 +107269,7 @@ may	O
 ,	O
 năm	B-DATETIME
 2000	I-DATETIME
+,	O
 người	O
 con	O
 trai	O
@@ -105922,10 +107360,12 @@ tá	I-PERSONTYPE
 Lê	B-PERSON
 Văn	I-PERSON
 Dũng	I-PERSON
+,	O
 Bí	B-PERSONTYPE
 thư	I-PERSONTYPE
 Đảng	I-PERSONTYPE
 ủy	I-PERSONTYPE
+,	O
 Phó	B-PERSONTYPE
 cục	I-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -105949,6 +107389,7 @@ bà	O
 Đặng	B-PERSON
 Thị	I-PERSON
 Thu	I-PERSON
+,	O
 Cục	B-ORGANIZATION
 Chính	I-ORGANIZATION
 trị	I-ORGANIZATION
@@ -106232,6 +107673,7 @@ ra	O
 rạng	I-DATETIME-DATE
 ngày	I-DATETIME-DATE
 23-9-1945	I-DATETIME-DATE
+,	O
 thực	O
 dân	O
 Pháp	B-LOCATION-GPE
@@ -106241,6 +107683,7 @@ tiến	O
 công	O
 Sài	B-LOCATION-GPE
 Gòn	I-LOCATION-GPE
+,	O
 mở	O
 đầu	O
 cuộc	O
@@ -106257,6 +107700,7 @@ nữa	O
 Ngay	O
 sáng	B-DATETIME-DATE
 23-9	I-DATETIME-DATE
+,	O
 các	O
 đơn	O
 vị	O
@@ -106286,6 +107730,7 @@ nơi	O
 
 Đêm	B-DATETIME-DATE
 23-9	I-DATETIME-DATE
+,	O
 Thường	B-ORGANIZATION
 vụ	I-ORGANIZATION
 Trung	I-ORGANIZATION
@@ -106399,6 +107844,7 @@ tại	O
 làng	B-LOCATION
 Mỹ	I-LOCATION
 Xương	I-LOCATION
+,	O
 Chiến	O
 khu	O
 Đồng	B-LOCATION
@@ -106409,6 +107855,7 @@ lúc	O
 mới	O
 24	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+.	O
 Nhạc	B-PERSONTYPE
 sĩ	I-PERSONTYPE
 Tạ	B-PERSON
@@ -106422,12 +107869,15 @@ thị	B-LOCATION
 trấn	I-LOCATION
 Trà	I-LOCATION
 Ôn	I-LOCATION
+,	O
 huyện	B-LOCATION
 Trà	I-LOCATION
 Ôn	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Vĩnh	I-LOCATION
 Long	I-LOCATION
+.	O
 Bài	O
 hát	O
 được	O
@@ -106439,6 +107889,7 @@ trên	O
 Báo	B-ORGANIZATION
 Độc	I-ORGANIZATION
 Lập	I-ORGANIZATION
+,	O
 theo	O
 con	O
 đường	O
@@ -106734,8 +108185,10 @@ thuộc	O
 tỉnh	B-LOCATION
 Giang	I-LOCATION
 Tô	I-LOCATION
+,	O
 Trung	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+,	O
 cho	O
 thấy	O
 một	O
@@ -106851,6 +108304,7 @@ dưỡng	O
 Aso	B-LOCATION-STRUC
 Farm	I-LOCATION-STRUC
 Land	I-LOCATION-STRUC
+.	O
 
 Aso	B-LOCATION-STRUC
 Farm	I-LOCATION-STRUC
@@ -107336,6 +108790,7 @@ giới	O
 làm	O
 thạch	O
 3D	B-QUANTITY-DIM
+.	O
 
 Được	O
 biết	O
@@ -107403,6 +108858,7 @@ Hình	O
 chị	O
 Hằng	B-PERSON
 Nga	I-PERSON
+,	O
 con	O
 công	O
 ,	O
@@ -107445,6 +108901,7 @@ chị	O
 chị	O
 Phương	B-PERSON
 Nga	I-PERSON
+:	O
 
 Theo	O
 Phương	B-PERSON
@@ -107585,7 +109042,7 @@ Dùng	I-PERSON
 Mặt	I-PERSON
 trận	I-PERSON
 ”	I-PERSON
-..	O
+...	O
 là	O
 những	O
 tên	O
@@ -107633,6 +109090,7 @@ quốc	I-ORGANIZATION
 tỉnh	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Giang	I-ORGANIZATION
+.	O
 
 Suốt	O
 cả	O
@@ -107716,9 +109174,11 @@ tại	O
 xã	B-LOCATION
 Ma	I-LOCATION
 Lé	I-LOCATION
+,	O
 huyện	B-LOCATION
 Đồng	I-LOCATION
 Văn	I-LOCATION
+,	O
 ngay	O
 từ	O
 khi	O
@@ -107730,6 +109190,7 @@ bước	O
 qua	O
 cổng	B-LOCATION
 Trời	I-LOCATION
+,	O
 bước	O
 qua	O
 lời	O
@@ -107764,13 +109225,16 @@ Cao	B-LOCATION
 Bắc	B-LOCATION
 -	O
 Lạng	B-LOCATION
+,	O
 Thái	B-LOCATION
 -	O
 Tuyên	B-LOCATION
 -	O
 Hà	B-LOCATION
+,	O
 Hải	B-LOCATION
 Dương	I-LOCATION
+,	O
 Hà	B-LOCATION
 Nam	I-LOCATION
 Ninh	I-LOCATION
@@ -107799,6 +109263,7 @@ là	O
 đường	B-LOCATION-STRUC
 Hạnh	I-LOCATION-STRUC
 Phúc	I-LOCATION-STRUC
+,	O
 ông	O
 Sùng	B-PERSON
 Đại	I-PERSON
@@ -107927,6 +109392,7 @@ Dùng	I-PERSON
 Mặt	I-PERSON
 trận	I-PERSON
 ”	I-PERSON
+.	O
 Ấy	O
 là	O
 việc	O
@@ -108285,6 +109751,7 @@ dân	O
 được	O
 100	B-QUANTITY-DIM
 tấn	I-QUANTITY-DIM
+,	O
 ông	O
 còn	O
 nấn	O
@@ -108341,6 +109808,7 @@ thời	O
 gian	O
 một	B-DATETIME-DURATION
 tuần	I-DATETIME-DURATION
+.	O
 Thồ	O
 được	O
 gạo	O
@@ -108856,6 +110324,7 @@ chuyện	O
 thật	O
 100	B-QUANTITY-PER
 %	I-QUANTITY-PER
+,	O
 có	O
 chuyện	O
 đã	O
@@ -108911,6 +110380,7 @@ Dũng	I-PERSON
 BĐBP	B-ORGANIZATION
 Hải	I-ORGANIZATION
 Phòng	I-ORGANIZATION
+:	O
 Dâng	O
 hương	O
 tưởng	O
@@ -108938,6 +110408,7 @@ biển	O
 ,	O
 sáng	B-DATETIME-DATE
 7-10	I-DATETIME-DATE
+,	O
 Bộ	B-ORGANIZATION
 Chỉ	I-ORGANIZATION
 huy	I-ORGANIZATION
@@ -108963,14 +110434,18 @@ di	O
 tích	O
 bến	B-LOCATION
 K15	I-LOCATION
+,	O
 phường	B-LOCATION
 Vạn	I-LOCATION
 Hương	I-LOCATION
+,	O
 quận	B-LOCATION
 Đồ	I-LOCATION
 Sơn	I-LOCATION
+,	O
 Hải	B-LOCATION
 Phòng	I-LOCATION
+.	O
 
 Tại	O
 lễ	O
@@ -109051,6 +110526,7 @@ tuệ	O
 người	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
 Nam	I-MISCELLANEOUS
+.	O
 
 Nhân	O
 dịp	O
@@ -109090,6 +110566,7 @@ nhân	I-ORGANIZATION
 dân	I-ORGANIZATION
 Việt	I-ORGANIZATION
 nam	I-ORGANIZATION
+.	O
 
 Nguyễn	B-PERSON
 Quang	I-PERSON
@@ -109223,6 +110700,7 @@ lụa	O
 -	O
 Bước	O
 1	B-QUANTITY-ORD
+:	O
 Thịt	O
 heo	O
 xay	O
@@ -109255,6 +110733,7 @@ liệu	O
 -	O
 Bước	O
 2	B-QUANTITY-ORD
+:	O
 Cho	O
 thịt	O
 heo	O
@@ -109299,6 +110778,7 @@ ráo	O
 -	O
 Bước	O
 3	B-QUANTITY-ORD
+:	O
 Sau	O
 2	B-DATETIME-DURATION
 tiếng	I-DATETIME-DURATION
@@ -109374,6 +110854,7 @@ giò	O
 -	O
 Bước	O
 4	B-QUANTITY-ORD
+:	O
 Trải	O
 miếng	O
 màng	O
@@ -109428,6 +110909,7 @@ hơn	O
 -	O
 Bước	O
 5	B-QUANTITY-ORD
+:	O
 Nắm	O
 2	B-QUANTITY-NUM
 mép	O
@@ -109483,6 +110965,7 @@ tự	O
 -	O
 Bước	O
 6	B-QUANTITY-ORD
+:	O
 Luồn	O
 dây	O
 buộc	O
@@ -109535,6 +111018,7 @@ tròn	O
 -	O
 Bước	O
 7	B-QUANTITY-ORD
+:	O
 Đặt	O
 xửng	O
 hấp	O
@@ -109609,8 +111093,10 @@ ngàn/Không	O
 bằng	O
 đá	B-LOCATION-GEO
 Bàn	I-LOCATION-GEO
+,	O
 sông	B-LOCATION-GEO
 Giăng	I-LOCATION-GEO
+,	O
 đó	O
 là	O
 câu	O
@@ -109623,6 +111109,7 @@ miền	O
 tây	O
 xứ	B-LOCATION
 Nghệ	I-LOCATION
+,	O
 chảy	O
 qua	O
 huyện	B-LOCATION
@@ -109664,6 +111151,7 @@ quốc	I-LOCATION
 gia	I-LOCATION
 Pù	I-LOCATION
 Mát	I-LOCATION
+,	O
 du	O
 lịch	O
 cộng	O
@@ -109746,6 +111234,7 @@ núi	O
 rừng	O
 Môn	B-LOCATION
 Sơn	I-LOCATION
+,	O
 xã	O
 biên	O
 giới	O
@@ -109753,6 +111242,7 @@ giáp	O
 nước	O
 bạn	O
 Lào	B-LOCATION-GPE
+,	O
 cách	O
 trung	O
 tâm	O
@@ -109764,12 +111254,14 @@ Cuông	I-LOCATION
 huyện	B-LOCATION
 Con	I-LOCATION
 Cuông	I-LOCATION
+,	O
 Nghệ	B-LOCATION
 An	I-LOCATION
 chưa	O
 đầy	O
 20	B-QUANTITY-DIM
 km	I-QUANTITY-DIM
+,	O
 để	O
 xuống	O
 bến	O
@@ -109784,6 +111276,7 @@ phá	O
 dòng	O
 sông	B-LOCATION-GEO
 Giăng	I-LOCATION-GEO
+,	O
 con	O
 sông	O
 dài	O
@@ -109796,6 +111289,7 @@ quốc	I-LOCATION
 gia	I-LOCATION
 Pù	I-LOCATION
 Mát	I-LOCATION
+.	O
 Ðược	O
 mở	O
 cửa	O
@@ -109842,6 +111336,7 @@ tháng	B-DATETIME-SET
 ,	I-DATETIME-SET
 tháng	I-DATETIME-SET
 6	I-DATETIME-SET
+,	O
 vào	O
 mùa	O
 cao	O
@@ -109914,6 +111409,7 @@ quốc	I-LOCATION
 gia	I-LOCATION
 Pù	I-LOCATION
 Mát	I-LOCATION
+.	O
 Ðó	O
 cũng	O
 là	O
@@ -110077,6 +111573,7 @@ khám	O
 phá	O
 sông	B-LOCATION-GEO
 Giăng	I-LOCATION-GEO
+,	O
 đoàn	O
 lên	O
 bản	B-LOCATION
@@ -110095,6 +111592,7 @@ quốc	I-LOCATION
 gia	I-LOCATION
 Pù	I-LOCATION
 Mát	I-LOCATION
+,	O
 vào	O
 thời	O
 gian	O
@@ -110371,6 +111869,7 @@ thành	O
 lập	O
 năm	B-DATETIME
 2002	I-DATETIME
+,	O
 với	O
 vùng	O
 bảo	O
@@ -110385,15 +111884,19 @@ vùng	O
 100	B-QUANTITY-DIM
 nghìn	I-QUANTITY-DIM
 ha	I-QUANTITY-DIM
+,	O
 thuộc	O
 ba	B-QUANTITY
 huyện	O
 Anh	B-LOCATION
 Sơn	I-LOCATION
+,	O
 Con	B-LOCATION
 Cuông	I-LOCATION
+,	O
 Tương	B-LOCATION
 Dương	I-LOCATION
+.	O
 Cách	O
 đây	O
 mười	O
@@ -110479,6 +111982,7 @@ quốc	I-ORGANIZATION
 gia	I-ORGANIZATION
 Pù	I-ORGANIZATION
 Mát	I-ORGANIZATION
+,	O
 các	O
 công	O
 ty	O
@@ -110549,12 +112053,15 @@ như	O
 thác	B-LOCATION-GEO
 Khe	I-LOCATION-GEO
 Kèm	I-LOCATION-GEO
+,	O
 khe	B-LOCATION-GEO
 nước	I-LOCATION-GEO
 Mọc	I-LOCATION-GEO
+,	O
 hang	B-LOCATION-GEO
 Thẳm	I-LOCATION-GEO
 Ồm	I-LOCATION-GEO
+,	O
 di	O
 tích	O
 lịch	O
@@ -110565,11 +112072,12 @@ hóa	O
 bia	B-PRODUCT
 Ma	I-PRODUCT
 Nhai	I-PRODUCT
+,	O
 thành	B-LOCATION-GPE
 cổ	I-LOCATION-GPE
 Trà	I-LOCATION-GPE
 Lân	I-LOCATION-GPE
-..	O
+...	O
 ''	O
 .	O
 
@@ -110584,6 +112092,7 @@ sơ	O
 ở	O
 Khe	B-LOCATION
 Kèm	I-LOCATION
+.	O
 
 Nằm	O
 trong	O
@@ -110594,6 +112103,7 @@ quốc	I-LOCATION
 gia	I-LOCATION
 Pù	I-LOCATION
 Mát	I-LOCATION
+,	O
 những	O
 bản	O
 làng	O
@@ -110690,6 +112200,7 @@ vào	O
 homestay	O
 Hoa	B-LOCATION
 Thụ	I-LOCATION
+,	O
 một	O
 trong	O
 ba	O
@@ -110697,6 +112208,7 @@ hộ	O
 ở	O
 bản	B-LOCATION
 Nưa	I-LOCATION
+,	O
 xã	B-LOCATION
 Yên	I-LOCATION
 Khê	I-LOCATION
@@ -110718,8 +112230,10 @@ chị	O
 Lô	B-PERSON
 Thị	I-PERSON
 Hoa	I-PERSON
+,	O
 43	B-QUANTITY-AGE
 tuổi	I-QUANTITY-AGE
+,	O
 chủ	O
 nhân	O
 ra	O
@@ -110730,6 +112244,7 @@ ngõ	O
 Từ	O
 năm	B-DATETIME
 2011	I-DATETIME
+,	O
 chị	O
 Hoa	B-PERSON
 quyết	O
@@ -110763,6 +112278,7 @@ phí	O
 200	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 Tiền	O
 dành	O
 dụm	O
@@ -110861,6 +112377,7 @@ người	O
 dân	B-MISCELLANEOUS
 tộc	I-MISCELLANEOUS
 Thái	I-MISCELLANEOUS
+,	O
 đây	O
 là	O
 một	O
@@ -110890,6 +112407,7 @@ lại	O
 với	O
 Bản	B-LOCATION
 Nưa	I-LOCATION
+,	O
 ngay	O
 từ	O
 khi	O
@@ -111244,6 +112762,7 @@ Sơn	I-ORGANIZATION
 tại	O
 bản	B-LOCATION
 Xiềng	I-LOCATION
+,	O
 sản	O
 xuất	O
 sản	O
@@ -111310,6 +112829,7 @@ mới	O
 tỉnh	B-LOCATION
 Nghệ	I-LOCATION
 An	I-LOCATION
+,	O
 huyện	B-LOCATION
 Con	I-LOCATION
 Cuông	I-LOCATION
@@ -111394,6 +112914,7 @@ thái	O
 tại	O
 bản	B-LOCATION
 Pha	I-LOCATION
+,	O
 xã	B-LOCATION
 Yên	I-LOCATION
 Khê	I-LOCATION
@@ -111446,6 +112967,7 @@ nông	I-ORGANIZATION
 nghiệp	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 các	O
 sản	O
 phẩm	O
@@ -111473,6 +112995,7 @@ phương	O
 Anh	O
 An-đô	B-PERSON
 Kát-su-hi-rô	I-PERSON
+,	O
 chuyên	O
 gia	O
 dự	O
@@ -111531,6 +113054,7 @@ lịch	O
 
 Năm	B-DATETIME
 2016	I-DATETIME
+,	O
 khách	O
 đến	O
 tham	O
@@ -111668,6 +113192,7 @@ miền	O
 tây	O
 Nghệ	B-LOCATION
 An	I-LOCATION
+.	O
 Hướng	O
 tới	O
 phát	O
@@ -111728,6 +113253,7 @@ tỉnh	O
 ở	O
 Bản	B-LOCATION
 Nưa	I-LOCATION
+.	O
 Giai	O
 điệu	O
 ngọt	O
@@ -111890,6 +113416,7 @@ gọi	O
 với	O
 Con	B-LOCATION
 Cuông	I-LOCATION
+,	O
 gần	O
 gũi	O
 và	O
@@ -111961,6 +113488,7 @@ lúc	O
 16h30	B-DATETIME-TIME
 chiều	I-DATETIME-TIME
 22/9	I-DATETIME-TIME
+,	O
 trên	O
 Quốc	B-LOCATION
 lộ	I-LOCATION
@@ -111969,13 +113497,16 @@ lộ	I-LOCATION
 bàn	O
 khối	B-LOCATION
 5	I-LOCATION
+,	O
 thị	B-LOCATION
 trấn	I-LOCATION
 Cầu	I-LOCATION
 giát	I-LOCATION
+,	O
 huyện	B-LOCATION
 Quỳnh	I-LOCATION
 Lưu	I-LOCATION
+.	O
 
 Hiện	O
 trường	O
@@ -112003,6 +113534,7 @@ tuổi	I-QUANTITY-AGE
 trú	O
 khối	B-LOCATION
 5	I-LOCATION
+,	O
 thị	B-LOCATION
 trấn	I-LOCATION
 Cầu	I-LOCATION
@@ -112020,6 +113552,7 @@ Nội	I-LOCATION-GPE
 vào	O
 chợ	B-LOCATION-STRUC
 Giát	I-LOCATION-STRUC
+.	O
 Khi	O
 đến	O
 gần	O
@@ -112108,17 +113641,21 @@ năm	I-EVENT
 
 Chiều	B-DATETIME-DATE
 22-9	I-DATETIME-DATE
+,	O
 tại	O
 Lai	B-LOCATION
 Châu	I-LOCATION
+,	O
 Thiếu	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Đỗ	B-PERSON
 Danh	I-PERSON
 Vượng	I-PERSON
+,	O
 Chính	B-PERSONTYPE
 ủy	I-PERSONTYPE
 BĐBP	I-PERSONTYPE
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 Hội	I-PERSONTYPE
@@ -112169,16 +113706,22 @@ Bắc	O
 :	O
 Quảng	B-LOCATION
 Ninh	I-LOCATION
+,	O
 Lạng	B-LOCATION
 Sơn	I-LOCATION
+,	O
 Cao	B-LOCATION
 Bằng	I-LOCATION
+,	O
 Hà	B-LOCATION
 Giang	I-LOCATION
+,	O
 Lào	B-LOCATION
 Cai	I-LOCATION
+,	O
 Lai	B-LOCATION
 Châu	I-LOCATION
+,	O
 Điện	B-LOCATION
 Biên	I-LOCATION
 và	O
@@ -112191,9 +113734,11 @@ tướng	I-PERSONTYPE
 Đỗ	B-PERSON
 Danh	I-PERSON
 Vượng	I-PERSON
+,	O
 Chính	B-PERSONTYPE
 ủy	I-PERSONTYPE
 BĐBP	I-PERSONTYPE
+,	O
 phát	O
 biểu	O
 chỉ	O
@@ -112218,6 +113763,7 @@ thấy	O
 trong	O
 năm	B-DATETIME
 2017	I-DATETIME
+,	O
 Đảng	O
 ủy	O
 ,	O
@@ -112401,6 +113947,7 @@ Quyết	I-EVENT
 thắng	I-EVENT
 năm	I-EVENT
 2017	I-EVENT
+.	O
 
 Sau	O
 khi	O
@@ -112455,11 +114002,13 @@ gồm	O
 BĐBP	B-ORGANIZATION
 Điện	I-ORGANIZATION
 Biên	I-ORGANIZATION
+,	O
 Lạng	B-LOCATION
 Sơn	I-LOCATION
 và	O
 Lào	B-LOCATION
 Cai	I-LOCATION
+.	O
 
 BĐBP	B-ORGANIZATION
 Điện	I-ORGANIZATION
@@ -112473,6 +114022,7 @@ cho	O
 BĐBP	B-ORGANIZATION
 Lai	I-ORGANIZATION
 Châu	I-ORGANIZATION
+.	O
 Ảnh	O
 :	O
 Hoàng	B-PERSON
@@ -112488,11 +114038,13 @@ Bộ	B-ORGANIZATION
 Tư	I-ORGANIZATION
 lệnh	I-ORGANIZATION
 BĐBP	I-ORGANIZATION
+,	O
 Thiếu	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Đỗ	B-PERSON
 Danh	I-PERSON
 Vượng	I-PERSON
+,	O
 Chính	O
 ủy	O
 BĐBP	O
@@ -112533,6 +114085,7 @@ Quyết	I-EVENT
 thắng	I-EVENT
 năm	I-EVENT
 2017	I-EVENT
+.	O
 
 Đặc	O
 biệt	O
@@ -112560,6 +114113,7 @@ Thi	I-EVENT
 đua	I-EVENT
 Quyết	I-EVENT
 thắng	I-EVENT
+.	O
 Đồng	O
 chí	O
 Chính	O
@@ -112602,6 +114156,7 @@ Quyết	I-EVENT
 thắng	I-EVENT
 năm	I-EVENT
 2018	I-EVENT
+.	O
 
 Thiếu	B-PERSONTYPE
 tướng	I-PERSONTYPE
@@ -112796,6 +114351,7 @@ cho	O
 BĐBP	B-ORGANIZATION
 Lai	I-ORGANIZATION
 Châu	I-ORGANIZATION
+.	O
 
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -112815,10 +114371,12 @@ Kỳ	I-LOCATION-GPE
 
 Chiều	B-DATETIME-DATE
 22-9	I-DATETIME-DATE
+,	O
 Thượng	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Tô	B-PERSON
 Lâm	I-PERSON
+,	O
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Bộ	B-ORGANIZATION
@@ -112831,6 +114389,7 @@ tiếp	O
 ngài	O
 Akif	B-PERSONTYPE
 Ayhan	I-PERSONTYPE
+,	O
 Đại	B-PERSONTYPE
 sứ	I-PERSONTYPE
 đặc	O
@@ -112845,6 +114404,7 @@ Kỳ	I-LOCATION-GPE
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Tại	O
 buổi	O
@@ -112891,6 +114451,7 @@ tháng	B-DATETIME
 8	I-DATETIME
 vừa	I-DATETIME
 qua	I-DATETIME
+,	O
 qua	O
 đó	O
 mở	O
@@ -112942,12 +114503,14 @@ của	O
 Thổ	B-LOCATION-GPE
 Nhĩ	I-LOCATION-GPE
 Kỳ	I-LOCATION-GPE
+.	O
 Đặc	O
 biệt	O
 ,	O
 trong	O
 năm	B-DATETIME
 2017	I-DATETIME
+,	O
 Bộ	B-ORGANIZATION
 Công	I-ORGANIZATION
 an	I-ORGANIZATION
@@ -113123,6 +114686,7 @@ Nam	I-LOCATION-GPE
 –	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+:	O
 Tăng	O
 cường	O
 hợp	O
@@ -113136,13 +114700,16 @@ CNCH	O
 
 Chiều	B-DATETIME-DATE
 21-9	I-DATETIME-DATE
+,	O
 tại	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Thượng	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Tô	B-PERSON
 Lâm	I-PERSON
+,	O
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Bộ	B-ORGANIZATION
@@ -113155,6 +114722,7 @@ tiếp	O
 ngài	O
 Sugi	B-PERSON
 Ryotaro	I-PERSON
+,	O
 Đại	B-PERSONTYPE
 sứ	I-PERSONTYPE
 đặc	O
@@ -113165,6 +114733,7 @@ Nhật	B-LOCATION-GPE
 Nhật	B-LOCATION-GPE
 -	O
 Việt	B-LOCATION-GPE
+.	O
 
 Cùng	O
 dự	O
@@ -113173,6 +114742,7 @@ có	O
 ngài	O
 Kunio	B-PERSON
 Umeda	I-PERSON
+,	O
 đại	B-PERSONTYPE
 sứ	I-PERSONTYPE
 Nhật	B-LOCATION-GPE
@@ -113196,6 +114766,7 @@ Nhật	I-ORGANIZATION
 Bản	I-ORGANIZATION
 –	O
 JCA	B-ORGANIZATION
+,	O
 Hiệp	B-ORGANIZATION
 hội	I-ORGANIZATION
 thúc	I-ORGANIZATION
@@ -113334,6 +114905,7 @@ dụng	O
 của	O
 Nhật	B-LOCATION-GPE
 Bản	I-LOCATION-GPE
+.	O
 
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -113401,6 +114973,7 @@ chữa	I-ORGANIZATION
 cháy	I-ORGANIZATION
 Nhật	I-ORGANIZATION
 Bản	I-ORGANIZATION
+,	O
 Hiệp	B-ORGANIZATION
 hội	I-ORGANIZATION
 thúc	I-ORGANIZATION
@@ -113466,6 +115039,7 @@ Bản	I-LOCATION-GPE
 và	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -113503,6 +115077,7 @@ Công	I-ORGANIZATION
 an	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 Chân	O
 thành	O
@@ -113595,6 +115170,7 @@ Công	I-ORGANIZATION
 an	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 Khổng	B-PERSON
 Hà	I-PERSON
@@ -113626,8 +115202,10 @@ Vương	B-LOCATION
 quốc	I-LOCATION
 Saudi	I-LOCATION
 Arabia	I-LOCATION
+,	O
 ngày	B-DATETIME-DATE
 22/9/2017	I-DATETIME-DATE
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 nước	I-PERSONTYPE
@@ -113660,6 +115238,7 @@ Salman	B-PERSON
 Bin	I-PERSON
 Abdulaziz	I-PERSON
 Al-Saud	I-PERSON
+.	O
 
 Cùng	O
 ngày	O
@@ -113667,6 +115246,7 @@ ngày	O
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
 tướng	I-PERSONTYPE
+,	O
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Ngoại	I-PERSONTYPE
@@ -113690,6 +115270,7 @@ Arabia	I-ORGANIZATION
 Adel	I-ORGANIZATION
 Al	I-ORGANIZATION
 Jubeir	I-ORGANIZATION
+.	O
 
 Sẻ	O
 chia	O
@@ -113704,6 +115285,7 @@ thịt	O
 
 Chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 Đoàn	O
 công	O
 tác	O
@@ -113725,16 +115307,21 @@ anh	O
 Nguyễn	B-PERSON
 Văn	I-PERSON
 Hùng	I-PERSON
+,	O
 xóm	B-LOCATION
 2	I-LOCATION
+,	O
 xã	B-LOCATION
 Diễn	I-LOCATION
 Hải	I-LOCATION
+,	O
 huyện	B-LOCATION
 Diễn	I-LOCATION
 Châu	I-LOCATION
+,	O
 Nghệ	B-LOCATION
 An	I-LOCATION
+.	O
 
 Đây	O
 là	O
@@ -113754,6 +115341,7 @@ các	O
 tỉnh	O
 miền	B-LOCATION
 Trung	I-LOCATION
+,	O
 cùng	O
 chia	O
 sẻ	O
@@ -113872,6 +115460,7 @@ tặng	O
 20	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+,	O
 10kg	B-QUANTITY-DIM
 gạo	O
 để	O
@@ -113945,6 +115534,7 @@ thập	I-ORGANIZATION
 đỏ	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 các	O
 địa	O
 phương	O
@@ -113995,6 +115585,7 @@ Linh	I-PERSON
 
 Hải	B-LOCATION
 Dương	I-LOCATION
+:	O
 Sẽ	O
 đóng	O
 cửa	O
@@ -114100,6 +115691,7 @@ hoạt	O
 từ	O
 năm	B-DATETIME
 2015	I-DATETIME
+,	O
 công	B-ORGANIZATION
 ty	I-ORGANIZATION
 Dệt	I-ORGANIZATION
@@ -114114,9 +115706,11 @@ công	I-LOCATION-STRUC
 nghiệp	I-LOCATION-STRUC
 Lai	I-LOCATION-STRUC
 Vu	I-LOCATION-STRUC
+,	O
 huyện	B-LOCATION
 Kim	I-LOCATION
 Thành	I-LOCATION
+,	O
 Hải	B-LOCATION
 Dương	I-LOCATION
 khiến	O
@@ -114178,6 +115772,7 @@ ban	O
 .	O
 Ông	O
 Vịnh	B-PERSON
+,	O
 một	O
 cựu	O
 chiến	O
@@ -114372,6 +115967,7 @@ từ	B-QUANTITY
 đến	I-QUANTITY
 2000	I-QUANTITY
 m3/ngày	I-QUANTITY
+.	O
 
 Sau	O
 khi	O
@@ -114486,6 +116082,7 @@ Vu	I-LOCATION-STRUC
 huyện	B-LOCATION
 Kim	I-LOCATION
 Thành	I-LOCATION
+.	O
 Trong	O
 báo	O
 cáo	O
@@ -114509,6 +116106,7 @@ là	O
 triệu	I-QUANTITY
 mét	I-QUANTITY
 vải/năm	I-QUANTITY
+,	O
 diện	O
 tích	O
 31	B-QUANTITY-DIM
@@ -114524,6 +116122,7 @@ là	O
 425	B-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
 USD	I-QUANTITY-CUR
+.	O
 
 Quang	O
 cảnh	O
@@ -114552,6 +116151,7 @@ Vu	I-LOCATION-STRUC
 huyện	B-LOCATION
 Kim	I-LOCATION
 Thành	I-LOCATION
+.	O
 
 Tại	O
 buổi	O
@@ -114597,6 +116197,7 @@ tư	O
 tại	O
 Hải	B-LOCATION
 Dương	I-LOCATION
+,	O
 song	O
 không	O
 đánh	O
@@ -114692,6 +116293,7 @@ ty	I-ORGANIZATION
 Dệt	I-ORGANIZATION
 Pacific	I-ORGANIZATION
 Crystal	I-ORGANIZATION
+,	O
 ông	O
 Eugene	B-PERSON
 Cheng	I-PERSON
@@ -114734,6 +116336,7 @@ nữa	O
 
 Thanh	B-LOCATION
 Hóa	I-LOCATION
+:	O
 Thống	O
 kê	O
 thiệt	O
@@ -114810,6 +116413,7 @@ bộ	O
 vào	O
 Thanh	B-LOCATION
 Hóa	I-LOCATION
+,	O
 nhưng	O
 địa	O
 phương	O
@@ -114835,6 +116439,7 @@ ban	O
 khoảng	O
 1000	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
+.	O
 
 Sau	O
 bản	O
@@ -114853,6 +116458,7 @@ cãi	O
 Đặng	B-PERSON
 Tiến	I-PERSON
 Dũng	I-PERSON
+,	O
 Chi	B-PERSONTYPE
 cục	I-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -114961,6 +116567,7 @@ cơn	B-EVENT-NATURAL
 bão	I-EVENT-NATURAL
 số	I-EVENT-NATURAL
 10	I-EVENT-NATURAL
+,	O
 dù	O
 nằm	O
 ngoài	O
@@ -115002,6 +116609,7 @@ UBND	O
 đề	O
 ngày	B-DATETIME-DATE
 16/9	I-DATETIME-DATE
+,	O
 tổng	O
 thiệt	O
 hại	O
@@ -115014,6 +116622,7 @@ là	O
 897	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Sau	O
 đó	O
@@ -115036,6 +116645,7 @@ UBND	O
 đề	O
 ngày	B-DATETIME-DATE
 18/9	I-DATETIME-DATE
+,	O
 con	O
 số	O
 thiệt	O
@@ -115046,6 +116656,7 @@ tới	O
 937	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Sau	O
 nhiều	O
@@ -115071,6 +116682,7 @@ mới	O
 ,	O
 ngày	B-DATETIME-DATE
 20/9	I-DATETIME-DATE
+,	O
 UBND	B-ORGANIZATION
 huyện	I-ORGANIZATION
 Hoằng	I-ORGANIZATION
@@ -115119,6 +116731,7 @@ khoảng	O
 640	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+,	O
 giảm	O
 hàng	O
 trăm	O
@@ -115152,6 +116765,7 @@ thay	O
 Nguyễn	B-PERSON
 Đình	I-PERSON
 Tuy	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 Chủ	I-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -115302,6 +116916,7 @@ tốc	I-LOCATION-STRUC
 Pháp	I-LOCATION-STRUC
 Vân-Cầu	I-LOCATION-STRUC
 Giẽ	I-LOCATION-STRUC
+.	O
 (	O
 Ảnh	O
 :	O
@@ -115367,7 +116982,9 @@ Thành	I-ORGANIZATION
 vào	O
 chiều	B-DATETIME-DATE
 nay	I-DATETIME-DATE
+,	O
 22/9	B-DATETIME-DATE
+.	O
 
 Thời	O
 điểm	O
@@ -115393,6 +117010,7 @@ tới	O
 Phạm	B-PERSON
 Văn	I-PERSON
 Khôi	I-PERSON
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 Hội	I-PERSONTYPE
@@ -115412,6 +117030,7 @@ giao	I-ORGANIZATION
 thông	I-ORGANIZATION
 Phương	I-ORGANIZATION
 Thành	I-ORGANIZATION
+,	O
 cho	O
 biết	O
 sau	O
@@ -115431,6 +117050,7 @@ giảm	O
 phí	O
 từ	O
 15/10	B-DATETIME-DATE
+.	O
 
 Cụ	O
 thể	O
@@ -115467,6 +117087,7 @@ Pháp	B-LOCATION
 Vân	I-LOCATION
 Cầu	B-LOCATION
 Giẽ	I-LOCATION
+.	O
 
 “	O
 Theo	O
@@ -115487,6 +117108,7 @@ xuống	O
 còn	O
 35.000	B-QUANTITY
 đồng/lượt	I-QUANTITY
+.	O
 Nhà	O
 đầu	O
 tư	O
@@ -115528,9 +117150,11 @@ Giao	I-ORGANIZATION
 thông	I-ORGANIZATION
 Vận	I-ORGANIZATION
 tải	I-ORGANIZATION
+,	O
 đến	O
 năm	B-DATETIME
 2021	I-DATETIME
+,	O
 tuyến	O
 đường	O
 này	O
@@ -115561,6 +117185,7 @@ lần	O
 tăng	O
 18	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 
 Lãnh	O
 đạo	O
@@ -115593,6 +117218,7 @@ năm	I-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
 18	I-DATETIME-DURATION
 ngày	I-DATETIME-DURATION
+.	O
 Dự	O
 án	O
 bắt	O
@@ -115604,6 +117230,7 @@ vốn	O
 từ	O
 ngày	B-DATETIME-DATE
 6/10/2015	I-DATETIME-DATE
+.	O
 Sau	O
 khi	O
 giảm	O
@@ -115631,6 +117258,7 @@ năm	I-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
 18	I-DATETIME-DURATION
 ngày	I-DATETIME-DURATION
+,	O
 thời	O
 điểm	O
 hoàn	O
@@ -115640,6 +117268,7 @@ kiến	O
 là	O
 ngày	B-DATETIME-DATE
 18/2/2031	I-DATETIME-DATE
+.	O
 Giảm	O
 so	O
 với	O
@@ -115651,6 +117280,7 @@ ký	O
 năm	I-DATETIME-DURATION
 10	I-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+.	O
 
 Phương	O
 tiện	O
@@ -115846,6 +117476,7 @@ Theo	O
 Nguyễn	B-PERSON
 Văn	I-PERSON
 Huyện	I-PERSON
+,	O
 Tổng	B-PERSONTYPE
 cục	I-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -115855,6 +117486,7 @@ cục	I-ORGANIZATION
 bộ	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+,	O
 việc	O
 rà	O
 soát	O
@@ -115918,6 +117550,7 @@ giao	O
 từ	O
 5-25	B-QUANTITY
 %	I-QUANTITY
+,	O
 tùy	O
 thuộc	O
 vào	O
@@ -115965,6 +117598,7 @@ không	O
 quá	O
 30	B-DATETIME-DURATION
 năm	I-DATETIME-DURATION
+,	O
 ”	O
 ông	O
 Huyện	B-PERSON
@@ -116072,6 +117706,7 @@ hoàn	O
 thành	O
 vào	O
 30/6/2015	B-DATETIME-DATE
+.	O
 Tổng	O
 mức	O
 đầu	O
@@ -116080,6 +117715,7 @@ là	O
 1.974	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+,	O
 bao	O
 gồm	O
 cải	O
@@ -116126,6 +117762,7 @@ rộng	O
 nền	O
 đường	O
 25m	B-QUANTITY-DIM
+.	O
 
 Giai	O
 đoạn	O
@@ -116168,6 +117805,7 @@ rộng	O
 nền	O
 đường	O
 33,5m	B-QUANTITY-DIM
+,	O
 xây	O
 dựng	O
 đường	O
@@ -116315,6 +117953,7 @@ tăng	O
 khoảng	O
 500	B-QUANTITY
 đồng/km	I-QUANTITY
+,	O
 mặc	O
 dù	O
 với	O
@@ -116343,6 +117982,7 @@ với	O
 Uber	B-ORGANIZATION
 và	O
 Grab	B-ORGANIZATION
+.	O
 
 Một	O
 số	O
@@ -116369,6 +118009,7 @@ lên	O
 khoảng	O
 7	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Tuy	O
 nhiên	O
 ,	O
@@ -116416,6 +118057,7 @@ tạp	O
 Đậu	B-PERSON
 Xuân	I-PERSON
 Ngọc	I-PERSON
+,	O
 Giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 Công	B-ORGANIZATION
@@ -116432,6 +118074,7 @@ và	I-ORGANIZATION
 tư	I-ORGANIZATION
 Thiên	I-ORGANIZATION
 Trường	I-ORGANIZATION
+,	O
 đơn	O
 vị	O
 khai	O
@@ -116444,8 +118087,10 @@ Nội	I-LOCATION-GPE
 đi	O
 Thái	B-LOCATION
 Bình	I-LOCATION
+,	O
 Nam	B-LOCATION
 Định	I-LOCATION
+,	O
 Nghệ	B-LOCATION
 An	I-LOCATION
 cho	O
@@ -116582,6 +118227,7 @@ với	O
 giá	O
 220.000	B-QUANTITY
 đồng/m3	I-QUANTITY
+.	O
 Cát	O
 xây	O
 ,	O
@@ -116590,6 +118236,7 @@ có	O
 giá	O
 290.000	B-QUANTITY
 đồng/m3	I-QUANTITY
+.	O
 Cát	O
 vàng	O
 để	O
@@ -116599,6 +118246,7 @@ tông	O
 là	O
 420.000	B-QUANTITY
 đồng/m3	I-QUANTITY
+,	O
 tăng	O
 khoảng	O
 5	B-QUANTITY-PER
@@ -116609,6 +118257,7 @@ cách	O
 đây	O
 2	B-DATETIME-DURATION
 tuần	I-DATETIME-DURATION
+.	O
 
 Do	O
 khan	O
@@ -116654,6 +118303,7 @@ liệu	O
 Trần	B-PERSON
 Ngọc	I-PERSON
 Đức	I-PERSON
+,	O
 chủ	B-PERSONTYPE
 thầu	I-PERSONTYPE
 xây	I-PERSONTYPE
@@ -116662,6 +118312,7 @@ dựng	I-PERSONTYPE
 quận	B-LOCATION
 Hoàng	I-LOCATION
 Mai	I-LOCATION
+,	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 cho	O
@@ -116674,6 +118325,7 @@ tăng	O
 khoảng	O
 10.000	B-QUANTITY
 đồng/tạ	I-QUANTITY
+.	O
 “	O
 Bởi	O
 vì	O
@@ -116771,6 +118423,7 @@ Trần	B-PERSON
 Thị	I-PERSON
 Phương	I-PERSON
 Lan	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 Giám	I-PERSONTYPE
 đốc	I-PERSONTYPE
@@ -116878,13 +118531,16 @@ Ngày	B-DATETIME-DATE
 Trần	B-PERSON
 Xuân	I-PERSON
 Tư	I-PERSON
+,	O
 Trưởng	B-PERSONTYPE
 bản	I-PERSONTYPE
 (	O
 Thượng	B-LOCATION
 Hóa	I-LOCATION
+,	O
 Minh	B-LOCATION
 Hóa	I-LOCATION
+,	O
 Quảng	B-LOCATION
 Bình	I-LOCATION
 cho	O
@@ -116895,11 +118551,14 @@ là	O
 ngày	O
 thứ	B-QUANTITY-ORD
 8	I-QUANTITY-ORD
+,	O
 3	B-QUANTITY-NUM
 bản	O
 Ón	B-LOCATION
+,	O
 Yên	B-LOCATION
 Hợp	I-LOCATION
+,	O
 Mò	B-LOCATION
 O	I-LOCATION
 Ồ	I-LOCATION
@@ -116933,6 +118592,7 @@ dâng	O
 cao	O
 hơn	O
 3,5m	B-QUANTITY-DIM
+,	O
 nhiều	O
 đoạn	O
 chỉ	O
@@ -116988,6 +118648,7 @@ nặng	O
 nhất	O
 với	O
 59ha	B-QUANTITY-DIM
+,	O
 có	O
 hộ	O
 gia	O
@@ -117016,6 +118677,7 @@ trả	O
 400	B-QUANTITY-CUR
 trăm	I-QUANTITY-CUR
 triệu	I-QUANTITY-CUR
+,	O
 Lành	O
 nói	O
 chờ	O
@@ -117114,6 +118776,7 @@ hại	O
 Đoàn	B-PERSON
 Ngọc	I-PERSON
 Lâm	I-PERSON
+,	O
 Bí	B-PERSONTYPE
 thư	I-PERSONTYPE
 Huyện	I-PERSONTYPE
@@ -117226,6 +118889,7 @@ sau	O
 bão	B-EVENT-NATURAL
 số	I-EVENT-NATURAL
 10	I-EVENT-NATURAL
+.	O
 
 Ảnh	O
 minh	O
@@ -117453,6 +119117,7 @@ sau	O
 bão	B-EVENT-NATURAL
 số	I-EVENT-NATURAL
 10	I-EVENT-NATURAL
+.	O
 
 Thủ	B-PERSONTYPE
 tướng	I-PERSONTYPE
@@ -117488,6 +119153,7 @@ cho	O
 tỉnh	B-LOCATION
 Hà	I-LOCATION
 Tĩnh	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Quảng	I-LOCATION
 Bình	I-LOCATION
@@ -117510,6 +119176,7 @@ mắt	O
 tỉnh	O
 Hà	B-LOCATION
 Tĩnh	I-LOCATION
+,	O
 Quảng	B-LOCATION
 Bình	I-LOCATION
 chủ	O
@@ -117615,6 +119282,7 @@ có	O
 tỉnh	O
 Hà	B-LOCATION
 Tĩnh	I-LOCATION
+,	O
 Quảng	B-LOCATION
 Bình	I-LOCATION
 khắc	O
@@ -117624,12 +119292,14 @@ quả	O
 bão	B-EVENT-NATURAL
 số	I-EVENT-NATURAL
 10	I-EVENT-NATURAL
+.	O
 
 Đối	O
 với	O
 tỉnh	B-LOCATION
 Nghệ	I-LOCATION
 An	I-LOCATION
+,	O
 Thủ	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Chính	O
@@ -117689,6 +119359,7 @@ hệ	O
 thống	O
 sông	B-LOCATION-GEO
 Cả	I-LOCATION-GEO
+.	O
 
 Về	O
 việc	O
@@ -117716,6 +119387,7 @@ lưu	O
 vực	O
 sông	B-LOCATION-GEO
 Hiếu	I-LOCATION-GEO
+,	O
 Thủ	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Chính	O
@@ -117732,6 +119404,7 @@ nguyên	I-ORGANIZATION
 và	I-ORGANIZATION
 Môi	I-ORGANIZATION
 trường	I-ORGANIZATION
+,	O
 Bộ	B-ORGANIZATION
 Tài	I-ORGANIZATION
 chính	I-ORGANIZATION
@@ -117777,6 +119450,7 @@ cấp	I-EVENT-NATURAL
 ,	I-EVENT-NATURAL
 cấp	I-EVENT-NATURAL
 12	I-EVENT-NATURAL
+,	O
 Thủ	B-PERSONTYPE
 tướng	I-PERSONTYPE
 Chính	O
@@ -117888,6 +119562,7 @@ khu	O
 vực	O
 miền	B-LOCATION
 Trung	I-LOCATION
+,	O
 trực	O
 tiếp	O
 là	O
@@ -117897,6 +119572,7 @@ Tĩnh	I-LOCATION
 và	O
 Quảng	B-LOCATION
 Bình	I-LOCATION
+,	O
 làm	O
 nhiều	O
 người	O
@@ -117918,6 +119594,7 @@ trên	O
 11.000	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Hàng	O
 ngàn	O
@@ -117981,6 +119658,7 @@ Thông	I-ORGANIZATION
 Ngô	B-PERSON
 Hồng	I-PERSON
 Hệ	I-PERSON
+,	O
 Trưởng	B-PERSONTYPE
 phòng	I-PERSONTYPE
 Kiểm	I-PERSONTYPE
@@ -117988,6 +119666,7 @@ Kiểm	I-PERSONTYPE
 xe	I-PERSONTYPE
 cơ	I-PERSONTYPE
 giới	I-PERSONTYPE
+,	O
 Cục	B-ORGANIZATION
 Đăng	I-ORGANIZATION
 kiểm	I-ORGANIZATION
@@ -118066,6 +119745,7 @@ phạt	O
 Trong	O
 năm	B-DATETIME
 2016	I-DATETIME
+,	O
 Cục	O
 cũng	O
 nhận	O
@@ -118091,6 +119771,7 @@ so	O
 với	O
 năm	B-DATETIME
 2016	I-DATETIME
+,	O
 danh	O
 sách	O
 đề	O
@@ -118201,6 +119882,7 @@ phạt	O
 Theo	O
 ông	O
 Hệ	B-PERSON
+,	O
 nguyên	O
 nhân	O
 khiến	O
@@ -118246,6 +119928,7 @@ trước	O
 ,	O
 năm	B-DATETIME
 2016	I-DATETIME
+,	O
 có	O
 rất	O
 ít	O
@@ -118337,6 +120020,7 @@ Kiểm	I-PERSONTYPE
 xe	I-PERSONTYPE
 cơ	I-PERSONTYPE
 giới	I-PERSONTYPE
+,	O
 Cục	B-ORGANIZATION
 Đăng	I-ORGANIZATION
 kiểm	I-ORGANIZATION
@@ -118397,6 +120081,7 @@ phòng	B-ORGANIZATION
 CSGT	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Nội	I-ORGANIZATION
+,	O
 tại	O
 đây	O
 ,	O
@@ -118469,6 +120154,7 @@ tá	I-PERSONTYPE
 Nguyễn	B-PERSON
 Minh	I-PERSON
 Thuý	I-PERSON
+,	O
 Đội	O
 phó	O
 Đội	O
@@ -118753,6 +120439,7 @@ năm	I-DATETIME
 2017	I-DATETIME
 đến	I-DATETIME
 nay	I-DATETIME
+,	O
 Đội	O
 chỉ	O
 huy	O
@@ -118848,13 +120535,16 @@ vực	O
 Đông	B-LOCATION
 Nam	I-LOCATION
 Á	I-LOCATION
+.	O
 
 Chiều	B-DATETIME-DATE
 nay	I-DATETIME-DATE
+,	O
 tại	O
 Phủ	B-LOCATION-STRUC
 Chủ	I-LOCATION-STRUC
 tịch	I-LOCATION-STRUC
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 nước	I-PERSONTYPE
@@ -118877,6 +120567,7 @@ liềm	I-ORGANIZATION
 Đỏ	I-ORGANIZATION
 quốc	I-ORGANIZATION
 tế	I-ORGANIZATION
+,	O
 Ủy	B-ORGANIZATION
 ban	I-ORGANIZATION
 Chữ	I-ORGANIZATION
@@ -118914,6 +120605,7 @@ thứ	I-EVENT
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Phát	O
 biểu	O
@@ -119117,6 +120809,7 @@ thập	I-ORGANIZATION
 Đỏ	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 “	O
 Tôi	O
@@ -119134,6 +120827,7 @@ liềm	I-ORGANIZATION
 Đỏ	I-ORGANIZATION
 quốc	I-ORGANIZATION
 tế	I-ORGANIZATION
+,	O
 ủy	O
 ban	O
 Chữ	B-ORGANIZATION
@@ -119165,6 +120859,7 @@ vực	O
 Đông	B-LOCATION
 Nam	I-LOCATION
 Á	I-LOCATION
+,	O
 trong	O
 đó	O
 có	O
@@ -119343,6 +121038,7 @@ sắc	O
 chung	O
 của	O
 ASEAN	B-ORGANIZATION
+,	O
 Hội	O
 Chữ	O
 thập	O
@@ -119611,6 +121307,7 @@ vực	I-EVENT
 lần	I-EVENT
 thứ	I-EVENT
 14	I-EVENT
+,	O
 cùng	O
 chiến	O
 lược	O
@@ -119719,18 +121416,22 @@ trú	O
 ở	O
 Gia	B-LOCATION
 Lai	I-LOCATION
+.	O
 
 Ngày	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 ông	O
 Trương	B-PERSON
 Minh	I-PERSON
 Tuấn	I-PERSON
+,	O
 Ủy	B-PERSONTYPE
 viên	I-PERSONTYPE
 Trung	I-PERSONTYPE
 ương	I-PERSONTYPE
 Đảng	I-PERSONTYPE
+,	O
 Bộ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Bộ	B-ORGANIZATION
@@ -119836,6 +121537,7 @@ chiếm	O
 trên	O
 47	B-QUANTITY-PER
 %	I-QUANTITY-PER
+.	O
 Doanh	O
 thu	O
 trong	O
@@ -119851,6 +121553,7 @@ trên	O
 1.000	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Tuy	O
 nhiên	O
@@ -119923,6 +121626,7 @@ trú	O
 Trong	O
 năm	B-DATETIME
 2016	I-DATETIME
+,	O
 đơn	O
 vị	O
 đã	O
@@ -119987,6 +121691,7 @@ nay	I-DATETIME
 tới	I-DATETIME
 cuối	I-DATETIME
 năm	I-DATETIME
+,	O
 VNPT	B-ORGANIZATION
 Gia	I-ORGANIZATION
 Lai	I-ORGANIZATION
@@ -120069,6 +121774,7 @@ thông	O
 của	O
 Gia	B-LOCATION
 Lai	I-LOCATION
+,	O
 rà	O
 soát	O
 lại	O
@@ -120089,6 +121795,7 @@ trú	O
 ở	O
 Gia	B-LOCATION
 Lai	I-LOCATION
+.	O
 Đồng	O
 thời	O
 phải	O
@@ -120163,6 +121870,7 @@ Việt	I-ORGANIZATION
 
 Sáng	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
 tướng	I-PERSONTYPE
@@ -120183,6 +121891,7 @@ Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
 Kim	I-ORGANIZATION
 Hack-Yong	I-ORGANIZATION
+.	O
 
 Phát	O
 biểu	O
@@ -120222,6 +121931,7 @@ Nam	I-LOCATION-GPE
 -	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
+.	O
 
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
@@ -120325,6 +122035,7 @@ suất	O
 cho	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Phó	B-PERSONTYPE
 Thủ	I-PERSONTYPE
@@ -120387,6 +122098,7 @@ Hàn	I-MISCELLANEOUS
 và	O
 tiếng	B-MISCELLANEOUS
 Việt	I-MISCELLANEOUS
+,	O
 nhất	O
 là	O
 dạy	O
@@ -120470,7 +122182,7 @@ nhập	O
 cảnh	O
 Hàn	B-LOCATION-GPE
 Quốc	I-LOCATION-GPE
-..	O
+...	O
 
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -120585,6 +122297,7 @@ toàn	O
 
 Sáng	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 Trạm	B-LOCATION-STRUC
 Biên	I-LOCATION-STRUC
 phòng	I-LOCATION-STRUC
@@ -120594,6 +122307,7 @@ Tấn	I-LOCATION-STRUC
 TP	B-LOCATION-GPE
 Quy	I-LOCATION-GPE
 Nhơn	I-LOCATION-GPE
+,	O
 Bình	B-LOCATION
 Định	I-LOCATION
 đã	O
@@ -120670,6 +122384,7 @@ Chánh	I-LOCATION
 huyện	B-LOCATION
 Bình	I-LOCATION
 Sơn	I-LOCATION
+,	O
 Quảng	B-LOCATION
 Ngãi	I-LOCATION
 làm	O
@@ -120699,11 +122414,13 @@ Tấn	I-LOCATION-STRUC
 vào	O
 ngày	B-DATETIME-DATE
 10/9	I-DATETIME-DATE
+.	O
 Khoảng	O
 23	B-DATETIME-TIME
 giờ	I-DATETIME-TIME
 ngày	I-DATETIME-TIME
 20/9	I-DATETIME-TIME
+,	O
 khi	O
 đang	O
 hoạt	O
@@ -120720,6 +122437,7 @@ N	I-LOCATION
 111	I-LOCATION
 ''	I-LOCATION
 E	I-LOCATION
+,	O
 cách	O
 vùng	O
 biển	O
@@ -120794,6 +122512,7 @@ Hải	I-LOCATION
 huyện	B-LOCATION
 Bình	I-LOCATION
 Sơn	I-LOCATION
+,	O
 Quảng	B-LOCATION
 Ngãi	I-LOCATION
 đang	O
@@ -120825,6 +122544,7 @@ giờ	I-DATETIME-TIME
 phút	I-DATETIME-TIME
 ngày	I-DATETIME-TIME
 21/9	I-DATETIME-TIME
+,	O
 tàu	O
 của	O
 ông	O
@@ -120935,10 +122655,12 @@ Lê	B-PERSON
 Quý	I-PERSON
 D	I-PERSON
 .	I-PERSON
+,	O
 trú	O
 huyện	B-LOCATION
 Đức	I-LOCATION
 Thọ	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Hà	I-LOCATION
 Tĩnh	I-LOCATION
@@ -120958,17 +122680,20 @@ chỗ	O
 
 Tối	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 thượng	B-PERSONTYPE
 tá	I-PERSONTYPE
 Nguyễn	B-PERSON
 Duy	I-PERSON
 Đông	I-PERSON
+,	O
 Trưởng	O
 Công	B-ORGANIZATION
 an	I-ORGANIZATION
 huyện	I-ORGANIZATION
 Đức	I-ORGANIZATION
 Thọ	I-ORGANIZATION
+,	O
 tỉnh	B-LOCATION
 Hà	I-LOCATION
 Tĩnh	I-LOCATION
@@ -121007,6 +122732,7 @@ khoảng	O
 12h50	B-DATETIME-TIME
 cùng	I-DATETIME-TIME
 ngày	I-DATETIME-TIME
+,	O
 tàu	B-PRODUCT
 SE6	I-PRODUCT
 chạy	O
@@ -121023,6 +122749,7 @@ gần	O
 ga	B-LOCATION-STRUC
 Đức	I-LOCATION-STRUC
 Lạc	I-LOCATION-STRUC
+,	O
 thuộc	O
 huyện	O
 này	O
@@ -121046,9 +122773,11 @@ tại	O
 thôn	B-LOCATION
 Hòa	I-LOCATION
 Thái	I-LOCATION
+,	O
 xã	B-LOCATION
 Đức	I-LOCATION
 Lạc	I-LOCATION
+.	O
 Cú	O
 tông	O
 trực	O
@@ -121135,6 +122864,7 @@ Khoảng	O
 chiều	I-DATETIME-TIME
 ngày	I-DATETIME-TIME
 21-9	I-DATETIME-TIME
+,	O
 tại	O
 ngã	B-LOCATION
 tư	I-LOCATION
@@ -121149,6 +122879,7 @@ thuộc	O
 phường	B-LOCATION
 Nghĩa	I-LOCATION
 Chánh	I-LOCATION
+,	O
 TP	B-LOCATION-GPE
 Quảng	I-LOCATION-GPE
 Ngãi	I-LOCATION-GPE
@@ -121244,6 +122975,7 @@ tại	O
 huyện	B-LOCATION
 Đại	I-LOCATION
 Lộc	I-LOCATION
+,	O
 tỉnh	B-LOCATION
 Quảng	I-LOCATION
 Nam	I-LOCATION
@@ -121433,6 +123165,7 @@ liệu	O
 
 Chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 UBND	B-ORGANIZATION
 tỉnh	I-ORGANIZATION
 Nghệ	I-ORGANIZATION
@@ -121474,6 +123207,7 @@ giai	O
 2018	B-DATETIME
 –	I-DATETIME
 2025	I-DATETIME
+.	O
 
 Cuộc	O
 họp	O
@@ -121707,6 +123441,7 @@ Lễ	B-EVENT
 hội	I-EVENT
 Hang	I-EVENT
 Bua	I-EVENT
+.	O
 Ảnh	O
 :	O
 Thanh	B-PERSON
@@ -121922,6 +123657,7 @@ trên	O
 27,2	B-QUANTITY-CUR
 tỷ	I-QUANTITY-CUR
 đồng	I-QUANTITY-CUR
+.	O
 
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -122137,6 +123873,7 @@ bắt	O
 đầu	O
 từ	B-QUANTITY
 1-10	I-QUANTITY
+.	O
 
 Theo	O
 đó	O
@@ -122144,6 +123881,7 @@ Theo	O
 từ	O
 ngày	B-DATETIME-DATE
 26-9	I-DATETIME-DATE
+,	O
 Tổng	B-ORGANIZATION
 công	I-ORGANIZATION
 ty	I-ORGANIZATION
@@ -122220,6 +123958,7 @@ tại	O
 website	O
 :	O
 www.dsvn.vn	B-URL
+.	O
 
 Bên	O
 cạnh	O
@@ -122328,9 +124067,11 @@ XII	I-PRODUCT-LEGAL
 
 Ngày	B-DATETIME-DATE
 22-9	I-DATETIME-DATE
+,	O
 tại	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 Đảng	B-ORGANIZATION
 bộ	I-ORGANIZATION
 Báo	I-ORGANIZATION
@@ -122359,6 +124100,7 @@ Trung	I-PRODUCT-LEGAL
 Khóa	I-PRODUCT-LEGAL
 XII	I-PRODUCT-LEGAL
 )	I-PRODUCT-LEGAL
+.	O
 
 Tại	O
 Hội	O
@@ -122368,6 +124110,7 @@ PGS-TS	B-PERSONTYPE
 Nguyễn	B-PERSON
 Viết	I-PERSON
 Thông	I-PERSON
+,	O
 Tổng	B-PERSONTYPE
 Thư	I-PERSONTYPE
 ký	I-PERSONTYPE
@@ -122377,12 +124120,14 @@ Lý	I-PERSONTYPE
 luận	I-PERSONTYPE
 Trung	I-PERSONTYPE
 ương	I-PERSONTYPE
+,	O
 Ủy	B-PERSONTYPE
 viên	I-PERSONTYPE
 Thường	I-PERSONTYPE
 trực	I-PERSONTYPE
 Hội	I-PERSONTYPE
 đồng	I-PERSONTYPE
+,	O
 đã	O
 trực	O
 tiếp	O
@@ -122428,6 +124173,7 @@ của	O
 Báo	B-ORGANIZATION
 Nhân	I-ORGANIZATION
 Dân	I-ORGANIZATION
+.	O
 
 Đồng	O
 chí	O
@@ -122562,6 +124308,7 @@ chí	O
 Lê	B-PERSON
 Quốc	I-PERSON
 Khánh	I-PERSON
+,	O
 Phó	B-PERSONTYPE
 Bí	I-PERSONTYPE
 thư	I-PERSONTYPE
@@ -122577,6 +124324,7 @@ tập	I-PERSONTYPE
 Báo	B-ORGANIZATION
 Nhân	I-ORGANIZATION
 Dân	I-ORGANIZATION
+,	O
 nêu	O
 rõ	O
 ,	O
@@ -122629,6 +124377,7 @@ của	O
 Báo	B-ORGANIZATION
 Nhân	I-ORGANIZATION
 Dân	I-ORGANIZATION
+.	O
 Do	O
 đó	O
 ,	O
@@ -122714,6 +124463,7 @@ ANH	I-PERSON
 
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+:	O
 20	B-QUANTITY-NUM
 xe	O
 khách	O
@@ -122791,6 +124541,7 @@ Nội	I-ORGANIZATION
 tài	O
 1	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+.	O
 
 Thời	O
 gian	O
@@ -122910,6 +124661,7 @@ bến	O
 ”	O
 1	B-DATETIME-DURATION
 tháng	I-DATETIME-DURATION
+.	O
 
 Theo	O
 Sở	B-ORGANIZATION
@@ -122919,6 +124671,7 @@ vận	I-ORGANIZATION
 tải	I-ORGANIZATION
 Hà	I-ORGANIZATION
 Nội	I-ORGANIZATION
+,	O
 qua	O
 kiểm	O
 tra	O
@@ -122960,16 +124713,21 @@ tuyến	O
 đường	O
 Phạm	B-LOCATION
 Hùng	I-LOCATION
+,	O
 Phạm	B-LOCATION
 Văn	I-LOCATION
 Đồng	I-LOCATION
+,	O
 Khuất	B-LOCATION
 Duy	I-LOCATION
 Tiến	I-LOCATION
+,	O
 Nguyễn	B-LOCATION
 Trãi	I-LOCATION
+,	O
 Kim	B-LOCATION
 Đồng	I-LOCATION
+,	O
 Giải	B-LOCATION
 Phóng	I-LOCATION
 và	O
@@ -122979,6 +124737,7 @@ bến	B-LOCATION-STRUC
 xe	I-LOCATION-STRUC
 Mỹ	I-LOCATION-STRUC
 Đình	I-LOCATION-STRUC
+,	O
 Giáp	B-LOCATION-STRUC
 Bát	I-LOCATION-STRUC
 
@@ -123154,6 +124913,7 @@ các	O
 bến	B-LOCATION-STRUC
 Giáp	I-LOCATION-STRUC
 Bát	I-LOCATION-STRUC
+,	O
 Mỹ	B-LOCATION-STRUC
 Đình	I-LOCATION-STRUC
 Trung	B-ORGANIZATION
@@ -123195,6 +124955,7 @@ ngày	I-DATETIME-DATERANGE
 đến	I-DATETIME-DATERANGE
 ngày	I-DATETIME-DATERANGE
 17/10	I-DATETIME-DATERANGE
+.	O
 
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -123213,6 +124974,7 @@ liềm	I-ORGANIZATION
 
 Chiều	B-DATETIME-DATE
 22.9	I-DATETIME-DATE
+,	O
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
 Nước	I-PERSONTYPE
@@ -123233,6 +124995,7 @@ liềm	I-ORGANIZATION
 đỏ	I-ORGANIZATION
 quốc	I-ORGANIZATION
 tế	I-ORGANIZATION
+,	O
 Ủy	B-ORGANIZATION
 ban	I-ORGANIZATION
 Chữ	I-ORGANIZATION
@@ -123254,9 +125017,11 @@ vực	I-ORGANIZATION
 Đông	I-ORGANIZATION
 Nam	I-ORGANIZATION
 Á	I-ORGANIZATION
+.	O
 
 Theo	O
 TTXVN	B-ORGANIZATION
+,	O
 ông	O
 Xavier	B-PERSON
 Castellanos	I-PERSON
@@ -123383,6 +125148,7 @@ liềm	I-ORGANIZATION
 đỏ	I-ORGANIZATION
 quốc	I-ORGANIZATION
 tế	I-ORGANIZATION
+,	O
 Ủy	B-ORGANIZATION
 ban	I-ORGANIZATION
 Chữ	I-ORGANIZATION
@@ -123406,6 +125172,7 @@ vực	I-ORGANIZATION
 Đông	I-ORGANIZATION
 Nam	I-ORGANIZATION
 Á	I-ORGANIZATION
+.	O
 
 Phát	O
 biểu	O
@@ -123457,6 +125224,7 @@ Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
 ngày	B-DATETIME-DATERANGE
 21-22.9	I-DATETIME-DATERANGE
+.	O
 
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -123549,6 +125317,7 @@ thập	I-ORGANIZATION
 đỏ	I-ORGANIZATION
 Việt	I-ORGANIZATION
 Nam	I-ORGANIZATION
+.	O
 
 Chủ	B-PERSONTYPE
 tịch	I-PERSONTYPE
@@ -123569,6 +125338,7 @@ liềm	I-ORGANIZATION
 đỏ	I-ORGANIZATION
 quốc	I-ORGANIZATION
 tế	I-ORGANIZATION
+,	O
 Ủy	B-ORGANIZATION
 ban	I-ORGANIZATION
 Chữ	I-ORGANIZATION
@@ -123598,11 +125368,13 @@ vực	O
 Đông	B-LOCATION
 Nam	I-LOCATION
 Á	I-LOCATION
+,	O
 trong	O
 đó	O
 có	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 đặc	O
 biệt	O
 là	O
@@ -123786,6 +125558,7 @@ tiết	O
 2	B-DATETIME-DATE
 ngày	I-DATETIME-DATE
 tới	I-DATETIME-DATE
+:	O
 Nam	B-LOCATION
 Bộ	I-LOCATION
 có	O
@@ -123803,9 +125576,11 @@ Thủy	I-ORGANIZATION
 văn	I-ORGANIZATION
 Trung	I-ORGANIZATION
 ương	I-ORGANIZATION
+,	O
 từ	B-DATETIME-DATERANGE
 ngày	I-DATETIME-DATERANGE
 23-24/9	I-DATETIME-DATERANGE
+,	O
 các	O
 tỉnh	O
 từ	O
@@ -123814,6 +125589,7 @@ Nẵng	I-LOCATION
 đến	O
 Bình	B-LOCATION
 Thuận	I-LOCATION
+,	O
 Tây	B-LOCATION
 Nguyên	I-LOCATION
 và	O
@@ -123835,6 +125611,7 @@ tiết	O
 từ	B-DATETIME-DATERANGE
 ngày	I-DATETIME-DATERANGE
 23-24/9	I-DATETIME-DATERANGE
+,	O
 khu	O
 vực	O
 Nam	B-LOCATION
@@ -123845,8 +125622,10 @@ các	O
 tỉnh	O
 Đắk	B-LOCATION
 Lắc	I-LOCATION
+,	O
 Đắk	B-LOCATION
 Nông	I-LOCATION
+,	O
 Lâm	B-LOCATION
 Đồng	I-LOCATION
 và	O
@@ -123912,6 +125691,7 @@ cấp	O
 Từ	O
 ngày	B-DATETIME-DATE
 25/9	I-DATETIME-DATE
+,	O
 mưa	O
 có	O
 xu	O
@@ -123948,6 +125728,7 @@ Bình	B-LOCATION
 -	O
 Cà	B-LOCATION
 Mau	I-LOCATION
+,	O
 Cà	B-LOCATION
 Mau	I-LOCATION
 -	O
@@ -123993,10 +125774,12 @@ Thủy	I-ORGANIZATION
 văn	I-ORGANIZATION
 Trung	I-ORGANIZATION
 ương	I-ORGANIZATION
+,	O
 dự	O
 báo	O
 đêm	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 phía	O
 Tây	B-LOCATION
 Bắc	I-LOCATION
@@ -124016,6 +125799,7 @@ từ	O
 -	I-QUANTITY
 95	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 từ	O
@@ -124024,6 +125808,7 @@ từ	O
 26	I-QUANTITY
 độ	I-QUANTITY
 C	I-QUANTITY
+.	O
 Phía	O
 Đông	B-LOCATION
 Bắc	I-LOCATION
@@ -124061,6 +125846,7 @@ cấp	O
 2	B-QUANTITY
 -	I-QUANTITY
 3	I-QUANTITY
+.	O
 Độ	O
 ẩm	O
 từ	B-QUANTITY
@@ -124068,6 +125854,7 @@ từ	B-QUANTITY
 -	I-QUANTITY
 96	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 từ	B-QUANTITY
@@ -124076,6 +125863,7 @@ từ	B-QUANTITY
 27	I-QUANTITY
 độ	I-QUANTITY
 C	I-QUANTITY
+.	O
 
 Các	O
 tỉnh	O
@@ -124123,6 +125911,7 @@ từ	B-QUANTITY
 -	I-QUANTITY
 93	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 từ	B-QUANTITY
@@ -124130,6 +125919,7 @@ từ	B-QUANTITY
 28	I-QUANTITY
 độ	I-QUANTITY
 C	I-QUANTITY
+.	O
 
 Đà	B-LOCATION
 Nẵng	I-LOCATION
@@ -124169,6 +125959,7 @@ Tây	O
 Nam	O
 cấp	O
 2-3	B-QUANTITY
+.	O
 Trong	O
 cơn	O
 dông	O
@@ -124192,6 +125983,7 @@ từ	B-QUANTITY
 -	I-QUANTITY
 96	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 từ	O
@@ -124200,6 +125992,7 @@ từ	O
 27	I-QUANTITY
 độ	I-QUANTITY
 C	I-QUANTITY
+.	O
 
 Khu	O
 vực	O
@@ -124226,6 +126019,7 @@ Tây	O
 Nam	O
 cấp	O
 2-3	B-QUANTITY
+.	O
 Trong	O
 cơn	O
 dông	O
@@ -124249,6 +126043,7 @@ từ	B-QUANTITY
 -	I-QUANTITY
 98	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 từ	B-QUANTITY
@@ -124256,6 +126051,7 @@ từ	B-QUANTITY
 23	I-QUANTITY
 độ	I-QUANTITY
 C	I-QUANTITY
+.	O
 
 Nam	B-LOCATION
 Bộ	I-LOCATION
@@ -124280,6 +126076,7 @@ Tây	O
 Nam	O
 cấp	O
 2-3	B-QUANTITY
+.	O
 Trong	O
 cơn	O
 dông	O
@@ -124303,6 +126100,7 @@ từ	B-QUANTITY
 -	I-QUANTITY
 99	I-QUANTITY
 %	I-QUANTITY
+.	O
 Nhiệt	O
 độ	O
 thấp	O
@@ -124359,6 +126157,7 @@ dã	O
 tại	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+.	O
 
 Rùa-	O
 một	O
@@ -124382,6 +126181,7 @@ Kiểm	I-ORGANIZATION
 lâm	I-ORGANIZATION
 Tây	I-ORGANIZATION
 Ninh	I-ORGANIZATION
+.	O
 Ảnh	O
 :	O
 Lê	B-PERSON
@@ -124474,15 +126274,18 @@ do	O
 Quỹ	B-ORGANIZATION
 Peace	I-ORGANIZATION
 Parks	I-ORGANIZATION
+,	O
 Tổ	O
 chức	O
 Save	B-ORGANIZATION
 The	I-ORGANIZATION
 Rhino	I-ORGANIZATION
 International	I-ORGANIZATION
+,	O
 Chính	O
 phủ	O
 Anh	B-LOCATION-GPE
+,	O
 Cơ	B-ORGANIZATION
 quan	I-ORGANIZATION
 phát	I-ORGANIZATION
@@ -124550,6 +126353,7 @@ chức	O
 Bà	O
 Madelon	B-PERSON
 Willemsen	I-PERSON
+,	O
 đại	O
 diện	O
 Tổ	B-ORGANIZATION
@@ -124750,6 +126554,7 @@ Theo	O
 Bùi	B-PERSON
 Ngọc	I-PERSON
 Mạnh	I-PERSON
+,	O
 Giám	B-PERSONTYPE
 đốc	I-PERSONTYPE
 Trung	B-ORGANIZATION
@@ -124898,6 +126703,7 @@ báo	O
 chí	O
 Việt	B-LOCATION-GPE
 Nam	I-LOCATION-GPE
+,	O
 sẽ	O
 góp	O
 phần	O
@@ -124986,12 +126792,14 @@ ngã	B-LOCATION
 ba	I-LOCATION
 Vũng	I-LOCATION
 Tàu	I-LOCATION
+.	O
 Từ	B-DATETIME
 đầu	I-DATETIME
 năm	I-DATETIME
 2017	I-DATETIME
 đến	I-DATETIME
 nay	I-DATETIME
+,	O
 đã	O
 có	O
 4	B-QUANTITY-NUM
@@ -125038,6 +126846,7 @@ Tàu	I-LOCATION
 (	O
 TP.Biên	B-LOCATION-GPE
 Hoà	I-LOCATION-GPE
+,	O
 Đồng	B-LOCATION
 Nai	I-LOCATION
 .	O
@@ -125074,6 +126883,7 @@ Hòa	I-LOCATION
 quốc	B-LOCATION
 lộ	I-LOCATION
 51	I-LOCATION
+.	O
 Khi	O
 xe	O
 60K1	O
@@ -125225,6 +127035,7 @@ từ	B-QUANTITY
 60	I-QUANTITY
 -	I-QUANTITY
 70	I-QUANTITY
+.	O
 
 Nút	O
 giao	O
@@ -125248,6 +127059,7 @@ của	O
 tỉnh	B-LOCATION
 Đồng	I-LOCATION
 Nai	I-LOCATION
+,	O
 với	O
 lưu	O
 lượng	O
@@ -125297,6 +127109,7 @@ vượt	O
 Đầu	B-DATETIME
 năm	I-DATETIME
 2016	I-DATETIME
+,	O
 Bộ	B-ORGANIZATION
 GTVT	I-ORGANIZATION
 tiếp	O
@@ -125463,6 +127276,7 @@ Nam	I-LOCATION-GPE
 
 Chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 Phó	B-PERSONTYPE
 Giám	I-PERSONTYPE
 đốc	I-PERSONTYPE
@@ -125470,10 +127284,12 @@ Sở	B-ORGANIZATION
 LĐ-TB-XH	I-ORGANIZATION
 Bình	I-ORGANIZATION
 Định	I-ORGANIZATION
+,	O
 ông	O
 Phan	B-PERSON
 Đình	I-PERSON
 Hòa	I-PERSON
+,	O
 xác	O
 nhận	O
 :	O
@@ -125535,6 +127351,7 @@ tính	O
 từ	O
 ngày	B-DATETIME-DATE
 1/10/2017	I-DATETIME-DATE
+.	O
 
 Trước	O
 đó	O
@@ -125587,6 +127404,7 @@ ra	O
 vào	O
 tháng	B-DATETIME
 3/1988	I-DATETIME
+.	O
 
 Sau	O
 đó	O
@@ -125630,10 +127448,12 @@ với	O
 Lê	B-PERSON
 Văn	I-PERSON
 Thoa	I-PERSON
+.	O
 
 Sáng	B-DATETIME-DATE
 ngày	I-DATETIME-DATE
 6/9/2017	I-DATETIME-DATE
+,	O
 ông	O
 Thoa	B-PERSON
 được	O
@@ -125683,6 +127503,7 @@ cư	O
 
 Chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 UBND	B-ORGANIZATION
 quận	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
@@ -125766,6 +127587,7 @@ UBND	B-ORGANIZATION
 quận	I-ORGANIZATION
 Hoàng	I-ORGANIZATION
 Mai	I-ORGANIZATION
+,	O
 trong	O
 những	O
 năm	O
@@ -125856,6 +127678,7 @@ pháp	O
 luật	O
 là	O
 294	B-QUANTITY-NUM
+,	O
 quản	O
 lý	O
 theo	O
@@ -126070,6 +127893,7 @@ so	O
 với	O
 năm	B-DATETIME
 2007	I-DATETIME
+.	O
 
 Các	O
 đơn	O
@@ -126585,6 +128409,7 @@ ngành	O
 GTVT	O
 miền	B-LOCATION
 Trung	I-LOCATION
+.	O
 
 Thứ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
@@ -126607,6 +128432,7 @@ Việt	I-PERSON
 
 Chiều	B-DATETIME-DATE
 22/9	I-DATETIME-DATE
+,	O
 tại	O
 Trường	B-LOCATION
 CĐ	I-LOCATION
@@ -126647,6 +128473,7 @@ khu	O
 vực	O
 miền	B-LOCATION
 Trung	I-LOCATION
+.	O
 
 Phát	O
 biểu	O
@@ -126668,10 +128495,12 @@ Ban	I-PERSONTYPE
 cán	I-PERSONTYPE
 sự	I-PERSONTYPE
 Đảng	I-PERSONTYPE
+,	O
 Bí	B-PERSONTYPE
 thư	I-PERSONTYPE
 Đảng	I-PERSONTYPE
 ủy	I-PERSONTYPE
+,	O
 Thứ	B-PERSONTYPE
 trưởng	I-PERSONTYPE
 Bộ	B-ORGANIZATION
@@ -126741,6 +128570,7 @@ Chí	I-ORGANIZATION
 Minh	I-ORGANIZATION
 Bộ	I-ORGANIZATION
 GTVT	I-ORGANIZATION
+,	O
 trong	O
 mỗi	O
 thời	O
@@ -126885,6 +128715,7 @@ lãnh	O
 ủy	O
 Bộ	B-ORGANIZATION
 GTVT	I-ORGANIZATION
+,	O
 bạn	O
 Nguyễn	B-PERSON
 Phúc	I-PERSON
@@ -126908,6 +128739,7 @@ mắc	O
 :	O
 Hà	B-LOCATION-GPE
 Nội	I-LOCATION-GPE
+,	O
 TP.HCM	B-LOCATION-GPE
 đang	O
 chú	O
@@ -126970,6 +128802,7 @@ lãnh	O
 ủy	O
 Bộ	B-ORGANIZATION
 GTVT	I-ORGANIZATION
+.	O
 Ảnh	O
 :	O
 Tấn	B-PERSON
@@ -127254,6 +129087,7 @@ ngành	O
 GTVT	O
 miền	B-LOCATION
 Trung	I-LOCATION
+.	O
 Ảnh	O
 :	O
 Tấn	B-PERSON
@@ -127348,6 +129182,7 @@ Ban	I-PERSONTYPE
 cán	I-PERSONTYPE
 sự	I-PERSONTYPE
 Đảng	I-PERSONTYPE
+,	O
 Phó	B-PERSONTYPE
 chủ	I-PERSONTYPE
 tịch	I-PERSONTYPE
