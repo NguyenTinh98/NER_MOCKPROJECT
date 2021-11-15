@@ -74,7 +74,7 @@ def convert_sentences_to_df(Y_pred, Data_test, option = "full", n_col = 3):
         
     return df.copy()
 
-# find word index near
+
 def get_data_error(df, num_sent, dist_size):
     """
     function get_data_error: phân tích lỗi xung quanh từ bị lỗi

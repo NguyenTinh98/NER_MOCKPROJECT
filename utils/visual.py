@@ -12,7 +12,7 @@ def print_color(lst):
         input: list of word, ex:['Chào', 'Tân', 'xinh', 'đẹp']
         output: show color of text
     '''
-    return html_print(' '.join(lst))
+    return html_print(' '.join(lst))    
 
 def visualize(predict_, labels):
     '''
