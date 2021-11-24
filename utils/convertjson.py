@@ -64,10 +64,11 @@ def convert_data2pkl(data, file):
         
 ## pipeline convert jsonl to pkl
 ## path to file admin jsonl and unknown jsonl
-admins = 'real_final/admin.jsonl'
-unknows = 'real_final/unknown.jsonl'
+## pipeline convert jsonl to pkl
+admins = '7900_299831/admin.jsonl'
+unknows = '7900_299831/unknown.jsonl'
 total_data = []
-file_pkl = 'final1.pkl'
-total_data += convert_json_admin(i)
-total_data += convert_json_unknown(i)
+file_pkl = 'final_7900.pkl'
+total_data += convert_json_admin(admins)
+total_data += convert_json_unknown(unknows)
 convert_data2pkl(total_data, file_pkl)
