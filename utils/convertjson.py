@@ -1,6 +1,9 @@
 import json
 import pickle
 
+def isBelongRange(a, b):
+     return b[0] >= a[0] and b[1] <= a[1]
+
 def sorted_idx(idx, isReverse = False):
     temp = [(u, v, a) for u, v, a in sorted(idx, key=lambda item: item[0], reverse = isReverse)]
     res = [temp[0]]
