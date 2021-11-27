@@ -19,7 +19,7 @@ def subword(X, y, size=256):
                 break
         if flag:
             for i in range(cur-1, cur-1-size, -1):
-                if y[i] == 'O' and (i > 0 and y[i-1] == 'O') and (i < len(X) - 1 and y[i+1] == 'O') and isSubword(x, i):
+                if y[i] == 'O' and (i > 0 and y[i-1] == 'O') and (i < len(X) - 1 and y[i+1] == 'O') and isSubword(X, i):
                     res_X.append(X[st: i+1])
                     res_y.append(y[st: i+1])
                     st = i+1
