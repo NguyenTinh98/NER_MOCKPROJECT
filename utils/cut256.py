@@ -16,7 +16,7 @@ def cutting_subword(X, y, size=256):
                 break
         if flag:
             for i in range(st+size-1, st-1, -1):
-                if isSubword(X, i):
+                if isNotSubword(X, i):
                     cur = i+1
                     if y[i] == 'O':
                         cur = i+1
