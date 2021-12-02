@@ -1,4 +1,4 @@
-def isSubword(x, idx, sub = '##'):
+def isNotSubword(x, idx, sub = '##'):
     return sub not in x[idx] and idx > 0 and idx < len(x) - 1 and sub not in x[idx-1] and sub not in x[idx+1]
 
 def cutting_subword(X, y, size=256):
@@ -7,7 +7,7 @@ def cutting_subword(X, y, size=256):
     st = 0
     cur = 0
     
-    while (st < len(X)-256):
+    while (st < len(X)-size):
         flag = True
         for i in range(st+size-1, st-1, -1):
             if X[i] in punct and y[i] == 'O':
@@ -16,7 +16,7 @@ def cutting_subword(X, y, size=256):
                 break
         if flag:
             for i in range(st+size-1, st-1, -1):
-                if isSubword(X, i):
+                if isNotSubword(X, i):
                     cur = i+1
                     if y[i] == 'O':
                         cur = i+1
