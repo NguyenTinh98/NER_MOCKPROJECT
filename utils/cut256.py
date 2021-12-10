@@ -1,5 +1,5 @@
 def isNotSubword(x, idx, sub = '##'):
-    if sub == '##:
+    if sub == '##':
         return sub not in x[idx] and idx < len(x) - 1 and sub not in x[idx+1]
     elif sub == '@@':
         return sub not in x[idx] and idx > 0 and sub not in x[idx-1]
@@ -38,7 +38,7 @@ def cutting_subword(X, y, size=256):
 
 ############
 def isNotSubword(x, idx, sub = '##'):
-    if sub == '##:
+    if sub == '##':
         return sub not in x[idx] and idx < len(x) - 1 and sub not in x[idx+1]
     elif sub == '@@':
         return sub not in x[idx] and idx > 0 and sub not in x[idx-1]
