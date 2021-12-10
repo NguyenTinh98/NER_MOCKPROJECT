@@ -1,7 +1,11 @@
 def isNotSubword(x, idx, sub = '##'):
-    return sub not in x[idx] and idx > 0 and idx < len(x) - 1 and sub not in x[idx-1] and sub not in x[idx+1]
+    if sub == '##:
+        return sub not in x[idx] and idx < len(x) - 1 and sub not in x[idx+1]
+    elif sub == '@@':
+        return sub not in x[idx] and idx > 0 and sub not in x[idx-1]
+    return sub in x[idx] and idx < len(x) - 1 and sub in x[idx+1]
 
-def cutting_subword(X, y, size=256):
+def subword(X, y, size=256):
     res_X, res_y = [], []
     punct = '.!?'
     st = 0
@@ -21,7 +25,9 @@ def cutting_subword(X, y, size=256):
                     if y[i] == 'O':
                         cur = i+1
                         break
-                
+        if st == cur:
+            cur += size
+            
         res_X.append(X[st: cur])
         res_y.append(y[st: cur])
         st = cur
