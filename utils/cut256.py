@@ -5,7 +5,7 @@ def isNotSubword(x, idx, sub = '##'):
         return sub not in x[idx] and idx > 0 and sub not in x[idx-1]
     return sub in x[idx] and idx < len(x) - 1 and sub in x[idx+1]
 
-def subword(X, y, size=256):
+def cutting_subword(X, y, size=256):
     res_X, res_y = [], []
     punct = '.!?'
     st = 0
