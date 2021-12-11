@@ -68,3 +68,18 @@ def cutting_subword(X, sub = '##', size=256):
         st = cur
     res_X.append(X[cur:])
     return res_X
+
+###############
+import string
+import unicodedata
+def preprocessing_text(text):
+    dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
+             '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
+    text = unicodedata.normalize('NFKC', text)
+    res = ''
+    for i in text:
+        if i.isalnum() or i in string.punctuation or i == ' ':
+            res += i
+        elif i in dictt:
+            res += dictt[i]
+    return res
