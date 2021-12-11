@@ -53,7 +53,7 @@ def cutting_subword(X, sub = '##', size=256):
     while (st < len(X)-size):
         flag = True
         for i in range(st+size-1, st-1, -1):
-            if X[i] in punct and i < len(X) - 1 and X[i+1] == ' ' and isNotSubword(X, i, sub):
+            if X[i] in punct and isNotSubword(X, i, sub):
                 cur = i+1
                 flag = False
                 break
