@@ -56,7 +56,7 @@ def iou_single(s1, e1, s2, e2):
  
 # (token - True - pred) 
 # [[ ],[ ]]           
-def span_f1(arr, labels = None, strict=True, digit=4):
+def span_f1(arr, labels = None, strict=1, digit=4):
     all_labels = set()
     dictt = dict()
     for ar in arr:
