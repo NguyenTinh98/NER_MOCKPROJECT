@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DisplaCify App</title>
+	<title>NER</title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,14 +18,18 @@
 	background-color:grey;
 	color:#fff;
 	padding:10px;
+	height: 780px;
 }
 #custom_card2{
 	background-color:#383838;
 	color:#fff;
 	padding:10px;
-  /* height: 750px; */
+	height: 780px;
 }
+
+
 </style>
+  
   
     <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -60,7 +64,7 @@
   </div>
 </nav>
 
-<div class="jumbotron" style="background:#673AB7;color:#fff; text-align: center; height: 100px;">
+<div class="jumbotron" style="background:#673AB7;color:#fff; text-align: center; height: 100px !important;">
       <h1>Named Entity Recognition</h1>
       <!-- <p><a class="btn btn-success waves-effect btn-lg" href="/" role="button">Refresh &raquo;</a></p> -->
   </div>
@@ -92,21 +96,21 @@
 
 </div> -->
 
-<div class="container" style="margin:15px !important; max-width: 98% !important; max-height: 70% !important;">
+<div class="container" style="margin:15px !important; max-width: 98% !important;">
 	<div class="row">
 		<div class="col-md-6" >
-          <div class="card mb-10 shadow-sm" id="custom_card" style="border: 1px !important;">
+          <div class="card mb-10 shadow-sm" id="custom_card" style="border: 1px !important; max-height: 100%;">
           	<form method="POST" action="{{ url_for('extract')}}">
-              <textarea rows="30" required="true" name="rawtext" class="form-control">{{raw_text}}</textarea>
-              <input type="submit" name = "clear_button" value = "Clear">
-              <input type="submit" name  = "submit_button"  value = "Submit">
+			<input type="submit" name = "clear_button" value = "Clear">
+			<input type="submit" name  = "submit_button"  value = "Submit">
+            <textarea rows='30' required="true" name="rawtext" class="form-control">{{raw_text}}</textarea>
             </form>
 		</div>
 	</div>
 	<div class="col-md-6">
-          <div class="card mb-10 shadow-sm" id="custom_card2" style="height: 100% !important;">
+          <div class="card mb-10 shadow-sm" id="custom_card2">
           	<h4>Result of Data</h4>
-			<p style='line-height: 2.5rem !important;'>{{ result|markdown }}</p>
+			<p>{{ result|markdown }}</p>
 			
 		</div>
 	</div>
