@@ -56,7 +56,7 @@ def convert_jsondict2list(line):
 def convert_json_file(file):
     print('Convert admin jsonl')
     data = []
-    with open (file, 'r') as f:
+    with open(file, 'r', encoding='utf-8') as f:
         for i in list(f):
             temp = convert_jsondict2list((json.loads(i)))
             if len(temp) > 0:
@@ -71,10 +71,11 @@ def convert_data2pkl(data, file):
 ## pipeline convert jsonl to pkl
 ## path to file admin jsonl and unknown jsonl
 ## pipeline convert jsonl to pkl
-admins = '7900_299831/admin.jsonl'
-unknows = '7900_299831/unknown.jsonl'
+admins = 'admin.jsonl'
+#unknows = '7900_299831/unknown.jsonl'
 total_data = []
-file_pkl = 'final_7900.pkl'
+file_pkl = 'final_augment.pkl'
 total_data += convert_json_file(admins)
-total_data += convert_json_file(unknowns)
+#total_data += convert_json_file(unknowns)
 convert_data2pkl(total_data, file_pkl)
+
