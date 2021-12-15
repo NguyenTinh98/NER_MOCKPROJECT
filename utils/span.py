@@ -56,7 +56,7 @@ def iou_single(s1, e1, s2, e2):
  
 # (token - True - pred) 
 # [[ ],[ ]]           
-def span_f1(arr, labels = None, strict=1, digit=4):
+def span_f1(arr, strict=1, labels= None, digits=4):
     all_labels = set()
     dictt = dict()
     for ar in arr:
@@ -75,6 +75,6 @@ def span_f1(arr, labels = None, strict=1, digit=4):
         precision = dictt[i][0] / dictt[i][2] if dictt[i][2] > 0 else 0
         recall = dictt[i][1] / dictt[i][3] if dictt[i][3] > 0 else 0
         f1 = 2 * precision * recall / (precision + recall) if precision + recall > 0 else 0
-        classfication_rp[i] = {'precision': round(precision, digit), 'recall': round(recall, digit), 'f1': round(f1, digit), 'support': dictt[i][3]}
+        classfication_rp[i] = {'precision': round(precision, digits), 'recall': round(recall, digits), 'f1': round(f1, digits), 'support': dictt[i][3]}
         f1_avg += f1
     return f1_avg / len(labels), classfication_rp
