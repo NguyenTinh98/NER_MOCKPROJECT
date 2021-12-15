@@ -22,7 +22,7 @@ def convert_spanformat(arr):
                 res[l].append((s, e))
     return res
  
-def compare_span(span1, span2, res, strict= True):
+def compare_span(span1, span2, res, strict= 1):
     all_labels = set(list(span1.keys()) + list(span2.keys()))
     for l in all_labels:
         if l not in res:
@@ -37,11 +37,16 @@ def compare_span(span1, span2, res, strict= True):
         res[l][3] += len(span2[l])
         for s, e in span1[l]:
             for s1, e1 in span2[l]:
-                temp0, temp1 = iou_single(s, e, s1, e1)
-                if strict:
-                    temp0, temp1 = int(temp0), int(temp1)
-                res[l][0] += temp0
-                res[l][1] += temp1
+                if strict == 2:
+                    if s == s1 and e == e1:
+                        res[l][0] += 1
+                        res[l][1] += 1
+                else:
+                    temp0, temp1 = iou_single(s, e, s1, e1)
+                    if strict == 1:
+                        temp0, temp1 = int(temp0), int(temp1)
+                    res[l][0] += temp0
+                    res[l][1] += temp1
     return res
  
 def iou_single(s1, e1, s2, e2):
