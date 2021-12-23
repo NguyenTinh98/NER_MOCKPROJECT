@@ -55,6 +55,23 @@ while(True):
     bertvisualize(aa['text'])
     
  ####
+def preprocess_data(sent):
+  sent = handle_bracket(sent)
+  sent = re.sub(' +', ' ', sent)
+  sent_out = ""
+  parts = sent.split()
+
+  for index in range(len(parts)):
+    word_space = parts[index]
+    # print(word_space)
+
+    sub_string_handeled, _ = handle_character(word_space)
+    
+    if index != len(parts) - 1:
+      sent_out +=  sub_string_handeled + " "
+    else:
+      sent_out += sub_string_handeled
+  return sent_out
 
 def preprocessing_text2(text):
     dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
