@@ -53,3 +53,38 @@ while(True):
     aa = json.loads(r.text)
 
     bertvisualize(aa['text'])
+    
+ ####
+
+def preprocessing_text2(text):
+    dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
+             '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
+    text = text.split('\n')
+    text = ' '.join([i.strip()  for i in text if i!=''])
+    text = unicodedata.normalize('NFKC', text)
+    res = ''
+    for i in text:
+        if i.isalnum() or i in string.punctuation or i == ' ':
+            res += i
+        elif i in dictt:
+            res += dictt[i]
+    text = preprocess_data(res)
+    return text
+
+
+def read_txt(path):
+  with open(path, 'r', encoding='utf-8') as f:
+    return f.readlines()
+
+def write_txt(data, path):
+  with open(path, 'w', encoding='utf-8') as f:
+    for i in data:
+      f.write(i + '\n')
+
+def convertfile2doccano(path1, path2):
+  res = []
+  data = read_txt(path1)
+  for line in data:
+    res.append(preprocessing_text2(line.strip()))
+  write_txt(res, path2)
+
