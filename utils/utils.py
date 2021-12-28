@@ -522,57 +522,81 @@ def preprocess_email_url(datas):
 
 from pyvi import ViTokenizer, ViPosTagger
 
-def hau_xu_ly(sent, out):
-  token, label = list(zip(*out))
+import string
+import unicodedata
+from pyvi import ViTokenizer, ViPosTagger
+
+def preprocessing_text(text):
+    dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
+             '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
+    text = unicodedata.normalize('NFKC', text)
+    res = ''
+    for i in text:
+        if i.isalnum() or i in string.punctuation or i == ' ':
+            res += i
+        elif i in dictt:
+            res += dictt[i]
+    return res
+  
+# sent = 'pham van manh have email ( pvm26042000@gmail.com ) ....'
+# out = [('pham', 'O'), ('van', 'O'), ('manh', 'O'), ('have', 'O'), ('email', 'O'), ('(', 'O'),  ('pvm26042000', 'EMAIL'), ('@', 'EMAIL'),('gmail', 'EMAIL'), ('.', 'EMAIL'),('com', 'EMAIL'),(')', 'O'),('....', 'O')]
+
+def merge_word(sent, pred_out):
+  '''
+    :sent: is input sentences (hanlded pre-processing). example: 'pham van manh have email ( pvm26042000@gmail.com ) ....'
+    :out : is input of predict, is list tuple. example: [('pham', 'O'), ('van', 'O'), ('manh', 'O'), ('have', 'O'), ('email', 'O'), ('(', 'O'),  ('pvm26042000', 'EMAIL'), ('@', 'EMAIL'),('gmail', 'EMAIL'), ('.', 'EMAIL'),('com', 'EMAIL'),(')', 'O'),('....', 'O')]
+  '''
+  out_merged = []
   parts = sent.split()
-  datas = []
-  count = 0
+  # print(parts)
+  # print(pred_out)
+  for index in range(0, len(parts)):
+    word = parts[index]
 
-  for i in range(len(parts)):
-    word = parts[i]
-    # print(word, count)
-    try:
-      
-      # print(word, count)
-      word_updated, index = gheptu(word,token , count)
-    except:
-    #  print(word_updated)
-     print('error: {}, {}, {}'.format(word,token , count))
-     break
-
-    out_qdn = quet_dinh_nhan((word_updated, label[count: index]))
     
-    for o in out_qdn:
-      w, label_merged = o
-      datas.append((w, label_merged))
-    count = index
+    for jndex in range(1, len(pred_out) + 1):
+      token = pred_out[0:jndex]
+      ws_token, ls_token = list(zip(*token))
+      word_token = "".join(ws_token)
+      # print(word_token, word)
+      if word_token == word:
+        if len(token) == 1:
+          out_merged.append(token[0])
+        elif len(token) > 1:
+          a, b = list(zip(*token))
+          word_merged = "".join(a)
+          l_merged = decide_label((word_merged, b))
+          out_merged.append(l_merged)
+        pred_out = pred_out[jndex:]
+        break
+  return out_merged
 
+def post_processing(origin_sentence, out_predict):
 
-  datas_trained = preprocess_email_url(datas)
+  out_merged = merge_word(origin_sentence, out_predict)
+  # print(out_merged)
+    
+  #handle email, url
+  datas_trained = post_process_email_url(out_merged)
   # print(datas_trained)
-  gomcum = gom_cum(datas_trained)
-  # print(gomcum)
-  if len(gomcum) != 0:
-    indexs = cluster(gomcum, 2)
-    # print(indexs)
-    for index in indexs:
-      string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-      # string_loc = " ".join(string)
-      if is_ADDRESS(string, label) == True:
-        for i in range(index[0], index[-1] + 1):
-          # print('hdhdhd')
-          datas_trained[i] =(datas_trained[i][0], "ADDRESS")
-  return datas_trained
-# else:
-
-
-def gom_cum(tokens):
+  #handle location -> address
   indexs = []
-  for index in range(len(tokens)):
-    token = tokens[index]
+  for index in range(len(datas_trained)):
+    token = datas_trained[index]
     if token[1] == "LOCATION" or token[1] == "ADDRESS" :
       indexs.append(index)
-  return indexs
+
+  if len(indexs) != 0:
+    gr_indexs = cluster(indexs, 2)
+    
+    print(gr_indexs)
+    for index in gr_indexs:
+      string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
+      # print(string, label)
+      if is_ADDRESS(string, label) == True:
+        for i in range(index[0], index[-1] + 1):
+          datas_trained[i] =(datas_trained[i][0], "ADDRESS")
+  return datas_trained
 
 def cluster(data, maxgap):
     '''Arrange data into groups where successive elements
@@ -595,27 +619,6 @@ def cluster(data, maxgap):
     return groups
   
 
-def gheptu(word, parts, index):
-  
-  if parts[index] == "[UNK]":
-    return word, index + 1
-    
-  start = index
-  # print(word)
-  for i in range(start, len(parts) + 1):
-    end = i
-    # print("".join(parts[start:end]))
-    # print(word.lower(),"".join(parts[start:end]).lower())
-
-
-
-    if word.lower() == "".join(parts[start:end]).lower():
-      # print('oke')
-      # print(word, end)
-      return word, end
-  # print('fuck')
-  # print(word, index)
-  return None
 
 def has_numbers(inputString):
   parts = inputString.split()
@@ -632,7 +635,7 @@ def has_numbers(inputString):
   return False
 
 def is_ADDRESS(string, label):
-  index_dau = [i for i, e in enumerate(string) if e == ","]
+  index_dau = [i for i, e in enumerate(string) if e in [",", "-"]]
   index_not_dau_phay = [i for i, e in enumerate(label) if e == "O"]
 
   uy_tin = 0
@@ -641,59 +644,64 @@ def is_ADDRESS(string, label):
  
   # print(string)
   if 'ADDRESS' in label:
-    uy_tin += 0.2
+    uy_tin += 0.1
   
   # if '(' in string_loc or ')' in string_loc:
   #   uy_tin -= 0.025
   
 
   if has_numbers(string_loc):
-    uy_tin += 0.05
+    uy_tin += 0.2
   
   count =  len(index_dau) 
 
   # count = label.count('LOCATION')
   # print(count)
-  if count > 0 and count < 3:  #count = 1, 2:
-    uy_tin += 0.15
-  elif count > 2:
-    uy_tin += 0.2
+  # if count > 0 and count < 3:  #count = 1, 2:
+  #   uy_tin += 0.1
+  # elif count > 2:
+  #   uy_tin += 0.15
   
   for i in index_not_dau_phay:
-      if string[i] != ",":
+      if string[i] not in [",", "-"]:
         uy_tin -= 0.05
-  level = ["số", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành", "tp", "tỉnh" ]
-  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số"] }
-  level_1 = {'status': True, 'keywords': ["đường", "ngõ", "ngách", "hẻm","kiệt",]}
-  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố"]}
+      else:
+        if string[i] == ",":
+          uy_tin += 0.02
+        if string[i] == "-":
+          uy_tin += 0.05
+  level = ["số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
+  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "kcn", "km", "quốc_lộ", "đại_lộ"] }
+  level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt",]}
+  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường"]}
   level_3 = {'status': True,'keywords':["thị","huyện"]}
-  level_4 = {'status': True,'keywords':["thành", "tp", "tỉnh"]}
+  level_4 = {'status': True,'keywords':["thành_phố", "tp", "tỉnh"]}
 
   parts =  ViPosTagger.postagging(ViTokenizer.tokenize(string_loc))[0]
-
+  # print(parts)
   for seg_word in parts:
     # print(seg_word)
     if seg_word.lower() in level:
  
 
       if seg_word.lower() in level_0['keywords'] and level_0['status'] == True:
-        uy_tin += 0.125
+        uy_tin += 0.075
         level_0['status'] = False
 
       if seg_word.lower() in level_1['keywords'] and level_1['status'] == True:
-        uy_tin += 0.125
+        uy_tin += 0.05
         level_1['status'] = False
 
       elif seg_word.lower()  in level_2['keywords'] and level_2['status'] == True:
-        uy_tin += 0.1
+        uy_tin += 0.025
         level_2['status'] = False
       elif seg_word.lower() in  level_3['keywords'] and level_3['status'] == True:
    
-        uy_tin += 0.05
+        uy_tin += 0.015
         level_3['status'] = False
       elif seg_word.lower() in level_4['keywords'] and level_4['status'] == True:
      
-        uy_tin += 0.025
+        uy_tin += 0.01
         level_4['status'] = False
 
       
@@ -705,6 +713,8 @@ def is_ADDRESS(string, label):
     return True
   else:
     return False
+
+
 
 ###########################################################################################################################
 import numpy as np
