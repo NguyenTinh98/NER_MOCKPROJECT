@@ -216,20 +216,20 @@ def is_Email(token):
         index += len(word) + 1
     return indexs
 def is_IP(token):
-  index = 0
-  indexs = []
-  for word in token.split(" "):
-      # print(word)
-      emails = re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", word)
-      # print(emails)
-      if len(emails) != 0:
-          index_start_email = word.find(emails[0]) + index
-          
-          index_end_email = index_start_email + len(emails[0])
-          
-          indexs.append((index_start_email, index_end_email))
-      index += len(word) + 1
-  return indexs
+    index = 0
+    indexs = []
+
+    # print(word)
+    emails = re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", token)
+    # print(emails)
+    if len(emails) != 0:
+        index_start_email = token.find(emails[0]) + index
+        
+        index_end_email = index_start_email + len(emails[0])
+        
+        indexs.append((index_start_email, index_end_email))
+    index += len(token) + 1
+    return indexs
 
 def post_process_email_url(datas):
   black_word = ["tp.hcm"]
@@ -252,20 +252,21 @@ def post_process_email_url(datas):
     
     elif data[1] == 'IP':
         check = is_IP(data[0])
+        print(check[0][1] - check[0][0]!= len(data[0]))
         if len(check) == 0 or  check[0][1] - check[0][0]!= len(data[0]):
           if data[0].isalnum():
             data = (data[0], 'QUANTITY')
           else:
             data = (data[0], 'O')
 
-    elif data[1] == 'PHONENUMBER':
-        check_ip = is_IP(data[0])
-        try:
-          if len(check_ip) > 0 and check_ip[0][1] - check_ip[0][0]== len(data[0]):
-            data = (data[0], 'IP')
-        except:
-          print("ERROR:{}".format(data))
-          # return
+    # elif data[1] == 'PHONENUMBER':
+    #     check_ip = is_IP(data[0])
+    #     try:
+    #       if len(check_ip) > 0 and check_ip[0][1] - check_ip[0][0]== len(data[0]):
+    #         data = (data[0], 'IP')
+    #     except:
+    #       print("ERROR:{}".format(data))
+    #       # return
 
     elif data[1] in ['O'] and data[1].lower() not in black_word:
         # print(data[0])
