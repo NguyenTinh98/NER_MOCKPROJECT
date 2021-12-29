@@ -716,6 +716,129 @@ def is_ADDRESS(string, label):
 
 
 
+#hậu xử lý
+def decide_label(part):
+  word = part[0]
+  labels = part[1]
+  return (word, max(labels))
+
+
+import re
+def constain_alpha(token):
+
+  for character in token:
+
+    is_letter = character.isalpha()
+    if is_letter == True:
+      return True
+  
+  return False
+
+def is_URL(token):
+    token = token.lower()
+    index = 0
+    indexs = []
+    if constain_alpha(token) == True:
+ 
+      
+      # print(word)
+      domain = re.findall(r'\b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b', token)
+      
+      if len(domain) != 0:
+          index_start_domain = token.find(domain[0]) + index
+          if token.find(domain[0]) == 0:
+              index_end_domain = index_start_domain + len(token)
+          else:
+              index_end_domain = index_start_domain + len(domain[0])
+          indexs.append((index_start_domain, index_end_domain))
+      index += len(token) + 1
+    return indexs
+
+def is_Email(token):
+    index = 0
+    indexs = []
+    for word in token.split(" "):
+        # print(word)
+        emails = re.findall(r"[\w.+-]+@[\w-]+\.[\w.-]+", word)
+        # print(emails)
+        if len(emails) != 0:
+            index_start_email = word.find(emails[0]) + index
+            
+            index_end_email = index_start_email + len(emails[0])
+            
+            indexs.append((index_start_email, index_end_email))
+        index += len(word) + 1
+    return indexs
+def is_IP(token):
+  index = 0
+  indexs = []
+  for word in token.split(" "):
+      # print(word)
+      emails = re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", word)
+      # print(emails)
+      if len(emails) != 0:
+          index_start_email = word.find(emails[0]) + index
+          
+          index_end_email = index_start_email + len(emails[0])
+          
+          indexs.append((index_start_email, index_end_email))
+      index += len(word) + 1
+  return indexs
+
+def post_process_email_url(datas):
+  black_word = ["tp.hcm"]
+  datas_trained = []
+  for i in range(len(datas)):
+    data = datas[i]
+
+      # check predict email
+    if data[1] == 'EMAIL':
+        check = is_Email(data[0])
+        if len(check) == 0:
+          data = (data[0], 'O')
+    
+    elif data[1] == 'URL':
+        check = is_URL(data[0])
+
+        if len(check) == 0 or  check[0][1] - check[0][0]!= len(data[0]):
+        
+          data = (data[0], 'O')
+    
+    elif data[1] == 'IP':
+        check = is_IP(data[0])
+        if len(check) == 0 or  check[0][1] - check[0][0]!= len(data[0]):
+          if data[0].isalnum():
+            data = (data[0], 'QUANTITY')
+          else:
+            data = (data[0], 'O')
+
+    elif data[1] == 'PHONENUMBER':
+        check_ip = is_IP(data[0])
+        try:
+          if len(check_ip) > 0 and check_ip[0][1] - check_ip[0][0]== len(data[0]):
+            data = (data[0], 'IP')
+        except:
+          print("ERROR:{}".format(data))
+          # return
+
+    elif data[1] in ['O'] and data[1].lower() not in black_word:
+        # print(data[0])
+        check_url = is_URL(data[0])
+        check_email= is_Email(data[0])
+
+        if len(check_url) > 0 and  check_url[0][1] - check_url[0][0] == len(data[0]):
+
+          data = (data[0], 'URL')
+
+        elif len(check_email) > 0:
+          data = (data[0], 'EMAIL')
+      
+    datas_trained.append(data)
+  return datas_trained
+    
+
+
+
 ###########################################################################################################################
 import numpy as np
 
