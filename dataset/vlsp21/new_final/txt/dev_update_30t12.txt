@@ -1907,9 +1907,6 @@ QUE	O
 này	O
 !	O
 
-Hiyou	PERSON
-Baodatviet.vn	URL
-
 Hơn	O
 nữa	O
 ,	O
