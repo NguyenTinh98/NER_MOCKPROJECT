@@ -5,47 +5,6 @@ from pyvi import ViTokenizer, ViPosTagger
 import re
 
 
-def preprocess_email_url(datas):
-  datas_trained = []
-  for i in range(len(datas)):
-    data = datas[i]
-
-    if data[1] == 'EMAIL':
-      check = is_Email(data[0])
-      if len(check) == 0:
-        data = (data[0], 'O')
-    
-    if data[1] != 'EMAIL' and  data[1] != 'URL': #(url, org, loc, o,.....)
-      check = is_Email(data[0])
-      if len(check) > 0:
-        data = (data[0], 'EMAIL')
-
-  
-
-    if data[1] == "URL":
-      # print(data[0])
-      check = is_URL(data[0])
-      if len(check) > 0 and  check[0][1] - check[0][0] == len(data[0]):
-        data = (data[0], 'URL')
-      else: 
-        data = (data[0], 'O')
-      
-    try:
-      if data[1] != 'URL' and data[1] != 'EMAIL':
-        check = is_URL(data[0])
-        if len(check) > 0 and  check[0][1] - check[0][0] == len(data[0]):
-          data = (data[0], 'URL')
-    except:
-      print(check)
-    datas_trained.append(data)
-  return datas_trained
-    
-
-
-
-
-
-
 def preprocessing_text(text):
     dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
              '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
@@ -58,8 +17,6 @@ def preprocessing_text(text):
             res += dictt[i]
     return res
   
-# sent = 'pham van manh have email ( pvm26042000@gmail.com ) ....'
-# out = [('pham', 'O'), ('van', 'O'), ('manh', 'O'), ('have', 'O'), ('email', 'O'), ('(', 'O'),  ('pvm26042000', 'EMAIL'), ('@', 'EMAIL'),('gmail', 'EMAIL'), ('.', 'EMAIL'),('com', 'EMAIL'),(')', 'O'),('....', 'O')]
 
 def merge_word(sent, pred_out):
   '''
@@ -68,17 +25,15 @@ def merge_word(sent, pred_out):
   '''
   out_merged = []
   parts = sent.split()
-  # print(parts)
-  # print(pred_out)
   for index in range(0, len(parts)):
     word = parts[index]
 
     
     for jndex in range(1, len(pred_out) + 1):
       token = pred_out[0:jndex]
-      ws_token, ls_token = list(zip(*token))
+      ws_token, _ = list(zip(*token))
       word_token = "".join(ws_token)
-      # print(word_token, word)
+  
       if word_token == word:
         if len(token) == 1:
           out_merged.append(token[0])
@@ -94,12 +49,8 @@ def merge_word(sent, pred_out):
 def post_processing(origin_sentence, out_predict):
 
   out_merged = merge_word(origin_sentence, out_predict)
-  # print(out_merged)
-    
-  #handle email, url
   datas_trained = post_process_email_url(out_merged)
-  # print(datas_trained)
-  #handle location -> address
+
   indexs = []
   for index in range(len(datas_trained)):
     token = datas_trained[index]
@@ -112,7 +63,7 @@ def post_processing(origin_sentence, out_predict):
     print(gr_indexs)
     for index in gr_indexs:
       string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-      # print(string, label)
+
       if is_ADDRESS(string, label) == True:
         for i in range(index[0], index[-1] + 1):
           datas_trained[i] =(datas_trained[i][0], "ADDRESS")
@@ -155,32 +106,23 @@ def has_numbers(inputString):
   return False
 
 def is_ADDRESS(string, label):
-  index_dau = [i for i, e in enumerate(string) if e in [",", "-"]]
+
+  level = ["số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
+  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "kcn", "km", "quốc_lộ", "đại_lộ"] }
+  level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt",]}
+  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường"]}
+  level_3 = {'status': True,'keywords':["thị","huyện"]}
+  level_4 = {'status': True,'keywords':["thành_phố", "tp", "tỉnh"]}
   index_not_dau_phay = [i for i, e in enumerate(label) if e == "O"]
 
   uy_tin = 0
   string_loc = " ".join(string)
-  # print(label)
- 
-  # print(string)
+
   if 'ADDRESS' in label:
     uy_tin += 0.1
-  
-  # if '(' in string_loc or ')' in string_loc:
-  #   uy_tin -= 0.025
-  
 
   if has_numbers(string_loc):
     uy_tin += 0.2
-  
-  count =  len(index_dau) 
-
-  # count = label.count('LOCATION')
-  # print(count)
-  # if count > 0 and count < 3:  #count = 1, 2:
-  #   uy_tin += 0.1
-  # elif count > 2:
-  #   uy_tin += 0.15
   
   for i in index_not_dau_phay:
       if string[i] not in [",", "-"]:
@@ -190,19 +132,13 @@ def is_ADDRESS(string, label):
           uy_tin += 0.02
         if string[i] == "-":
           uy_tin += 0.05
-  level = ["số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
-  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "kcn", "km", "quốc_lộ", "đại_lộ"] }
-  level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt",]}
-  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường"]}
-  level_3 = {'status': True,'keywords':["thị","huyện"]}
-  level_4 = {'status': True,'keywords':["thành_phố", "tp", "tỉnh"]}
+
+  
 
   parts =  ViPosTagger.postagging(ViTokenizer.tokenize(string_loc))[0]
-  # print(parts)
+
   for seg_word in parts:
-    # print(seg_word)
     if seg_word.lower() in level:
- 
 
       if seg_word.lower() in level_0['keywords'] and level_0['status'] == True:
         uy_tin += 0.075
@@ -224,11 +160,6 @@ def is_ADDRESS(string, label):
         uy_tin += 0.01
         level_4['status'] = False
 
-      
-      # print(word.lower(), level_1.index(word.lower()) + 1)
-      
-
-  # print("check{}".format(uy_tin))
   if uy_tin >= 0.3:
     return True
   else:
@@ -257,9 +188,6 @@ def is_URL(token):
     index = 0
     indexs = []
     if constain_alpha(token) == True:
- 
-      
-      # print(word)
       domain = re.findall(r'\b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b', token)
       
       if len(domain) != 0:
