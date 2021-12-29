@@ -424,29 +424,9 @@ def show_span_f1(dic):
 
 ################################################################################
 #hậu xử lý
-def quet_dinh_nhan(token):
-  all_freq = {}
-  word = token[0]
-  # print(token[0], token[1])
-  if token[0][-1] in [",", ".", ";", "?", "!"] and token[1][-1] == "O" and len(token[1]) > 1:
-    ended = (token[0][-1], token[1][-1])
-    for i in token[1][:-1]:
-      if i in all_freq:
-          all_freq[i] += 1
-      else:
-          all_freq[i] = 1
-    res = max(all_freq, key = all_freq.get)
-    return [(token[0][:-1], res), ended]
-  else:
-    for i in token[1]:
-        if i in all_freq:
-            all_freq[i] += 1
-        else:
-            all_freq[i] = 1
-    res = max(all_freq, key = all_freq.get)
-    return [(token[0], res)]
-
-
+import string
+import unicodedata
+from pyvi import ViTokenizer, ViPosTagger
 import re
 
 def is_URL(token):
@@ -520,11 +500,8 @@ def preprocess_email_url(datas):
 
 
 
-from pyvi import ViTokenizer, ViPosTagger
 
-import string
-import unicodedata
-from pyvi import ViTokenizer, ViPosTagger
+
 
 def preprocessing_text(text):
     dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
