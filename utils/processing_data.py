@@ -146,18 +146,18 @@ def is_ADDRESS(string, label):
 
   for index in range(len(parts)):
     seg_word = parts[index]
-    if index == 0:
-      if has_numbers(seg_word.split(" ")[0]):
+    if index == 0 and  has_numbers(seg_word.split(" ")[0]):
         uy_tin += 0.3
+        break
 
     if seg_word.lower() in level:
  
       if seg_word.lower() in level_0['keywords'] and level_0['status'] == True:
-        uy_tin += 0.25
-        level_0['status'] = False
+        uy_tin += 0.3
+        break
 
       elif seg_word.lower() in level_1['keywords'] and level_1['status'] == True:
-        uy_tin += 0.075
+        uy_tin += 0.25
         level_1['status'] = False
 
       elif seg_word.lower()  in level_2['keywords'] and level_2['status'] == True:
