@@ -835,8 +835,6 @@ def post_process_email_url(datas):
       
     datas_trained.append(data)
   return datas_trained
-    
-
 
 
 ###########################################################################################################################
