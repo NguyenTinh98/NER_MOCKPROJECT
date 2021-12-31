@@ -74,29 +74,21 @@ def post_processing(origin_sentence, out_predict):
 
   out_merged = merge_word(origin_sentence, out_predict)
   datas_trained = post_process_email_url(out_merged)
+  
+  gr_indexs = cluster(datas_trained, 3)
+  print(gr_indexs)
+  for index in gr_indexs:
+    string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
 
-  indexs = []
-  for index in range(len(datas_trained)):
-    token = datas_trained[index]
-    if token[1] == "LOCATION" or token[1] == "ADDRESS" :
-      indexs.append(index)
-
-  if len(indexs) != 0:
-    gr_indexs = cluster(indexs, 3)
-
-
-    for index in gr_indexs:
-      string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-      # print(string, label)
-      if is_ADDRESS(string, label) == True:
-        for i in range(index[0], index[-1] + 1):
-          datas_trained[i] =(datas_trained[i][0], "ADDRESS")
-      else:
-        for i in range(index[0], index[-1] + 1):
-          if datas_trained[i][0] == ',':
-            datas_trained[i] = (datas_trained[i][0], "O")
-          else:
-            datas_trained[i] =(datas_trained[i][0], "LOCATION")
+    if is_ADDRESS(string, label) == True:
+      for i in range(index[0], index[-1] + 1):
+        datas_trained[i] =(datas_trained[i][0], "ADDRESS")
+    else:
+      for i in range(index[0], index[-1] + 1):
+        if datas_trained[i][0] == ',':
+          datas_trained[i] = (datas_trained[i][0], "O")
+        else:
+          datas_trained[i] =(datas_trained[i][0], "LOCATION")
   return datas_trained
 
 def cluster(data, maxgap):
@@ -107,13 +99,29 @@ def cluster(data, maxgap):
         >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
         [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
     '''
-    data.sort()
-    groups = [[data[0]]]
-    for x in data[1:]:
-        if abs(x - groups[-1][-1]) <= maxgap:
-            groups[-1].append(x)
-        else:
-            groups.append([x])
+
+    black_list = [":", "(", ";", "{", "["]
+
+    indexs = []
+    for index in range(len(data)):
+      token = data[index]
+      if token[1] == "LOCATION" or token[1] == "ADDRESS" :
+        indexs.append(index)
+
+    indexs.sort()
+    groups = [[indexs[0]]]
+
+    for jndex in range(1,len(indexs[1:])):
+      x  = indexs[jndex]
+      # print(data[indexs[jndex-1]:x])
+      w, labels = list(zip(*data[indexs[jndex-1]:x]))
+      # print(any(character in w for character in black_list))
+      if abs(x - groups[-1][-1]) <= maxgap and any(character in w for character in black_list) == False:
+          groups[-1].append(x)
+      elif any(character in data[indexs[jndex-1]:x] for character in black_list):
+          groups.append([x])
+      else:
+          groups.append([x])
     return groups
   
 
@@ -200,9 +208,6 @@ def is_URL(token):
     index = 0
     indexs = []
     if constain_alpha(token) == True:
- 
-      
-      # print(word)
       domain = re.findall(r'\b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b', token)
       
       if len(domain) != 0:
@@ -260,9 +265,7 @@ def post_process_email_url(datas):
     
     elif data[1] == 'URL':
         check = is_URL(data[0])
-
         if len(check) == 0 or  check[0][1] - check[0][0]!= len(data[0]):
-        
           data = (data[0], 'O')
     
     elif data[1] == 'IP':
@@ -273,7 +276,6 @@ def post_process_email_url(datas):
           else:
             data = (data[0], 'O')
 
-          # return
     if data[1] in ['O'] and data[1].lower() not in black_word:
         # print(data[0])
         check_url = is_URL(data[0])
