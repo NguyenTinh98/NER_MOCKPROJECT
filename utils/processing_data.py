@@ -143,8 +143,8 @@ def is_ADDRESS(string, label):
   uy_tin = 0
   string_loc = " ".join(string)
 
-  level = ["số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "số_nhà","ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
-  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "số_nhà"] }
+  level = ["lầu", "tầng", "căn_hộ", "số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "số_nhà","ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
+  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "số_nhà", "lầu", "tầng", "căn_hộ"] }
   level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt","kcn", "km"]}
   level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường", "quốc_lộ", "đại_lộ"]}
   level_3 = {'status': True,'keywords':["thị","huyện"]}
