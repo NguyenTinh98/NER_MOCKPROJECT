@@ -100,22 +100,6 @@ def post_processing(origin_sentence, out_predict):
               datas_trained[i] =(datas_trained[i][0], "LOCATION")
   return datas_trained
 
-def cluster(data, maxgap):
-    '''Arrange data into groups where successive elements
-       differ by no more than *maxgap*
-        >>> cluster([1, 6, 9, 100, 102, 105, 109, 134, 139], maxgap=10)
-        [[1, 6, 9], [100, 102, 105, 109], [134, 139]]
-        >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
-        [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
-    '''
-    data.sort()
-    groups = [[data[0]]]
-    for x in data[1:]:
-        if abs(x - groups[-1][-1]) <= maxgap:
-            groups[-1].append(x)
-        else:
-            groups.append([x])
-    return groups
   
 
 
@@ -300,3 +284,37 @@ def post_process_email_url(datas):
       
     datas_trained.append(data)
   return datas_trained
+
+
+def cluster(data, maxgap):
+  '''Arrange data into groups where successive elements
+      differ by no more than *maxgap*
+      >>> cluster([1, 6, 9, 100, 102, 105, 109, 134, 139], maxgap=10)
+      [[1, 6, 9], [100, 102, 105, 109], [134, 139]]
+      >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
+      [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
+  '''
+
+  black_list = [":", "(", ";", "{", "["]
+
+  indexs = []
+  for index in range(len(data)):
+    token = data[index]
+    if token[1] == "LOCATION" or token[1] == "ADDRESS" :
+      indexs.append(index)
+
+  indexs.sort()
+  groups = [[indexs[0]]]
+
+  for jndex in range(1,len(indexs[1:])):
+    x  = indexs[jndex]
+    # print(data[indexs[jndex-1]:x])
+    w, labels = list(zip(*data[indexs[jndex-1]:x]))
+    # print(any(character in w for character in black_list))
+    if abs(x - groups[-1][-1]) <= maxgap and any(character in w for character in black_list) == False:
+        groups[-1].append(x)
+    elif any(character in data[indexs[jndex-1]:x] for character in black_list):
+        groups.append([x])
+    else:
+        groups.append([x])
+  return groups
