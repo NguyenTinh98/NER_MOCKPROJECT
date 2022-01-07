@@ -22,6 +22,7 @@ def preprocess_email_url(datas):
   
 
     if data[1] == "URL":
+      # print(data[0])
       check = is_URL(data[0])
       if len(check) > 0 and  check[0][1] - check[0][0] == len(data[0]):
         data = (data[0], 'URL')
@@ -75,7 +76,6 @@ def post_processing(origin_sentence, out_predict):
   out_merged = merge_word(origin_sentence, out_predict)
   datas_trained = post_process_email_url(out_merged)
 
-<<<<<<< HEAD
   indexs = []
   for index in range(len(datas_trained)):
     token = datas_trained[index]
@@ -98,23 +98,6 @@ def post_processing(origin_sentence, out_predict):
               datas_trained[i] = (datas_trained[i][0], "O")
             else:
               datas_trained[i] =(datas_trained[i][0], "LOCATION")
-=======
-  gr_indexs = cluster(datas_trained, 3)
-  if gr_indexs is not None:
-    #print(gr_indexs)
-    for index in gr_indexs:
-      string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-
-      if is_ADDRESS(string, label) == True:
-        for i in range(index[0], index[-1] + 1):
-          datas_trained[i] =(datas_trained[i][0], "ADDRESS")
-      else:
-        for i in range(index[0], index[-1] + 1):
-          if datas_trained[i][0] == ',':
-            datas_trained[i] = (datas_trained[i][0], "O")
-          else:
-            datas_trained[i] =(datas_trained[i][0], "LOCATION")
->>>>>>> 09371ef456e91f3836ae8e5de05b99eb3c2df7b3
   return datas_trained
 
 def cluster(data, maxgap):
@@ -125,7 +108,6 @@ def cluster(data, maxgap):
         >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
         [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
     '''
-<<<<<<< HEAD
     data.sort()
     groups = [[data[0]]]
     for x in data[1:]:
@@ -134,35 +116,6 @@ def cluster(data, maxgap):
         else:
             groups.append([x])
     return groups
-=======
-
-    black_list = [":", "(", ";", "{", "["]
-
-    indexs = []
-    for index in range(len(data)):
-      token = data[index]
-      if token[1] == "LOCATION" or token[1] == "ADDRESS" :
-        indexs.append(index)
-
-    indexs.sort()
-    if len(indexs) > 0:
-      groups = [[indexs[0]]]
-
-      for jndex in range(1,len(indexs[1:])):
-        x  = indexs[jndex]
-        # print(data[indexs[jndex-1]:x])
-        w, labels = list(zip(*data[indexs[jndex-1]:x]))
-        # print(any(character in w for character in black_list))
-        if abs(x - groups[-1][-1]) <= maxgap and any(character in w for character in black_list) == False:
-            groups[-1].append(x)
-        elif any(character in data[indexs[jndex-1]:x] for character in black_list):
-            groups.append([x])
-        else:
-            groups.append([x])
-      return groups
-    else:
-      return None
->>>>>>> 09371ef456e91f3836ae8e5de05b99eb3c2df7b3
   
 
 
@@ -228,17 +181,10 @@ def is_ADDRESS(string, label):
      
         uy_tin += 0.01
         level_4['status'] = False
-<<<<<<< HEAD
   if uy_tin >= 0.3:
     return True
   else:
     return False
-=======
-  #print(uy_tin)
-  if uy_tin >= 0.29:
-    return True
-  return False
->>>>>>> 09371ef456e91f3836ae8e5de05b99eb3c2df7b3
 
 
 def decide_label(part):
