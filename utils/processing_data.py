@@ -49,15 +49,16 @@ def merge_word(sent, pred_out):
   '''
   out_merged = []
   parts = sent.split()
+
   for index in range(0, len(parts)):
     word = parts[index]
 
     
     for jndex in range(1, len(pred_out) + 1):
       token = pred_out[0:jndex]
-      ws_token, _ = list(zip(*token))
+      ws_token, ls_token = list(zip(*token))
       word_token = "".join(ws_token)
-   
+      # print(word_token, word)
       if word_token == word:
         if len(token) == 1:
           out_merged.append(token[0])
@@ -74,21 +75,29 @@ def post_processing(origin_sentence, out_predict):
 
   out_merged = merge_word(origin_sentence, out_predict)
   datas_trained = post_process_email_url(out_merged)
-  
-  gr_indexs = cluster(datas_trained, 3)
-  print(gr_indexs)
-  for index in gr_indexs:
-    string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
 
-    if is_ADDRESS(string, label) == True:
-      for i in range(index[0], index[-1] + 1):
-        datas_trained[i] =(datas_trained[i][0], "ADDRESS")
-    else:
-      for i in range(index[0], index[-1] + 1):
-        if datas_trained[i][0] == ',':
-          datas_trained[i] = (datas_trained[i][0], "O")
+  indexs = []
+  for index in range(len(datas_trained)):
+    token = datas_trained[index]
+    if token[1] == "LOCATION" or token[1] == "ADDRESS" :
+      indexs.append(index)
+
+  if len(indexs) != 0:
+    gr_indexs = cluster(indexs, 3)
+    
+    if len(gr_indexs) > 1:
+      for index in gr_indexs:
+        string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
+        # print(string, label)
+        if is_ADDRESS(string, label) == True:
+          for i in range(index[0], index[-1] + 1):
+            datas_trained[i] =(datas_trained[i][0], "ADDRESS")
         else:
-          datas_trained[i] =(datas_trained[i][0], "LOCATION")
+          for i in range(index[0], index[-1] + 1):
+            if datas_trained[i][0] == ',':
+              datas_trained[i] = (datas_trained[i][0], "O")
+            else:
+              datas_trained[i] =(datas_trained[i][0], "LOCATION")
   return datas_trained
 
 def cluster(data, maxgap):
@@ -99,35 +108,20 @@ def cluster(data, maxgap):
         >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
         [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
     '''
-
-    black_list = [":", "(", ";", "{", "["]
-
-    indexs = []
-    for index in range(len(data)):
-      token = data[index]
-      if token[1] == "LOCATION" or token[1] == "ADDRESS" :
-        indexs.append(index)
-
-    indexs.sort()
-    groups = [[indexs[0]]]
-
-    for jndex in range(1,len(indexs[1:])):
-      x  = indexs[jndex]
-      # print(data[indexs[jndex-1]:x])
-      w, labels = list(zip(*data[indexs[jndex-1]:x]))
-      # print(any(character in w for character in black_list))
-      if abs(x - groups[-1][-1]) <= maxgap and any(character in w for character in black_list) == False:
-          groups[-1].append(x)
-      elif any(character in data[indexs[jndex-1]:x] for character in black_list):
-          groups.append([x])
-      else:
-          groups.append([x])
+    data.sort()
+    groups = [[data[0]]]
+    for x in data[1:]:
+        if abs(x - groups[-1][-1]) <= maxgap:
+            groups[-1].append(x)
+        else:
+            groups.append([x])
     return groups
   
 
 
 def has_numbers(inputString):
   parts = inputString.split()
+
   for i in range(len(parts)):
     part = parts[i]
     for char in part:
@@ -139,33 +133,41 @@ def has_numbers(inputString):
   return False
 
 def is_ADDRESS(string, label):
+  index_not_dau_phay = [i for i, e in enumerate(label) if e == "O"]
 
   uy_tin = 0
   string_loc = " ".join(string)
+  if 'ADDRESS' in label:
+    uy_tin += 0.15
 
-  level = ["lầu", "tầng", "căn_hộ", "số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "số_nhà","ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
-  level_0 ={'status': True,'keywords': ["toà", "chung_cư", "số", "lô", "số_nhà", "lầu", "tầng", "căn_hộ"] }
-  level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt","kcn", "km"]}
-  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường", "quốc_lộ", "đại_lộ"]}
+  if has_numbers(string_loc):
+    uy_tin += 0.15
+
+  for i in index_not_dau_phay:
+      if string[i] not in [",", "-"]:
+        uy_tin -= 0.05
+      else:
+        if string[i] == ",":
+          uy_tin += 0.02
+        if string[i] == "-":
+          uy_tin += 0.05
+  level = ["toà_nhà", "nhà", "lầu", "tầng", "căn_hộ", "số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
+  level_0 ={'status': True,'keywords': ["toà", "toà_nhà", "nhà", "lầu", "tầng", "căn_hộ", "chung_cư", "số", "lô", "kcn", "km", "quốc_lộ", "đại_lộ"] }
+  level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt",]}
+  level_2 = {'status': True, 'keywords':["ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "tổ", "dân_phố", "đường"]}
   level_3 = {'status': True,'keywords':["thị","huyện"]}
   level_4 = {'status': True,'keywords':["thành_phố", "tp", "tỉnh"]}
 
   parts =  ViPosTagger.postagging(ViTokenizer.tokenize(string_loc))[0]
 
-  for index in range(len(parts)):
-    seg_word = parts[index]
-    if index == 0 and  has_numbers(seg_word.split(" ")[0]):
-        uy_tin += 0.3
-        break
-
+  for seg_word in parts:
     if seg_word.lower() in level:
- 
       if seg_word.lower() in level_0['keywords'] and level_0['status'] == True:
-        uy_tin += 0.3
-        break
-
-      elif seg_word.lower() in level_1['keywords'] and level_1['status'] == True:
         uy_tin += 0.25
+        level_0['status'] = False
+
+      if seg_word.lower() in level_1['keywords'] and level_1['status'] == True:
+        uy_tin += 0.075
         level_1['status'] = False
 
       elif seg_word.lower()  in level_2['keywords'] and level_2['status'] == True:
@@ -179,11 +181,10 @@ def is_ADDRESS(string, label):
      
         uy_tin += 0.01
         level_4['status'] = False
-  print(uy_tin)
-  if uy_tin >= 0.29:
+  if uy_tin >= 0.3:
     return True
-  
-  return False
+  else:
+    return False
 
 
 def decide_label(part):
@@ -204,9 +205,15 @@ def constain_alpha(token):
   return False
 
 def is_URL(token):
+    black_list = [".exe",".txt", ".jpg", ".png", ".mp3 "]
     token = token.lower()
     index = 0
     indexs = []
+
+    for tk in black_list:
+      if tk in token:
+        return indexs
+
     if constain_alpha(token) == True:
       domain = re.findall(r'\b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b', token)
       
@@ -265,7 +272,9 @@ def post_process_email_url(datas):
     
     elif data[1] == 'URL':
         check = is_URL(data[0])
+
         if len(check) == 0 or  check[0][1] - check[0][0]!= len(data[0]):
+        
           data = (data[0], 'O')
     
     elif data[1] == 'IP':
@@ -276,6 +285,7 @@ def post_process_email_url(datas):
           else:
             data = (data[0], 'O')
 
+          # return
     if data[1] in ['O'] and data[1].lower() not in black_word:
         # print(data[0])
         check_url = is_URL(data[0])
