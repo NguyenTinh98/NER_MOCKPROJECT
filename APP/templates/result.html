@@ -109,7 +109,7 @@
 
 <div class="container" style="margin:15px !important; max-width: 98% !important;">
 	<div class="row">
-		<div class="col-4" >
+		<div class="col-md-6" >
           <div class="card mb-10 shadow-sm" id="custom_card" style="border: 1px !important;">
           	<form method="POST" action="{{ url_for('extract')}}">
 			<input type="submit" name = "clear_button" value = "Clear">
@@ -118,21 +118,13 @@
             </form>
 		</div>
 	</div>
-	<div class="col-4">
+	<div class="col-md-6">
           <div class="card mb-10 shadow-sm" id="custom_card2">
           	<h4>Result of Data</h4>
-			<p style='line-height: 2.5rem !important;'>{{ result1|markdown }}</p>
+			<p style='line-height: 2.5rem !important;'>{{ result|markdown }}</p>
 			
 		</div>
 	</div>
-
-	<div class="col-4">
-		<div class="card mb-10 shadow-sm" id="custom_card2">
-			<h4>Result of Data_Post</h4>
-		  <p style='line-height: 2.5rem !important;'>{{ result|markdown }}</p>
-		  
-	  </div>
-  </div>
 
 </div>
 	

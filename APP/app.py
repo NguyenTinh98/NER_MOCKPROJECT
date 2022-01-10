@@ -22,7 +22,7 @@ def loading(PATH = 'model/xlmr_span1.pt'):
     dict_path['weight'] = PATH
     start = time.time()
     print("1. Loading some package")
-    ner = NER(dict_path = dict_path, model_name = model_name, tag_value = tag_values , dropout = DROPOUT_OUT, max_len = MAX_LEN, batch_size = BS, device = device, concat=False)
+    ner = NER(dict_path = dict_path, model_name = model_name, tag_value = tag_values , dropout = DROPOUT_OUT, max_len = MAX_LEN, batch_size = BS, device = device, concat=True)
     print(f"===== Done !!! =====Time: {time.time() -start:.4} s =========")
     print('2.Load model')
     start = time.time()
@@ -30,7 +30,7 @@ def loading(PATH = 'model/xlmr_span1.pt'):
     print(f"===== Done !!! =====Time: {time.time() -start:.4} s =========")
     return ner
 
-ner = loading('model/nopoor_nocat/xlmr_span0_08t01_nopoor_nocat.pt')
+ner = loading('model/poor_nocat/xlmr_span0_08t01_poor_nocat.pt')
 
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem">{}</div>"""
 
@@ -50,7 +50,7 @@ def index():
 	# html = displacy.render(docx,style="ent")
 	# html = html.replace("\n\n","\n")
 	# result = HTML_WRAPPER.format(html)
-	return render_template('result.html', raw_text = '', result='', result1='')
+	return render_template('result.html', raw_text = '', result='')
 
 
 @app.route('/',methods=["GET","POST"])
@@ -58,20 +58,15 @@ def extract():
     if request.method == 'POST':
         if request.form.get('submit_button', False) == "NE Recognition":
             raw_text = request.form['rawtext']
-            docx, outx = ner.predict(raw_text)
+            docx = ner.predict(raw_text)
             html = utils.visualize_spacy(docx)
             html = html.replace('[/n]','</br>')
             result = HTML_WRAPPER.format(html)
-
-            html1 = utils.visualize_spacy(outx)
-            html1 = html1.replace('[/n]','</br>')
-            result1 = HTML_WRAPPER.format(html1)
         elif request.form.get('clear_button', False) == "Clear":
             raw_text = ''
             result = ''
-            result1 = ''
     
-    return render_template('result.html', raw_text=raw_text, result=result, result1=result1)
+    return render_template('result.html', raw_text=raw_text, result=result)
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True, use_reloader=False)
