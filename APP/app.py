@@ -30,7 +30,7 @@ def loading(PATH = 'model/xlmr_span1.pt'):
     print(f"===== Done !!! =====Time: {time.time() -start:.4} s =========")
     return ner
 
-ner = loading('model/poor_nocat/xlmr_span0_08t01_poor_nocat.pt')
+ner = loading('model/nopoor_cat/xlmr_span0_08t01_nopoor_cat.pt')
 
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem">{}</div>"""
 
@@ -69,4 +69,4 @@ def extract():
     return render_template('result.html', raw_text=raw_text, result=result)
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True, use_reloader=False)
+    app.run(port=5700, debug=True, use_reloader=False)

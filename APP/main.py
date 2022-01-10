@@ -70,7 +70,7 @@ class NER(nn.Module):
         #return out
         #print(out)
         result = data_processing.post_processing(texts, out)
-        return result, out
+        return result
          
 #################################################################################################################################################
 class BaseBertCrf(nn.Module):
