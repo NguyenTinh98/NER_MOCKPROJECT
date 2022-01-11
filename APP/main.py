@@ -17,7 +17,7 @@ import utils
 import data_processing
 
 class NER(nn.Module):
-    def __init__(self, dict_path, model_name, tag_value ,dropout = 0.4,  max_len = 256, batch_size = 32, device = 'cuda', concat=True):
+    def __init__(self, dict_path, model_name, tag_value ,dropout = 0.4,  max_len = 256, batch_size = 32, device = 'cuda', concat=False):
         super(NER, self).__init__()
         self.tag_value = tag_value
         self.max_len = max_len
