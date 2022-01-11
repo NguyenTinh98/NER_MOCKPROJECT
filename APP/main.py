@@ -27,7 +27,7 @@ class NER(nn.Module):
         self.is_crf = 'crf' in self.model_name
         self.tokenizer = AutoTokenizer.from_pretrained(dict_path['tokenizer'], do_lower_case=False,use_fast=False)
         self.config = AutoConfig.from_pretrained(dict_path['config'], output_hidden_states=True)
-        self.base_model = AutoModel.from_pretrained(dict_path['model'], config=self.config, add_pooling_layer=False)
+        self.base_model = AutoModel.from_pretrained(dict_path['model'], config=self.config, add_pooling_layer=True)
         self.concat = concat
         self.sub = dict_path['sub']
         self.dropout = dropout
