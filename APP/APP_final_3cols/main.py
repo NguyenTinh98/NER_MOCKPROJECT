@@ -68,7 +68,7 @@ class NER(nn.Module):
             words_out += tests
             tags_out += tags
             probs_out += probs
-        out1 = [(w,t,p) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t) for w,t,p in zip(words_out,tags_out, probs_out)][1:-1]
+        out1 = [(w,t,p) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t,p) for w,t,p in zip(words_out,tags_out, probs_out)][1:-1]
         out2 = [(w,t) for w,t,p in out1]
         out = data_processing.span_cluster(out1)
         texts = " ".join([word for (word, _) in out])
