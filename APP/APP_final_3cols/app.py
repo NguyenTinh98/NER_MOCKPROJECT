@@ -39,17 +39,8 @@ from flaskext.markdown import Markdown
 app = Flask(__name__)
 Markdown(app)
 
-
-# def analyze_text(text):
-# 	return nlp(text)
-
 @app.route('/')
 def index():
-	# raw_text = "Bill Gates is An American Computer Scientist since 1986"
-	# docx = nlp(raw_text)
-	# html = displacy.render(docx,style="ent")
-	# html = html.replace("\n\n","\n")
-	# result = HTML_WRAPPER.format(html)
 	return render_template('result.html', raw_text = '', result='', result1='')
 
 

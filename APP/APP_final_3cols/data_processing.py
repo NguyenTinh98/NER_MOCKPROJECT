@@ -1,5 +1,3 @@
-import string
-import unicodedata
 from pyvi import ViTokenizer, ViPosTagger
 import re
 
@@ -20,7 +18,6 @@ def preprocess_email_url(datas):
 
 
     if data[1] == "URL":
-      # print(data[0])
       check = is_URL(data[0])
       if len(check) > 0 and  check[0][1] - check[0][0] == len(data[0]):
         data = (data[0], 'URL')
@@ -37,9 +34,6 @@ def preprocess_email_url(datas):
     datas_trained.append(data)
   return datas_trained
     
-# sent = 'pham van manh have email ( pvm26042000@gmail.com ) ....'
-# out = [('pham', 'O'), ('van', 'O'), ('manh', 'O'), ('have', 'O'), ('email', 'O'), ('(', 'O'),  ('pvm26042000', 'EMAIL'), ('@', 'EMAIL'),('gmail', 'EMAIL'), ('.', 'EMAIL'),('com', 'EMAIL'),(')', 'O'),('....', 'O')]
-
 def merge_word(sent, pred_out):
   '''
     :sent: is input sentences (hanlded pre-processing). example: 'pham van manh have email ( pvm26042000@gmail.com ) ....'
@@ -56,7 +50,6 @@ def merge_word(sent, pred_out):
       token = pred_out[0:jndex]
       ws_token, ls_token = list(zip(*token))
       word_token = "".join(ws_token)
-      # print(word_token, word)
       if word_token == word:
         if len(token) == 1:
           out_merged.append(token[0])
@@ -78,7 +71,6 @@ def post_processing(origin_sentence, out_predict):
   if len(gr_indexs) > 0:
     for index in gr_indexs:
       string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-      # print(string, label)
       if is_ADDRESS(string, label) == True:
         for i in range(index[0], index[-1] + 1):
           datas_trained[i] =(datas_trained[i][0], "ADDRESS")
@@ -131,9 +123,7 @@ def is_Email(token):
     index = 0
     indexs = []
     for word in token.split(" "):
-        # print(word)
         emails = re.findall(r"[\w.+-]+@[\w-]+\.[\w.-]+", word)
-        # print(emails)
         if len(emails) != 0:
             index_start_email = word.find(emails[0]) + index
             
@@ -150,7 +140,6 @@ def is_IP(token):
   index = 0
   indexs = []
   for word in token.split(" "):
-      # print(word)
       emails = re.findall(ipv4 + '|' + ipv4Bi + '|' + ipv6, word)
       if len(emails) != 0:
           index_start_email = word.find(emails[0]) + index
@@ -190,17 +179,6 @@ def post_process_email_url(datas):
             data = (data[0], 'QUANTITY')
           else:
             data = (data[0], 'O')
-    # if data[1] not in 'O' and data[0].lower() not in black_word:
-    #     # print(data[0])
-    #     check_url = is_URL(data[0])
-    #     check_email= is_Email(data[0])
-
-    #     if len(check_url) > 0 and  check_url[0][1] - check_url[0][0] == len(data[0]):
-
-    #       data = (data[0], 'URL')
-
-    #     elif len(check_email) > 0:
-    #       data = (data[0], 'EMAIL')
     datas_trained.append(data)
   return datas_trained
 
@@ -228,9 +206,7 @@ def cluster(data, maxgap):
 
   for jndex in range(1,len(indexs)):
     x  = indexs[jndex]
-    # print(data[indexs[jndex-1]:x])
     w, labels = list(zip(*data[indexs[jndex-1]:x]))
-    # print(any(character in w for character in black_list))
     if abs(x - groups[-1][-1]) <= maxgap and any(character in w for character in black_list) == False:
         groups[-1].append(x)
     elif any(character in data[indexs[jndex-1]:x] for character in black_list):
@@ -328,7 +304,6 @@ def post_processing(origin_sentence, out_predict):
     for index in gr_indexs:
       if len(index) > 1:
         string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
-        # print(string)
         set_label = set(label)
         if len(set_label) >= 2 and (set_label != {'O', 'LOCATION'} and set_label != {'PERSONTYPE', 'LOCATION'}): 
           print(string)
@@ -343,36 +318,6 @@ def post_processing(origin_sentence, out_predict):
               elif datas_trained[i] not in ['-/']:
                 datas_trained[i] =(datas_trained[i][0], "LOCATION")
   return datas_trained
-
-def merge_subtags_4column(tokens, tags_true, tags_predict, sm):
-    tags = []
-    tests = []
-    trues = []
-    sms = []
-    temp = []
-    for index in range(len(tokens)):
-        if len(tests) == 0:
-            if "▁" in tokens[index]:
-                tests.append(tokens[index][1:])
-            else:
-                tests.append(tokens[index])
-            tags.append(tags_predict[index])
-            trues.append(tags_true[index])
-            sms.append(sm[index])
-        elif "▁" in tokens[index] or tokens[index] == '</s>':
-            if tokens[index] == '</s>':
-                tests.append(tokens[index])
-            else:
-                tests.append(tokens[index][1:])
-            tags.append(tags_predict[index])
-            trues.append(tags_true[index])
-            temp.append(sm[index])
-            sms.append(np.mean(temp, axis=0))
-            temp = []
-        else:
-            tests[-1] = tests[-1] + tokens[index]
-            temp.append(sm[index])
-    return tests, trues, tags, sms
 
 def span_cluster(dts, pred=1):
     sent = list(dts)

@@ -15,7 +15,6 @@ import torch.nn.functional as F
 log_soft = F.log_softmax
 import utils
 import data_processing
-import processing_data_0701
 
 class NER(nn.Module):
     def __init__(self, dict_path, model_name, tag_value ,dropout = 0.4,  max_len = 256, batch_size = 32, device = 'cuda', concat=True):
@@ -65,20 +64,15 @@ class NER(nn.Module):
                 sm = [(utils.softmax(logits[0,i])) for i in range(len_subword)]
 
             tags_predict = [ self.tag_value[i]  for i in  predict]
-            #tests, tags = utils.merge_subtags(sub, tags_predict)
             tests, tags, probs = utils.merge_subtags_4column(sub, tags_predict, sm)
             words_out += tests
             tags_out += tags
             probs_out += probs
-        #out = [(w,t) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t) for w,t in zip(words_out,tags_out)][1:-1]
         out1 = [(w,t,p) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t) for w,t,p in zip(words_out,tags_out, probs_out)][1:-1]
-        #texts = " ".join([word for (word, _) in out])
         out2 = [(w,t) for w,t,p in out1]
-        out = processing_data_0701.span_cluster(out1)
+        out = data_processing.span_cluster(out1)
         texts = " ".join([word for (word, _) in out])
-        #return out
-        #print(out)
-        result = processing_data_0701.post_processing(texts, out)
+        result = data_processing.post_processing(texts, out)
         return out2, result
          
 #################################################################################################################################################
