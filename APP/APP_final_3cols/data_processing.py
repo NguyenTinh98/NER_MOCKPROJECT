@@ -236,23 +236,23 @@ def is_ADDRESS(string, label):
   string_loc = " ".join(string)
   if 'ADDRESS' in label:
     uy_tin += 0.15
-    print('label address', uy_tin)
+    #print('label address', uy_tin)
 
   if has_numbers(string_loc):
     uy_tin += 0.15
-    print('has numbers', uy_tin)
+    #print('has numbers', uy_tin)
 
   for i in index_not_dau_phay:
       if string[i] not in [",", "-"]:
         uy_tin -= 0.05
-        print('not in ,-', uy_tin)
+        #print('not in ,-', uy_tin)
       else:
         if string[i] == ",":
           uy_tin += 0.02
-          print('==,', uy_tin)
+          #print('==,', uy_tin)
         if string[i] == "-":
           uy_tin += 0.05
-          print('== -', uy_tin)
+          #print('== -', uy_tin)
   level = ["toà_nhà", "nhà", "lầu", "tầng", "căn_hộ", "số", "lô", "km","quốc_lộ","đại_lộ","kcn", "đường","tổ", "ngõ", "toà", "ngách", "hẻm","kiệt", "chung_cư", "ấp" ,"thôn", "khu","phố" , "quận", "phường", "xã", "thị_xã","huyện", "thành_phố", "tp", "tỉnh" ]
   level_0 ={'status': True,'keywords': ["toà", "toà_nhà", "nhà", "lầu", "tầng", "căn_hộ", "chung_cư", "số", "lô", "kcn", "km", "quốc_lộ", "đại_lộ"] }
   level_1 = {'status': True, 'keywords': [ "ngõ", "ngách", "hẻm","kiệt",]}
@@ -269,29 +269,29 @@ def is_ADDRESS(string, label):
       if seg_word.lower() in level_0['keywords'] and level_0['status'] == True and i < len(parts) - 1 and parts[i+1] not in punct:
         uy_tin += 0.25
         level_0['status'] = False
-        print('level0', uy_tin)
+        #print('level0', uy_tin)
 
       elif seg_word.lower() in level_1['keywords'] and level_1['status'] == True and i < len(parts) - 1 and parts[i+1] not in punct:
         uy_tin += 0.075
         level_1['status'] = False
-        print('level1', uy_tin)
+        #print('level1', uy_tin)
 
       elif seg_word.lower()  in level_2['keywords'] and level_2['status'] == True and i < len(parts) - 1 and parts[i+1] not in punct:
         uy_tin += 0.025
         level_2['status'] = False
-        print('level2', uy_tin)
+        #print('level2', uy_tin)
       
       elif seg_word.lower() in  level_3['keywords'] and level_3['status'] == True and i < len(parts) - 1 and parts[i+1] not in punct:
         uy_tin += 0.015
         level_3['status'] = False
-        print('level3', uy_tin)
+        #print('level3', uy_tin)
       
       elif seg_word.lower() in level_4['keywords'] and level_4['status'] == True and i < len(parts) - 1 and parts[i+1] not in punct:
         uy_tin += 0.01
         level_4['status'] = False
-        print('level4', uy_tin)
+        #print('level4', uy_tin)
 
-  print(uy_tin)
+  #print(uy_tin)
   return uy_tin >= 0.3
 
 def post_processing(origin_sentence, out_predict):
@@ -306,13 +306,13 @@ def post_processing(origin_sentence, out_predict):
         string, label = list(zip(*datas_trained[index[0]: index[-1] + 1]))
         set_label = set(label)
         if len(set_label) >= 2 and (set_label != {'O', 'LOCATION'} and set_label != {'PERSONTYPE', 'LOCATION'}): 
-          print(string)
+          #print(string)
           if is_ADDRESS(string, label) == True:
             for i in range(index[0], index[-1] + 1):
               datas_trained[i] =(datas_trained[i][0], "ADDRESS")
           else:
             for i in range(index[0], index[-1] + 1):
-              print(datas_trained[i])
+              #print(datas_trained[i])
               if datas_trained[i][0] in ',':
                 datas_trained[i] = (datas_trained[i][0], "O")
               elif datas_trained[i] not in ['-/']:
