@@ -22,7 +22,7 @@ def loading(PATH = 'model/xlmr_span1.pt'):
     dict_path['weight'] = PATH
     start = time.time()
     print("1. Loading some package")
-    ner = NER(dict_path = dict_path, model_name = model_name, tag_value = tag_values , dropout = DROPOUT_OUT, max_len = MAX_LEN, batch_size = BS, device = device, concat=True)
+    ner = NER(dict_path = dict_path, model_name = model_name, tag_value = tag_values , dropout = DROPOUT_OUT, max_len = MAX_LEN, batch_size = BS, device = device, concat=False)
     print(f"===== Done !!! =====Time: {time.time() -start:.4} s =========")
     print('2.Load model')
     start = time.time()
@@ -30,7 +30,7 @@ def loading(PATH = 'model/xlmr_span1.pt'):
     print(f"===== Done !!! =====Time: {time.time() -start:.4} s =========")
     return ner
 
-ner = loading('model/nopoor_cat/xlmr_span0_08t01_nopoor_cat.pt')
+ner = loading('model/span2_pool_nocat/xlmr_span2_10t01_pool_nocat.pt')
 
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem">{}</div>"""
 
@@ -39,17 +39,8 @@ from flaskext.markdown import Markdown
 app = Flask(__name__)
 Markdown(app)
 
-
-# def analyze_text(text):
-# 	return nlp(text)
-
 @app.route('/')
 def index():
-	# raw_text = "Bill Gates is An American Computer Scientist since 1986"
-	# docx = nlp(raw_text)
-	# html = displacy.render(docx,style="ent")
-	# html = html.replace("\n\n","\n")
-	# result = HTML_WRAPPER.format(html)
 	return render_template('result.html', raw_text = '', result='')
 
 
@@ -59,6 +50,7 @@ def extract():
         if request.form.get('submit_button', False) == "NE Recognition":
             raw_text = request.form['rawtext']
             docx = ner.predict(raw_text)
+
             html = utils.visualize_spacy(docx)
             html = html.replace('[/n]','</br>')
             result = HTML_WRAPPER.format(html)
@@ -69,4 +61,4 @@ def extract():
     return render_template('result.html', raw_text=raw_text, result=result)
 
 if __name__ == '__main__':
-    app.run(port=5700, debug=True, use_reloader=False)
+    app.run(port=5000, debug=True, use_reloader=False)

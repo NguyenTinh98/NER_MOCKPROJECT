@@ -17,7 +17,7 @@ import utils
 import data_processing
 
 class NER(nn.Module):
-    def __init__(self, dict_path, model_name, tag_value ,dropout = 0.4,  max_len = 256, batch_size = 32, device = 'cuda', concat=False):
+    def __init__(self, dict_path, model_name, tag_value ,dropout = 0.4,  max_len = 256, batch_size = 32, device = 'cuda', concat=True):
         super(NER, self).__init__()
         self.tag_value = tag_value
         self.max_len = max_len
@@ -44,6 +44,7 @@ class NER(nn.Module):
         sub_cut = utils.cutting_subword(subwords, sub = self.sub, size = self.max_len)
         tags_out = []
         words_out = []
+        probs_out = []
         self.model.eval()
         for sub in sub_cut:
             input_ids = pad_sequences([self.tokenizer.convert_tokens_to_ids(sub)],
@@ -60,15 +61,16 @@ class NER(nn.Module):
                 logits = outputs[0].detach().cpu().numpy()
                 len_subword = sum(input_ids[0] != 1)
                 predict = np.argmax(logits, axis=2)[0][:len_subword]
+                sm = [(utils.softmax(logits[0,i])) for i in range(len_subword)]
 
             tags_predict = [ self.tag_value[i]  for i in  predict]
-            tests, tags = utils.merge_subtags(sub, tags_predict)
+            tests, tags, probs = utils.merge_subtags_4column(sub, tags_predict, sm)
             words_out += tests
             tags_out += tags
-        out = [(w,t) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t) for w,t in zip(words_out,tags_out)][1:-1]
+            probs_out += probs
+        out1 = [(w,t,p) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t) for w,t,p in zip(words_out,tags_out, probs_out)][1:-1]
+        out = data_processing.span_cluster(out1)
         texts = " ".join([word for (word, _) in out])
-        #return out
-        #print(out)
         result = data_processing.post_processing(texts, out)
         return result
          
