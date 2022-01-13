@@ -8,7 +8,6 @@ import torch
 from keras.preprocessing.sequence import pad_sequences
 import numpy as np
 from transformers import AutoConfig, AutoModel, AutoTokenizer
-from sklearn.metrics import f1_score
 from TorchCRF import CRF   
 #from torchcrf import CRF
 import torch.nn.functional as F
@@ -39,14 +38,15 @@ class NER(nn.Module):
            
 
     def predict(self, texts):
-        texts = utils.preprocessing_text(self.tokenizer,texts)
+        texts = utils.preprocessing_text(texts)
         subwords = self.tokenizer.tokenize(texts)
-        sub_cut = utils.cutting_subword(subwords, sub = self.sub, size = self.max_len)
+        sub_cut = utils.cutting_subword(subwords, sub = self.sub, size = self.max_len-2)
         tags_out = []
         words_out = []
         probs_out = []
         self.model.eval()
         for sub in sub_cut:
+            sub = ["<s>"] + sub + ["</s>"]
             input_ids = pad_sequences([self.tokenizer.convert_tokens_to_ids(sub)],
                                         maxlen=self.max_len, dtype="long", value=self.tokenizer.pad_token_id,
                                         truncating="post", padding="post")
@@ -65,10 +65,10 @@ class NER(nn.Module):
 
             tags_predict = [ self.tag_value[i]  for i in  predict]
             tests, tags, probs = utils.merge_subtags_4column(sub, tags_predict, sm)
-            words_out += tests
-            tags_out += tags
-            probs_out += probs
-        out1 = [(w,t,p) if w != '.</s>' else  (w.replace('.</s>','[/n]'),t,p) for w,t,p in zip(words_out,tags_out, probs_out)][1:-1]
+            words_out += tests[1:-1]
+            tags_out += tags[1:-1]
+            probs_out += probs[1:-1]
+        out1 = [(w,t,p) if w != '.</x>' else  (w.replace('.</x>','[/n]'),t,p) for w,t,p in zip(words_out,tags_out, probs_out)]
         out = data_processing.span_cluster(out1)
         texts = " ".join([word for (word, _) in out])
         result = data_processing.post_processing(texts, out)

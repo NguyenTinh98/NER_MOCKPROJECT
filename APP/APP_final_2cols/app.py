@@ -1,6 +1,4 @@
-from flask import Flask,url_for,render_template,request
-import spacy
-from spacy import displacy
+from flask import Flask,render_template,request
 import json
 import torch
 import time

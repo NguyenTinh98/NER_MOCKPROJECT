@@ -45,14 +45,14 @@ def process_unk(tokenizer, sq):
             temp.append(i)
     return ' '.join(temp)
 
-def preprocessing_text(tokenizer,text):
+def preprocessing_text(text):
     dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ','́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
              '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
     text = text.split('\n')
     text = [i.strip()  for i in text if i!='']
     out = ""
     for i in range(1,len(text)+1):
-        out += text[i-1]+' .</s> '
+        out += text[i-1]+' .</x> '
     text = unicodedata.normalize('NFKC', out)
     res = ''
     for i in text:
@@ -61,7 +61,7 @@ def preprocessing_text(tokenizer,text):
         elif i in dictt:
             res += dictt[i]
     text = preprocess_data(res)
-    return process_unk(tokenizer,text)
+    return text
 
 def handle_bracket(test_str):
     res = re.findall(r'(\(|\[|\"|\'|\{)(.*?)(\}|\'|\"|\]|\))', test_str)
@@ -165,7 +165,7 @@ def merge_subtags_4column(tokens, tags_predict, sm):
                 tests.append(tokens[index])
             tags.append(tags_predict[index])
             sms.append(sm[index])
-        elif "▁" in tokens[index]:
+        elif "▁" in tokens[index] or "</s>" in tokens[index]:
             tests.append(tokens[index][1:])
             tags.append(tags_predict[index])
             temp.append(sm[index])
