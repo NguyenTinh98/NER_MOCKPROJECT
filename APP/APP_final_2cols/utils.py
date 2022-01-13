@@ -29,8 +29,6 @@ OPTIONS = {'ents': NER_COLOR, 'colors': COLORS}
 
 ############################################################
 def preprocess_data(sent):
-    sent = '<s> ' + sent + ' </s>'
-    #sent = '$ ' + sent
     sent = handle_bracket(sent)
     sent = re.sub(' +', ' ', sent)
     sent_out = ""
@@ -195,7 +193,7 @@ def visualize_spacy(arr):
         
     ex = [{'text': text, 'ents': [{'start': x[0], 'end': x[1], 'label': x[2]} for x in start_end_labels if x[2]!= 0]}]
     return displacy.render(ex, manual=True, jupyter=False, style='ent', options = OPTIONS)#page=True
-
+#########################################
 def softmax(arr):
     return np.exp(arr) / sum(np.exp(arr))
 
@@ -206,3 +204,34 @@ def write_pickle(dt, path):
 def read_pickle(file):
   with open(file, 'rb') as f:
     return pickle.load(f)
+#=========convert data for auto-labelling==============
+def preprocessing_text2(text):
+    dictt = {'™': ' ', '‘': "'", '®': ' ', '×': ' ', '😀': ' ', '‑': ' - ', '́': ' ', '—': ' - ', '̣': ' ', '–': ' - ', '`': "'",\
+    '“': '"', '̉': ' ','’': "'", '̃': ' ', '\u200b': ' ', '̀': ' ', '”': '"', '…': '...', '\ufeff': ' ', '″': '"'}
+    text = text.split('\n')
+    text = ' '.join([i.strip() for i in text if i!=''])
+    text = unicodedata.normalize('NFKC', text)
+    res = ''
+    for i in text:
+        if i.isalnum() or i in string.punctuation or i == ' ':
+            res += i
+        elif i in dictt:
+            res += dictt[i]
+    text = preprocess_data(res)
+    return text
+
+def read_txt(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return f.readlines()
+
+def write_txt(data, path):
+    with open(path, 'w', encoding='utf-8') as f:
+        for i in data:
+            f.write(i + '\n')
+
+def convertfile2doccano(path, path2):
+    res = []
+    data = read_txt(path)
+    for line in data:
+        res.append(preprocessing_text2(line.strip()))
+        write_txt(res, path2)

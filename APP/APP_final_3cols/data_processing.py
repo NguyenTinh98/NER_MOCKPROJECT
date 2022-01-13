@@ -190,7 +190,7 @@ def cluster(data, maxgap):
       >>> cluster([1, 6, 9, 99, 100, 102, 105, 134, 139, 141], maxgap=10)
       [[1, 6, 9], [99, 100, 102, 105], [134, 139, 141]]
   '''
-  black_list = [":", "(", ";", "{", "["]
+  black_list = [":", "(", ";", "{", "[", "và", "tại", "ở", "của"]
 
   indexs = []
   for index in range(len(data)):
